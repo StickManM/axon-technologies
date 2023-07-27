@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "axontechnologies:thunderanium_ingot"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "M": {
+      "item": "axontechnologies:mimicarium_portal_frame"
+    }
+  },
+  "pattern": [
+    "DED",
+    "#M#",
+    "DED"
+  ],
+  "result": {
+    "item": "axontechnologies:thunderanium_portal_frame"
+  },
+  "show_notification": true
+}

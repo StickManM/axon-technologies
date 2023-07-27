@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "axontechnologies:stripped_thundered_wood"
+    }
+  ],
+  "result": {
+    "item": "axontechnologies:thundered_planks",
+    "count": 4
+  }
+}

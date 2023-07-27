@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "axontechnologies:mimicarium_ore",
+    "axontechnologies:deepslate_mimicarium_ore",
+    "axontechnologies:dreadstone",
+    "axontechnologies:dreadstone_diamond_ore",
+    "axontechnologies:voidstone",
+    "axontechnologies:fakestone",
+    "axontechnologies:fakeslate",
+    "axontechnologies:thundered_stone",
+    "axontechnologies:thunderanium_portal_frame"
+  ]
+}
