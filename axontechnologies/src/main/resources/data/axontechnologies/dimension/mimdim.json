@@ -1,0 +1,12 @@
+{
+  "type": "axontechnologies:mimdim",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "axontechnologies:mimdim",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "axontechnologies:mimdim_biome_plains"
+    }
+  }
+}
+

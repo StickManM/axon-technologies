@@ -1,0 +1,86 @@
+package net.stickmanm.axontechnologies.data;
+
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.ModelIds;
+import net.minecraft.data.client.Models;
+import net.stickmanm.axontechnologies.block.ModBlocks;
+import net.stickmanm.axontechnologies.item.ModItems;
+
+public class ModModelProvider extends FabricModelProvider {
+    public ModModelProvider(FabricDataOutput output) {
+        super(output);
+    }
+
+    @Override
+    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        //Ores
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MIMICARIUM_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MIMICARIUM_ORE);
+
+        //Thundered Tree Blocks
+        blockStateModelGenerator.registerLog(ModBlocks.THUNDERED_LOG).log(ModBlocks.THUNDERED_LOG).wood(ModBlocks.THUNDERED_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_THUNDERED_LOG).log(ModBlocks.STRIPPED_THUNDERED_LOG).wood(ModBlocks.STRIPPED_THUNDERED_WOOD);
+
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THUNDERED_PLANKS);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THUNDERED_LEAVES);
+
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.THUNDERED_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        //Dreadstone and Dreadstone Ores
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_DIAMOND_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_THUNDERANIUM_ORE);
+
+        //MISC
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOIDSTONE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MIMIMCARIUM_PORTAL_FRAME);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THUNDERANIUM_PORTAL_FRAME);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FAKESTONE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FAKESLATE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHARGED_DIRT);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THUNDERED_STONE);
+
+        //SPAWN EGGS
+        blockStateModelGenerator.registerParentedItemModel(ModItems.RED_ESSENCE_ZOMBIE_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
+
+    }
+
+    @Override
+    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.MIMICARIUM, Models.GENERATED);
+
+        //Igniters
+        itemModelGenerator.register(ModItems.MIMICARIUM_IGNITER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DREADED_IGNITER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THUNDERANIUM_KEY, Models.GENERATED);
+
+        //Thunderanium
+        itemModelGenerator.register(ModItems.RAW_THUNDERANIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REFINED_THUNDERANIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THUNDERANIUM_CLUSTER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THUNDERANIUM_INGOT, Models.GENERATED);
+
+        //Armors
+        itemModelGenerator.register(ModItems.ARMOR_TEST_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ARMOR_TEST_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ARMOR_TEST_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ARMOR_TEST_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.THUNDERANIUM_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THUNDERANIUM_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THUNDERANIUM_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THUNDERANIUM_BOOTS, Models.GENERATED);
+
+        //Tools
+        itemModelGenerator.register(ModItems.THUNDERANIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THUNDERANIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THUNDERANIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THUNDERANIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THUNDERANIUM_HOE, Models.HANDHELD);
+
+    }
+}

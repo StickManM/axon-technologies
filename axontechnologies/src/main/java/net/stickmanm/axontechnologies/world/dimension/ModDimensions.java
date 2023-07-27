@@ -1,0 +1,62 @@
+package net.stickmanm.axontechnologies.world.dimension;
+
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.util.Identifier;
+import net.minecraft.world.RegistryWorldView;
+import net.minecraft.world.World;
+import net.minecraft.world.dimension.DimensionType;
+import net.stickmanm.axontechnologies.AxonTechnologies;
+import net.stickmanm.axontechnologies.block.ModBlocks;
+import net.stickmanm.axontechnologies.item.ModItems;
+
+public class ModDimensions {
+    //Dread Caverns
+    public static final RegistryKey<World> DCDIM_DIMENSION_KEY = RegistryKey.of(RegistryKeys.WORLD,
+            new Identifier(AxonTechnologies.MOD_ID, "dcdim"));
+    public static final RegistryKey<DimensionType> DCDIM_TYPE_KEY = RegistryKey.of(RegistryKeys.DIMENSION_TYPE, DCDIM_DIMENSION_KEY.getValue());
+
+    //Mimic World
+    public static final RegistryKey<World> MIMDIM_DIMENSION_KEY = RegistryKey.of(RegistryKeys.WORLD,
+            new Identifier(AxonTechnologies.MOD_ID, "mimdim"));
+    public static final RegistryKey<DimensionType> MIMDIM_TYPE_KEY = RegistryKey.of(RegistryKeys.DIMENSION_TYPE, MIMDIM_DIMENSION_KEY.getValue());
+
+    //Thunderlands
+    public static final RegistryKey<World> THUNDERLANDS_DIMENSION_KEY = RegistryKey.of(RegistryKeys.WORLD,
+            new Identifier(AxonTechnologies.MOD_ID, "thunderlands"));
+    public static final RegistryKey<DimensionType> THUNDERLANDS_TYPE_KEY = RegistryKey.of(RegistryKeys.DIMENSION_TYPE, THUNDERLANDS_DIMENSION_KEY.getValue());
+
+    public static void registerModDimensions() {
+        AxonTechnologies.LOGGER.debug("Registering ModDimensions for " + AxonTechnologies.MOD_ID);
+
+        //PORTALS
+
+        //DREAD CAVERNS PORTAL
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.VOIDSTONE)
+                .destDimID(DCDIM_DIMENSION_KEY.getValue())
+                .tintColor(152, 29,151)
+                .lightWithItem(ModItems.DREADED_IGNITER)
+                .flatPortal()
+                .registerPortal();
+
+        //MIMIC WORLD PORTAL
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.MIMIMCARIUM_PORTAL_FRAME)
+                .destDimID(MIMDIM_DIMENSION_KEY.getValue())
+                .tintColor(255, 0, 255)
+                .lightWithItem(ModItems.MIMICARIUM_IGNITER)
+                .registerPortal();
+
+        //THUNDERLANDS PORTAL
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.THUNDERANIUM_PORTAL_FRAME)
+                .destDimID(THUNDERLANDS_DIMENSION_KEY.getValue())
+                .tintColor(170, 169, 173)
+                .lightWithItem(ModItems.THUNDERANIUM_KEY)
+                .registerPortal();
+
+    }
+}
