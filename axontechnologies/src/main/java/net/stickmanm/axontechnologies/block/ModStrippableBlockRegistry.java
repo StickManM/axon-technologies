@@ -8,4 +8,4 @@ public class ModStrippableBlockRegistry {
         StrippableBlockRegistry.register(ModBlocks.THUNDERED_WOOD, ModBlocks.STRIPPED_THUNDERED_WOOD);
     }
 }
-//comment 2
+//comment 3
