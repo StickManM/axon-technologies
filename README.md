@@ -1,4 +1,4 @@
-# Axon-T.E.C.H.N.O.L.O.G.I.E.S.
+# Axon T.E.C.H.N.O.L.O.G.I.E.S.
 This is the Repository for the Axon T.E.C.H.N.O.L.O.G.I.E.S. Mod
 
 Disclaimer:
