@@ -7,13 +7,18 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.world.World;
 import net.stickmanm.axontechnologies.AxonTechnologies;
+import net.stickmanm.axontechnologies.effect.GlitchsterEffect;
 import net.stickmanm.axontechnologies.item.ModArmorMaterials;
+import net.stickmanm.axontechnologies.item.ModItems;
 import net.stickmanm.axontechnologies.item.client.ThunderaniumArmorRenderer;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.RenderProvider;
@@ -81,29 +86,34 @@ public class ThunderaniumArmorItem extends ArmorItem implements GeoItem {
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if(!world.isClient()) {
-            if(entity instanceof PlayerEntity) {
-                PlayerEntity player = (PlayerEntity)entity;
 
-                if(hasFullSuitOfArmorOn(player)) {
-                    evaluateArmorEffects(player);
+
+        if(!world.isClient()) {
+            if(entity instanceof PlayerEntity player) {
+                ItemStack headPiece = player.getEquippedStack(EquipmentSlot.HEAD);
+                ItemStack chestPiece = player.getEquippedStack(EquipmentSlot.CHEST);
+                ItemStack legPiece = player.getEquippedStack(EquipmentSlot.LEGS);
+                ItemStack footPiece = player.getEquippedStack(EquipmentSlot.FEET);
+
+
+
+
+                if (headPiece.isOf(ModItems.THUNDERANIUM_HELMET) &&
+                        chestPiece.isOf(ModItems.THUNDERANIUM_CHESTPLATE) &&
+                        legPiece.isOf(ModItems.THUNDERANIUM_LEGGINGS) &&
+                        footPiece.isOf(ModItems.THUNDERANIUM_BOOTS)) {
+                    player.addStatusEffect(new StatusEffectInstance(AxonTechnologies.GLITCHSTER, 200, 0, false, false, true));
+                  }
                 }
-            }
-        }
+
+
+
+
+    }
 
         super.inventoryTick(stack, world, entity, slot, selected);
     }
 
-    private void evaluateArmorEffects(PlayerEntity player) {
-        for (Map.Entry<ArmorMaterial, StatusEffect> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
-            ArmorMaterial mapArmorMaterial = entry.getKey();
-            StatusEffect mapStatusEffect = entry.getValue();
-
-            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
-                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
-            }
-        }
-    }
 
     private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial, StatusEffect mapStatusEffect) {
         boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect);

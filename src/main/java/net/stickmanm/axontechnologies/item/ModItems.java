@@ -9,10 +9,7 @@ import net.minecraft.util.Identifier;
 import net.stickmanm.axontechnologies.AxonTechnologies;
 import net.stickmanm.axontechnologies.entity.ModEntities;
 import net.stickmanm.axontechnologies.fluid.ModFluids;
-import net.stickmanm.axontechnologies.item.custom.ArmorTestArmorItem;
-import net.stickmanm.axontechnologies.item.custom.ModAxeItem;
-import net.stickmanm.axontechnologies.item.custom.ModHoeItem;
-import net.stickmanm.axontechnologies.item.custom.ModPickaxeItem;
+import net.stickmanm.axontechnologies.item.custom.*;
 
 public class ModItems {
     //MATERIALS
@@ -59,13 +56,13 @@ public class ModItems {
 
     //Thunderanium
     public static final Item THUNDERANIUM_HELMET = registerItem("thunderanium_helmet",
-            new ArmorTestArmorItem(ModArmorMaterials.THUNDERANIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ThunderaniumArmorItem(ModArmorMaterials.THUNDERANIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item THUNDERANIUM_CHESTPLATE = registerItem("thunderanium_chestplate",
-            new ArmorTestArmorItem(ModArmorMaterials.THUNDERANIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ThunderaniumArmorItem(ModArmorMaterials.THUNDERANIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item THUNDERANIUM_LEGGINGS = registerItem("thunderanium_leggings",
-            new ArmorTestArmorItem(ModArmorMaterials.THUNDERANIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ThunderaniumArmorItem(ModArmorMaterials.THUNDERANIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item THUNDERANIUM_BOOTS = registerItem("thunderanium_boots",
-            new ArmorTestArmorItem(ModArmorMaterials.THUNDERANIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ThunderaniumArmorItem(ModArmorMaterials.THUNDERANIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     //TOOLS
     public static final Item THUNDERANIUM_SWORD = registerItem("thunderanium_sword",
