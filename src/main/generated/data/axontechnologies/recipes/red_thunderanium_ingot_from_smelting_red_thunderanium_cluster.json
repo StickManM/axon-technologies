@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 15,
+  "experience": 10.0,
+  "group": "red_thunderanium",
+  "ingredient": {
+    "item": "axontechnologies:red_thunderanium_cluster"
+  },
+  "result": "axontechnologies:red_thunderanium_ingot"
+}
