@@ -140,6 +140,82 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.THUNDERANIUM_CLUSTER))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.THUNDERANIUM_CLUSTER)));
 
+        //Armor
+
+        //Thunderanium
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDERANIUM_HELMET)
+                .pattern("###")
+                .pattern("# #")
+                .input('#', ModItems.THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.THUNDERANIUM_HELMET))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.THUNDERANIUM_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDERANIUM_CHESTPLATE)
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.THUNDERANIUM_CHESTPLATE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.THUNDERANIUM_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDERANIUM_LEGGINGS)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.THUNDERANIUM_LEGGINGS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.THUNDERANIUM_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDERANIUM_BOOTS)
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.THUNDERANIUM_BOOTS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.THUNDERANIUM_BOOTS)));
+
+        //Red Thunderanium
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_HELMET)
+                .pattern("###")
+                .pattern("#T#")
+                .input('#', ModItems.RED_THUNDERANIUM_INGOT)
+                .input('T', ModItems.THUNDERANIUM_HELMET)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RED_THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RED_THUNDERANIUM_HELMET))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RED_THUNDERANIUM_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_CHESTPLATE)
+                .pattern("#T#")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.RED_THUNDERANIUM_INGOT)
+                .input('T', ModItems.THUNDERANIUM_CHESTPLATE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RED_THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RED_THUNDERANIUM_CHESTPLATE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RED_THUNDERANIUM_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_LEGGINGS)
+                .pattern("###")
+                .pattern("#T#")
+                .pattern("# #")
+                .input('#', ModItems.RED_THUNDERANIUM_INGOT)
+                .input('T', ModItems.THUNDERANIUM_LEGGINGS)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RED_THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RED_THUNDERANIUM_LEGGINGS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RED_THUNDERANIUM_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_BOOTS)
+                .pattern("#T#")
+                .pattern("# #")
+                .input('#', ModItems.RED_THUNDERANIUM_INGOT)
+                .input('T', ModItems.THUNDERANIUM_BOOTS)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RED_THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RED_THUNDERANIUM_BOOTS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RED_THUNDERANIUM_BOOTS)));
+
 
         //Tools
 
@@ -193,6 +269,58 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.THUNDERANIUM_HOE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.THUNDERANIUM_HOE)));
+
+
+        //Red Thunderanium
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_SWORD)
+                .pattern(" # ")
+                .pattern(" # ")
+                .pattern(" S ")
+                .input('#', ModItems.RED_THUNDERANIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RED_THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RED_THUNDERANIUM_SWORD))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RED_THUNDERANIUM_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_PICKAXE)
+                .pattern("###")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('#', ModItems.RED_THUNDERANIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RED_THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RED_THUNDERANIUM_PICKAXE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RED_THUNDERANIUM_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_SHOVEL)
+                .pattern(" # ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('#', ModItems.RED_THUNDERANIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RED_THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RED_THUNDERANIUM_SHOVEL))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RED_THUNDERANIUM_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_AXE)
+                .pattern("## ")
+                .pattern("#S ")
+                .pattern(" S ")
+                .input('#', ModItems.RED_THUNDERANIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RED_THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RED_THUNDERANIUM_AXE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RED_THUNDERANIUM_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_HOE)
+                .pattern("## ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('#', ModItems.THUNDERANIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RED_THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RED_THUNDERANIUM_HOE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RED_THUNDERANIUM_HOE)));
 
 
 

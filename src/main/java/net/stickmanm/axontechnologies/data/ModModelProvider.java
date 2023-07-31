@@ -82,12 +82,23 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.THUNDERANIUM_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.THUNDERANIUM_BOOTS, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.RED_THUNDERANIUM_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_THUNDERANIUM_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_THUNDERANIUM_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_THUNDERANIUM_BOOTS, Models.GENERATED);
+
         //Tools
         itemModelGenerator.register(ModItems.THUNDERANIUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THUNDERANIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THUNDERANIUM_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THUNDERANIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THUNDERANIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.RED_THUNDERANIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RED_THUNDERANIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RED_THUNDERANIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RED_THUNDERANIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RED_THUNDERANIUM_HOE, Models.HANDHELD);
 
     }
 }

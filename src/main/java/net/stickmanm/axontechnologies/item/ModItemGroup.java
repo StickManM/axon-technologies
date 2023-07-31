@@ -28,10 +28,6 @@ public class ModItemGroup {
                         entries.add(ModItems.MIMICARIUM_IGNITER);
                         entries.add(ModItems.DREADED_IGNITER);
                         entries.add(ModItems.THUNDERANIUM_KEY);
-                        entries.add(ModItems.ARMOR_TEST_HELMET);
-                        entries.add(ModItems.ARMOR_TEST_CHESTPLATE);
-                        entries.add(ModItems.ARMOR_TEST_LEGGINGS);
-                        entries.add(ModItems.ARMOR_TEST_BOOTS);
                         entries.add(ModItems.THUNDERANIUM_HELMET);
                         entries.add(ModItems.THUNDERANIUM_CHESTPLATE);
                         entries.add(ModItems.THUNDERANIUM_LEGGINGS);
@@ -41,6 +37,17 @@ public class ModItemGroup {
                         entries.add(ModItems.THUNDERANIUM_AXE);
                         entries.add(ModItems.THUNDERANIUM_SHOVEL);
                         entries.add(ModItems.THUNDERANIUM_HOE);
+                        entries.add(ModItems.RED_THUNDERANIUM_HELMET);
+                        entries.add(ModItems.RED_THUNDERANIUM_CHESTPLATE);
+                        entries.add(ModItems.RED_THUNDERANIUM_LEGGINGS);
+                        entries.add(ModItems.RED_THUNDERANIUM_BOOTS);
+                        entries.add(ModItems.RED_THUNDERANIUM_SWORD);
+                        entries.add(ModItems.RED_THUNDERANIUM_PICKAXE);
+                        entries.add(ModItems.RED_THUNDERANIUM_AXE);
+                        entries.add(ModItems.RED_THUNDERANIUM_SHOVEL);
+                        entries.add(ModItems.RED_THUNDERANIUM_HOE);
+
+
                         entries.add(ModItems.LIQUID_THUNDER_BUCKET);
 
 

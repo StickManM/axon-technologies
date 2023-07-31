@@ -28,6 +28,15 @@ public enum ModArmorMaterials implements ArmorMaterial {
         map.put(ArmorItem.Type.HELMET, 13);
     }), 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, 0.1F, () -> {
         return Ingredient.ofItems(new Item[]{ModItems.THUNDERANIUM_INGOT});
+    }),
+
+    RED_THUNDERANIUM("red_thunderanium", 0, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+        map.put(ArmorItem.Type.BOOTS, 10);
+        map.put(ArmorItem.Type.LEGGINGS, 15);
+        map.put(ArmorItem.Type.CHESTPLATE, 17);
+        map.put(ArmorItem.Type.HELMET, 13);
+    }), 35, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.5F, 0.25F, () -> {
+        return Ingredient.ofItems(new Item[]{ModItems.RED_THUNDERANIUM_INGOT});
     });
 
     public static final StringIdentifiable.Codec<ArmorMaterials> CODEC = StringIdentifiable.createCodec(ArmorMaterials::values);

@@ -75,7 +75,19 @@ public class ModItems {
     public static final Item THUNDERANIUM_BOOTS = registerItem("thunderanium_boots",
             new ThunderaniumArmorItem(ModArmorMaterials.THUNDERANIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    //Red Thunderanium
+    public static final Item RED_THUNDERANIUM_HELMET = registerItem("red_thunderanium_helmet",
+            new RedThunderaniumArmorItem(ModArmorMaterials.RED_THUNDERANIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item RED_THUNDERANIUM_CHESTPLATE = registerItem("red_thunderanium_chestplate",
+            new RedThunderaniumArmorItem(ModArmorMaterials.RED_THUNDERANIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item RED_THUNDERANIUM_LEGGINGS = registerItem("red_thunderanium_leggings",
+            new RedThunderaniumArmorItem(ModArmorMaterials.RED_THUNDERANIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item RED_THUNDERANIUM_BOOTS = registerItem("red_thunderanium_boots",
+            new RedThunderaniumArmorItem(ModArmorMaterials.RED_THUNDERANIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     //TOOLS
+
+    //Thunderanium
     public static final Item THUNDERANIUM_SWORD = registerItem("thunderanium_sword",
             new SwordItem(ModToolMaterials.THUNDERANIUM, 5,-2f,
                     new FabricItemSettings()));
@@ -94,6 +106,27 @@ public class ModItems {
 
     public static final Item THUNDERANIUM_PICKAXE = registerItem("thunderanium_pickaxe",
             new ModPickaxeItem(ModToolMaterials.THUNDERANIUM, 3,-2.4f,
+                    new FabricItemSettings()));
+
+    //Red Thunderanium
+    public static final Item RED_THUNDERANIUM_SWORD = registerItem("red_thunderanium_sword",
+            new SwordItem(ModToolMaterials.RED_THUNDERANIUM, 5,-2f,
+                    new FabricItemSettings()));
+
+    public static final Item RED_THUNDERANIUM_AXE = registerItem("red_thunderanium_axe",
+            new ModAxeItem(ModToolMaterials.RED_THUNDERANIUM, 8,-3.2f,
+                    new FabricItemSettings()));
+
+    public static final Item RED_THUNDERANIUM_HOE = registerItem("red_thunderanium_hoe",
+            new ModHoeItem(ModToolMaterials.RED_THUNDERANIUM, 3,-2.3f,
+                    new FabricItemSettings()));
+
+    public static final Item RED_THUNDERANIUM_SHOVEL = registerItem("red_thunderanium_shovel",
+            new ShovelItem(ModToolMaterials.RED_THUNDERANIUM, 3,-2.5f,
+                    new FabricItemSettings()));
+
+    public static final Item RED_THUNDERANIUM_PICKAXE = registerItem("red_thunderanium_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.RED_THUNDERANIUM, 3,-2.4f,
                     new FabricItemSettings()));
 
     //BUCKETS
