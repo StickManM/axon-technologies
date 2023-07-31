@@ -6,9 +6,11 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.stat.Stat;
+import net.stickmanm.axontechnologies.world.dimension.ModDimensions;
 
 public class ThunderPoisoningEffect extends StatusEffect {
     public ThunderPoisoningEffect() {
@@ -24,6 +26,10 @@ public class ThunderPoisoningEffect extends StatusEffect {
     public void applyUpdateEffect(LivingEntity entity, int Amplifier) {
         if (!entity.getWorld().isClient()) {
             entity.damage(entity.getDamageSources().lightningBolt(), 1.5F);
+                    addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE, "22653B89-116E-49DC-9B6B-9971489B5BE5", -1, EntityAttributeModifier.Operation.ADDITION)
+                            .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.16, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
+                            .addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "55FCED67-E92A-486E-9800-B47F202C4386", -10, EntityAttributeModifier.Operation.ADDITION)
+                            .addAttributeModifier(EntityAttributes.GENERIC_LUCK, "CC5AF142-2BD2-4215-B636-2605AED11727", -10, EntityAttributeModifier.Operation.ADDITION);
 
 
         }
