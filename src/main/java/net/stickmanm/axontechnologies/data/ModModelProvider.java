@@ -19,6 +19,8 @@ public class ModModelProvider extends FabricModelProvider {
         //Ores
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MIMICARIUM_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MIMICARIUM_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THUNDERANIUM_ORE);
+
 
         //Thundered Tree Blocks
         blockStateModelGenerator.registerLog(ModBlocks.THUNDERED_LOG).log(ModBlocks.THUNDERED_LOG).wood(ModBlocks.THUNDERED_WOOD);
@@ -63,6 +65,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.REFINED_THUNDERANIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.THUNDERANIUM_CLUSTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.THUNDERANIUM_INGOT, Models.GENERATED);
+
+        //Red Thunderanium
+        itemModelGenerator.register(ModItems.RED_THUNDERANIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_THUNDERANIUM_CLUSTER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_ESSENCE, Models.GENERATED);
 
         //Armors
         itemModelGenerator.register(ModItems.ARMOR_TEST_HELMET, Models.GENERATED);

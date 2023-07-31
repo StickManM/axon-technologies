@@ -1,11 +1,13 @@
 package net.stickmanm.axontechnologies.entity.custom;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.brain.sensor.HurtBySensor;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.mob.WardenEntity;
 import net.minecraft.entity.mob.ZombifiedPiglinEntity;
 import net.minecraft.entity.passive.*;
@@ -24,9 +26,9 @@ import software.bernie.geckolib.core.object.PlayState;
 
 import java.util.function.Predicate;
 
-public class RedEssenceZombieEntity extends AnimalEntity implements GeoEntity {
+public class RedEssenceZombieEntity extends PathAwareEntity implements GeoEntity {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
-    public RedEssenceZombieEntity(EntityType<? extends AnimalEntity> entityType, World world) {
+    public RedEssenceZombieEntity(EntityType<? extends PathAwareEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -69,8 +71,8 @@ public class RedEssenceZombieEntity extends AnimalEntity implements GeoEntity {
 
 
     @Nullable
-    @Override
-    public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
+
+    public MobEntity createChild(ServerWorld world, MobEntity entity) {
         return ModEntities.RED_ESSENCE_ZOMBIE.create(world);
     }
 

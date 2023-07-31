@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:dreaded_igniter"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

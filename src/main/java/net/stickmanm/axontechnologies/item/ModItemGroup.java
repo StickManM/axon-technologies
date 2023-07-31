@@ -14,7 +14,7 @@ public class ModItemGroup {
     public static ItemGroup AXONTECHNOLOGIES = Registry.register(Registries.ITEM_GROUP, new Identifier(AxonTechnologies.MOD_ID, "axontechnologiesgroup"),
             FabricItemGroup.builder()
                     .displayName(Text.literal("Axon T.E.C.H.N.O.L.O.G.I.E.S."))
-                    .icon(() -> new ItemStack(ModItems.THUNDERANIUM_INGOT)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.RED_THUNDERANIUM_INGOT)).entries((displayContext, entries) -> {
                         //ITEMS
                         entries.add(ModItems.MIMICARIUM);
                         entries.add(ModItems.RAW_THUNDERANIUM);
@@ -61,6 +61,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.FAKESLATE);
                         entries.add(ModBlocks.CHARGED_DIRT);
                         entries.add(ModBlocks.THUNDERED_STONE);
+                        entries.add(ModBlocks.THUNDERANIUM_ORE);
 
 
                     }).build());

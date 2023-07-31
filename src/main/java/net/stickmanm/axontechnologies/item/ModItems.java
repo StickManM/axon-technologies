@@ -28,6 +28,17 @@ public class ModItems {
     public static final Item THUNDERANIUM_INGOT = registerItem("thunderanium_ingot",
             new Item(new FabricItemSettings()));
 
+    public static final Item RED_ESSENCE = registerItem("red_essence",
+            new Item(new FabricItemSettings()));
+
+    public static final Item RED_THUNDERANIUM_INGOT = registerItem("red_thunderanium_ingot",
+            new Item(new FabricItemSettings()));
+
+    public static final Item RED_THUNDERANIUM_CLUSTER = registerItem("red_thunderanium_cluster",
+            new Item(new FabricItemSettings()));
+
+
+
     //SPAWN EGGS
     public static final Item RED_ESSENCE_ZOMBIE_SPAWN_EGG = registerItem("red_essence_zombie_spawn_egg",
             new SpawnEggItem(ModEntities.RED_ESSENCE_ZOMBIE, 0xFF0000, 0x000000,

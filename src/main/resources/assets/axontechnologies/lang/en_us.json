@@ -1,6 +1,9 @@
 {
   "item.axontechnologies.mimicarium": "Mimicarium",
   "item.axontechnologies.thunderanium_ingot": "Thunderanium Ingot",
+  "item.axontechnologies.red_thunderanium_ingot": "Red Thunderanium Ingot",
+  "item.axontechnologies.red_thunderanium_cluster": "Red Thunderanium Cluster",
+  "item.axontechnologies.red_essence": "Red Essence",
   "item.axontechnologies.raw_thunderanium": "Raw Thunderanium",
   "item.axontechnologies.refined_thunderanium": "Refined Thunderanium",
   "item.axontechnologies.thunderanium_cluster": "Thunderanium Cluster",
@@ -24,6 +27,7 @@
   "item.axontechnologies.thunderanium_hoe": "Thunderanium Hoe",
   "block.axontechnologies.mimicarium_ore": "Mimicarium Ore",
   "block.axontechnologies.deepslate_mimicarium_ore": "Deepslate Mimicarium Ore",
+  "block.axontechnologies.thunderanium_ore": "Thunderanium Ore",
   "block.axontechnologies.dreadstone": "Dreadstone",
   "block.axontechnologies.voidstone": "Voidstone",
   "block.axontechnologies.fakestone": "Fakestone",

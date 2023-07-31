@@ -19,9 +19,8 @@ public class ModEntities {
                     .fireImmune()
                     .specificSpawnBlocks(ModBlocks.CHARGED_DIRT)
                     .trackRangeChunks(32)
+                    .spawnableFarFromPlayer()
                     .dimensions(EntityDimensions.fixed(0.6f,2f)).build());
-
-
 
 
 }

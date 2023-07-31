@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:thunderanium_ingot_from_smelting_thunderanium_cluster"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -61,6 +61,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool()));
 
 
+
     //MISC
     public static final Block FAKESTONE = registerBlock("fakestone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.1f).requiresTool()));
@@ -73,6 +74,9 @@ public class ModBlocks {
 
     public static final Block THUNDERED_STONE = registerBlock("thundered_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.1f).requiresTool()));
+
+    public static final Block THUNDERANIUM_ORE = registerBlock("thundernaium_ore",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.DREADSTONE_THUNDERANIUM_ORE).strength(2.4f).requiresTool()));
 
 
     private static Block registerBlock(String name, Block block) {

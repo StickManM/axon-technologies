@@ -23,6 +23,10 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) { //cool comment
 
+
+
+        //Merging
+
         //Ores
         offerSmelting(exporter, List.of(ModBlocks.MIMICARIUM_ORE), RecipeCategory.MISC, ModItems.MIMICARIUM,
                 3f, 10, "mimicarium");
@@ -35,11 +39,17 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerSmelting(exporter, List.of(ModBlocks.DREADSTONE_THUNDERANIUM_ORE), RecipeCategory.MISC, ModItems.RAW_THUNDERANIUM,
                 5f, 10, "thunderanium");
 
+        offerSmelting(exporter, List.of(ModBlocks.THUNDERANIUM_ORE), RecipeCategory.MISC, ModItems.RAW_THUNDERANIUM,
+                5f, 10, "thunderanium");
+
         offerSmelting(exporter, List.of(ModItems.RAW_THUNDERANIUM), RecipeCategory.MISC, ModItems.REFINED_THUNDERANIUM,
                 5f, 10, "thunderanium");
 
         offerSmelting(exporter, List.of(ModItems.THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.THUNDERANIUM_INGOT,
                 5f, 10, "thunderanium");
+
+        offerSmelting(exporter, List.of(ModItems.RED_THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_INGOT,
+                10f, 15, "red_thunderanium");
 
 
         //Thundered Wood
@@ -112,6 +122,16 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.THUNDERANIUM_PORTAL_FRAME)));
 
         //MISC
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_CLUSTER)
+                .pattern("###")
+                .pattern("#T#")
+                .pattern("###")
+                .input('#', ModItems.RED_ESSENCE)
+                .input('T', ModItems.THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RED_ESSENCE),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RED_THUNDERANIUM_CLUSTER))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RED_THUNDERANIUM_CLUSTER)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDERANIUM_CLUSTER)
                 .pattern("##")
                 .pattern("##")

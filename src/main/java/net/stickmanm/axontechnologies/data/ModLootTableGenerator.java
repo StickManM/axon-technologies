@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.item.Items;
 import net.stickmanm.axontechnologies.block.ModBlocks;
+import net.stickmanm.axontechnologies.entity.ModEntities;
 import net.stickmanm.axontechnologies.item.ModItems;
 
 public class ModLootTableGenerator extends FabricBlockLootTableProvider {
@@ -17,6 +18,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         //Ores
         addDrop(ModBlocks.MIMICARIUM_ORE,oreDrops(ModBlocks.MIMICARIUM_ORE, ModItems.MIMICARIUM));
         addDrop(ModBlocks.DEEPSLATE_MIMICARIUM_ORE,oreDrops(ModBlocks.DEEPSLATE_MIMICARIUM_ORE, ModItems.MIMICARIUM));
+        addDrop(ModBlocks.THUNDERANIUM_ORE,oreDrops(ModBlocks.THUNDERANIUM_ORE, ModItems.RAW_THUNDERANIUM));
 
 
         //Thundered Tree
@@ -41,6 +43,9 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CHARGED_DIRT);
         addDrop(ModBlocks.THUNDERANIUM_PORTAL_FRAME);
         addDrop(ModBlocks.THUNDERED_STONE);
+
+
+
 
     }
 }
