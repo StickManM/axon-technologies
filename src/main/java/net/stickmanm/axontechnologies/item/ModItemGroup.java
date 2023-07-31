@@ -21,6 +21,9 @@ public class ModItemGroup {
                         entries.add(ModItems.THUNDERANIUM_CLUSTER);
                         entries.add(ModItems.REFINED_THUNDERANIUM);
                         entries.add(ModItems.THUNDERANIUM_INGOT);
+                        entries.add(ModItems.RED_THUNDERANIUM_INGOT);
+                        entries.add(ModItems.RED_THUNDERANIUM_CLUSTER);
+                        entries.add(ModItems.RED_ESSENCE);
                         entries.add(ModItems.RED_ESSENCE_ZOMBIE_SPAWN_EGG);
                         entries.add(ModItems.MIMICARIUM_IGNITER);
                         entries.add(ModItems.DREADED_IGNITER);

@@ -75,7 +75,7 @@ public class ModBlocks {
     public static final Block THUNDERED_STONE = registerBlock("thundered_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.1f).requiresTool()));
 
-    public static final Block THUNDERANIUM_ORE = registerBlock("thundernaium_ore",
+    public static final Block THUNDERANIUM_ORE = registerBlock("thunderanium_ore",
             new Block(FabricBlockSettings.copyOf(ModBlocks.DREADSTONE_THUNDERANIUM_ORE).strength(2.4f).requiresTool()));
 
 
