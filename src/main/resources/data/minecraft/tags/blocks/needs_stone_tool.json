@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-
+    "axontechnologies:thundered_stone",
+    "axontechnologies:dreadstone"
   ]
 }
