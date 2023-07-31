@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "axontechnologies:block/thundernaium_ore"
+    "all": "axontechnologies:block/thunderanium_ore"
   }
 }

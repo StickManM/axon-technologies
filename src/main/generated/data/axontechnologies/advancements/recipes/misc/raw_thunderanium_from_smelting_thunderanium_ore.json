@@ -3,16 +3,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:raw_thunderanium_from_smelting_thundernaium_ore"
+        "recipe": "minecraft:raw_thunderanium_from_smelting_thunderanium_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_thundernaium_ore": {
+    "has_thunderanium_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "axontechnologies:thundernaium_ore"
+              "axontechnologies:thunderanium_ore"
             ]
           }
         ]
@@ -22,13 +22,13 @@
   },
   "requirements": [
     [
-      "has_thundernaium_ore",
+      "has_thunderanium_ore",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:raw_thunderanium_from_smelting_thundernaium_ore"
+      "minecraft:raw_thunderanium_from_smelting_thunderanium_ore"
     ]
   },
   "sends_telemetry_event": false
