@@ -37,8 +37,9 @@ public class ModDimensions {
         CustomPortalBuilder.beginPortal()
                 .frameBlock(ModBlocks.VOIDSTONE)
                 .destDimID(DCDIM_DIMENSION_KEY.getValue())
-                .tintColor(152, 29,151)
+                .tintColor(0, 0,0)
                 .lightWithItem(ModItems.DREADED_IGNITER)
+                .lightWithItem(ModItems.THUNDERANIUM_KEY)
                 .flatPortal()
                 .registerPortal();
 
@@ -46,8 +47,10 @@ public class ModDimensions {
         CustomPortalBuilder.beginPortal()
                 .frameBlock(ModBlocks.MIMIMCARIUM_PORTAL_FRAME)
                 .destDimID(MIMDIM_DIMENSION_KEY.getValue())
-                .tintColor(255, 0, 255)
+                .tintColor(144, 238, 144)
                 .lightWithItem(ModItems.MIMICARIUM_IGNITER)
+                .lightWithItem(ModItems.THUNDERANIUM_KEY)
+                .lightWithItem(ModItems.DREADED_IGNITER)
                 .registerPortal();
 
         //THUNDERLANDS PORTAL
