@@ -99,7 +99,8 @@
   "features": [
 
     [
-      "axontechnologies:dreadstone_diamond_ore"
+      "axontechnologies:dreadstone_diamond_ore",
+      "axontechnologies:dreadstone_thunderanium_ore"
     ]
   ]
 }

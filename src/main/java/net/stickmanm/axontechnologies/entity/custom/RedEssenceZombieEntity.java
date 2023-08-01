@@ -40,8 +40,9 @@ public class RedEssenceZombieEntity extends PathAwareEntity implements GeoEntity
                 .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 0.4f)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 64)
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 100.0D)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 20.0f)
-                .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 40.0f)
+                .add(EntityAttributes.GENERIC_ATTACK_SPEED, 5.0f)
+                .add(EntityAttributes.GENERIC_LUCK, 50.5f)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 1.0f);
 
 

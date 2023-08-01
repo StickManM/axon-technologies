@@ -9,8 +9,8 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    THUNDERANIUM(MiningLevels.NETHERITE, 3031, 13.0f, 5.0f, 25, () -> Ingredient.ofItems(ModItems.THUNDERANIUM_INGOT)),
-    RED_THUNDERANIUM(MiningLevels.NETHERITE, 6969, 18.0f, 6.3f, 35, () -> Ingredient.ofItems(ModItems.RED_THUNDERANIUM_INGOT));
+    THUNDERANIUM(5, 3031, 13.0f, 5.0f, 25, () -> Ingredient.ofItems(ModItems.THUNDERANIUM_INGOT)),
+    RED_THUNDERANIUM(6, 6969, 18.0f, 6.3f, 35, () -> Ingredient.ofItems(ModItems.RED_THUNDERANIUM_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

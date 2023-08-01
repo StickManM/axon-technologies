@@ -34,13 +34,14 @@ import org.slf4j.LoggerFactory;
 public class AxonTechnologies implements ModInitializer {
 	public static final String MOD_ID = "axontechnologies";
 	public static final Logger LOGGER = LoggerFactory.getLogger("axontechnologies");
-	public static final RegistryKey<PlacedFeature> DREADSTONE_DIAMOND_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("axontechnologies","dreadstone_diamond_ore"));
-	public static final RegistryKey<PlacedFeature> DREADSTONE_THUNDERANIUM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("axontechnologies","dreadstone_thunderanium_ore"));
+	public static final RegistryKey<PlacedFeature> DREADSTONE_DIAMOND_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"dreadstone_diamond_ore"));
+	public static final RegistryKey<PlacedFeature> DREADSTONE_THUNDERANIUM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"dreadstone_thunderanium_ore"));
+	public static final RegistryKey<PlacedFeature> THUNDERANIUM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"thunderanium_ore"));
 
 
-	public static final RegistryKey<PlacedFeature> VOIDSTONE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("axontechnologies","voidstone"));
+	public static final RegistryKey<PlacedFeature> VOIDSTONE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"voidstone"));
 
-	public static final RegistryKey<PlacedFeature> LIQUID_THUNDER_LAKE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("axontechnologies","lake_liquid_thunder"));
+	public static final RegistryKey<PlacedFeature> LIQUID_THUNDER_LAKE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"lake_liquid_thunder"));
 
 
 	public static final StatusEffect GLITCHSTER = new GlitchsterEffect();
@@ -65,8 +66,8 @@ public class AxonTechnologies implements ModInitializer {
 
 
 		FabricDefaultAttributeRegistry.register(ModEntities.RED_ESSENCE_ZOMBIE, RedEssenceZombieEntity.setAttributes());
-		Registry.register(Registries.STATUS_EFFECT, new Identifier("axontechnologies", "glitchster"), GLITCHSTER);
-		Registry.register(Registries.STATUS_EFFECT, new Identifier("axontechnologies", "thunder_poisoning"), THUNDER_POISONING);
+		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "glitchster"), GLITCHSTER);
+		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "thunder_poisoning"), THUNDER_POISONING);
 
 	}
 }

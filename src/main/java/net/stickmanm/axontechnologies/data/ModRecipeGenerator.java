@@ -124,7 +124,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         //MISC
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_CLUSTER)
                 .pattern("###")
-                .pattern("#T#")
+                .pattern("TTT")
                 .pattern("###")
                 .input('#', ModItems.RED_ESSENCE)
                 .input('T', ModItems.THUNDERANIUM_INGOT)

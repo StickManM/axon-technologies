@@ -1,9 +1,9 @@
 {
-  "feature": "axontechnologies:dreadstone_thunderanium_ore",
+  "feature": "axontechnologies:thunderanium_ore",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 24
+      "count": 32
     },
     {
       "type": "minecraft:in_square"
