@@ -16,6 +16,7 @@ import net.stickmanm.axontechnologies.block.ModBlocks;
 import net.stickmanm.axontechnologies.block.ModFlammableBlockRegistry;
 import net.stickmanm.axontechnologies.block.ModStrippableBlockRegistry;
 import net.stickmanm.axontechnologies.effect.GlitchsterEffect;
+import net.stickmanm.axontechnologies.effect.GlitchsterIIEffect;
 import net.stickmanm.axontechnologies.effect.ThunderPoisoningEffect;
 import net.stickmanm.axontechnologies.entity.ModEntities;
 import net.stickmanm.axontechnologies.entity.custom.RedEssenceZombieEntity;
@@ -45,6 +46,7 @@ public class AxonTechnologies implements ModInitializer {
 
 
 	public static final StatusEffect GLITCHSTER = new GlitchsterEffect();
+	public static final StatusEffect GLITCHSTERII = new GlitchsterIIEffect();
 	public static final StatusEffect THUNDER_POISONING = new ThunderPoisoningEffect();
 	@Override
 	public void onInitialize() {
@@ -67,6 +69,7 @@ public class AxonTechnologies implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(ModEntities.RED_ESSENCE_ZOMBIE, RedEssenceZombieEntity.setAttributes());
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "glitchster"), GLITCHSTER);
+		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "glitchster2"), GLITCHSTERII);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "thunder_poisoning"), THUNDER_POISONING);
 
 	}

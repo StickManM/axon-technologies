@@ -100,9 +100,8 @@ public class RedThunderaniumArmorItem extends ArmorItem implements GeoItem {
                         chestPiece.isOf(ModItems.RED_THUNDERANIUM_CHESTPLATE) &&
                         legPiece.isOf(ModItems.RED_THUNDERANIUM_LEGGINGS) &&
                         footPiece.isOf(ModItems.RED_THUNDERANIUM_BOOTS)) {
-                    player.addStatusEffect(new StatusEffectInstance(AxonTechnologies.GLITCHSTER, 200, 1, false, false, true));
+                    player.addStatusEffect(new StatusEffectInstance(AxonTechnologies.GLITCHSTERII, 200, 0, false, false, true));
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1, false, false, false));
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 200, 4, false, false, false));
                   }
                 }
 

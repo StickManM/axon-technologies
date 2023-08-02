@@ -21,7 +21,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
         return Ingredient.ofItems(new Item[]{ModItems.MIMICARIUM});
     }),
 
-    THUNDERANIUM("thunderanium", 200, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+    THUNDERANIUM("thunderanium", 400, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
         map.put(ArmorItem.Type.BOOTS, 10);
         map.put(ArmorItem.Type.LEGGINGS, 15);
         map.put(ArmorItem.Type.CHESTPLATE, 17);
