@@ -12,6 +12,9 @@
     "axontechnologies:thundered_stone",
     "axontechnologies:thunderanium_portal_frame",
     "axontechnologies:mimicarium_portal_frame",
-    "axontechnologies:thunderanium_ore"
+    "axontechnologies:thunderanium_ore",
+    "axontechnologies:corrupted_stone",
+    "axontechnologies:corruption_block"
+
   ]
 }

@@ -16,6 +16,9 @@ public class ModItems {
     public static final Item MIMICARIUM = registerItem("mimicarium",
             new Item(new FabricItemSettings()));
 
+    public static final Item RAW_NETHERITE = registerItem("raw_netherite",
+            new Item(new FabricItemSettings()));
+
     public static final Item RAW_THUNDERANIUM = registerItem("raw_thunderanium",
             new Item(new FabricItemSettings()));
 
@@ -44,6 +47,10 @@ public class ModItems {
             new SpawnEggItem(ModEntities.RED_ESSENCE_ZOMBIE, 0xFF0000, 0x000000,
                     new FabricItemSettings()));
 
+    public static final Item DARK_ESSENCE_ZOMBIE_SPAWN_EGG = registerItem("dark_essence_zombie_spawn_egg",
+            new SpawnEggItem(ModEntities.DARK_ESSENCE_ZOMBIE, 0x301934, 0x000000,
+                    new FabricItemSettings()));
+
     //Lighters
     public static final Item MIMICARIUM_IGNITER = registerItem("mimicarium_igniter",
             new Item(new FabricItemSettings()));
@@ -52,6 +59,8 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item THUNDERANIUM_KEY = registerItem("thunderanium_key",
+            new Item(new FabricItemSettings()));
+    public static final Item CORRUPTION_GATEWAY = registerItem("corruption_gateway",
             new Item(new FabricItemSettings()));
 
     //Armors
@@ -114,11 +123,11 @@ public class ModItems {
                     new FabricItemSettings()));
 
     public static final Item RED_THUNDERANIUM_AXE = registerItem("red_thunderanium_axe",
-            new ModAxeItem(ModToolMaterials.RED_THUNDERANIUM, 8,-3.2f,
+            new ModAxeItem(ModToolMaterials.RED_THUNDERANIUM, 8,-4.6f,
                     new FabricItemSettings()));
 
     public static final Item RED_THUNDERANIUM_HOE = registerItem("red_thunderanium_hoe",
-            new ModHoeItem(ModToolMaterials.RED_THUNDERANIUM, 3,-2.3f,
+            new ModHoeItem(ModToolMaterials.RED_THUNDERANIUM, -1,-2.3f,
                     new FabricItemSettings()));
 
     public static final Item RED_THUNDERANIUM_SHOVEL = registerItem("red_thunderanium_shovel",

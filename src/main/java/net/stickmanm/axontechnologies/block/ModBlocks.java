@@ -45,29 +45,42 @@ public class ModBlocks {
     public static final Block VOIDSTONE = registerBlock("voidstone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool()));
     public static final Block MIMIMCARIUM_PORTAL_FRAME = registerBlock("mimicarium_portal_frame",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(2.4f).requiresTool()));
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4.0f).requiresTool()));
 
     public static final Block THUNDERANIUM_PORTAL_FRAME = registerBlock("thunderanium_portal_frame",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(2.4f).requiresTool()));
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4.0f).requiresTool()));
+
+    public static final Block CORRUPTION_PORTAL_FRAME = registerBlock("corruption_portal_frame",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4.2f).requiresTool()));
 
     //Dreadstone + Dreadstone Ores
     public static final Block DREADSTONE = registerBlock("dreadstone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.4f).requiresTool()));
 
     public static final Block DREADSTONE_DIAMOND_ORE = registerBlock("dreadstone_diamond_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool()));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool(),
+                    UniformIntProvider.create(7, 10)));
 
     public static final Block DREADSTONE_THUNDERANIUM_ORE = registerBlock("dreadstone_thunderanium_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool()));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool(),
+                    UniformIntProvider.create(10, 17)));
+    public static final Block DREADSTONE_NETHERITE_ORE = registerBlock("dreadstone_netherite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength(4.5f).requiresTool(),
+                    UniformIntProvider.create(10, 17)));
 
 
 
     //MISC
+
+    //Mimic World
     public static final Block FAKESTONE = registerBlock("fakestone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.1f).requiresTool()));
 
     public static final Block FAKESLATE = registerBlock("fakeslate",
             new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(2.4f).requiresTool()));
+
+    //Thunderlands
+
 
     public static final Block CHARGED_DIRT = registerBlock("charged_dirt",
             new Block(FabricBlockSettings.copyOf(Blocks.DIRT).strength(0.6f)));
@@ -76,7 +89,21 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.1f).requiresTool()));
 
     public static final Block THUNDERANIUM_ORE = registerBlock("thunderanium_ore",
-            new Block(FabricBlockSettings.copyOf(ModBlocks.DREADSTONE_THUNDERANIUM_ORE).strength(2.4f).requiresTool()));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(2.5f).requiresTool(),
+                    UniformIntProvider.create(15, 25)));
+
+    //Corruptionlands
+
+    public static final Block CORRUPTED_DIRT = registerBlock("corrupted_dirt",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.CHARGED_DIRT).strength(0.8f)));
+
+    public static final Block CORRUPTED_STONE = registerBlock("corrupted_stone",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(2.3f).requiresTool()));
+    public static final Block CORRUPTION_BLOCK = registerBlock("corruption_block",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(2.3f).requiresTool()));
+
+
+
 
 
     private static Block registerBlock(String name, Block block) {

@@ -14,6 +14,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.stickmanm.axontechnologies.AxonTechnologies;
+import net.stickmanm.axontechnologies.effect.ModEffects;
 import net.stickmanm.axontechnologies.item.ModArmorMaterials;
 import net.stickmanm.axontechnologies.item.ModItems;
 import net.stickmanm.axontechnologies.item.client.RedThunderaniumArmorRenderer;
@@ -30,9 +31,7 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class RedThunderaniumArmorItem extends ArmorItem implements GeoItem {
-    private static final Map<ArmorMaterial, StatusEffect> MATERIAL_TO_EFFECT_MAP =
-            (new ImmutableMap.Builder<ArmorMaterial, StatusEffect>())
-                    .put(ModArmorMaterials.RED_THUNDERANIUM, AxonTechnologies.GLITCHSTER).build();
+
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
     private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
 
@@ -100,7 +99,7 @@ public class RedThunderaniumArmorItem extends ArmorItem implements GeoItem {
                         chestPiece.isOf(ModItems.RED_THUNDERANIUM_CHESTPLATE) &&
                         legPiece.isOf(ModItems.RED_THUNDERANIUM_LEGGINGS) &&
                         footPiece.isOf(ModItems.RED_THUNDERANIUM_BOOTS)) {
-                    player.addStatusEffect(new StatusEffectInstance(AxonTechnologies.GLITCHSTERII, 200, 0, false, false, true));
+                    player.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERII, 400, 0, false, false, true));
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1, false, false, false));
                   }
                 }

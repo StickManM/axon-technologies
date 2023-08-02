@@ -15,18 +15,22 @@ import net.stickmanm.axontechnologies.item.ModItems;
 public class ModDimensions {
     //Dread Caverns
     public static final RegistryKey<World> DCDIM_DIMENSION_KEY = RegistryKey.of(RegistryKeys.WORLD,
-            new Identifier(AxonTechnologies.MOD_ID, "dcdim"));
+            new Identifier(AxonTechnologies.MOD_ID, "dreadcaverns"));
     public static final RegistryKey<DimensionType> DCDIM_TYPE_KEY = RegistryKey.of(RegistryKeys.DIMENSION_TYPE, DCDIM_DIMENSION_KEY.getValue());
 
     //Mimic World
     public static final RegistryKey<World> MIMDIM_DIMENSION_KEY = RegistryKey.of(RegistryKeys.WORLD,
-            new Identifier(AxonTechnologies.MOD_ID, "mimdim"));
+            new Identifier(AxonTechnologies.MOD_ID, "mimicworld"));
     public static final RegistryKey<DimensionType> MIMDIM_TYPE_KEY = RegistryKey.of(RegistryKeys.DIMENSION_TYPE, MIMDIM_DIMENSION_KEY.getValue());
 
     //Thunderlands
     public static final RegistryKey<World> THUNDERLANDS_DIMENSION_KEY = RegistryKey.of(RegistryKeys.WORLD,
             new Identifier(AxonTechnologies.MOD_ID, "thunderlands"));
     public static final RegistryKey<DimensionType> THUNDERLANDS_TYPE_KEY = RegistryKey.of(RegistryKeys.DIMENSION_TYPE, THUNDERLANDS_DIMENSION_KEY.getValue());
+
+    public static final RegistryKey<World> CORRUPTIONLANDS_DIMENSION_KEY = RegistryKey.of(RegistryKeys.WORLD,
+            new Identifier(AxonTechnologies.MOD_ID, "corruptionlands"));
+    public static final RegistryKey<DimensionType> CORRUPTIONLANDS_TYPE_KEY = RegistryKey.of(RegistryKeys.DIMENSION_TYPE, CORRUPTIONLANDS_DIMENSION_KEY.getValue());
 
     public static void registerModDimensions() {
         AxonTechnologies.LOGGER.debug("Registering ModDimensions for " + AxonTechnologies.MOD_ID);
@@ -40,6 +44,7 @@ public class ModDimensions {
                 .tintColor(0, 0,0)
                 .lightWithItem(ModItems.DREADED_IGNITER)
                 .lightWithItem(ModItems.THUNDERANIUM_KEY)
+                .lightWithItem(ModItems.CORRUPTION_GATEWAY)
                 .flatPortal()
                 .registerPortal();
 
@@ -51,6 +56,7 @@ public class ModDimensions {
                 .lightWithItem(ModItems.MIMICARIUM_IGNITER)
                 .lightWithItem(ModItems.THUNDERANIUM_KEY)
                 .lightWithItem(ModItems.DREADED_IGNITER)
+                .lightWithItem(ModItems.CORRUPTION_GATEWAY)
                 .registerPortal();
 
         //THUNDERLANDS PORTAL
@@ -59,6 +65,15 @@ public class ModDimensions {
                 .destDimID(THUNDERLANDS_DIMENSION_KEY.getValue())
                 .tintColor(170, 169, 173)
                 .lightWithItem(ModItems.THUNDERANIUM_KEY)
+                .lightWithItem(ModItems.CORRUPTION_GATEWAY)
+                .registerPortal();
+
+        //CORRUPTEDLANDS PORTAL
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.CORRUPTION_PORTAL_FRAME)
+                .destDimID(CORRUPTIONLANDS_DIMENSION_KEY.getValue())
+                .tintColor(0, 0, 0)
+                .lightWithItem(ModItems.CORRUPTION_GATEWAY)
                 .registerPortal();
 
     }

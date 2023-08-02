@@ -36,29 +36,43 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_DIAMOND_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_THUNDERANIUM_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_NETHERITE_ORE);
 
         //MISC
+
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOIDSTONE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MIMIMCARIUM_PORTAL_FRAME);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THUNDERANIUM_PORTAL_FRAME);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTION_PORTAL_FRAME);
+
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FAKESTONE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FAKESLATE);
+
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHARGED_DIRT);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THUNDERED_STONE);
 
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTED_STONE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTED_DIRT);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTION_BLOCK);
+
+
         //SPAWN EGGS
         blockStateModelGenerator.registerParentedItemModel(ModItems.RED_ESSENCE_ZOMBIE_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
+        blockStateModelGenerator.registerParentedItemModel(ModItems.DARK_ESSENCE_ZOMBIE_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
 
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
         itemModelGenerator.register(ModItems.MIMICARIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_NETHERITE, Models.GENERATED);
 
         //Igniters
         itemModelGenerator.register(ModItems.MIMICARIUM_IGNITER, Models.GENERATED);
         itemModelGenerator.register(ModItems.DREADED_IGNITER, Models.GENERATED);
         itemModelGenerator.register(ModItems.THUNDERANIUM_KEY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORRUPTION_GATEWAY, Models.GENERATED);
 
         //Thunderanium
         itemModelGenerator.register(ModItems.RAW_THUNDERANIUM, Models.GENERATED);

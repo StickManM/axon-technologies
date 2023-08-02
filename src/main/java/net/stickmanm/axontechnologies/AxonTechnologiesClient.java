@@ -10,6 +10,7 @@ import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.util.Identifier;
 import net.stickmanm.axontechnologies.block.ModBlocks;
 import net.stickmanm.axontechnologies.entity.ModEntities;
+import net.stickmanm.axontechnologies.entity.client.DarkEssenceZombieRenderer;
 import net.stickmanm.axontechnologies.entity.client.RedEssenceZombieRenderer;
 import net.stickmanm.axontechnologies.fluid.ModFluids;
 
@@ -20,6 +21,7 @@ public class AxonTechnologiesClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.THUNDERED_SAPLING, RenderLayer.getCutout());
 
         EntityRendererRegistry.register(ModEntities.RED_ESSENCE_ZOMBIE, RedEssenceZombieRenderer::new);
+        EntityRendererRegistry.register(ModEntities.DARK_ESSENCE_ZOMBIE, DarkEssenceZombieRenderer::new);
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_LIQUID_THUNDER, ModFluids.FLOWING_LIQUID_THUNDER,
                 new SimpleFluidRenderHandler(

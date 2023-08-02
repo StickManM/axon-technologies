@@ -10,9 +10,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.stickmanm.axontechnologies.AxonTechnologies;
 import net.stickmanm.axontechnologies.block.ModBlocks;
+import net.stickmanm.axontechnologies.entity.custom.DarkEssenceZombieEntity;
 import net.stickmanm.axontechnologies.entity.custom.RedEssenceZombieEntity;
 
 public class ModEntities {
+
     public static final EntityType<RedEssenceZombieEntity> RED_ESSENCE_ZOMBIE = Registry.register(
             Registries.ENTITY_TYPE, new Identifier(AxonTechnologies.MOD_ID,"red_essence_zombie"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, RedEssenceZombieEntity::new)
@@ -22,5 +24,17 @@ public class ModEntities {
                     .spawnableFarFromPlayer()
                     .dimensions(EntityDimensions.fixed(0.6f,2f)).build());
 
+    public static final EntityType<DarkEssenceZombieEntity> DARK_ESSENCE_ZOMBIE = Registry.register(
+            Registries.ENTITY_TYPE, new Identifier(AxonTechnologies.MOD_ID,"dark_essence_zombie"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, DarkEssenceZombieEntity::new)
+                    .fireImmune()
+                    .specificSpawnBlocks(ModBlocks.CORRUPTED_DIRT)
+                    .specificSpawnBlocks(ModBlocks.CORRUPTED_STONE)
+                    .trackRangeChunks(48)
+                    .spawnableFarFromPlayer()
+                    .dimensions(EntityDimensions.fixed(0.6f,2f)).build());
+
 
 }
+
+

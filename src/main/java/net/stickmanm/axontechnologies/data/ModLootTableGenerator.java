@@ -34,6 +34,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DREADSTONE);
         addDrop(ModBlocks.DREADSTONE_DIAMOND_ORE,oreDrops(ModBlocks.DREADSTONE_DIAMOND_ORE, Items.DIAMOND));
         addDrop(ModBlocks.DREADSTONE_THUNDERANIUM_ORE,oreDrops(ModBlocks.DREADSTONE_THUNDERANIUM_ORE, ModItems.RAW_THUNDERANIUM));
+        addDrop(ModBlocks.DREADSTONE_NETHERITE_ORE,oreDrops(ModBlocks.DREADSTONE_NETHERITE_ORE, ModItems.RAW_NETHERITE));
 
         //MISC
         addDrop(ModBlocks.VOIDSTONE);
@@ -43,6 +44,10 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CHARGED_DIRT);
         addDrop(ModBlocks.THUNDERANIUM_PORTAL_FRAME);
         addDrop(ModBlocks.THUNDERED_STONE);
+        addDrop(ModBlocks.CORRUPTED_DIRT);
+        addDrop(ModBlocks.CORRUPTED_STONE);
+        addDrop(ModBlocks.CORRUPTION_PORTAL_FRAME);
+        addDrop(ModBlocks.CORRUPTION_BLOCK);
 
 
 

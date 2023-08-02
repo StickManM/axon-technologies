@@ -33,14 +33,23 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerSmelting(exporter, List.of(ModBlocks.DEEPSLATE_MIMICARIUM_ORE), RecipeCategory.MISC, ModItems.MIMICARIUM,
                 3f, 10, "mimicarium");
 
+
         offerSmelting(exporter, List.of(ModBlocks.DREADSTONE_DIAMOND_ORE), RecipeCategory.MISC, Items.DIAMOND,
                 3f, 10, "diamond");
+
+        offerSmelting(exporter, List.of(ModBlocks.DREADSTONE_NETHERITE_ORE), RecipeCategory.MISC, Items.NETHERITE_INGOT,
+                3f, 11, "netherite");
+
+        offerSmelting(exporter, List.of(ModItems.RAW_NETHERITE), RecipeCategory.MISC, Items.NETHERITE_INGOT,
+                3f, 10, "netherite");
 
         offerSmelting(exporter, List.of(ModBlocks.DREADSTONE_THUNDERANIUM_ORE), RecipeCategory.MISC, ModItems.RAW_THUNDERANIUM,
                 5f, 10, "thunderanium");
 
+
         offerSmelting(exporter, List.of(ModBlocks.THUNDERANIUM_ORE), RecipeCategory.MISC, ModItems.RAW_THUNDERANIUM,
                 5f, 10, "thunderanium");
+
 
         offerSmelting(exporter, List.of(ModItems.RAW_THUNDERANIUM), RecipeCategory.MISC, ModItems.REFINED_THUNDERANIUM,
                 5f, 10, "thunderanium");
@@ -50,6 +59,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         offerSmelting(exporter, List.of(ModItems.RED_THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_INGOT,
                 10f, 15, "red_thunderanium");
+
+
 
 
         //Thundered Wood
@@ -97,6 +108,18 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.THUNDERANIUM_KEY))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.THUNDERANIUM_KEY)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTION_GATEWAY)
+                .pattern("DRD")
+                .pattern("#K#")
+                .pattern("DRD")
+                .input('K', ModItems.THUNDERANIUM_KEY)
+                .input('#', ModItems.THUNDERANIUM_INGOT)
+                .input('D', Items.DIAMOND)
+                .input('R', ModItems.RED_THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CORRUPTION_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTION_GATEWAY))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTION_GATEWAY)));
+
         //PORTAL FRAMES
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MIMIMCARIUM_PORTAL_FRAME)
                 .pattern("I#I")
@@ -120,6 +143,19 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.THUNDERANIUM_PORTAL_FRAME))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.THUNDERANIUM_PORTAL_FRAME)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CORRUPTION_PORTAL_FRAME)
+                .pattern("DRD")
+                .pattern("#F#")
+                .pattern("DTD")
+                .input('#', ModItems.RED_ESSENCE)
+                .input('D', Items.DIAMOND)
+                .input('F', ModBlocks.THUNDERANIUM_PORTAL_FRAME)
+                .input('T', ModItems.THUNDERANIUM_INGOT)
+                .input('R', ModItems.RED_THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CORRUPTION_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.CORRUPTION_PORTAL_FRAME))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.CORRUPTION_PORTAL_FRAME)));
 
         //MISC
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_CLUSTER)
@@ -316,7 +352,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .pattern("## ")
                 .pattern(" S ")
                 .pattern(" S ")
-                .input('#', ModItems.THUNDERANIUM_INGOT)
+                .input('#', ModItems.RED_THUNDERANIUM_INGOT)
                 .input('S', Items.STICK)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.RED_THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.RED_THUNDERANIUM_HOE))

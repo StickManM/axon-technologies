@@ -17,30 +17,40 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItems.RED_THUNDERANIUM_INGOT)).entries((displayContext, entries) -> {
                         //ITEMS
                         entries.add(ModItems.MIMICARIUM);
+                        entries.add(ModItems.RAW_NETHERITE);
+
                         entries.add(ModItems.RAW_THUNDERANIUM);
                         entries.add(ModItems.THUNDERANIUM_CLUSTER);
                         entries.add(ModItems.REFINED_THUNDERANIUM);
                         entries.add(ModItems.THUNDERANIUM_INGOT);
+
                         entries.add(ModItems.RED_THUNDERANIUM_INGOT);
                         entries.add(ModItems.RED_THUNDERANIUM_CLUSTER);
                         entries.add(ModItems.RED_ESSENCE);
+
                         entries.add(ModItems.RED_ESSENCE_ZOMBIE_SPAWN_EGG);
+
                         entries.add(ModItems.MIMICARIUM_IGNITER);
                         entries.add(ModItems.DREADED_IGNITER);
                         entries.add(ModItems.THUNDERANIUM_KEY);
+                        entries.add(ModItems.CORRUPTION_GATEWAY);
+
                         entries.add(ModItems.THUNDERANIUM_HELMET);
                         entries.add(ModItems.THUNDERANIUM_CHESTPLATE);
                         entries.add(ModItems.THUNDERANIUM_LEGGINGS);
                         entries.add(ModItems.THUNDERANIUM_BOOTS);
+
                         entries.add(ModItems.THUNDERANIUM_SWORD);
                         entries.add(ModItems.THUNDERANIUM_PICKAXE);
                         entries.add(ModItems.THUNDERANIUM_AXE);
                         entries.add(ModItems.THUNDERANIUM_SHOVEL);
                         entries.add(ModItems.THUNDERANIUM_HOE);
+
                         entries.add(ModItems.RED_THUNDERANIUM_HELMET);
                         entries.add(ModItems.RED_THUNDERANIUM_CHESTPLATE);
                         entries.add(ModItems.RED_THUNDERANIUM_LEGGINGS);
                         entries.add(ModItems.RED_THUNDERANIUM_BOOTS);
+
                         entries.add(ModItems.RED_THUNDERANIUM_SWORD);
                         entries.add(ModItems.RED_THUNDERANIUM_PICKAXE);
                         entries.add(ModItems.RED_THUNDERANIUM_AXE);
@@ -54,6 +64,7 @@ public class ModItemGroup {
                         //BLOCKS
                         entries.add(ModBlocks.MIMICARIUM_ORE);
                         entries.add(ModBlocks.DEEPSLATE_MIMICARIUM_ORE);
+
                         entries.add(ModBlocks.THUNDERED_LOG);
                         entries.add(ModBlocks.THUNDERED_WOOD);
                         entries.add(ModBlocks.STRIPPED_THUNDERED_LOG);
@@ -61,17 +72,27 @@ public class ModItemGroup {
                         entries.add(ModBlocks.THUNDERED_PLANKS);
                         entries.add(ModBlocks.THUNDERED_LEAVES);
                         entries.add(ModBlocks.THUNDERED_SAPLING);
+
                         entries.add(ModBlocks.VOIDSTONE);
                         entries.add(ModBlocks.MIMIMCARIUM_PORTAL_FRAME);
                         entries.add(ModBlocks.THUNDERANIUM_PORTAL_FRAME);
+                        entries.add(ModBlocks.CORRUPTION_PORTAL_FRAME);
+
                         entries.add(ModBlocks.DREADSTONE);
                         entries.add(ModBlocks.DREADSTONE_DIAMOND_ORE);
                         entries.add(ModBlocks.DREADSTONE_THUNDERANIUM_ORE);
+                        entries.add(ModBlocks.DREADSTONE_NETHERITE_ORE);
+
                         entries.add(ModBlocks.FAKESTONE);
                         entries.add(ModBlocks.FAKESLATE);
+
                         entries.add(ModBlocks.CHARGED_DIRT);
                         entries.add(ModBlocks.THUNDERED_STONE);
                         entries.add(ModBlocks.THUNDERANIUM_ORE);
+
+                        entries.add(ModBlocks.CORRUPTED_DIRT);
+                        entries.add(ModBlocks.CORRUPTED_STONE);
+                        entries.add(ModBlocks.CORRUPTION_BLOCK);
 
 
                     }).build());
