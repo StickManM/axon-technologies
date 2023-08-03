@@ -114,7 +114,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .pattern("DRD")
                 .input('K', ModItems.THUNDERANIUM_KEY)
                 .input('#', ModItems.THUNDERANIUM_INGOT)
-                .input('D', Items.DIAMOND)
+                .input('D', ModBlocks.CORRUPTION_BLOCK)
                 .input('R', ModItems.RED_THUNDERANIUM_INGOT)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.CORRUPTION_BLOCK),
                         FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTION_GATEWAY))
@@ -149,7 +149,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#F#")
                 .pattern("DTD")
                 .input('#', ModItems.RED_ESSENCE)
-                .input('D', Items.DIAMOND)
+                .input('D', ModBlocks.CORRUPTION_BLOCK)
                 .input('F', ModBlocks.THUNDERANIUM_PORTAL_FRAME)
                 .input('T', ModItems.THUNDERANIUM_INGOT)
                 .input('R', ModItems.RED_THUNDERANIUM_INGOT)

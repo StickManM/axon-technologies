@@ -24,6 +24,7 @@ public class AntiGlitchsterEffect extends StatusEffect {
             entity.removeStatusEffect(ModEffects.GLITCHSTER);
             entity.removeStatusEffect(ModEffects.GLITCHSTERII);
             addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", 0f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
+        entity.damage(entity.getDamageSources().lightningBolt(), 0.5f);
 
 
 

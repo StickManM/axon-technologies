@@ -57,6 +57,8 @@ public class ModItemGroup {
                         entries.add(ModItems.RED_THUNDERANIUM_SHOVEL);
                         entries.add(ModItems.RED_THUNDERANIUM_HOE);
 
+                        entries.add(ModItems.ANTIGLITCH_SWORD);
+
 
                         entries.add(ModItems.LIQUID_THUNDER_BUCKET);
 

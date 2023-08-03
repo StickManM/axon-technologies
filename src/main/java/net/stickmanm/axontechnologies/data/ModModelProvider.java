@@ -102,6 +102,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RED_THUNDERANIUM_BOOTS, Models.GENERATED);
 
         //Tools
+
+        itemModelGenerator.register(ModItems.ANTIGLITCH_SWORD, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.THUNDERANIUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THUNDERANIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THUNDERANIUM_PICKAXE, Models.HANDHELD);

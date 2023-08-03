@@ -96,6 +96,11 @@ public class ModItems {
 
     //TOOLS
 
+    //MISC TOOLS
+    public static final Item ANTIGLITCH_SWORD = registerItem("antiglitch_sword",
+            new ModAntiGlitchSwordItem(ModToolMaterials.RED_THUNDERANIUM, 3,-2f,
+                    new FabricItemSettings()));
+
     //Thunderanium
     public static final Item THUNDERANIUM_SWORD = registerItem("thunderanium_sword",
             new SwordItem(ModToolMaterials.THUNDERANIUM, 5,-2f,
