@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "axontechnologies:thunderanium_ingot"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "K": {
+      "item": "axontechnologies:thunderanium_key"
+    },
+    "R": {
+      "item": "axontechnologies:red_thunderanium_ingot"
+    }
+  },
+  "pattern": [
+    "DRD",
+    "#K#",
+    "DRD"
+  ],
+  "result": {
+    "item": "axontechnologies:corruption_gateway"
+  },
+  "show_notification": true
+}
