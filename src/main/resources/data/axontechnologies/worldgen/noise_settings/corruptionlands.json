@@ -5,10 +5,10 @@
   "ore_veins_enabled": true,
   "legacy_random_source": false,
   "default_block": {
-    "Name": "axontechnologies:thundered_stone"
+    "Name": "axontechnologies:corrupted_stone"
   },
   "default_fluid": {
-    "Name": "",
+    "Name": "minecraft:lava",
     "Properties": {
       "level": "0"
     }
@@ -391,7 +391,7 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "axontechnologies:charged_dirt"
+                            "Name": "axontechnologies:corrupted_dirt"
                           }
                         }
                       ]
