@@ -29,6 +29,7 @@ public class ModItemGroup {
                         entries.add(ModItems.RED_ESSENCE);
 
                         entries.add(ModItems.RED_ESSENCE_ZOMBIE_SPAWN_EGG);
+                        entries.add(ModItems.DARK_ESSENCE_ZOMBIE_SPAWN_EGG);
 
                         entries.add(ModItems.MIMICARIUM_IGNITER);
                         entries.add(ModItems.DREADED_IGNITER);

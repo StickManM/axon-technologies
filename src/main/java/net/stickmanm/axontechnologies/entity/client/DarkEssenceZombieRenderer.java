@@ -16,7 +16,7 @@ public class DarkEssenceZombieRenderer extends GeoEntityRenderer<DarkEssenceZomb
 
     @Override
     public Identifier getTextureLocation(DarkEssenceZombieEntity animatable) {
-        return new Identifier(AxonTechnologies.MOD_ID, "textures/entity/red_essence_zombie.png");
+        return new Identifier(AxonTechnologies.MOD_ID, "textures/entity/dark_essence_zombie.png");
     }
 
     @Override

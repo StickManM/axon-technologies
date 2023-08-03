@@ -19,7 +19,7 @@ public class DarkEssenceZombieModel extends GeoModel<DarkEssenceZombieEntity> {
 
     @Override
     public Identifier getTextureResource(DarkEssenceZombieEntity animatable) {
-        return new Identifier(AxonTechnologies.MOD_ID,"textures/entity/red_essence_zombie.png");    }
+        return new Identifier(AxonTechnologies.MOD_ID,"textures/entity/dark_essence_zombie.png");    }
 
     @Override
     public Identifier getAnimationResource(DarkEssenceZombieEntity animatable) {
