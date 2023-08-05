@@ -99,8 +99,16 @@ public class RedThunderaniumArmorItem extends ArmorItem implements GeoItem {
                         chestPiece.isOf(ModItems.RED_THUNDERANIUM_CHESTPLATE) &&
                         legPiece.isOf(ModItems.RED_THUNDERANIUM_LEGGINGS) &&
                         footPiece.isOf(ModItems.RED_THUNDERANIUM_BOOTS)) {
-                    player.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERII, 400, 0, false, false, true));
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1, false, false, false));
+
+                    if(player.hasStatusEffect(ModEffects.ANTIGLITCHSTER)) {
+                        player.removeStatusEffect(ModEffects.GLITCHSTERII);
+                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1, false, false, true));
+                    }
+                    else {
+                        player.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERII, 200, 0, false, false, true));
+                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1, false, false, true));
+                    }
+
                   }
                 }
 
@@ -113,33 +121,6 @@ public class RedThunderaniumArmorItem extends ArmorItem implements GeoItem {
     }
 
 
-    private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial, StatusEffect mapStatusEffect) {
-        boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect);
-
-        if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect, 200, 0, true, false,true));
-        }
-    }
-
-    private boolean hasFullSuitOfArmorOn(PlayerEntity player) {
-        ItemStack boots = player.getInventory().getArmorStack(0);
-        ItemStack leggings = player.getInventory().getArmorStack(1);
-        ItemStack breastplate = player.getInventory().getArmorStack(2);
-        ItemStack helmet = player.getInventory().getArmorStack(3);
-
-        return !helmet.isEmpty() && !breastplate.isEmpty()
-                && !leggings.isEmpty() && !boots.isEmpty();
-    }
-
-    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        ArmorItem boots = ((ArmorItem)player.getInventory().getArmorStack(0).getItem());
-        ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
-        ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
-        ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
-
-        return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
-                leggings.getMaterial() == material && boots.getMaterial() == material;
-    }
 
 
 }

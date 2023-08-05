@@ -54,6 +54,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTED_STONE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTED_DIRT);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTION_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTINITE_ORE);
 
 
         //SPAWN EGGS
@@ -83,7 +84,16 @@ public class ModModelProvider extends FabricModelProvider {
         //Red Thunderanium
         itemModelGenerator.register(ModItems.RED_THUNDERANIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RED_THUNDERANIUM_CLUSTER, Models.GENERATED);
+
+        //Essence
         itemModelGenerator.register(ModItems.RED_ESSENCE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_ESSENCE, Models.GENERATED);
+
+        //Dark Thunderanium
+        itemModelGenerator.register(ModItems.DARK_THUNDERNAIUM_INGOT, Models.GENERATED);
+
+        //Corruptinite
+        itemModelGenerator.register(ModItems.CORRUPTINITE, Models.GENERATED);
 
         //Armors
         itemModelGenerator.register(ModItems.ARMOR_TEST_HELMET, Models.GENERATED);
@@ -100,6 +110,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RED_THUNDERANIUM_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RED_THUNDERANIUM_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.RED_THUNDERANIUM_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CORRUPTINITE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_BOOTS, Models.GENERATED);
 
         //Tools
 

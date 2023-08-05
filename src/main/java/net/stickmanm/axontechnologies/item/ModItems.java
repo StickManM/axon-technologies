@@ -40,6 +40,16 @@ public class ModItems {
     public static final Item RED_THUNDERANIUM_CLUSTER = registerItem("red_thunderanium_cluster",
             new Item(new FabricItemSettings()));
 
+    public static final Item DARK_ESSENCE = registerItem("dark_essence",
+            new Item(new FabricItemSettings()));
+
+    public static final Item DARK_THUNDERNAIUM_INGOT = registerItem("dark_thunderanium_ingot",
+            new Item(new FabricItemSettings()));
+
+    public static final Item CORRUPTINITE = registerItem("corruptinite",
+            new Item(new FabricItemSettings()));
+
+
 
 
     //SPAWN EGGS
@@ -94,11 +104,31 @@ public class ModItems {
     public static final Item RED_THUNDERANIUM_BOOTS = registerItem("red_thunderanium_boots",
             new RedThunderaniumArmorItem(ModArmorMaterials.RED_THUNDERANIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    //Dark Thunderanium
+    public static final Item DARK_THUNDERANIUM_HELMET = registerItem("dark_thunderanium_helmet",
+            new DarkThunderaniumArmorItem(ModArmorMaterials.DARK_THUNDERANIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item DARK_THUNDERANIUM_CHESTPLATE = registerItem("dark_thunderanium_chestplate",
+            new DarkThunderaniumArmorItem(ModArmorMaterials.DARK_THUNDERANIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item DARK_THUNDERANIUM_LEGGINGS = registerItem("dark_thunderanium_leggings",
+            new DarkThunderaniumArmorItem(ModArmorMaterials.DARK_THUNDERANIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item DARK_THUNDERANIUM_BOOTS = registerItem("dark_thunderanium_boots",
+            new DarkThunderaniumArmorItem(ModArmorMaterials.DARK_THUNDERANIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    //Corruptinite
+    public static final Item CORRUPTINITE_HELMET = registerItem("corruptinite_helmet",
+            new CorruptiniteArmorItem(ModArmorMaterials.CORRUPTINITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item CORRUPTINITE_CHESTPLATE = registerItem("corruptinite_chestplate",
+            new CorruptiniteArmorItem(ModArmorMaterials.CORRUPTINITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item CORRUPTINITE_LEGGINGS = registerItem("corruptinite_leggings",
+            new CorruptiniteArmorItem(ModArmorMaterials.CORRUPTINITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item CORRUPTINITE_BOOTS = registerItem("corruptinite_boots",
+            new CorruptiniteArmorItem(ModArmorMaterials.CORRUPTINITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     //TOOLS
 
     //MISC TOOLS
     public static final Item ANTIGLITCH_SWORD = registerItem("antiglitch_sword",
-            new ModAntiGlitchSwordItem(ModToolMaterials.RED_THUNDERANIUM, 3,-2f,
+            new ModAntiGlitchSwordItem(ModToolMaterials.RED_THUNDERANIUM, 0,-3f,
                     new FabricItemSettings()));
 
     //Thunderanium
@@ -128,7 +158,7 @@ public class ModItems {
                     new FabricItemSettings()));
 
     public static final Item RED_THUNDERANIUM_AXE = registerItem("red_thunderanium_axe",
-            new ModAxeItem(ModToolMaterials.RED_THUNDERANIUM, 8,-4.6f,
+            new ModAxeItem(ModToolMaterials.RED_THUNDERANIUM, 8,-4.0f,
                     new FabricItemSettings()));
 
     public static final Item RED_THUNDERANIUM_HOE = registerItem("red_thunderanium_hoe",

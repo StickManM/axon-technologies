@@ -31,12 +31,30 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }),
 
     RED_THUNDERANIUM("red_thunderanium", 0, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 10);
-        map.put(ArmorItem.Type.LEGGINGS, 15);
-        map.put(ArmorItem.Type.CHESTPLATE, 17);
-        map.put(ArmorItem.Type.HELMET, 13);
+        map.put(ArmorItem.Type.BOOTS, 13);
+        map.put(ArmorItem.Type.LEGGINGS, 20);
+        map.put(ArmorItem.Type.CHESTPLATE, 23);
+        map.put(ArmorItem.Type.HELMET, 16);
     }), 35, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.5F, 0.25F, () -> {
         return Ingredient.ofItems(new Item[]{ModItems.RED_THUNDERANIUM_INGOT});
+    }),
+
+    DARK_THUNDERANIUM("dark_thunderanium", 0, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+        map.put(ArmorItem.Type.BOOTS, 19);
+        map.put(ArmorItem.Type.LEGGINGS, 26);
+        map.put(ArmorItem.Type.CHESTPLATE, 28);
+        map.put(ArmorItem.Type.HELMET, 21);
+    }), 50, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.5F, () -> {
+        return Ingredient.ofItems(new Item[]{ModItems.DARK_THUNDERNAIUM_INGOT});
+    }),
+
+    CORRUPTINITE("corruptinite", 0, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+        map.put(ArmorItem.Type.BOOTS, 17);
+        map.put(ArmorItem.Type.LEGGINGS, 25);
+        map.put(ArmorItem.Type.CHESTPLATE, 27);
+        map.put(ArmorItem.Type.HELMET, 20);
+    }), 55, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.5F, () -> {
+        return Ingredient.ofItems(new Item[]{ModItems.CORRUPTINITE});
     });
 
     public static final StringIdentifiable.Codec<ArmorMaterials> CODEC = StringIdentifiable.createCodec(ArmorMaterials::values);

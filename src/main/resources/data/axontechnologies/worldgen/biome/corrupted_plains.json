@@ -13,7 +13,7 @@
       {
         "type": "axontechnologies:dark_essence_zombie",
         "weight": 100,
-        "minCount": 5,
+        "minCount": 10,
         "maxCount": 20
       }
     ]

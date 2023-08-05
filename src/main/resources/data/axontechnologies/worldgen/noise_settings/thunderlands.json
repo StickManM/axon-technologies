@@ -1,5 +1,5 @@
 {
-  "sea_level": 55,
+  "sea_level": 63,
   "disable_mob_generation": false,
   "aquifers_enabled": true,
   "ore_veins_enabled": true,
@@ -8,7 +8,7 @@
     "Name": "axontechnologies:thundered_stone"
   },
   "default_fluid": {
-    "Name": "",
+    "Name": "axontechnologies:liquid_thunder_block",
     "Properties": {
       "level": "0"
     }

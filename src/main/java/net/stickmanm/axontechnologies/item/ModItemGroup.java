@@ -18,6 +18,11 @@ public class ModItemGroup {
                         //ITEMS
                         entries.add(ModItems.MIMICARIUM);
                         entries.add(ModItems.RAW_NETHERITE);
+                        entries.add(ModItems.RED_ESSENCE);
+                        entries.add(ModItems.DARK_ESSENCE);
+
+                        entries.add(ModItems.CORRUPTINITE);
+                        entries.add(ModItems.DARK_THUNDERNAIUM_INGOT);
 
                         entries.add(ModItems.RAW_THUNDERANIUM);
                         entries.add(ModItems.THUNDERANIUM_CLUSTER);
@@ -26,7 +31,7 @@ public class ModItemGroup {
 
                         entries.add(ModItems.RED_THUNDERANIUM_INGOT);
                         entries.add(ModItems.RED_THUNDERANIUM_CLUSTER);
-                        entries.add(ModItems.RED_ESSENCE);
+
 
                         entries.add(ModItems.RED_ESSENCE_ZOMBIE_SPAWN_EGG);
                         entries.add(ModItems.DARK_ESSENCE_ZOMBIE_SPAWN_EGG);
@@ -57,6 +62,17 @@ public class ModItemGroup {
                         entries.add(ModItems.RED_THUNDERANIUM_AXE);
                         entries.add(ModItems.RED_THUNDERANIUM_SHOVEL);
                         entries.add(ModItems.RED_THUNDERANIUM_HOE);
+
+                        entries.add(ModItems.DARK_THUNDERANIUM_HELMET);
+                        entries.add(ModItems.DARK_THUNDERANIUM_CHESTPLATE);
+                        entries.add(ModItems.DARK_THUNDERANIUM_LEGGINGS);
+                        entries.add(ModItems.DARK_THUNDERANIUM_BOOTS);
+
+                        entries.add(ModItems.CORRUPTINITE_HELMET);
+                        entries.add(ModItems.CORRUPTINITE_CHESTPLATE);
+                        entries.add(ModItems.CORRUPTINITE_LEGGINGS);
+                        entries.add(ModItems.CORRUPTINITE_BOOTS);
+
 
                         entries.add(ModItems.ANTIGLITCH_SWORD);
 
@@ -96,6 +112,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.CORRUPTED_DIRT);
                         entries.add(ModBlocks.CORRUPTED_STONE);
                         entries.add(ModBlocks.CORRUPTION_BLOCK);
+                        entries.add(ModBlocks.CORRUPTINITE_ORE);
 
 
                     }).build());

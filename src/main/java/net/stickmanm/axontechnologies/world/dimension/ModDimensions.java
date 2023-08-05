@@ -72,7 +72,7 @@ public class ModDimensions {
         CustomPortalBuilder.beginPortal()
                 .frameBlock(ModBlocks.CORRUPTION_PORTAL_FRAME)
                 .destDimID(CORRUPTIONLANDS_DIMENSION_KEY.getValue())
-                .tintColor(0, 0, 0)
+                .tintColor(139, 0, 0)
                 .lightWithItem(ModItems.CORRUPTION_GATEWAY)
                 .registerPortal();
 

@@ -102,6 +102,10 @@ public class ModBlocks {
     public static final Block CORRUPTION_BLOCK = registerBlock("corruption_block",
             new Block(FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(2.3f).requiresTool()));
 
+    public static final Block CORRUPTINITE_ORE = registerBlock("corruptinite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.CORRUPTED_STONE).strength(2.5f).requiresTool(),
+                    UniformIntProvider.create(20, 27)));
+
 
 
 

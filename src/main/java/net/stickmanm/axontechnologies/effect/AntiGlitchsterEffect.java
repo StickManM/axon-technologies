@@ -5,12 +5,14 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.stickmanm.axontechnologies.AxonTechnologies;
+import software.bernie.shadowed.eliotlash.mclib.math.functions.classic.Mod;
 
 public class AntiGlitchsterEffect extends StatusEffect {
     public AntiGlitchsterEffect() {
-        super(StatusEffectCategory.NEUTRAL, // whether beneficial or harmful for entities
+        super(StatusEffectCategory.HARMFUL, // whether beneficial or harmful for entities
                 0x8B0000); // color in RGB
     }
 
@@ -21,9 +23,25 @@ public class AntiGlitchsterEffect extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int Amplifier) {
 
+        if(entity.hasStatusEffect(ModEffects.GLITCHSTER)) {
             entity.removeStatusEffect(ModEffects.GLITCHSTER);
+        }
+        else if (entity.hasStatusEffect(ModEffects.GLITCHSTERII)) {
             entity.removeStatusEffect(ModEffects.GLITCHSTERII);
-            addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", 0f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
+        }
+        else if (entity.hasStatusEffect(ModEffects.GLITCHSTERIII)) {
+            entity.removeStatusEffect(ModEffects.GLITCHSTERIII);
+            entity.addStatusEffect(new StatusEffectInstance(ModEffects.NEUTRALIZED_GLITCHSTER, 40));
+        }
+        else if (entity.hasStatusEffect(ModEffects.GLITCHSTERIV)) {
+            entity.removeStatusEffect(ModEffects.GLITCHSTERIV);
+            entity.addStatusEffect(new StatusEffectInstance(ModEffects.NEUTRALIZED_GLITCHSTER, 40));
+        }
+        else if (entity.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTER)) {
+            entity.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
+        }
+
+
         entity.damage(entity.getDamageSources().lightningBolt(), 0.5f);
 
 

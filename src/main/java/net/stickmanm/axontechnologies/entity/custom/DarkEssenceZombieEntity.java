@@ -46,7 +46,7 @@ public class DarkEssenceZombieEntity extends PathAwareEntity implements GeoEntit
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 45.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 5.0f)
                 .add(EntityAttributes.GENERIC_LUCK, 50.5f)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 1.05f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 1f);
 
 
     }

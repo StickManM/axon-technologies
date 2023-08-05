@@ -1,6 +1,5 @@
 package net.stickmanm.axontechnologies.item.custom;
 
-import com.google.common.collect.ImmutableMap;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
@@ -12,15 +11,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.world.World;
-import net.stickmanm.axontechnologies.AxonTechnologies;
-import net.stickmanm.axontechnologies.effect.GlitchsterEffect;
 import net.stickmanm.axontechnologies.effect.ModEffects;
-import net.stickmanm.axontechnologies.item.ModArmorMaterials;
 import net.stickmanm.axontechnologies.item.ModItems;
-import net.stickmanm.axontechnologies.item.client.ThunderaniumArmorRenderer;
+import net.stickmanm.axontechnologies.item.client.CorruptiniteArmorRenderer;
+import net.stickmanm.axontechnologies.item.client.RedThunderaniumArmorRenderer;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.RenderProvider;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -28,30 +23,29 @@ import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInst
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 
-import java.util.Map;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-public class ThunderaniumArmorItem extends ArmorItem implements GeoItem {
+public class CorruptiniteArmorItem extends ArmorItem implements GeoItem {
 
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
     private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
 
 
-    public ThunderaniumArmorItem(ArmorMaterial material, Type type, Settings settings) {
+    public CorruptiniteArmorItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);
     }
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private ThunderaniumArmorRenderer renderer;
+            private CorruptiniteArmorRenderer renderer;
 
 
             @Override
             public BipedEntityModel<LivingEntity> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack,
                                                                         EquipmentSlot equipmentSlot, BipedEntityModel<LivingEntity> original) {
                 if (this.renderer == null)
-                    this.renderer = new ThunderaniumArmorRenderer();
+                    this.renderer = new CorruptiniteArmorRenderer();
 
 
                 this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
@@ -97,21 +91,21 @@ public class ThunderaniumArmorItem extends ArmorItem implements GeoItem {
 
 
 
-                if (headPiece.isOf(ModItems.THUNDERANIUM_HELMET) &&
-                        chestPiece.isOf(ModItems.THUNDERANIUM_CHESTPLATE) &&
-                        legPiece.isOf(ModItems.THUNDERANIUM_LEGGINGS) &&
-                        footPiece.isOf(ModItems.THUNDERANIUM_BOOTS)) {
+                if (headPiece.isOf(ModItems.CORRUPTINITE_HELMET) &&
+                        chestPiece.isOf(ModItems.CORRUPTINITE_CHESTPLATE) &&
+                        legPiece.isOf(ModItems.CORRUPTINITE_LEGGINGS) &&
+                        footPiece.isOf(ModItems.CORRUPTINITE_BOOTS)) {
 
                     if(player.hasStatusEffect(ModEffects.ANTIGLITCHSTER)) {
-                        player.removeStatusEffect(ModEffects.GLITCHSTER);
+                        player.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
                     }
                     else {
-                        player.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTER, 200, 0, false, false, true));
+                        player.addStatusEffect(new StatusEffectInstance(ModEffects.CORRUPTED_GLITCHSTER, 200, 0, false, false, true));
+                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1, false, false, true));
                     }
 
                   }
-
-            }
+                }
 
 
 

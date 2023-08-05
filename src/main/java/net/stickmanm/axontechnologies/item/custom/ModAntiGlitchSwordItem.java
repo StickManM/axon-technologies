@@ -13,8 +13,21 @@ public class ModAntiGlitchSwordItem extends SwordItem {
     }
 
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+
         target.addStatusEffect(new StatusEffectInstance(ModEffects.ANTIGLITCHSTER, 1200, 0));
-        attacker.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERII, 900, 1));
+
+        if(attacker.hasStatusEffect(ModEffects.GLITCHSTER)) {
+            attacker.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERII, 900, 0));
+        }
+        else if (attacker.hasStatusEffect(ModEffects.GLITCHSTERII)) {
+            attacker.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERIII, 900, 0));
+
+        }
+        else if (attacker.hasStatusEffect(ModEffects.GLITCHSTERIII)) {
+            attacker.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERIV, 900, 0));
+
+        }
+
         return true;
     }
 

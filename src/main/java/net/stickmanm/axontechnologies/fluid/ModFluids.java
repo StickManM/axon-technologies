@@ -31,7 +31,12 @@ public class ModFluids {
         LIQUID_THUNDER_BLOCK = Registry.register(Registries.BLOCK, new Identifier(AxonTechnologies.MOD_ID, "liquid_thunder_block"),
                 new FluidBlock(ModFluids.STILL_LIQUID_THUNDER, FabricBlockSettings.copyOf(Blocks.LAVA)){ });
 
+
+
     }
+
+
+
 
 
 }
