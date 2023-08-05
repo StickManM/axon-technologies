@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dreadstone_thunderanium_ore": {
+    "has_dark_thunderanium_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "axontechnologies:dreadstone_thunderanium_ore"
+              "axontechnologies:dark_thunderanium_sword"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:raw_thunderanium_from_smelting_dreadstone_thunderanium_ore"
+        "recipe": "minecraft:dark_thunderanium_sword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_dreadstone_thunderanium_ore",
+      "has_dark_thunderanium_ingot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:raw_thunderanium_from_smelting_dreadstone_thunderanium_ore"
+      "minecraft:dark_thunderanium_sword"
     ]
   },
   "sends_telemetry_event": false

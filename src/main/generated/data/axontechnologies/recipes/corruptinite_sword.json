@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "axontechnologies:corruptinite"
+    },
+    "E": {
+      "item": "axontechnologies:dark_essence"
+    },
+    "S": {
+      "item": "axontechnologies:antiglitch_sword"
+    }
+  },
+  "pattern": [
+    "E#E",
+    "E#E",
+    "ESE"
+  ],
+  "result": {
+    "item": "axontechnologies:corruptinite_sword"
+  },
+  "show_notification": true
+}

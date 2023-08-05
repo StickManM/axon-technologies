@@ -37,16 +37,22 @@ public class ModItems {
     public static final Item RED_THUNDERANIUM_INGOT = registerItem("red_thunderanium_ingot",
             new Item(new FabricItemSettings()));
 
+
     public static final Item RED_THUNDERANIUM_CLUSTER = registerItem("red_thunderanium_cluster",
             new Item(new FabricItemSettings()));
 
     public static final Item DARK_ESSENCE = registerItem("dark_essence",
             new Item(new FabricItemSettings()));
 
-    public static final Item DARK_THUNDERNAIUM_INGOT = registerItem("dark_thunderanium_ingot",
+    public static final Item DARK_THUNDERANIUM_INGOT = registerItem("dark_thunderanium_ingot",
+            new Item(new FabricItemSettings()));
+
+    public static final Item DARK_THUNDERANIUM_CLUSTER = registerItem("dark_thunderanium_cluster",
             new Item(new FabricItemSettings()));
 
     public static final Item CORRUPTINITE = registerItem("corruptinite",
+            new Item(new FabricItemSettings()));
+    public static final Item UNSTABLE_CORRUPTINITE = registerItem("unstable_corruptinite",
             new Item(new FabricItemSettings()));
 
 
@@ -133,7 +139,7 @@ public class ModItems {
 
     //Thunderanium
     public static final Item THUNDERANIUM_SWORD = registerItem("thunderanium_sword",
-            new SwordItem(ModToolMaterials.THUNDERANIUM, 5,-2f,
+            new ModSwordItem(ModToolMaterials.THUNDERANIUM, 5,-2f,
                     new FabricItemSettings()));
 
     public static final Item THUNDERANIUM_AXE = registerItem("thunderanium_axe",
@@ -154,11 +160,11 @@ public class ModItems {
 
     //Red Thunderanium
     public static final Item RED_THUNDERANIUM_SWORD = registerItem("red_thunderanium_sword",
-            new SwordItem(ModToolMaterials.RED_THUNDERANIUM, 5,-2f,
+            new ModSwordItem(ModToolMaterials.RED_THUNDERANIUM, 5,-2f,
                     new FabricItemSettings()));
 
     public static final Item RED_THUNDERANIUM_AXE = registerItem("red_thunderanium_axe",
-            new ModAxeItem(ModToolMaterials.RED_THUNDERANIUM, 8,-4.0f,
+            new ModAxeItem(ModToolMaterials.RED_THUNDERANIUM, 8,-3.9f,
                     new FabricItemSettings()));
 
     public static final Item RED_THUNDERANIUM_HOE = registerItem("red_thunderanium_hoe",
@@ -171,6 +177,48 @@ public class ModItems {
 
     public static final Item RED_THUNDERANIUM_PICKAXE = registerItem("red_thunderanium_pickaxe",
             new ModPickaxeItem(ModToolMaterials.RED_THUNDERANIUM, 3,-2.4f,
+                    new FabricItemSettings()));
+
+    //Dark Thunderanium
+    public static final Item DARK_THUNDERANIUM_SWORD = registerItem("dark_thunderanium_sword",
+            new DarkThunderaniumSwordItem(ModToolMaterials.DARK_THUNDERANIUM, 5,-2f,
+                    new FabricItemSettings()));
+
+    public static final Item DARK_THUNDERANIUM_AXE = registerItem("dark_thunderanium_axe",
+            new ModAxeItem(ModToolMaterials.DARK_THUNDERANIUM, 8,-3.9f,
+                    new FabricItemSettings()));
+
+    public static final Item DARK_THUNDERANIUM_HOE = registerItem("dark_thunderanium_hoe",
+            new ModHoeItem(ModToolMaterials.DARK_THUNDERANIUM, -1,-2.3f,
+                    new FabricItemSettings()));
+
+    public static final Item DARK_THUNDERANIUM_SHOVEL = registerItem("dark_thunderanium_shovel",
+            new ShovelItem(ModToolMaterials.DARK_THUNDERANIUM, 3,-2.5f,
+                    new FabricItemSettings()));
+
+    public static final Item DARK_THUNDERANIUM_PICKAXE = registerItem("dark_thunderanium_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.DARK_THUNDERANIUM, 3,-2.4f,
+                    new FabricItemSettings()));
+
+    //Corruptinite
+    public static final Item CORRUPTINITE_SWORD = registerItem("corruptinite_sword",
+            new CorruptiniteSwordItem(ModToolMaterials.DARK_THUNDERANIUM, 5,-2f,
+                    new FabricItemSettings()));
+
+    public static final Item CORRUPTINITE_AXE = registerItem("corruptinite_axe",
+            new ModAxeItem(ModToolMaterials.DARK_THUNDERANIUM, 8,-3.9f,
+                    new FabricItemSettings()));
+
+    public static final Item CORRUPTINITE_HOE = registerItem("corruptinite_hoe",
+            new ModHoeItem(ModToolMaterials.DARK_THUNDERANIUM, -1,-2.3f,
+                    new FabricItemSettings()));
+
+    public static final Item CORRUPTINITE_SHOVEL = registerItem("corruptinite_shovel",
+            new ShovelItem(ModToolMaterials.DARK_THUNDERANIUM, 3,-2.5f,
+                    new FabricItemSettings()));
+
+    public static final Item CORRUPTINITE_PICKAXE = registerItem("corruptinite_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.DARK_THUNDERANIUM, 3,-2.4f,
                     new FabricItemSettings()));
 
     //BUCKETS

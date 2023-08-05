@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "axontechnologies:corruptinite_ore",
+    "axontechnologies:corruption_portal_frame",
+    "axontechnologies:corruption_block"
+  ]
+}

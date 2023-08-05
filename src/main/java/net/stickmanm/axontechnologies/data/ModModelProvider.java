@@ -90,10 +90,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DARK_ESSENCE, Models.GENERATED);
 
         //Dark Thunderanium
-        itemModelGenerator.register(ModItems.DARK_THUNDERNAIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_CLUSTER, Models.GENERATED);
 
         //Corruptinite
         itemModelGenerator.register(ModItems.CORRUPTINITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSTABLE_CORRUPTINITE, Models.GENERATED);
 
         //Armors
         itemModelGenerator.register(ModItems.ARMOR_TEST_HELMET, Models.GENERATED);
@@ -136,6 +138,19 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RED_THUNDERANIUM_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RED_THUNDERANIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RED_THUNDERANIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.CORRUPTINITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_HOE, Models.HANDHELD);
+
 
     }
 }

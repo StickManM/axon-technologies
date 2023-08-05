@@ -45,7 +45,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
         map.put(ArmorItem.Type.CHESTPLATE, 28);
         map.put(ArmorItem.Type.HELMET, 21);
     }), 50, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.5F, () -> {
-        return Ingredient.ofItems(new Item[]{ModItems.DARK_THUNDERNAIUM_INGOT});
+        return Ingredient.ofItems(new Item[]{ModItems.DARK_THUNDERANIUM_INGOT});
     }),
 
     CORRUPTINITE("corruptinite", 0, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {

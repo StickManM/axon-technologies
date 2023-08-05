@@ -10,7 +10,9 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     THUNDERANIUM(5, 3031, 13.0f, 5.0f, 25, () -> Ingredient.ofItems(ModItems.THUNDERANIUM_INGOT)),
-    RED_THUNDERANIUM(6, 0, 18.0f, 7.5f, 35, () -> Ingredient.ofItems(ModItems.RED_THUNDERANIUM_INGOT));
+    RED_THUNDERANIUM(6, 0, 18.0f, 7.5f, 35, () -> Ingredient.ofItems(ModItems.RED_THUNDERANIUM_INGOT)),
+    DARK_THUNDERANIUM(7, 0, 22.0f, 8.9f, 52, () -> Ingredient.ofItems(ModItems.DARK_THUNDERANIUM_INGOT)),
+    CORRUPTINITE(7, 0, 22.0f, 8.25f, 50, () -> Ingredient.ofItems(ModItems.CORRUPTINITE));
 
     private final int miningLevel;
     private final int itemDurability;

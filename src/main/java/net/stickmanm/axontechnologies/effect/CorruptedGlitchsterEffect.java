@@ -12,7 +12,7 @@ import net.minecraft.entity.player.PlayerEntity;
 public class CorruptedGlitchsterEffect extends StatusEffect {
     public CorruptedGlitchsterEffect() {
         super(StatusEffectCategory.BENEFICIAL, // whether beneficial or harmful for entities
-                0x98D982); // color in RGB
+                0x000000); // color in RGB
     }
 
     // This method is called every tick to check whether it should apply the status effect or not
@@ -21,19 +21,22 @@ public class CorruptedGlitchsterEffect extends StatusEffect {
     // This method is called when it applies the status effect. We implement custom functionality here.
     @Override
     public void applyUpdateEffect(LivingEntity entity, int Amplifier) {
-
-            if (!entity.getWorld().isClient()) {
+        if(entity.hasStatusEffect(ModEffects.ANTI_CORRUPTED_GLITCHSTER)) {
+            addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", 1f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
+            entity.removeStatusEffect(this);
+        }
+        else if (!entity.getWorld().isClient()) {
                 ((PlayerEntity) entity).getHungerManager().add(Amplifier + 1, 1.0f);
                 addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE, "648D7064-6A60-4F59-8ABE-C2C23A6DD7A9", 9f, EntityAttributeModifier.Operation.ADDITION)
                         .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", 6.8f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
                         .addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "91AEAA56-376B-4498-935B-2F7F68070635", 30f, EntityAttributeModifier.Operation.ADDITION)
                         .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_SPEED, "AF8B6E3F-3328-4C0A-AA36-5BA2BB9DBEF3", 26f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
                         .addAttributeModifier(EntityAttributes.GENERIC_LUCK, "AF8B6E3F-3328-4C0A-AA36-5BA2BB9DBEF3", 30f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 10, 2));
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 10, 1, false, false, false));
                 if (entity.getHealth() < entity.getMaxHealth()) {
                     entity.heal(0.1F);
                 }
-            }
+        }
 
 
 

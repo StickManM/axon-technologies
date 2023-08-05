@@ -1,10 +1,7 @@
 {
   "replace": false,
   "values": [
-    "axontechnologies:thunderanium_ore",
-    "axontechnologies:dreadstone_thunderanium_ore",
     "axontechnologies:dreadstone_netherite_ore",
-    "axontechnologies:corruption_portal_frame",
-    "axontechnologies:corruption_block"
+    "axontechnologies:thunderanium_portal_frame"
   ]
 }

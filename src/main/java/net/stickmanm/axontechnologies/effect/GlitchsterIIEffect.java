@@ -5,6 +5,8 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 
 public class GlitchsterIIEffect extends StatusEffect {
@@ -31,6 +33,7 @@ public class GlitchsterIIEffect extends StatusEffect {
                         .addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "91AEAA56-376B-4498-935B-2F7F68070635", 20f, EntityAttributeModifier.Operation.ADDITION)
                         .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_SPEED, "AF8B6E3F-3328-4C0A-AA36-5BA2BB9DBEF3", 25f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
                         .addAttributeModifier(EntityAttributes.GENERIC_LUCK, "AF8B6E3F-3328-4C0A-AA36-5BA2BB9DBEF3", 20f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 10, 2, false, false, false));
                 if (entity.getHealth() < entity.getMaxHealth()) {
                     entity.heal(0.1F);
                 }

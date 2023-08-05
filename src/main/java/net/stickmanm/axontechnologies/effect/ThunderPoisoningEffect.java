@@ -15,7 +15,7 @@ import net.stickmanm.axontechnologies.world.dimension.ModDimensions;
 public class ThunderPoisoningEffect extends StatusEffect {
     public ThunderPoisoningEffect() {
         super(StatusEffectCategory.HARMFUL, // whether beneficial or harmful for entities
-                0x98D982); // color in RGB
+                0xA8A9AD); // color in RGB
     }
 
     // This method is called every tick to check whether it should apply the status effect or not
@@ -25,7 +25,7 @@ public class ThunderPoisoningEffect extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int Amplifier) {
         if (!entity.getWorld().isClient()) {
-            entity.damage(entity.getDamageSources().lightningBolt(), 1.5F);
+            entity.damage(entity.getDamageSources().lightningBolt(), 2F);
                     addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE, "22653B89-116E-49DC-9B6B-9971489B5BE5", -1, EntityAttributeModifier.Operation.ADDITION)
                             .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.16, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
                             .addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "55FCED67-E92A-486E-9800-B47F202C4386", -10, EntityAttributeModifier.Operation.ADDITION)

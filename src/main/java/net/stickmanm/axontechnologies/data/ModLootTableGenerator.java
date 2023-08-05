@@ -19,7 +19,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MIMICARIUM_ORE,oreDrops(ModBlocks.MIMICARIUM_ORE, ModItems.MIMICARIUM));
         addDrop(ModBlocks.DEEPSLATE_MIMICARIUM_ORE,oreDrops(ModBlocks.DEEPSLATE_MIMICARIUM_ORE, ModItems.MIMICARIUM));
         addDrop(ModBlocks.THUNDERANIUM_ORE,oreDrops(ModBlocks.THUNDERANIUM_ORE, ModItems.RAW_THUNDERANIUM));
-        addDrop(ModBlocks.CORRUPTINITE_ORE,oreDrops(ModBlocks.CORRUPTINITE_ORE, ModItems.CORRUPTINITE));
+        addDrop(ModBlocks.CORRUPTINITE_ORE,oreDrops(ModBlocks.CORRUPTINITE_ORE, ModItems.UNSTABLE_CORRUPTINITE));
 
 
         //Thundered Tree

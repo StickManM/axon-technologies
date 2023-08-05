@@ -11,6 +11,10 @@
   "item.axontechnologies.red_thunderanium_cluster": "Red Thunderanium Cluster",
 
   "item.axontechnologies.corruptinite": "Corruptinite",
+  "item.axontechnologies.unstable_corruptinite": "Unstable Corruptinite",
+
+  "item.axontechnologies.dark_thunderanium_ingot": "Dark Thunderanium Ingot",
+  "item.axontechnologies.dark_thunderanium_cluster": "Dark Thunderanium Cluster",
 
   "item.axontechnologies.red_essence": "Red Essence",
   "item.axontechnologies.dark_essence": "Dark Essence",
@@ -65,6 +69,18 @@
   "item.axontechnologies.red_thunderanium_shovel": "Red Thunderanium Shovel",
   "item.axontechnologies.red_thunderanium_hoe": "Red Thunderanium Hoe",
 
+  "item.axontechnologies.dark_thunderanium_sword": "Dark Thunderanium Sword",
+  "item.axontechnologies.dark_thunderanium_axe": "Dark Thunderanium Axe",
+  "item.axontechnologies.dark_thunderanium_pickaxe": "Dark Thunderanium Pickaxe",
+  "item.axontechnologies.dark_thunderanium_shovel": "Dark Thunderanium Shovel",
+  "item.axontechnologies.dark_thunderanium_hoe": "Dark Thunderanium Hoe",
+
+  "item.axontechnologies.corruptinite_sword": "Corruptinite Sword",
+  "item.axontechnologies.corruptinite_axe": "Corruptinite Axe",
+  "item.axontechnologies.corruptinite_pickaxe": "Corruptinite Pickaxe",
+  "item.axontechnologies.corruptinite_shovel": "Corruptinite Shovel",
+  "item.axontechnologies.corruptinite_hoe": "Corruptinite Hoe",
+
   "block.axontechnologies.mimicarium_ore": "Mimicarium Ore",
   "block.axontechnologies.deepslate_mimicarium_ore": "Deepslate Mimicarium Ore",
   "block.axontechnologies.thunderanium_ore": "Thunderanium Ore",
@@ -108,8 +124,10 @@
   "effect.axontechnologies.glitchster4": "Glitchster IV",
   "effect.axontechnologies.neutralized_glitchster": "Neutralized Glitchster",
   "effect.axontechnologies.corrupted_glitchster": "Corrupted Glitchster",
+  "effect.axontechnologies.corrupted_glitchster2": "Corrupted Glitchster II",
   "effect.axontechnologies.thunder_poisoning": "Thunder Poisoning",
   "effect.axontechnologies.antiglitchster": "Anti Glitchster",
+  "effect.axontechnologies.anti_corrupted_glitchster": "Glitchster",
 
   "entity.axontechnologies.red_essence_zombie": "Red Essence Zombie",
   "entity.axontechnologies.dark_essence_zombie": "Dark Essence Zombie"

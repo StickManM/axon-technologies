@@ -5,6 +5,8 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import software.bernie.shadowed.eliotlash.mclib.math.functions.classic.Mod;
 
@@ -30,6 +32,7 @@ public class GlitchsterEffect extends StatusEffect {
                 addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE, "648D7064-6A60-4F59-8ABE-C2C23A6DD7A9", 3.0f, EntityAttributeModifier.Operation.ADDITION)
                         .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", 3.0f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
                         .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_SPEED, "AF8B6E3F-3328-4C0A-AA36-5BA2BB9DBEF3", 15f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 10, 1, false, false, false));
             }
         }
 

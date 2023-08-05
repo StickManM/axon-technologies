@@ -15,6 +15,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.stickmanm.axontechnologies.AxonTechnologies;
+import net.stickmanm.axontechnologies.block.LiquidThunderFluidBlock;
 import net.stickmanm.axontechnologies.item.ModItemGroup;
 
 public class ModFluids {
@@ -29,7 +30,7 @@ public class ModFluids {
                 new Identifier(AxonTechnologies.MOD_ID, "flowing_liquid_thunder"), new LiquidThunderFluid.Flowing());
 
         LIQUID_THUNDER_BLOCK = Registry.register(Registries.BLOCK, new Identifier(AxonTechnologies.MOD_ID, "liquid_thunder_block"),
-                new FluidBlock(ModFluids.STILL_LIQUID_THUNDER, FabricBlockSettings.copyOf(Blocks.LAVA)){ });
+                new LiquidThunderFluidBlock(ModFluids.STILL_LIQUID_THUNDER, FabricBlockSettings.copyOf(Blocks.LAVA)));
 
 
 

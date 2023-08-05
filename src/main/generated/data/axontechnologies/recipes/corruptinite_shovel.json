@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "axontechnologies:corruptinite"
+    },
+    "E": {
+      "item": "axontechnologies:dark_essence"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "E#E",
+    "ESE",
+    "ESE"
+  ],
+  "result": {
+    "item": "axontechnologies:corruptinite_shovel"
+  },
+  "show_notification": true
+}
