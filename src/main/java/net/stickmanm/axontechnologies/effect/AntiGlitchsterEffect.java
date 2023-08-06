@@ -22,23 +22,21 @@ public class AntiGlitchsterEffect extends StatusEffect {
     // This method is called when it applies the status effect. We implement custom functionality here.
     @Override
     public void applyUpdateEffect(LivingEntity entity, int Amplifier) {
+        if (!entity.getWorld().isClient()) {
 
-        if(entity.hasStatusEffect(ModEffects.GLITCHSTER)) {
-            entity.removeStatusEffect(ModEffects.GLITCHSTER);
-        }
-        else if (entity.hasStatusEffect(ModEffects.GLITCHSTERII)) {
-            entity.removeStatusEffect(ModEffects.GLITCHSTERII);
-        }
-        else if (entity.hasStatusEffect(ModEffects.GLITCHSTERIII)) {
-            entity.removeStatusEffect(ModEffects.GLITCHSTERIII);
-            entity.addStatusEffect(new StatusEffectInstance(ModEffects.NEUTRALIZED_GLITCHSTER, 40));
-        }
-        else if (entity.hasStatusEffect(ModEffects.GLITCHSTERIV)) {
-            entity.removeStatusEffect(ModEffects.GLITCHSTERIV);
-            entity.addStatusEffect(new StatusEffectInstance(ModEffects.NEUTRALIZED_GLITCHSTER, 40));
-        }
-        else if (entity.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTER)) {
-            entity.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
+            if (entity.hasStatusEffect(ModEffects.GLITCHSTER)) {
+                entity.removeStatusEffect(ModEffects.GLITCHSTER);
+            } else if (entity.hasStatusEffect(ModEffects.GLITCHSTERII)) {
+                entity.removeStatusEffect(ModEffects.GLITCHSTERII);
+            } else if (entity.hasStatusEffect(ModEffects.GLITCHSTERIII)) {
+                entity.removeStatusEffect(ModEffects.GLITCHSTERIII);
+                entity.addStatusEffect(new StatusEffectInstance(ModEffects.NEUTRALIZED_GLITCHSTER, 40));
+            } else if (entity.hasStatusEffect(ModEffects.GLITCHSTERIV)) {
+                entity.removeStatusEffect(ModEffects.GLITCHSTERIV);
+                entity.addStatusEffect(new StatusEffectInstance(ModEffects.NEUTRALIZED_GLITCHSTER, 40));
+            } else if (entity.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTER)) {
+                entity.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
+            }
         }
 
 

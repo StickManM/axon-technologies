@@ -21,15 +21,15 @@ public class AntiCorruptedGlitchsterEffect extends StatusEffect {
     // This method is called when it applies the status effect. We implement custom functionality here.
     @Override
     public void applyUpdateEffect(LivingEntity entity, int Amplifier) {
-        if(entity.hasStatusEffect(ModEffects.GLITCHSTER) ||
-                entity.hasStatusEffect(ModEffects.GLITCHSTERII) ||
-                entity.hasStatusEffect(ModEffects.GLITCHSTERIII) ||
-        entity.hasStatusEffect(ModEffects.GLITCHSTERIV)) {
-            entity.removeStatusEffect(this);
-        }
+
 
        if (!entity.getWorld().isClient()) {
-               entity.removeStatusEffect(ModEffects.CORRUPTED_GLITCHSTER);
+           if(entity.hasStatusEffect(ModEffects.GLITCHSTER) ||
+                   entity.hasStatusEffect(ModEffects.GLITCHSTERII) ||
+                   entity.hasStatusEffect(ModEffects.GLITCHSTERIII) ||
+                   entity.hasStatusEffect(ModEffects.GLITCHSTERIV)) {
+               entity.removeStatusEffect(this);
+           }
         }
 
 

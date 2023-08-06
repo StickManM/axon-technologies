@@ -22,8 +22,13 @@ public class CorruptedGlitchsterIIEffect extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int Amplifier) {
         if(entity.hasStatusEffect(ModEffects.ANTI_CORRUPTED_GLITCHSTER)) {
-            addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", 1f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
-            entity.removeStatusEffect(this);
+            if (!entity.getWorld().isClient()) {
+                addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", 2f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
+                        .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE, "648D7064-6A60-4F59-8ABE-C2C23A6DD7A9", 10f, EntityAttributeModifier.Operation.ADDITION)
+                        .addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "91AEAA56-376B-4498-935B-2F7F68070635", 40f, EntityAttributeModifier.Operation.ADDITION)
+                        .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_SPEED, "AF8B6E3F-3328-4C0A-AA36-5BA2BB9DBEF3", 29f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
+                        .addAttributeModifier(EntityAttributes.GENERIC_LUCK, "AF8B6E3F-3328-4C0A-AA36-5BA2BB9DBEF3", 50, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
+            }
         }
         else if (!entity.getWorld().isClient()) {
                 ((PlayerEntity) entity).getHungerManager().add(Amplifier + 1, 1.0f);
