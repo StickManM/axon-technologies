@@ -25,6 +25,7 @@ import net.stickmanm.axontechnologies.entity.custom.RedEssenceZombieEntity;
 import net.stickmanm.axontechnologies.fluid.ModFluids;
 import net.stickmanm.axontechnologies.item.ModItemGroup;
 import net.stickmanm.axontechnologies.item.ModItems;
+import net.stickmanm.axontechnologies.world.ModDimensionFeatures;
 import net.stickmanm.axontechnologies.world.biome.ModBiomes;
 import net.stickmanm.axontechnologies.world.dimension.ModDimensionOres;
 import net.stickmanm.axontechnologies.world.dimension.ModDimensions;
@@ -65,7 +66,7 @@ public class AxonTechnologies implements ModInitializer {
 		ModStrippableBlockRegistry.registerStrippableBlocks();
 
 		ModDimensions.registerModDimensions();
-		ModDimensionOres.registerModDimensionOres();
+		ModDimensionFeatures.registerModDimensionOres();
 		ModBiomes.registerModBiomes();
 
 		ModEffects.registerModEffects();

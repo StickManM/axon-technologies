@@ -198,6 +198,14 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE)));
 
+        //Fuels
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDER_FUEL)
+                .pattern("C#")
+                .input('#', ModItems.THUNDERANIUM_INGOT)
+                .input('C', Items.COAL)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.THUNDER_FUEL))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.THUNDER_FUEL)));
 
 
         //Armor

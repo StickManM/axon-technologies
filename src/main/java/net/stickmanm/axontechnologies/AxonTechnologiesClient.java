@@ -23,12 +23,12 @@ public class AxonTechnologiesClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.RED_ESSENCE_ZOMBIE, RedEssenceZombieRenderer::new);
         EntityRendererRegistry.register(ModEntities.DARK_ESSENCE_ZOMBIE, DarkEssenceZombieRenderer::new);
 
-        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_LIQUID_THUNDER, ModFluids.FLOWING_LIQUID_THUNDER,
-                new SimpleFluidRenderHandler(
-                        new Identifier("minecraft:block/water_still"),
-                        new Identifier("minecraft:block/water_flow"),
-                        0xA1a8a9ad
-                ));
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_LIQUID_THUNDER, new SimpleFluidRenderHandler(
+                SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY,
+                0xD3D3D3));
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.FLOWING_LIQUID_THUNDER, new SimpleFluidRenderHandler(
+                SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY,
+                0xD3D3D3));
 
     }
 }

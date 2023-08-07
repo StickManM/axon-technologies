@@ -55,6 +55,10 @@ public class ModItems {
     public static final Item UNSTABLE_CORRUPTINITE = registerItem("unstable_corruptinite",
             new Item(new FabricItemSettings()));
 
+    //Fuels
+    public static final Item THUNDER_FUEL = registerItem("thunder_fuel",
+            new Item(new FabricItemSettings()));
+
 
 
 

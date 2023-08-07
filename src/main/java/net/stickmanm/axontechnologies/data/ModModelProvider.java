@@ -69,6 +69,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MIMICARIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_NETHERITE, Models.GENERATED);
 
+        //Fuels
+        itemModelGenerator.register(ModItems.THUNDER_FUEL, Models.GENERATED);
+
         //Igniters
         itemModelGenerator.register(ModItems.MIMICARIUM_IGNITER, Models.GENERATED);
         itemModelGenerator.register(ModItems.DREADED_IGNITER, Models.GENERATED);

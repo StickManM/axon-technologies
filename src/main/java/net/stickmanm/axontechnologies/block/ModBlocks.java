@@ -42,7 +42,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(1.0f).requiresTool()));
 
     public static final Block THUNDERED_SAPLING = registerBlock("thundered_sapling",
-            new SaplingBlock(new ThunderedSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(1.0f).requiresTool()));
+            new SaplingBlock(new ThunderedSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
     //Portal Blocks
     public static final Block VOIDSTONE = registerBlock("voidstone",
