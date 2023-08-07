@@ -102,6 +102,7 @@ public class RedThunderaniumArmorItem extends ArmorItem implements GeoItem {
 
                     if(player.hasStatusEffect(ModEffects.ANTIGLITCHSTER)) {
                         player.removeStatusEffect(ModEffects.GLITCHSTERII);
+                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10, 1, false, false, false));
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1, false, false, true));
                     }
                     else {

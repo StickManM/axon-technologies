@@ -42,7 +42,7 @@ public class DarkEssenceZombieEntity extends PathAwareEntity implements GeoEntit
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 0.5f)
                 .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 0.5f)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 96)
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 120.0D)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 110.0D)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 45.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 5.0f)
                 .add(EntityAttributes.GENERIC_LUCK, 50.5f)

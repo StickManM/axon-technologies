@@ -20,6 +20,7 @@ public class ModEntities {
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, RedEssenceZombieEntity::new)
                     .fireImmune()
                     .specificSpawnBlocks(ModBlocks.CHARGED_DIRT)
+                    .specificSpawnBlocks(ModBlocks.THUNDERED_STONE)
                     .trackRangeChunks(32)
                     .spawnableFarFromPlayer()
                     .dimensions(EntityDimensions.fixed(0.6f,2f)).build());

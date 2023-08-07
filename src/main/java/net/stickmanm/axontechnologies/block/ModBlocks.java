@@ -16,6 +16,8 @@ import net.stickmanm.axontechnologies.item.ModItemGroup;
 import net.stickmanm.axontechnologies.world.tree.ThunderedSaplingGenerator;
 
 public class ModBlocks {
+
+    //Ore
     public static final Block MIMICARIUM_ORE = registerBlock("mimicarium_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GOLD_ORE).strength(4.0f).requiresTool(),
                     UniformIntProvider.create(3, 7)));
@@ -24,6 +26,7 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE).strength(4.0f).requiresTool(),
                     UniformIntProvider.create(3, 7)));
 
+    //Thundered Tree
     public static final Block THUNDERED_LOG = registerBlock("thundered_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(2.0f)));
     public static final Block THUNDERED_WOOD = registerBlock("thundered_wood",

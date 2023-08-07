@@ -35,6 +35,8 @@ public class GlitchsterEffect extends StatusEffect {
                         .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", 3.0f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
                         .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_SPEED, "AF8B6E3F-3328-4C0A-AA36-5BA2BB9DBEF3", 15f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
                 entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 10, 1, false, false, false));
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10, 1, false, false, false));
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 10, 0, false, false, false));
             }
         }
 

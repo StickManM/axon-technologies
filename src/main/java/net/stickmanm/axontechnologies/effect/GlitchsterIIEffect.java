@@ -36,6 +36,8 @@ public class GlitchsterIIEffect extends StatusEffect {
                         .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_SPEED, "AF8B6E3F-3328-4C0A-AA36-5BA2BB9DBEF3", 25f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
                         .addAttributeModifier(EntityAttributes.GENERIC_LUCK, "AF8B6E3F-3328-4C0A-AA36-5BA2BB9DBEF3", 20f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
                 entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 10, 2, false, false, false));
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10, 1, false, false, false));
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 10, 1, false, false, false));
                 if (entity.getHealth() < entity.getMaxHealth()) {
                     entity.heal(0.1F);
                 }
