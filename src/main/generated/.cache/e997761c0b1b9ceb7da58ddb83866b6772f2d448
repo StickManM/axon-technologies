@@ -1,11 +1,11 @@
-// 1.20.1	2023-08-07T13:46:05.2719452	Axon T.E.C.H.N.O.L.O.G.I.E.S./Block Loot Tables
+// 1.20.1	2023-08-07T16:49:15.495166	Axon T.E.C.H.N.O.L.O.G.I.E.S./Block Loot Tables
 880218b3e93eb77067688a3c15ff93b460685708 data\axontechnologies\loot_tables\blocks\thundered_log.json
 4bce5fb71f1a71baede3748fe0d0cc070ce8ce5d data\axontechnologies\loot_tables\blocks\thunderanium_portal_frame.json
 9e6941a814080a4fb8f480184eec6a10caff53d0 data\axontechnologies\loot_tables\blocks\corruption_portal_frame.json
 6c1e786912de8625304342dd66bb062badf048bf data\axontechnologies\loot_tables\blocks\thunderanium_ore.json
 26809c8c1fb59fbb8e6a8c236976329d79708f35 data\axontechnologies\loot_tables\blocks\stripped_thundered_wood.json
-76c28a59d450588c4a2a9dc47b78fe93384c686e data\axontechnologies\loot_tables\blocks\thundered_wood.json
 568b7adab59ef1d202fdebe1fa6c46f8c4afe52d data\axontechnologies\loot_tables\blocks\thundered_stone.json
+76c28a59d450588c4a2a9dc47b78fe93384c686e data\axontechnologies\loot_tables\blocks\thundered_wood.json
 89c00ff62aa093a28fc996887eff960a2b74dbc2 data\axontechnologies\loot_tables\blocks\dreadstone.json
 9633e7bed08344c22a207d8112cc51aafba7e138 data\axontechnologies\loot_tables\blocks\mimicarium_ore.json
 1db74d13b8b38c72a04ee1eaccd139baca049c50 data\axontechnologies\loot_tables\blocks\corrupted_dirt.json

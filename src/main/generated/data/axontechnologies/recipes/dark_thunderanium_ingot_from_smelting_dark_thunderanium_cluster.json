@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 12000,
+  "experience": 100000.0,
+  "group": "dark_thunderanium",
+  "ingredient": {
+    "item": "axontechnologies:dark_thunderanium_cluster"
+  },
+  "result": "axontechnologies:dark_thunderanium_ingot"
+}

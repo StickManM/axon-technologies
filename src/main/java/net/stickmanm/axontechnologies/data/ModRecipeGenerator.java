@@ -62,6 +62,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerSmelting(exporter, List.of(ModItems.RED_THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_INGOT,
                 10f, 15, "red_thunderanium");
 
+        offerSmelting(exporter, List.of(ModItems.DARK_THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_INGOT,
+                100000f, 12000, "dark_thunderanium");
+
 
 
 

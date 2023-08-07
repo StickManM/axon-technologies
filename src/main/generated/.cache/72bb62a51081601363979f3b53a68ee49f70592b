@@ -1,4 +1,4 @@
-// 1.20.1	2023-08-07T13:46:05.2729479	Axon T.E.C.H.N.O.L.O.G.I.E.S./Model Definitions
+// 1.20.1	2023-08-07T16:49:15.4961663	Axon T.E.C.H.N.O.L.O.G.I.E.S./Model Definitions
 6d9b6227db83d5ac66c64381185e737cf862ea41 assets\axontechnologies\models\item\corruptinite_leggings.json
 21d2fbaf31544a603c41460022e8be3b206b61c1 assets\axontechnologies\models\item\thunderanium_hoe.json
 fe420264ca9813d02b26c39830ef0c3e5158270b assets\axontechnologies\models\item\dreadstone_diamond_ore.json
@@ -99,6 +99,7 @@ bee9b2630810dabf7ac4d28b0e57f2d37659bca0 assets\axontechnologies\models\block\fa
 55e6a6b303d6351e750e68cd5098d552e8a9a6f9 assets\axontechnologies\models\item\dreadstone_thunderanium_ore.json
 1b7fce35310591f6c09d6f39233dc5a4730773e0 assets\axontechnologies\models\item\dreadstone_netherite_ore.json
 70e06c4e97603e89113e5911ca23f5255c3d0714 assets\axontechnologies\blockstates\dreadstone.json
+ea60b7cb010b7a0e8110549c5b4ce94295196d31 assets\axontechnologies\models\item\thunder_fuel.json
 3833bd4e4edba3fb518096629c9b7268ea6aba84 assets\axontechnologies\blockstates\corrupted_dirt.json
 4b213a0d276890311a3783356b380a6eef4a101a assets\axontechnologies\models\item\thundered_stone.json
 db0d8985598bc5c9bf0a2fdaf1b5cfe0e07eb3ca assets\axontechnologies\models\item\red_thunderanium_sword.json
@@ -106,8 +107,8 @@ dad3eb1e143137c22b36b68ded6bbeb590032a66 assets\axontechnologies\models\item\cor
 55313a1d555d570043958f2bfb8da44a2a0e0168 assets\axontechnologies\models\item\corruptinite_sword.json
 3ca07cff27bb8ae895abbffac625908bca1020b0 assets\axontechnologies\models\item\thunderanium_ingot.json
 41db064946b9f8963bf26bc22ec6c237ecd0cd3b assets\axontechnologies\blockstates\mimicarium_ore.json
-6a56282e9fba82343065b304ae147fc8b0d5c119 assets\axontechnologies\blockstates\thundered_wood.json
 687a7f3754a29cbec3755c6ba6f2802dbfdb35b8 assets\axontechnologies\blockstates\thunderanium_portal_frame.json
+6a56282e9fba82343065b304ae147fc8b0d5c119 assets\axontechnologies\blockstates\thundered_wood.json
 5d77c1e4bbe2c191a4397cfec41d12e0b2936187 assets\axontechnologies\models\item\thunderanium_axe.json
 dcdff4a11a44bfa804a0fe5122a97c3fdb247e5a assets\axontechnologies\blockstates\dreadstone_netherite_ore.json
 892403d3c63e0167f57c570f332873f938715418 assets\axontechnologies\models\item\red_thunderanium_shovel.json

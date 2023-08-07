@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "axontechnologies:thunderanium_ingot"
+    },
+    "C": {
+      "item": "minecraft:coal"
+    }
+  },
+  "pattern": [
+    "C#"
+  ],
+  "result": {
+    "item": "axontechnologies:thunder_fuel"
+  },
+  "show_notification": true
+}
