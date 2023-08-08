@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
 	"id": "axontechnologies",
-	"version": "A3",
-	"name": "Axon T.E.C.H.N.O.L.O.G.I.E.S.",
+	"version": "${version}",
+	"name": "Axon T.e.c.h.n.o.l.o.g.i.e.s.",
 	"description": "This mod adds new ores, armor with their own tool types, and dimensions. It is currently still being developed, so bugs are expected.",
 	"authors": [
 		"StickManM"

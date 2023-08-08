@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "axontechnologies:dreadstone_thunderanium_ore"
+    "axontechnologies:dreadstone_thunderanium_ore",
+    "axontechnologies:void_coal_ore",
+    "axontechnologies:void_coal_block"
   ]
 }
