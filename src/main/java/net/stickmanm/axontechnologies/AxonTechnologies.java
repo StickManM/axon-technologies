@@ -16,6 +16,7 @@ import net.stickmanm.axontechnologies.entity.ModEntities;
 import net.stickmanm.axontechnologies.entity.custom.DarkEssenceZombieEntity;
 import net.stickmanm.axontechnologies.entity.custom.RedEssenceZombieEntity;
 import net.stickmanm.axontechnologies.fluid.ModFluids;
+import net.stickmanm.axontechnologies.item.ModFuels;
 import net.stickmanm.axontechnologies.item.ModItemGroup;
 import net.stickmanm.axontechnologies.item.ModItems;
 import net.stickmanm.axontechnologies.world.biome.ModBiomes;
@@ -30,17 +31,7 @@ import org.slf4j.LoggerFactory;
 public class AxonTechnologies implements ModInitializer {
 	public static final String MOD_ID = "axontechnologies";
 	public static final Logger LOGGER = LoggerFactory.getLogger("axontechnologies");
-	public static final RegistryKey<PlacedFeature> DREADSTONE_DIAMOND_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"dreadstone_diamond_ore"));
-	public static final RegistryKey<PlacedFeature> DREADSTONE_THUNDERANIUM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"dreadstone_thunderanium_ore"));
-	public static final RegistryKey<PlacedFeature> DREADSTONE_NETHERITE_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"dreadstone_netherite_ore"));
-	public static final RegistryKey<PlacedFeature> CORRUPTION_BLOCK_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"corruption_block"));
-	public static final RegistryKey<PlacedFeature> CORRUPTINITE_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"corruptinite_ore"));
-	public static final RegistryKey<PlacedFeature> THUNDERANIUM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"thunderanium_ore"));
 
-
-	public static final RegistryKey<PlacedFeature> VOIDSTONE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"voidstone"));
-
-	public static final RegistryKey<PlacedFeature> LIQUID_THUNDER_LAKE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"lake_liquid_thunder"));
 
 
 
@@ -62,6 +53,8 @@ public class AxonTechnologies implements ModInitializer {
 		ModBiomes.registerModBiomes();
 
 		ModEffects.registerModEffects();
+
+		ModFuels.registerModFuels();
 
 
 

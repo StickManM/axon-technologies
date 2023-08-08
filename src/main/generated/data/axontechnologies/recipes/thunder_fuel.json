@@ -6,7 +6,7 @@
       "item": "axontechnologies:thunderanium_ingot"
     },
     "C": {
-      "item": "minecraft:coal"
+      "item": "axontechnologies:void_coal_block"
     }
   },
   "pattern": [

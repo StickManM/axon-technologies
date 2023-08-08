@@ -71,6 +71,13 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength(4.5f).requiresTool(),
                     UniformIntProvider.create(10, 17)));
 
+    public static final Block VOID_COAL_ORE = registerBlock("void_coal_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.COAL_ORE).strength(2.4f).requiresTool(),
+                    UniformIntProvider.create(7, 10)));
+
+    public static final Block VOID_COAL_BLOCK = registerBlock("void_coal_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.4f).requiresTool()));
+
 
 
     //MISC

@@ -37,6 +37,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_DIAMOND_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_THUNDERANIUM_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_NETHERITE_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOID_COAL_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOID_COAL_BLOCK);
 
         //MISC
 
@@ -71,6 +73,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         //Fuels
         itemModelGenerator.register(ModItems.THUNDER_FUEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VOID_COAL, Models.GENERATED);
 
         //Igniters
         itemModelGenerator.register(ModItems.MIMICARIUM_IGNITER, Models.GENERATED);

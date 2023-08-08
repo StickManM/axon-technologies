@@ -21,8 +21,12 @@ public class ModItemGroup {
                         entries.add(ModItems.RED_ESSENCE);
                         entries.add(ModItems.DARK_ESSENCE);
 
+                        entries.add(ModItems.VOID_COAL);
+                        entries.add(ModItems.THUNDER_FUEL);
+
                         entries.add(ModItems.CORRUPTINITE);
                         entries.add(ModItems.UNSTABLE_CORRUPTINITE);
+
 
                         entries.add(ModItems.DARK_THUNDERANIUM_INGOT);
                         entries.add(ModItems.DARK_THUNDERANIUM_CLUSTER);
@@ -116,6 +120,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.DREADSTONE_DIAMOND_ORE);
                         entries.add(ModBlocks.DREADSTONE_THUNDERANIUM_ORE);
                         entries.add(ModBlocks.DREADSTONE_NETHERITE_ORE);
+                        entries.add(ModBlocks.VOID_COAL_ORE);
+                        entries.add(ModBlocks.VOID_COAL_BLOCK);
 
                         entries.add(ModBlocks.FAKESTONE);
                         entries.add(ModBlocks.FAKESLATE);

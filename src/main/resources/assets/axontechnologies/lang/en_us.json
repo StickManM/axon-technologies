@@ -21,6 +21,7 @@
 
 
   "item.axontechnologies.thunder_fuel": "Thunder Fuel",
+  "item.axontechnologies.void_coal": "Void Coal",
 
 
 
@@ -90,6 +91,7 @@
   "block.axontechnologies.corruptinite_ore": "Corruptinite Ore",
 
   "block.axontechnologies.dreadstone": "Dreadstone",
+  "block.axontechnologies.void_coal_block": "Block of Void Coal",
 
   "block.axontechnologies.voidstone": "Voidstone",
   "block.axontechnologies.fakestone": "Fakestone",
@@ -109,6 +111,7 @@
   "block.axontechnologies.dreadstone_diamond_ore": "Dreadstone Diamond Ore",
   "block.axontechnologies.dreadstone_thunderanium_ore": "Dreadstone Thunderanium Ore",
   "block.axontechnologies.dreadstone_netherite_ore": "Dreadstone Netherite Ore",
+  "block.axontechnologies.void_coal_ore": "Void Coal Ore",
 
   "block.axontechnologies.thundered_wood": "Thundered Wood",
   "block.axontechnologies.stripped_thundered_log": "Stripped Thundered Log",

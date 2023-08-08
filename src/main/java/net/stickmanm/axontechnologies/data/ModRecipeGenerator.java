@@ -40,6 +40,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerSmelting(exporter, List.of(ModBlocks.DREADSTONE_NETHERITE_ORE), RecipeCategory.MISC, Items.NETHERITE_INGOT,
                 3f, 11, "netherite");
 
+        offerSmelting(exporter, List.of(ModBlocks.VOID_COAL_ORE), RecipeCategory.MISC, ModItems.VOID_COAL,
+                3f, 11, "void_coal");
+
         offerSmelting(exporter, List.of(ModItems.RAW_NETHERITE), RecipeCategory.MISC, Items.NETHERITE_INGOT,
                 3f, 10, "netherite");
 
@@ -63,7 +66,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 10f, 15, "red_thunderanium");
 
         offerSmelting(exporter, List.of(ModItems.DARK_THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_INGOT,
-                100000f, 12000, "dark_thunderanium");
+                1000f, 6000, "dark_thunderanium");
 
 
 
@@ -205,10 +208,19 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDER_FUEL)
                 .pattern("C#")
                 .input('#', ModItems.THUNDERANIUM_INGOT)
-                .input('C', Items.COAL)
+                .input('C', ModBlocks.VOID_COAL_BLOCK)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.THUNDER_FUEL))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.THUNDER_FUEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.VOID_COAL_BLOCK)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.VOID_COAL)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.VOID_COAL),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.VOID_COAL_BLOCK))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.VOID_COAL_BLOCK)));
 
 
         //Armor
