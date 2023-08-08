@@ -142,8 +142,21 @@ public class ModItems {
 
     //MISC TOOLS
     public static final Item ANTIGLITCH_SWORD = registerItem("antiglitch_sword",
-            new ModAntiGlitchSwordItem(ModToolMaterials.RED_THUNDERANIUM, 0,-3f,
+            new ModAntiGlitchSwordItem(ModToolMaterials.RED_THUNDERANIUM, 4,-2.5f,
                     new FabricItemSettings().fireproof()));
+
+    public static final Item IRON_GOLD_HOE = registerItem("iron_gold_hoe",
+            new HoeItem(ToolMaterials.IRON, 2,1f,
+                    new FabricItemSettings()));
+
+    public static final Item ULTIMATE_HOE_TROPHY = registerItem("ultimate_hoe_trophy",
+            new ModHoeItem(ModToolMaterials.DARK_THUNDERANIUM, 0,-3f,
+                    new FabricItemSettings()));
+
+    public static final Item AXON_TOOL = registerItem("axon_tool",
+            new AxonToolItem(ModToolMaterials.AXON, 2147483646,100000f,
+                    new FabricItemSettings()));
+
 
     //Thunderanium
     public static final Item THUNDERANIUM_SWORD = registerItem("thunderanium_sword",

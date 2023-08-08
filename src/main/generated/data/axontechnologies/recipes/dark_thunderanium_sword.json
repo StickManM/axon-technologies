@@ -5,14 +5,17 @@
     "#": {
       "item": "axontechnologies:dark_thunderanium_ingot"
     },
+    "E": {
+      "item": "axontechnologies:dark_essence"
+    },
     "S": {
       "item": "axontechnologies:antiglitch_sword"
     }
   },
   "pattern": [
-    " # ",
-    " # ",
-    " S "
+    "E#E",
+    "E#E",
+    "ESE"
   ],
   "result": {
     "item": "axontechnologies:dark_thunderanium_sword"

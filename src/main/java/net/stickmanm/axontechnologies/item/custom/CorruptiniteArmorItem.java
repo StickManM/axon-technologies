@@ -98,7 +98,10 @@ public class CorruptiniteArmorItem extends ArmorItem implements GeoItem {
 
                     if(player.hasStatusEffect(ModEffects.ANTIGLITCHSTER)) {
                         player.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
-                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10, 1, false, false, false));
+                    }
+                    else if (player.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTERII)) {
+                        player.removeStatusEffect(ModEffects.CORRUPTED_GLITCHSTER);
+                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1, false, false, true));
                     }
                     else {
                         player.addStatusEffect(new StatusEffectInstance(ModEffects.CORRUPTED_GLITCHSTER, 200, 0, false, false, true));

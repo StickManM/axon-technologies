@@ -14,13 +14,15 @@ public class DarkThunderaniumSwordItem extends SwordItem {
 
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
 
-        if(target.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTER)) {
-            target.addStatusEffect(new StatusEffectInstance(ModEffects.ANTI_CORRUPTED_GLITCHSTER, 300, 0));
-        }
+
 
         if (attacker.hasStatusEffect(ModEffects.GLITCHSTERIII)) {
-            attacker.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERIV, 600, 0));
+            target.addStatusEffect(new StatusEffectInstance(ModEffects.ANTI_CORRUPTED_GLITCHSTER, 300, 0));
 
+            attacker.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERIV, 800, 0));
+
+        } else if (attacker.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTER)||attacker.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTERII)) {
+            attacker.addStatusEffect(new StatusEffectInstance(ModEffects.ANTI_CORRUPTED_GLITCHSTER, 900, 0));
         }
 
         return true;

@@ -75,6 +75,12 @@
         "maxCount": 4
       },
       {
+        "type": "minecraft:piglin_brute",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
         "type": "minecraft:drowned",
         "weight": 100,
         "minCount": 4,

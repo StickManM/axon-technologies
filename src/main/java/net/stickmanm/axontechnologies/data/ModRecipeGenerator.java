@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 import net.stickmanm.axontechnologies.block.ModBlocks;
 import net.stickmanm.axontechnologies.item.ModItems;
@@ -205,10 +206,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE)));
 
         //Fuels
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDER_FUEL)
-                .pattern("C#")
-                .input('#', ModItems.THUNDERANIUM_INGOT)
-                .input('C', ModBlocks.VOID_COAL_BLOCK)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDER_FUEL)
+                .input(ModItems.THUNDERANIUM_INGOT)
+                .input(ModBlocks.VOID_COAL_BLOCK)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.THUNDER_FUEL))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.THUNDER_FUEL)));
@@ -339,7 +339,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_BOOTS))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_BOOTS)));
 
-
         //Corruptinite
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_HELMET)
                 .pattern("###")
@@ -387,11 +386,34 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .pattern("EEE")
                 .pattern("E#E")
                 .pattern("EEE")
-                .input('#', ModItems.THUNDERANIUM_SWORD)
+                .input('#', ModItems.RED_THUNDERANIUM_SWORD)
                 .input('E', ModItems.DARK_ESSENCE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.DARK_ESSENCE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.ANTIGLITCH_SWORD))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.ANTIGLITCH_SWORD)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.IRON_GOLD_HOE)
+                .input(Items.GOLDEN_HOE)
+                .input(Items.IRON_HOE)
+                .criterion(FabricRecipeProvider.hasItem(Items.GOLDEN_HOE),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.IRON_GOLD_HOE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.IRON_GOLD_HOE)));
+
+        //Axon
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ULTIMATE_HOE_TROPHY)
+                .input(Items.DIAMOND_HOE)
+                .input(Items.NETHERITE_HOE)
+                .input(Items.WOODEN_HOE)
+                .input(Items.STONE_HOE)
+                .input(ModItems.IRON_GOLD_HOE)
+                .input(ModItems.THUNDERANIUM_HOE)
+                .input(ModItems.RED_THUNDERANIUM_HOE)
+                .input(ModItems.DARK_THUNDERANIUM_HOE)
+                .input(ModItems.CORRUPTINITE_HOE)
+                .criterion(FabricRecipeProvider.hasItem(Items.NETHERITE_HOE),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.ULTIMATE_HOE_TROPHY))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.ULTIMATE_HOE_TROPHY)));
+
 
         //Thunderanium
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDERANIUM_SWORD)
@@ -500,51 +522,60 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         //Dark Thunderanium
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_SWORD)
-                .pattern(" # ")
-                .pattern(" # ")
-                .pattern(" S ")
+                .pattern("E#E")
+                .pattern("E#E")
+                .pattern("ESE")
                 .input('#', ModItems.DARK_THUNDERANIUM_INGOT)
                 .input('S', ModItems.ANTIGLITCH_SWORD)
+                .input('E', ModItems.DARK_ESSENCE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.DARK_THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_SWORD))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_SWORD)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_PICKAXE)
                 .pattern("###")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern("ESE")
+                .pattern("EBE")
                 .input('#', ModItems.DARK_THUNDERANIUM_INGOT)
                 .input('S', Items.STICK)
+                .input('E', ModItems.DARK_ESSENCE)
+                .input('B', ModItems.RED_THUNDERANIUM_PICKAXE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.DARK_THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_PICKAXE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_PICKAXE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_SHOVEL)
-                .pattern(" # ")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern("E#E")
+                .pattern("ESE")
+                .pattern("EBE")
                 .input('#', ModItems.DARK_THUNDERANIUM_INGOT)
                 .input('S', Items.STICK)
+                .input('E', ModItems.DARK_ESSENCE)
+                .input('B', ModItems.RED_THUNDERANIUM_SHOVEL)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.DARK_THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_SHOVEL))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_SHOVEL)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_AXE)
-                .pattern("## ")
-                .pattern("#S ")
-                .pattern(" S ")
+                .pattern("##E")
+                .pattern("#SE")
+                .pattern("EBE")
                 .input('#', ModItems.DARK_THUNDERANIUM_INGOT)
                 .input('S', Items.STICK)
+                .input('E', ModItems.DARK_ESSENCE)
+                .input('B', ModItems.RED_THUNDERANIUM_AXE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.DARK_THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_AXE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_AXE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_HOE)
-                .pattern("## ")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern("##E")
+                .pattern("ESE")
+                .pattern("EBE")
                 .input('#', ModItems.DARK_THUNDERANIUM_INGOT)
                 .input('S', Items.STICK)
+                .input('E', ModItems.DARK_ESSENCE)
+                .input('B', ModItems.RED_THUNDERANIUM_HOE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.DARK_THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_HOE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_HOE)));
@@ -552,56 +583,51 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         //Corruptinite
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_SWORD)
-                .pattern("E#E")
-                .pattern("E#E")
-                .pattern("ESE")
+                .pattern(" # ")
+                .pattern(" # ")
+                .pattern(" S ")
                 .input('#', ModItems.CORRUPTINITE)
                 .input('S', ModItems.ANTIGLITCH_SWORD)
-                .input('E', ModItems.DARK_ESSENCE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.CORRUPTINITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_SWORD))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_SWORD)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_PICKAXE)
                 .pattern("###")
-                .pattern("ESE")
-                .pattern("ESE")
+                .pattern(" S ")
+                .pattern(" S ")
                 .input('#', ModItems.CORRUPTINITE)
                 .input('S', Items.STICK)
-                .input('E', ModItems.DARK_ESSENCE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.CORRUPTINITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_PICKAXE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_PICKAXE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_SHOVEL)
-                .pattern("E#E")
-                .pattern("ESE")
-                .pattern("ESE")
+                .pattern(" # ")
+                .pattern(" S ")
+                .pattern(" S ")
                 .input('#', ModItems.CORRUPTINITE)
                 .input('S', Items.STICK)
-                .input('E', ModItems.DARK_ESSENCE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.CORRUPTINITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_SHOVEL))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_SHOVEL)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_AXE)
-                .pattern("##E")
-                .pattern("#SE")
-                .pattern("ESE")
+                .pattern("## ")
+                .pattern("#S ")
+                .pattern(" S ")
                 .input('#', ModItems.CORRUPTINITE)
                 .input('S', Items.STICK)
-                .input('E', ModItems.DARK_ESSENCE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.CORRUPTINITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_AXE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_AXE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_HOE)
-                .pattern("##E")
-                .pattern("ESE")
-                .pattern("ESE")
+                .pattern("## ")
+                .pattern(" S ")
+                .pattern(" S ")
                 .input('#', ModItems.CORRUPTINITE)
                 .input('S', Items.STICK)
-                .input('E', ModItems.DARK_ESSENCE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.CORRUPTINITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_HOE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_HOE)));

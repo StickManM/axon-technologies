@@ -5,17 +5,14 @@
     "#": {
       "item": "axontechnologies:corruptinite"
     },
-    "E": {
-      "item": "axontechnologies:dark_essence"
-    },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "##E",
-    "#SE",
-    "ESE"
+    "## ",
+    "#S ",
+    " S "
   ],
   "result": {
     "item": "axontechnologies:corruptinite_axe"

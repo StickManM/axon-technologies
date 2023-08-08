@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "axontechnologies:item/iron_gold_hoe"
+  }
+}

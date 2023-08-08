@@ -19,11 +19,8 @@
   "item.axontechnologies.red_essence": "Red Essence",
   "item.axontechnologies.dark_essence": "Dark Essence",
 
-
   "item.axontechnologies.thunder_fuel": "Thunder Fuel",
   "item.axontechnologies.void_coal": "Void Coal",
-
-
 
   "item.axontechnologies.mimicarium_igniter": "Flint N' Mimicarium",
   "item.axontechnologies.dreaded_igniter": "Dread Igniter",
@@ -32,6 +29,9 @@
 
   "item.axontechnologies.liquid_thunder_bucket": "Bucket of Liquid Thunder",
   "item.axontechnologies.antiglitch_sword": "Antiglitch Sword",
+  "item.axontechnologies.iron_gold_hoe": "Iron-Gold Hoe",
+  "item.axontechnologies.ultimate_hoe_trophy": "Ultimate Hoe Trophy",
+  "item.axontechnologies.axon_tool": "Tickle Travis Tickler",
 
   "item.axontechnologies.armor_test_helmet": "Armor Test Helmet",
   "item.axontechnologies.armor_test_chestplate": "Armor Test Chestplate",
@@ -136,5 +136,8 @@
   "effect.axontechnologies.anti_corrupted_glitchster": "Glitchster",
 
   "entity.axontechnologies.red_essence_zombie": "Red Essence Zombie",
-  "entity.axontechnologies.dark_essence_zombie": "Dark Essence Zombie"
+  "entity.axontechnologies.dark_essence_zombie": "Dark Essence Zombie",
+
+  "category.axontechnologies.keybinds": "Axon T.e.c.h.n.o.l.o.g.i.e.s.",
+  "key.axontechnologies.activate_effect": "Activate Effect"
 }

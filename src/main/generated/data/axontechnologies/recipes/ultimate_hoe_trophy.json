@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_hoe"
+    },
+    {
+      "item": "minecraft:netherite_hoe"
+    },
+    {
+      "item": "minecraft:wooden_hoe"
+    },
+    {
+      "item": "minecraft:stone_hoe"
+    },
+    {
+      "item": "axontechnologies:iron_gold_hoe"
+    },
+    {
+      "item": "axontechnologies:thunderanium_hoe"
+    },
+    {
+      "item": "axontechnologies:red_thunderanium_hoe"
+    },
+    {
+      "item": "axontechnologies:dark_thunderanium_hoe"
+    },
+    {
+      "item": "axontechnologies:corruptinite_hoe"
+    }
+  ],
+  "result": {
+    "item": "axontechnologies:ultimate_hoe_trophy"
+  }
+}

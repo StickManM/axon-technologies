@@ -1,19 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": {
+  "ingredients": [
+    {
       "item": "axontechnologies:thunderanium_ingot"
     },
-    "C": {
+    {
       "item": "axontechnologies:void_coal_block"
     }
-  },
-  "pattern": [
-    "C#"
   ],
   "result": {
     "item": "axontechnologies:thunder_fuel"
-  },
-  "show_notification": true
+  }
 }

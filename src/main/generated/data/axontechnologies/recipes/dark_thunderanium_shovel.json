@@ -5,14 +5,20 @@
     "#": {
       "item": "axontechnologies:dark_thunderanium_ingot"
     },
+    "B": {
+      "item": "axontechnologies:red_thunderanium_shovel"
+    },
+    "E": {
+      "item": "axontechnologies:dark_essence"
+    },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "pattern": [
-    " # ",
-    " S ",
-    " S "
+    "E#E",
+    "ESE",
+    "EBE"
   ],
   "result": {
     "item": "axontechnologies:dark_thunderanium_shovel"

@@ -5,17 +5,14 @@
     "#": {
       "item": "axontechnologies:corruptinite"
     },
-    "E": {
-      "item": "axontechnologies:dark_essence"
-    },
     "S": {
       "item": "axontechnologies:antiglitch_sword"
     }
   },
   "pattern": [
-    "E#E",
-    "E#E",
-    "ESE"
+    " # ",
+    " # ",
+    " S "
   ],
   "result": {
     "item": "axontechnologies:corruptinite_sword"

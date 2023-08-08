@@ -67,7 +67,7 @@ public abstract class LiquidThunderFluid extends FlowableFluid {
 
     @Override
     protected boolean canBeReplacedWith(FluidState state, BlockView world, BlockPos pos, Fluid fluid, Direction direction) {
-        return false;
+        return true;
     }
 
     private void playExtinguishEvent(WorldAccess world, BlockPos pos) {

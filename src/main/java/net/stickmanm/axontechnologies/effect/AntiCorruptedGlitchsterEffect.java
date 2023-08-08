@@ -30,6 +30,7 @@ public class AntiCorruptedGlitchsterEffect extends StatusEffect {
                    entity.hasStatusEffect(ModEffects.GLITCHSTERIV)) {
                entity.removeStatusEffect(this);
            }
+           entity.damage(entity.getDamageSources().lightningBolt(), 0.5f);
         }
 
 

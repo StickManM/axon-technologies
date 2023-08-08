@@ -40,7 +40,7 @@ public class AntiGlitchsterEffect extends StatusEffect {
         }
 
 
-        entity.damage(entity.getDamageSources().lightningBolt(), 0.5f);
+        entity.damage(entity.getDamageSources().lightningBolt(), 0.75f);
 
 
 

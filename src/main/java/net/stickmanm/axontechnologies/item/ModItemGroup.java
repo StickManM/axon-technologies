@@ -13,7 +13,7 @@ import net.stickmanm.axontechnologies.block.ModBlocks;
 public class ModItemGroup {
     public static ItemGroup AXONTECHNOLOGIES = Registry.register(Registries.ITEM_GROUP, new Identifier(AxonTechnologies.MOD_ID, "axontechnologiesgroup"),
             FabricItemGroup.builder()
-                    .displayName(Text.literal("Axon T.E.C.H.N.O.L.O.G.I.E.S."))
+                    .displayName(Text.literal("Axon T.e.c.h.n.o.l.o.g.i.e.s."))
                     .icon(() -> new ItemStack(ModItems.RED_THUNDERANIUM_INGOT)).entries((displayContext, entries) -> {
                         //ITEMS
                         entries.add(ModItems.MIMICARIUM);
@@ -94,6 +94,9 @@ public class ModItemGroup {
 
 
                         entries.add(ModItems.ANTIGLITCH_SWORD);
+                        entries.add(ModItems.IRON_GOLD_HOE);
+                        entries.add(ModItems.ULTIMATE_HOE_TROPHY);
+                        entries.add(ModItems.AXON_TOOL);
 
 
                         entries.add(ModItems.LIQUID_THUNDER_BUCKET);
