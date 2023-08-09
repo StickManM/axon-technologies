@@ -17,9 +17,9 @@ public class DarkThunderaniumSwordItem extends SwordItem {
 
 
         if (attacker.hasStatusEffect(ModEffects.GLITCHSTERIII)) {
-            target.addStatusEffect(new StatusEffectInstance(ModEffects.ANTI_CORRUPTED_GLITCHSTER, 300, 0));
+            target.addStatusEffect(new StatusEffectInstance(ModEffects.ANTI_CORRUPTED_GLITCHSTER, 300));
 
-            attacker.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERIV, 800, 0));
+            attacker.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERIV, 800));
 
         } else if (attacker.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTER)||attacker.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTERII)) {
             attacker.addStatusEffect(new StatusEffectInstance(ModEffects.ANTI_CORRUPTED_GLITCHSTER, 900, 0));
