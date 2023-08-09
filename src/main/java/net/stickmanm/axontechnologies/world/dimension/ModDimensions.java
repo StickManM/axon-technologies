@@ -43,8 +43,6 @@ public class ModDimensions {
                 .destDimID(DCDIM_DIMENSION_KEY.getValue())
                 .tintColor(0, 0,0)
                 .lightWithItem(ModItems.DREADED_IGNITER)
-                .lightWithItem(ModItems.THUNDERANIUM_KEY)
-                .lightWithItem(ModItems.CORRUPTION_GATEWAY)
                 .flatPortal()
                 .registerPortal();
 
@@ -54,9 +52,6 @@ public class ModDimensions {
                 .destDimID(MIMDIM_DIMENSION_KEY.getValue())
                 .tintColor(144, 238, 144)
                 .lightWithItem(ModItems.MIMICARIUM_IGNITER)
-                .lightWithItem(ModItems.THUNDERANIUM_KEY)
-                .lightWithItem(ModItems.DREADED_IGNITER)
-                .lightWithItem(ModItems.CORRUPTION_GATEWAY)
                 .registerPortal();
 
         //THUNDERLANDS PORTAL
@@ -65,7 +60,6 @@ public class ModDimensions {
                 .destDimID(THUNDERLANDS_DIMENSION_KEY.getValue())
                 .tintColor(170, 169, 173)
                 .lightWithItem(ModItems.THUNDERANIUM_KEY)
-                .lightWithItem(ModItems.CORRUPTION_GATEWAY)
                 .registerPortal();
 
         //CORRUPTEDLANDS PORTAL
