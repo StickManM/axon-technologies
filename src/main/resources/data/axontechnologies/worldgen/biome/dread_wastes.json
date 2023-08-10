@@ -33,6 +33,12 @@
     "misc": [],
     "monster": [
       {
+        "type": "axontechnologies:lost_miner",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 5
+      },
+      {
         "type": "minecraft:husk",
         "weight": 100,
         "minCount": 4,

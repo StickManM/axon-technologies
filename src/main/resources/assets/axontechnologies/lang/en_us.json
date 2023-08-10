@@ -60,6 +60,7 @@
 
   "item.axontechnologies.red_essence_zombie_spawn_egg": "Red Essence Zombie Spawn Egg",
   "item.axontechnologies.dark_essence_zombie_spawn_egg": "Dark Essence Zombie Spawn Egg",
+  "item.axontechnologies.lost_miner_spawn_egg": "Lost Miner Spawn Egg",
 
   "item.axontechnologies.thunderanium_sword": "Thunderanium Sword",
   "item.axontechnologies.thunderanium_axe": "Thunderanium Axe",
@@ -87,6 +88,8 @@
 
   "block.axontechnologies.mimicarium_ore": "Mimicarium Ore",
   "block.axontechnologies.deepslate_mimicarium_ore": "Deepslate Mimicarium Ore",
+  "block.axontechnologies.fakestone_iron_ore": "Fakestone Iron Ore",
+  "block.axontechnologies.fakestone_gold_ore": "Fakestone Gold Ore",
   "block.axontechnologies.thunderanium_ore": "Thunderanium Ore",
   "block.axontechnologies.corruptinite_ore": "Corruptinite Ore",
 
@@ -137,6 +140,7 @@
 
   "entity.axontechnologies.red_essence_zombie": "Red Essence Zombie",
   "entity.axontechnologies.dark_essence_zombie": "Dark Essence Zombie",
+  "entity.axontechnologies.lost_miner": "Lost Miner",
 
   "category.axontechnologies.keybinds": "Axon T.e.c.h.n.o.l.o.g.i.e.s.",
   "key.axontechnologies.activate_effect": "Activate Effect"

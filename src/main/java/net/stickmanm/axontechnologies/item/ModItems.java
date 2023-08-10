@@ -75,6 +75,10 @@ public class ModItems {
             new SpawnEggItem(ModEntities.DARK_ESSENCE_ZOMBIE, 0x301934, 0x000000,
                     new FabricItemSettings()));
 
+    public static final Item LOST_MINER_SPAWN_EGG = registerItem("lost_miner_spawn_egg",
+            new SpawnEggItem(ModEntities.LOST_MINER, 0x301934, 0xFFD700,
+                    new FabricItemSettings()));
+
     //Lighters
     public static final Item MIMICARIUM_IGNITER = registerItem("mimicarium_igniter",
             new Item(new FabricItemSettings().fireproof()));

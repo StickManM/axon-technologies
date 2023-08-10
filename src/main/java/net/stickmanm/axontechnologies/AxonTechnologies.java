@@ -33,8 +33,6 @@ public class AxonTechnologies implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("axontechnologies");
 
 
-
-
 	@Override
 	public void onInitialize() {
 		ModItemGroup.registerItemGroups();
@@ -56,10 +54,7 @@ public class AxonTechnologies implements ModInitializer {
 
 		ModFuels.registerModFuels();
 
-
-
-		FabricDefaultAttributeRegistry.register(ModEntities.RED_ESSENCE_ZOMBIE, RedEssenceZombieEntity.setAttributes());
-		FabricDefaultAttributeRegistry.register(ModEntities.DARK_ESSENCE_ZOMBIE, DarkEssenceZombieEntity.setAttributes());
+		ModEntities.registerModEntities();
 
 
 	}

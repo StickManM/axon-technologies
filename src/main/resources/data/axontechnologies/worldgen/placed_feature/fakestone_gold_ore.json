@@ -1,9 +1,9 @@
 {
-  "feature": "axontechnologies:voidstone",
+  "feature": "axontechnologies:fakestone_gold_ore",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 64
+      "count": 50
     },
     {
       "type": "minecraft:in_square"

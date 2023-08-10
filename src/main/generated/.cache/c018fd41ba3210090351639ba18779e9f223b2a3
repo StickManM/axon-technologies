@@ -1,4 +1,4 @@
-// 1.20.1	2023-08-08T16:50:29.2905453	Axon T.e.c.h.n.o.l.o.g.i.e.s./Recipes
+// 1.20.1	2023-08-10T14:56:15.3443831	Axon T.e.c.h.n.o.l.o.g.i.e.s./Recipes
 94600d9d2327b6becc980e2d44a29de849462694 data\axontechnologies\advancements\recipes\misc\dark_thunderanium_helmet.json
 f428598fba28b4e515d7e9411144b5400993a115 data\axontechnologies\recipes\netherite_ingot_from_smelting_raw_netherite.json
 5ed0b9ef3e3ea84282faf10a54a2f6b8cfd66298 data\axontechnologies\recipes\red_thunderanium_helmet.json
@@ -57,8 +57,8 @@ ffb3f46f17197aa0091775dfbcab097a804f23b5 data\axontechnologies\recipes\corruptin
 5db1774853b633dd4b188508b65db8775616e9bb data\axontechnologies\advancements\recipes\misc\thundered_wood.json
 cf9bebb9101ba570889d6148b021834e2c43d753 data\axontechnologies\recipes\corruptinite_leggings.json
 3cff4c285b8ec19cd685301b2a8c87c577021f18 data\axontechnologies\recipes\red_thunderanium_leggings.json
-1f853bbd1ec9bafde3e9f7f442cd29fdf02dc0b8 data\axontechnologies\advancements\recipes\misc\corruptinite_hoe.json
 fc33ac225aa0b771cd507c3746d8978e6351a245 data\axontechnologies\recipes\dark_thunderanium_sword.json
+1f853bbd1ec9bafde3e9f7f442cd29fdf02dc0b8 data\axontechnologies\advancements\recipes\misc\corruptinite_hoe.json
 b7b99512cb5b725abf1dbd62149f687cee9b76ea data\axontechnologies\recipes\thunderanium_cluster.json
 094b3a245d7222b91e94a11dff0912c3e10f678d data\axontechnologies\advancements\recipes\misc\corruptinite_pickaxe.json
 0b256f5625859692038da330693635d2eae8a10b data\axontechnologies\recipes\dark_thunderanium_chestplate.json

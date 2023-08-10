@@ -14,6 +14,7 @@ import net.minecraft.util.Identifier;
 import net.stickmanm.axontechnologies.block.ModBlocks;
 import net.stickmanm.axontechnologies.entity.ModEntities;
 import net.stickmanm.axontechnologies.entity.client.DarkEssenceZombieRenderer;
+import net.stickmanm.axontechnologies.entity.client.LostMinerRenderer;
 import net.stickmanm.axontechnologies.entity.client.RedEssenceZombieRenderer;
 import net.stickmanm.axontechnologies.fluid.ModFluids;
 import org.lwjgl.glfw.GLFW;
@@ -36,6 +37,7 @@ public class AxonTechnologiesClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.RED_ESSENCE_ZOMBIE, RedEssenceZombieRenderer::new);
         EntityRendererRegistry.register(ModEntities.DARK_ESSENCE_ZOMBIE, DarkEssenceZombieRenderer::new);
+        EntityRendererRegistry.register(ModEntities.LOST_MINER, LostMinerRenderer::new);
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_LIQUID_THUNDER, new SimpleFluidRenderHandler(
                 SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY,

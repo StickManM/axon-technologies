@@ -1,16 +1,16 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 5,
+    "size": 14,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
         "target": {
           "predicate_type": "minecraft:tag_match",
-          "tag": "axontechnologies:corrupted_stone_replaceable"
+          "tag": "axontechnologies:fakestone_replaceable"
         },
         "state": {
-          "Name": "axontechnologies:corruptinite_ore"
+          "Name": "axontechnologies:fakestone_iron_ore"
         }
       }
     ]

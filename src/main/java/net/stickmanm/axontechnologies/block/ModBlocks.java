@@ -26,6 +26,14 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE).strength(4.0f).requiresTool(),
                     UniformIntProvider.create(3, 7)));
 
+    public static final Block FAKESTONE_IRON_ORE = registerBlock("fakestone_iron_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).requiresTool(),
+                    UniformIntProvider.create(3, 7)));
+
+    public static final Block FAKESTONE_GOLD_ORE = registerBlock("fakestone_gold_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GOLD_ORE).requiresTool(),
+                    UniformIntProvider.create(3, 7)));
+
     //Thundered Tree
     public static final Block THUNDERED_LOG = registerBlock("thundered_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(2.0f)));

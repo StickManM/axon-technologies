@@ -13,6 +13,7 @@ public class ModBiomes {
 
     public static final RegistryKey<Biome> THUNDERED_PLAINS_KEY = RegistryKey.of(RegistryKeys.BIOME, new Identifier("axontechnologies","thundered_plains"));
     public static final RegistryKey<Biome> DREAD_WASTES_KEY = RegistryKey.of(RegistryKeys.BIOME, new Identifier("axontechnologies","dread_wastes"));
+    public static final RegistryKey<Biome> MIMIC_PLAINS_KEY = RegistryKey.of(RegistryKeys.BIOME, new Identifier("axontechnologies","mimic_plains"));
 
 
     public static void registerModBiomes(){
