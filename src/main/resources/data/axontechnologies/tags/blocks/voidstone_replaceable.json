@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "minecraft:obsidian"
+    "minecraft:obsidian",
+    "minecraft:bedrock"
 
   ]
 }
