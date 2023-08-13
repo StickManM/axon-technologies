@@ -1,4 +1,4 @@
-// 1.20.1	2023-08-10T14:56:15.3413855	Axon T.e.c.h.n.o.l.o.g.i.e.s./Model Definitions
+// 1.20.1	2023-08-12T19:19:54.4871347	Axon T.e.c.h.n.o.l.o.g.i.e.s./Model Definitions
 0350a9ccc24bde6caacec31cd097652d973b8860 assets\axontechnologies\models\block\void_coal_ore.json
 6d9b6227db83d5ac66c64381185e737cf862ea41 assets\axontechnologies\models\item\corruptinite_leggings.json
 21d2fbaf31544a603c41460022e8be3b206b61c1 assets\axontechnologies\models\item\thunderanium_hoe.json
@@ -69,8 +69,8 @@ e13e4c5f501c2d0ac65f7cda4947ea2fe8811bab assets\axontechnologies\models\item\thu
 1d354b6ace1cb05678f2291af5516e440ed26e00 assets\axontechnologies\models\block\dreadstone.json
 3e8104c7eec48623626ffc479cf4ec91b925122f assets\axontechnologies\models\item\corruptinite_pickaxe.json
 3dedc51d2d28fb2b11541af13ad4436b8bf83863 assets\axontechnologies\models\block\void_coal_block.json
-56b2ee299a448f4bef2ed751dd3783ec122ab900 assets\axontechnologies\models\item\dark_thunderanium_helmet.json
 06ad3353e3655a8c040df5d6128f0d40a6a5b809 assets\axontechnologies\models\block\stripped_thundered_wood.json
+56b2ee299a448f4bef2ed751dd3783ec122ab900 assets\axontechnologies\models\item\dark_thunderanium_helmet.json
 0caadd8c41b7b584d386815145ac06c1bea79650 assets\axontechnologies\blockstates\corruption_portal_frame.json
 cf0b573a8bf55a902a83cd8acd7054cbf695a0c8 assets\axontechnologies\models\item\thunderanium_chestplate.json
 f83e4a3159efbfcb2125ba9c6bc02e3cd8e381b9 assets\axontechnologies\models\item\thundered_log.json
@@ -103,8 +103,8 @@ b098e7ef83235c506f2900502e18d6578fe692b5 assets\axontechnologies\models\item\dar
 e5fcc32f35ed1035a5b0ca8b8fd44f59e96d8886 assets\axontechnologies\models\item\corruptinite_helmet.json
 9b44fe92d94a5775fdaa266e8760a33760374998 assets\axontechnologies\blockstates\thundered_planks.json
 1a7d23bf312784743a0f95ac5c4da4e596fa13ab assets\axontechnologies\models\item\ultimate_hoe_trophy.json
-f6ec27602e54af3500dec7a3865e096bff908527 assets\axontechnologies\blockstates\corruptinite_ore.json
 3ce00bb705ec09da65a9fe3179cbc03f768b9dee assets\axontechnologies\blockstates\fakestone.json
+f6ec27602e54af3500dec7a3865e096bff908527 assets\axontechnologies\blockstates\corruptinite_ore.json
 7280ec10477f1832c3f4f41afef587461b56803e assets\axontechnologies\models\item\corruption_portal_frame.json
 771c13186c7257f411fa6a206bd316146c55612c assets\axontechnologies\blockstates\mimicarium_portal_frame.json
 d1de5bbbb0f856591045019a5465762da9058cfd assets\axontechnologies\models\item\dark_essence.json

@@ -42,7 +42,7 @@ public class ModEntities {
             Registries.ENTITY_TYPE, new Identifier(AxonTechnologies.MOD_ID,"lost_miner"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, LostMinerEntity::new)
                     .specificSpawnBlocks(ModBlocks.DREADSTONE)
-                    .trackRangeChunks(10)
+                    .trackRangeChunks(15)
                     .spawnableFarFromPlayer()
                     .dimensions(EntityDimensions.fixed(0.6f,2f)).build());
 

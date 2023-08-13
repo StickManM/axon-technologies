@@ -45,7 +45,7 @@ public class LostMinerEntity extends PathAwareEntity implements GeoEntity {
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 8.5f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 5.0f)
                 .add(EntityAttributes.GENERIC_LUCK, 1.5f)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.19f);
 
 
     }

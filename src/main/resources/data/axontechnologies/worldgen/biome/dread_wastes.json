@@ -82,7 +82,7 @@
       },
       {
         "type": "minecraft:piglin_brute",
-        "weight": 80,
+        "weight": 70,
         "minCount": 4,
         "maxCount": 4
       },
@@ -94,7 +94,7 @@
       },
       {
         "type": "minecraft:guardian",
-        "weight": 1,
+        "weight": 10,
         "minCount": 4,
         "maxCount": 4
       },

@@ -178,8 +178,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RED_THUNDERANIUM_CLUSTER)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDERANIUM_CLUSTER)
-                .pattern("##")
-                .pattern("##")
+                .pattern("###")
                 .input('#', ModItems.REFINED_THUNDERANIUM)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.REFINED_THUNDERANIUM),
                         FabricRecipeProvider.conditionsFromItem(ModItems.THUNDERANIUM_CLUSTER))
@@ -398,6 +397,17 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(Items.GOLDEN_HOE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.IRON_GOLD_HOE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.IRON_GOLD_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.NETHERITE_PICKAXE)
+                .pattern(" # ")
+                .pattern(" # ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('#', Items.NETHERITE_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(Items.NETHERITE_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(Items.NETHERITE_PICKAXE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.NETHERITE_PICKAXE)));
+
 
         //Axon
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ULTIMATE_HOE_TROPHY)
