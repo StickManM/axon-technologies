@@ -8,17 +8,17 @@
     "D": {
       "item": "minecraft:diamond"
     },
-    "E": {
-      "item": "minecraft:ender_pearl"
-    },
     "M": {
       "item": "axontechnologies:mimicarium_portal_frame"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
     }
   },
   "pattern": [
-    "DED",
+    "DND",
     "#M#",
-    "DED"
+    "DND"
   ],
   "result": {
     "item": "axontechnologies:thunderanium_portal_frame"

@@ -142,13 +142,13 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MIMIMCARIUM_PORTAL_FRAME)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.THUNDERANIUM_PORTAL_FRAME)
-                .pattern("DED")
+                .pattern("DND")
                 .pattern("#M#")
-                .pattern("DED")
+                .pattern("DND")
                 .input('#', ModItems.THUNDERANIUM_INGOT)
                 .input('D', Items.DIAMOND)
                 .input('M', ModBlocks.MIMIMCARIUM_PORTAL_FRAME)
-                .input('E', Items.ENDER_PEARL)
+                .input('N', Items.NETHERITE_INGOT)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.THUNDERANIUM_PORTAL_FRAME))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.THUNDERANIUM_PORTAL_FRAME)));
@@ -398,15 +398,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.IRON_GOLD_HOE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.IRON_GOLD_HOE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.NETHERITE_PICKAXE)
-                .pattern(" # ")
-                .pattern(" # ")
-                .pattern(" S ")
-                .input('S', Items.STICK)
-                .input('#', Items.NETHERITE_INGOT)
-                .criterion(FabricRecipeProvider.hasItem(Items.NETHERITE_INGOT),
-                        FabricRecipeProvider.conditionsFromItem(Items.NETHERITE_PICKAXE))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.NETHERITE_PICKAXE)));
+
 
 
         //Axon

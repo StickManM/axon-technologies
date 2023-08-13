@@ -78,7 +78,7 @@ public class DarkEssenceZombieEntity extends PathAwareEntity implements GeoEntit
     @Nullable
 
     public MobEntity createChild(ServerWorld world, MobEntity entity) {
-        return ModEntities.RED_ESSENCE_ZOMBIE.create(world);
+        return ModEntities.DARK_ESSENCE_ZOMBIE.create(world);
     }
 
     public boolean tryAttack(Entity target) {

@@ -38,14 +38,14 @@ public class LostMinerEntity extends PathAwareEntity implements GeoEntity {
 
     public static DefaultAttributeContainer.Builder setAttributes() {
         return MobEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 0.1f)
+                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 0.2f)
                 .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 0.4f)
-                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 10)
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 30.0D)
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 15)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 32.0D)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 8.5f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 5.0f)
                 .add(EntityAttributes.GENERIC_LUCK, 1.5f)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.19f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2f);
 
 
     }
