@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:thunderanium_ingot_from_smelting_thunderanium_cluster"
+        "recipe": "minecraft:thunderanium_ingot_from_blasting_thunderanium_cluster"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:thunderanium_ingot_from_smelting_thunderanium_cluster"
+      "minecraft:thunderanium_ingot_from_blasting_thunderanium_cluster"
     ]
   },
   "sends_telemetry_event": false

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_red_thunderanium_cluster": {
+    "has_deepslate_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "axontechnologies:red_thunderanium_cluster"
+              "minecraft:deepslate_bricks"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:red_thunderanium_ingot_from_smelting_red_thunderanium_cluster"
+        "recipe": "minecraft:cracked_deepslate_bricks_from_blasting_deepslate_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_red_thunderanium_cluster",
+      "has_deepslate_bricks",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:red_thunderanium_ingot_from_smelting_red_thunderanium_cluster"
+      "minecraft:cracked_deepslate_bricks_from_blasting_deepslate_bricks"
     ]
   },
   "sends_telemetry_event": false

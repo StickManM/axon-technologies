@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dark_thunderanium_cluster": {
+    "has_raw_netherite": {
       "conditions": {
         "items": [
           {
             "items": [
-              "axontechnologies:dark_thunderanium_cluster"
+              "axontechnologies:raw_netherite"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:dark_thunderanium_ingot_from_smelting_dark_thunderanium_cluster"
+        "recipe": "minecraft:netherite_ingot_from_blasting_raw_netherite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_dark_thunderanium_cluster",
+      "has_raw_netherite",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:dark_thunderanium_ingot_from_smelting_dark_thunderanium_cluster"
+      "minecraft:netherite_ingot_from_blasting_raw_netherite"
     ]
   },
   "sends_telemetry_event": false

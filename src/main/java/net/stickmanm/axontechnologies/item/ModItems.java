@@ -161,6 +161,10 @@ public class ModItems {
             new AxonToolItem(ModToolMaterials.AXON, 2147483646,100000f,
                     new FabricItemSettings()));
 
+    public static final Item TICKLE_TRAVIS_TICKLER = registerItem("tickle_travis_tickler",
+            new AxonToolItem(ModToolMaterials.AXON, 2147483646,100000f,
+                    new FabricItemSettings()));
+
 
     //Thunderanium
     public static final Item THUNDERANIUM_SWORD = registerItem("thunderanium_sword",

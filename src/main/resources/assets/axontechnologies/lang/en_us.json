@@ -31,7 +31,8 @@
   "item.axontechnologies.antiglitch_sword": "Antiglitch Sword",
   "item.axontechnologies.iron_gold_hoe": "Iron-Gold Hoe",
   "item.axontechnologies.ultimate_hoe_trophy": "Ultimate Hoe Trophy",
-  "item.axontechnologies.axon_tool": "Tickle Travis Tickler",
+  "item.axontechnologies.tickle_travis_tickler": "Tickle Travis Tickler",
+  "item.axontechnologies.axon_tool": "Razzor",
 
   "item.axontechnologies.armor_test_helmet": "Armor Test Helmet",
   "item.axontechnologies.armor_test_chestplate": "Armor Test Chestplate",
@@ -142,6 +143,44 @@
   "entity.axontechnologies.dark_essence_zombie": "Dark Essence Zombie",
   "entity.axontechnologies.lost_miner": "Lost Miner",
 
-  "category.axontechnologies.keybinds": "Axon T.e.c.h.n.o.l.o.g.i.e.s.",
-  "key.axontechnologies.activate_effect": "Activate Effect"
+  "advancement.axontechnologies.get_mimicarium.title": "Stop Mocking Me",
+  "advancement.axontechnologies.get_mimicarium.description": "Obtain a piece of Mimicarium.",
+
+  "advancement.axontechnologies.get_thunderanium_ingot.title": "How Do You Even Get Thunder Into Ingot Form?",
+  "advancement.axontechnologies.get_thunderanium_ingot.description": "Obtain a Thunderanium Ingot.",
+
+  "advancement.axontechnologies.get_thunderanium_armor.title": "Man of Steel? No I'm a Man of Thunder",
+  "advancement.axontechnologies.get_thunderanium_armor.description": "Get a full set of Thunderanium Armor.",
+
+  "advancement.axontechnologies.get_red_essence.title": "All That Work For a Color...",
+  "advancement.axontechnologies.get_red_essence.description": "Kill a Red Essence Zombie and collect its Red Essence.",
+
+  "advancement.axontechnologies.get_red_thunderanium_ingot.title": "I Could Get the Same Results Using Red Dye",
+  "advancement.axontechnologies.get_red_thunderanium_ingot.description": "Combine Thunderanium Ingots and Red Essence to obtain a Red Thunderanium Ingot.",
+
+  "advancement.axontechnologies.get_red_thunderanium_armor.title": "Fear me Red Essence Zombies With My Dyed Armor!",
+  "advancement.axontechnologies.get_red_thunderanium_armor.description": "Get a full set of Red Thunderanium Armor.",
+
+  "advancement.axontechnologies.get_dark_essence.title": "And the Cycle Continues",
+  "advancement.axontechnologies.get_dark_essence.description": "Kill a Dark Essence Zombie for Dark Essence.",
+
+  "advancement.axontechnologies.get_dark_thunderanium_ingot.title": "Sometimes You Have to Embrace The Darkness",
+  "advancement.axontechnologies.get_dark_thunderanium_ingot.description": "Create a Dark Thunderanium Ingot.",
+
+  "advancement.axontechnologies.get_corruptinite.title": "Corruption is My Path",
+  "advancement.axontechnologies.get_corruptinite.description": "Create Stabilized Corruptinite.",
+
+  "advancement.axontechnologies.get_dark_thunderanium_armor.title": "Dark Thunder Sounds Cool!",
+  "advancement.axontechnologies.get_dark_thunderanium_armor.description": "Get a full set of Dark Thunderanium Armor.",
+
+  "advancement.axontechnologies.get_corruptinite_armor.title": "You Can't Lock Up The Darkness!",
+  "advancement.axontechnologies.get_corruptinite_armor.description": "Get a full set of Corruptinite Armor.",
+
+  "advancement.axontechnologies.get_ultimate_hoe_trophy.title": "Seriously? What is Wrong With You?",
+  "advancement.axontechnologies.get_ultimate_hoe_trophy.description": "Get the Ultimate Hoe Trophy",
+
+
+
+  "category.axontechnologies.keybinds": "Axon T.e.c.h.n.o.l.o.g.i.e.s. (WIP)",
+  "key.axontechnologies.activate_effect": "Activate Effect (WIP)"
 }

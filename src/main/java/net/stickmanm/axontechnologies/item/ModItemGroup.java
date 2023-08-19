@@ -98,6 +98,8 @@ public class ModItemGroup {
                         entries.add(ModItems.IRON_GOLD_HOE);
                         entries.add(ModItems.ULTIMATE_HOE_TROPHY);
                         entries.add(ModItems.AXON_TOOL);
+                        entries.add(ModItems.TICKLE_TRAVIS_TICKLER);
+
 
 
                         entries.add(ModItems.LIQUID_THUNDER_BUCKET);

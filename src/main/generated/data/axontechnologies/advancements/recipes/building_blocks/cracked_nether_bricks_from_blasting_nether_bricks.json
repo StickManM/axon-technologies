@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_raw_thunderanium": {
+    "has_nether_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "axontechnologies:raw_thunderanium"
+              "minecraft:nether_bricks"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:refined_thunderanium_from_smelting_raw_thunderanium"
+        "recipe": "minecraft:cracked_nether_bricks_from_blasting_nether_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_raw_thunderanium",
+      "has_nether_bricks",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:refined_thunderanium_from_smelting_raw_thunderanium"
+      "minecraft:cracked_nether_bricks_from_blasting_nether_bricks"
     ]
   },
   "sends_telemetry_event": false

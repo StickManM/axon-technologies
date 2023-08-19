@@ -4,10 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
-import net.stickmanm.axontechnologies.data.ModLootTableGenerator;
-import net.stickmanm.axontechnologies.data.ModModelProvider;
-import net.stickmanm.axontechnologies.data.ModRecipeGenerator;
-import net.stickmanm.axontechnologies.data.ModWorldGenerator;
+import net.stickmanm.axontechnologies.data.*;
 import net.stickmanm.axontechnologies.world.ModConfiguredFeatures;
 import net.stickmanm.axontechnologies.world.ModPlacedFeatures;
 
@@ -20,6 +17,7 @@ public class AxonTechnologiesDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModRecipeGenerator::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModWorldGenerator::new);
+		pack.addProvider(ModAdvancementGenerator::new);
 
 	}
 

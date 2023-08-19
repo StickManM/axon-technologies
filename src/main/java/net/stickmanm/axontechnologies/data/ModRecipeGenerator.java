@@ -2,6 +2,7 @@ package net.stickmanm.axontechnologies.data;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -30,45 +31,85 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         //Ores
         offerSmelting(exporter, List.of(ModBlocks.MIMICARIUM_ORE), RecipeCategory.MISC, ModItems.MIMICARIUM,
-                3f, 10, "mimicarium");
+                3f, 75, "mimicarium");
         offerSmelting(exporter, List.of(ModBlocks.DEEPSLATE_MIMICARIUM_ORE), RecipeCategory.MISC, ModItems.MIMICARIUM,
                 3f, 10, "mimicarium");
 
 
         offerSmelting(exporter, List.of(ModBlocks.DREADSTONE_DIAMOND_ORE), RecipeCategory.MISC, Items.DIAMOND,
-                3f, 10, "diamond");
+                3f, 75, "diamond");
 
         offerSmelting(exporter, List.of(ModBlocks.DREADSTONE_NETHERITE_ORE), RecipeCategory.MISC, Items.NETHERITE_INGOT,
-                3f, 11, "netherite");
+                3f, 75, "netherite");
 
         offerSmelting(exporter, List.of(ModBlocks.VOID_COAL_ORE), RecipeCategory.MISC, ModItems.VOID_COAL,
-                3f, 11, "void_coal");
+                3f, 75, "void_coal");
 
-        offerSmelting(exporter, List.of(ModItems.RAW_NETHERITE), RecipeCategory.MISC, Items.NETHERITE_INGOT,
-                3f, 10, "netherite");
+        offerBlasting(exporter, List.of(ModItems.RAW_NETHERITE), RecipeCategory.MISC, Items.NETHERITE_INGOT,
+                3f, 75, "netherite");
 
         offerSmelting(exporter, List.of(ModBlocks.DREADSTONE_THUNDERANIUM_ORE), RecipeCategory.MISC, ModItems.REFINED_THUNDERANIUM,
-                5f, 10, "thunderanium");
+                5f, 75, "thunderanium");
 
         offerSmelting(exporter, List.of(ModBlocks.THUNDERANIUM_ORE), RecipeCategory.MISC, ModItems.REFINED_THUNDERANIUM,
-                5f, 10, "thunderanium");
+                5f, 75, "thunderanium");
 
         offerSmelting(exporter, List.of(ModBlocks.CORRUPTINITE_ORE), RecipeCategory.MISC, ModItems.UNSTABLE_CORRUPTINITE,
-                5f, 10, "corruptinite");
+                5f, 75, "corruptinite");
 
 
-        offerSmelting(exporter, List.of(ModItems.RAW_THUNDERANIUM), RecipeCategory.MISC, ModItems.REFINED_THUNDERANIUM,
-                5f, 10, "thunderanium");
+        offerBlasting(exporter, List.of(ModItems.RAW_THUNDERANIUM), RecipeCategory.MISC, ModItems.REFINED_THUNDERANIUM,
+                5f, 75, "thunderanium");
 
-        offerSmelting(exporter, List.of(ModItems.THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.THUNDERANIUM_INGOT,
-                5f, 10, "thunderanium");
+        offerBlasting(exporter, List.of(ModItems.THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.THUNDERANIUM_INGOT,
+                5f, 75, "thunderanium");
 
-        offerSmelting(exporter, List.of(ModItems.RED_THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_INGOT,
-                10f, 15, "red_thunderanium");
+        offerBlasting(exporter, List.of(ModItems.RED_THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.RED_THUNDERANIUM_INGOT,
+                10f, 75, "red_thunderanium");
 
-        offerSmelting(exporter, List.of(ModItems.DARK_THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_INGOT,
+        offerBlasting(exporter, List.of(ModItems.DARK_THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_INGOT,
                 1000f, 6000, "dark_thunderanium");
 
+        //BLAST FURNACE +
+        offerBlasting(exporter, List.of(Blocks.SAND), RecipeCategory.BUILDING_BLOCKS, Blocks.GLASS,
+                5f, 100, "glass");
+
+        offerBlasting(exporter, List.of(Blocks.RED_SAND), RecipeCategory.BUILDING_BLOCKS, Blocks.GLASS,
+                5f, 100, "glass");
+
+
+        offerBlasting(exporter, List.of(Items.CLAY_BALL), RecipeCategory.BUILDING_BLOCKS, Items.BRICK,
+                5f, 100, "brick");
+
+        offerBlasting(exporter, List.of(Blocks.NETHERRACK), RecipeCategory.BUILDING_BLOCKS, Items.NETHER_BRICK,
+                5f, 100, "brick");
+
+
+        offerBlasting(exporter, List.of(Blocks.STONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_STONE_BRICKS,
+                5f, 100, "cracked");
+
+        offerBlasting(exporter, List.of(Blocks.DEEPSLATE_BRICKS), RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_DEEPSLATE_BRICKS,
+                5f, 100, "cracked");
+
+        offerBlasting(exporter, List.of(Blocks.DEEPSLATE_TILES), RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_DEEPSLATE_TILES,
+                5f, 100, "cracked");
+
+        offerBlasting(exporter, List.of(Blocks.POLISHED_BLACKSTONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS,
+                5f, 100, "cracked");
+
+        offerBlasting(exporter, List.of(Blocks.NETHER_BRICKS), RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_NETHER_BRICKS,
+                5f, 100, "cracked");
+
+        //CRAFTING +
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, Items.HOPPER)
+                .pattern("# #")
+                .pattern("#B#")
+                .pattern(" # ")
+                .input('#', Items.IRON_INGOT)
+                .input('B', Items.BARREL)
+                .criterion(FabricRecipeProvider.hasItem(Items.BARREL),
+                        FabricRecipeProvider.conditionsFromItem(Items.HOPPER))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.HOPPER)));
 
 
 
@@ -203,6 +244,13 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.UNSTABLE_CORRUPTINITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TICKLE_TRAVIS_TICKLER)
+                .input(ModItems.AXON_TOOL)
+                .input(Items.FEATHER)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_TOOL),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.TICKLE_TRAVIS_TICKLER))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TICKLE_TRAVIS_TICKLER)));
 
         //Fuels
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDER_FUEL)

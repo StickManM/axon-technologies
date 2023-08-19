@@ -1,7 +1,7 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": 15,
+  "cookingtime": 75,
   "experience": 10.0,
   "group": "red_thunderanium",
   "ingredient": {
