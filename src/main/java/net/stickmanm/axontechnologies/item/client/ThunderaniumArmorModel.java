@@ -2,7 +2,6 @@ package net.stickmanm.axontechnologies.item.client;
 
 import net.minecraft.util.Identifier;
 import net.stickmanm.axontechnologies.AxonTechnologies;
-import net.stickmanm.axontechnologies.item.custom.ArmorTestArmorItem;
 import net.stickmanm.axontechnologies.item.custom.ThunderaniumArmorItem;
 import software.bernie.geckolib.model.GeoModel;
 

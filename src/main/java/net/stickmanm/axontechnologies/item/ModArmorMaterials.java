@@ -12,14 +12,6 @@ import java.util.EnumMap;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    ARMOR_TEST("armor_test", 0, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 10);
-        map.put(ArmorItem.Type.LEGGINGS, 15);
-        map.put(ArmorItem.Type.CHESTPLATE, 17);
-        map.put(ArmorItem.Type.HELMET, 13);
-    }), 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, 0.1F, () -> {
-        return Ingredient.ofItems(new Item[]{ModItems.MIMICARIUM});
-    }),
 
     THUNDERANIUM("thunderanium", 400, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
         map.put(ArmorItem.Type.BOOTS, 10);

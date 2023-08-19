@@ -92,14 +92,7 @@ public class ModItems {
             new Item(new FabricItemSettings().fireproof()));
 
     //Armors
-    public static final Item ARMOR_TEST_HELMET = registerItem("armor_test_helmet",
-            new ArmorTestArmorItem(ModArmorMaterials.ARMOR_TEST, ArmorItem.Type.HELMET, new FabricItemSettings()));
-    public static final Item ARMOR_TEST_CHESTPLATE = registerItem("armor_test_chestplate",
-            new ArmorTestArmorItem(ModArmorMaterials.ARMOR_TEST, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-    public static final Item ARMOR_TEST_LEGGINGS = registerItem("armor_test_leggings",
-            new ArmorTestArmorItem(ModArmorMaterials.ARMOR_TEST, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
-    public static final Item ARMOR_TEST_BOOTS = registerItem("armor_test_boots",
-            new ArmorTestArmorItem(ModArmorMaterials.ARMOR_TEST, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
 
 
     //Thunderanium

@@ -107,10 +107,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNSTABLE_CORRUPTINITE, Models.GENERATED);
 
         //Armors
-        itemModelGenerator.register(ModItems.ARMOR_TEST_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ARMOR_TEST_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ARMOR_TEST_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ARMOR_TEST_BOOTS, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.THUNDERANIUM_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.THUNDERANIUM_CHESTPLATE, Models.GENERATED);
