@@ -10,8 +10,7 @@ import net.stickmanm.axontechnologies.AxonTechnologies;
 public class ModTags {
 
     public static class Blocks{
-        public static final TagKey<Block> DIRT =
-                createTag("dirt");
+
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(AxonTechnologies.MOD_ID, name));
@@ -20,8 +19,14 @@ public class ModTags {
 
     public static class Items {
 
+        public static final TagKey<Item> TRIMS = createTag("trims");
+        public static final TagKey<Item> MIMIC_WORLD_INGITERS = createTag("lights_mimic_world_portal");
+        public static final TagKey<Item> DREAD_CAVERNS_INGITERS = createTag("lights_dread_caverns_portal");
+        public static final TagKey<Item> THUNDERLANDS_INGITERS = createTag("lights_thunderlands_portal");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(AxonTechnologies.MOD_ID, name));
+
         }
     }
 

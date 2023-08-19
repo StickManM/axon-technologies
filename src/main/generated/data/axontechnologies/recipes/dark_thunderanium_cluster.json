@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    "###",
-    "TTT",
-    "###"
+    " ##",
+    " TT",
+    " ##"
   ],
   "result": {
     "item": "axontechnologies:dark_thunderanium_cluster"

@@ -26,7 +26,7 @@ public abstract class LiquidThunderFluid extends FlowableFluid {
 
     @Override
     protected boolean isInfinite(World world) {
-        return false;
+        return true;
     }
 
     @Override
@@ -153,12 +153,23 @@ public abstract class LiquidThunderFluid extends FlowableFluid {
             FluidState fluidState2 = world.getFluidState(pos);
             if (this.isIn(FluidTags.LAVA) && fluidState2.isIn(FluidTags.WATER)) {
                 if (state.getBlock() instanceof FluidBlock) {
+                    world.setBlockState(pos, ModBlocks.THUNDERED_STONE.getDefaultState(), Block.NOTIFY_ALL);
+                }
+                this.playExtinguishEvent(world, pos);
+                return;
+            }
+        }
+        if (direction == Direction.UP) {
+            FluidState fluidState2 = world.getFluidState(pos);
+            if (this.isIn(FluidTags.LAVA) && fluidState2.isIn(FluidTags.WATER)) {
+                if (state.getBlock() instanceof FluidBlock) {
                     world.setBlockState(pos, ModBlocks.VOIDSTONE.getDefaultState(), Block.NOTIFY_ALL);
                 }
                 this.playExtinguishEvent(world, pos);
                 return;
             }
         }
+
         super.flow(world, pos, state, direction, fluidState);
     }
 

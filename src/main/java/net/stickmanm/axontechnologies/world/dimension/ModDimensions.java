@@ -11,6 +11,7 @@ import net.minecraft.world.dimension.DimensionType;
 import net.stickmanm.axontechnologies.AxonTechnologies;
 import net.stickmanm.axontechnologies.block.ModBlocks;
 import net.stickmanm.axontechnologies.item.ModItems;
+import net.stickmanm.axontechnologies.util.ModTags;
 
 public class ModDimensions {
     //Dread Caverns

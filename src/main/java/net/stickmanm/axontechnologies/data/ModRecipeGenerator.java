@@ -13,9 +13,12 @@ import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 import net.stickmanm.axontechnologies.block.ModBlocks;
 import net.stickmanm.axontechnologies.item.ModItems;
+import net.stickmanm.axontechnologies.util.ModTags;
 
 import java.util.List;
 import java.util.function.Consumer;
+
+import static net.stickmanm.axontechnologies.util.ModTags.Items.TRIMS;
 
 public class ModRecipeGenerator extends FabricRecipeProvider {
     public ModRecipeGenerator(FabricDataOutput output) {
@@ -226,9 +229,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.THUNDERANIUM_CLUSTER)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_CLUSTER)
-                .pattern("###")
-                .pattern("TTT")
-                .pattern("###")
+                .pattern(" ##")
+                .pattern(" TT")
+                .pattern(" ##")
                 .input('#', ModItems.DARK_ESSENCE)
                 .input('T', ModItems.RED_THUNDERANIUM_INGOT)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.DARK_ESSENCE),
@@ -244,6 +247,18 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.UNSTABLE_CORRUPTINITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)
+                .pattern("#I#")
+                .pattern("#N#")
+                .pattern("###")
+                .input('I', TRIMS)
+                .input('N', Blocks.NETHERRACK)
+                .input('#', Blocks.NETHERITE_BLOCK)
+                .criterion(FabricRecipeProvider.hasItem(Items.NETHERITE_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)));
+
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TICKLE_TRAVIS_TICKLER)
                 .input(ModItems.AXON_TOOL)
