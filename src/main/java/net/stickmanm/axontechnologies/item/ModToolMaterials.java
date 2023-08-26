@@ -10,11 +10,14 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     THUNDERANIUM(5, 3031, 13.0f, 5.0f, 25, () -> Ingredient.ofItems(ModItems.THUNDERANIUM_INGOT)),
-    RED_THUNDERANIUM(6, 0, 18.0f, 7.5f, 35, () -> Ingredient.ofItems(ModItems.RED_THUNDERANIUM_INGOT)),
-    DARK_THUNDERANIUM(7, 0, 25.0f, 8.9f, 55, () -> Ingredient.ofItems(ModItems.DARK_THUNDERANIUM_INGOT)),
-    CORRUPTINITE(7, 0, 22.0f, 8.25f, 50, () -> Ingredient.ofItems(ModItems.CORRUPTINITE)),
+    RED_THUNDERANIUM(6, 0, 20.0f, 7.5f, 35, () -> Ingredient.ofItems(ModItems.RED_THUNDERANIUM_INGOT)),
+    DARK_THUNDERANIUM(7, 0, 30.0f, 8.9f, 55, () -> Ingredient.ofItems(ModItems.DARK_THUNDERANIUM_INGOT)),
+    CORRUPTINITE(7, 0, 25.0f, 8.25f, 50, () -> Ingredient.ofItems(ModItems.CORRUPTINITE)),
+    CORRUPTINITE_AXON_ALLOY_ARMOR(10, 0, 45.0f, 12.5f, 100, () -> Ingredient.ofItems(ModItems.CORRUPTINITE)),
+    DARK_THUNDERANIUM_AXON_ALLOY_ARMOR(10, 0, 50.0f, 14.0f, 115, () -> Ingredient.ofItems(ModItems.DARK_THUNDERANIUM_INGOT)),
+    AXON_ALLOY_ARMOR(10, 0, 40.0f, 11.5f, 90, () -> Ingredient.ofItems(ModItems.AXON_ALLOY)),
 
-    AXON(2147483647, 0, 1000f, 330282346638528860000000000000000000000f, 2147483647, () -> Ingredient.ofItems(ModItems.MIMICARIUM));
+    RAZZORIUM(2147483647, 0, 1000f, 330282346638528860000000000000000000000f, 2147483647, () -> Ingredient.ofItems(ModItems.RAZZORIUM));
 
     private final int miningLevel;
     private final int itemDurability;

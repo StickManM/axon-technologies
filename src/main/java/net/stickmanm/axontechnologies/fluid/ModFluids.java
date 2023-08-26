@@ -22,7 +22,7 @@ public class ModFluids {
                 new Identifier(AxonTechnologies.MOD_ID, "flowing_liquid_thunder"), new LiquidThunderFluid.Flowing());
 
         LIQUID_THUNDER_BLOCK = Registry.register(Registries.BLOCK, new Identifier(AxonTechnologies.MOD_ID, "liquid_thunder_block"),
-                new LiquidThunderFluidBlock(ModFluids.STILL_LIQUID_THUNDER, FabricBlockSettings.copyOf(Blocks.LAVA)));
+                new LiquidThunderFluidBlock(ModFluids.STILL_LIQUID_THUNDER, FabricBlockSettings.copyOf(Blocks.LAVA).liquid().replaceable()));
 
 
 

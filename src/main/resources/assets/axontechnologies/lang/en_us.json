@@ -16,11 +16,24 @@
   "item.axontechnologies.dark_thunderanium_ingot": "Dark Thunderanium Ingot",
   "item.axontechnologies.dark_thunderanium_cluster": "Dark Thunderanium Cluster",
 
+  "item.axontechnologies.axon_alloy": "Axon Alloy",
+  "item.axontechnologies.razzorium": "Razzorium",
+
   "item.axontechnologies.red_essence": "Red Essence",
   "item.axontechnologies.dark_essence": "Dark Essence",
 
   "item.axontechnologies.thunder_fuel": "Thunder Fuel",
   "item.axontechnologies.void_coal": "Void Coal",
+
+  "item.axontechnologies.compressed_stick": "Compressed Stick",
+  "item.axontechnologies.double_compressed_stick": "Double Compressed Stick",
+  "item.axontechnologies.triple_compressed_stick": "Triple Compressed Stick",
+  "item.axontechnologies.quadruple_compressed_stick": "Quadruple Compressed Stick",
+  "item.axontechnologies.quintuple_compressed_stick": "Quintuple Compressed Stick",
+
+  "item.axontechnologies.quattuordecuple_compressed_stick": "Quattuordecuple Compressed Stick",
+
+
 
   "item.axontechnologies.mimicarium_igniter": "Flint N' Mimicarium",
   "item.axontechnologies.dreaded_igniter": "Dread Igniter",
@@ -95,6 +108,7 @@
   "block.axontechnologies.corruptinite_ore": "Corruptinite Ore",
 
   "block.axontechnologies.dreadstone": "Dreadstone",
+  "block.axontechnologies.reinforced_dreadstone": "Reinforced Dreadstone",
   "block.axontechnologies.void_coal_block": "Block of Void Coal",
 
   "block.axontechnologies.voidstone": "Voidstone",
@@ -182,5 +196,7 @@
 
 
   "category.axontechnologies.keybinds": "Axon T.e.c.h.n.o.l.o.g.i.e.s. (WIP)",
-  "key.axontechnologies.activate_effect": "Activate Effect (WIP)"
+  "key.axontechnologies.activate_effect": "Activate Effect (WIP)",
+
+  "tooltip.axontechnologies.compressed_stick": "Part of the Compressed Sticks. There are 14 Compressed Sticks in total."
 }

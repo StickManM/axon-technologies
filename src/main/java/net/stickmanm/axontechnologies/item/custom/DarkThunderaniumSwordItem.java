@@ -28,5 +28,10 @@ public class DarkThunderaniumSwordItem extends SwordItem {
         return true;
     }
 
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return super.isEnchantable(stack);
+    }
+
 
 }

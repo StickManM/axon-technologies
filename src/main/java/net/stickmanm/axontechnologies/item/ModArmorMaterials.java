@@ -47,6 +47,33 @@ public enum ModArmorMaterials implements ArmorMaterial {
         map.put(ArmorItem.Type.HELMET, 20);
     }), 55, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.5F, () -> {
         return Ingredient.ofItems(new Item[]{ModItems.CORRUPTINITE});
+    }),
+
+    CORRUPTINITE_AXON_ALLOY_ARMOR("corruptinite_axon_alloy_armor", 0, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+        map.put(ArmorItem.Type.BOOTS, 27);
+        map.put(ArmorItem.Type.LEGGINGS, 35);
+        map.put(ArmorItem.Type.CHESTPLATE, 37);
+        map.put(ArmorItem.Type.HELMET, 30);
+    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0F, 1, () -> {
+        return Ingredient.ofItems(new Item[]{ModItems.CORRUPTINITE});
+    }),
+
+    DARK_THUNDERANIUM_AXON_ALLOY_ARMOR("dark_thunderanium_axon_alloy_armor", 0, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+        map.put(ArmorItem.Type.BOOTS, 29);
+        map.put(ArmorItem.Type.LEGGINGS, 36);
+        map.put(ArmorItem.Type.CHESTPLATE, 38);
+        map.put(ArmorItem.Type.HELMET, 31);
+    }), 115, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0F, 1F, () -> {
+        return Ingredient.ofItems(new Item[]{ModItems.DARK_THUNDERANIUM_INGOT});
+    }),
+
+    AXON_ALLOY_ARMOR("axon_alloy_armor", 0, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+        map.put(ArmorItem.Type.BOOTS, 25);
+        map.put(ArmorItem.Type.LEGGINGS, 33);
+        map.put(ArmorItem.Type.CHESTPLATE, 35);
+        map.put(ArmorItem.Type.HELMET, 28);
+    }), 90, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0F, 1F, () -> {
+        return Ingredient.ofItems(new Item[]{ModItems.AXON_ALLOY});
     });
 
     public static final StringIdentifiable.Codec<ArmorMaterials> CODEC = StringIdentifiable.createCodec(ArmorMaterials::values);

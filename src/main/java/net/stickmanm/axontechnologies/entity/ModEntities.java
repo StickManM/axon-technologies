@@ -25,7 +25,6 @@ public class ModEntities {
                     .specificSpawnBlocks(ModBlocks.CHARGED_DIRT)
                     .specificSpawnBlocks(ModBlocks.THUNDERED_STONE)
                     .trackRangeChunks(32)
-                    .spawnableFarFromPlayer()
                     .dimensions(EntityDimensions.fixed(0.6f,2f)).build());
 
     public static final EntityType<DarkEssenceZombieEntity> DARK_ESSENCE_ZOMBIE = Registry.register(
@@ -35,7 +34,6 @@ public class ModEntities {
                     .specificSpawnBlocks(ModBlocks.CORRUPTED_DIRT)
                     .specificSpawnBlocks(ModBlocks.CORRUPTED_STONE)
                     .trackRangeChunks(48)
-                    .spawnableFarFromPlayer()
                     .dimensions(EntityDimensions.fixed(0.6f,2f)).build());
 
     public static final EntityType<LostMinerEntity> LOST_MINER = Registry.register(
@@ -43,7 +41,6 @@ public class ModEntities {
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, LostMinerEntity::new)
                     .specificSpawnBlocks(ModBlocks.DREADSTONE)
                     .trackRangeChunks(15)
-                    .spawnableFarFromPlayer()
                     .dimensions(EntityDimensions.fixed(0.6f,2f)).build());
 
     public static void registerModEntities(){

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": 6000,
+  "cookingtime": 100,
   "experience": 1000.0,
   "group": "dark_thunderanium",
   "ingredient": {

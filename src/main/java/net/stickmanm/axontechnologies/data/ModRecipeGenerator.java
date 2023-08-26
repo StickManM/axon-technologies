@@ -71,7 +71,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 10f, 75, "red_thunderanium");
 
         offerBlasting(exporter, List.of(ModItems.DARK_THUNDERANIUM_CLUSTER), RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_INGOT,
-                1000f, 6000, "dark_thunderanium");
+                1000f, 100, "dark_thunderanium");
 
         //BLAST FURNACE +
         offerBlasting(exporter, List.of(Blocks.SAND), RecipeCategory.BUILDING_BLOCKS, Blocks.GLASS,
@@ -259,6 +259,34 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.REINFORCED_DREADSTONE)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModBlocks.DREADSTONE)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.DREADSTONE),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.REINFORCED_DREADSTONE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.REINFORCED_DREADSTONE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY)
+                .pattern("RES")
+                .pattern("THN")
+                .pattern("CDM")
+                .input('E', ModItems.DARK_ESSENCE)
+                .input('C', ModItems.CORRUPTINITE)
+                .input('D', ModItems.DARK_THUNDERANIUM_INGOT)
+                .input('R', ModItems.RED_ESSENCE)
+                .input('M', ModItems.MIMICARIUM)
+                .input('T', ModItems.THUNDERANIUM_INGOT)
+                .input('H', ModItems.RED_THUNDERANIUM_INGOT)
+                .input('N', Items.NETHERITE_INGOT)
+                .input('S', ModItems.QUINTUPLE_COMPRESSED_STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.CORRUPTINITE),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.DARK_THUNDERANIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.AXON_ALLOY)));
+
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TICKLE_TRAVIS_TICKLER)
                 .input(ModItems.AXON_TOOL)
@@ -283,6 +311,52 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.VOID_COAL),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.VOID_COAL_BLOCK))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.VOID_COAL_BLOCK)));
+
+        //Compressed Sticks
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COMPRESSED_STICK)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.COMPRESSED_STICK))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.COMPRESSED_STICK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DOUBLE_COMPRESSED_STICK)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.COMPRESSED_STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.COMPRESSED_STICK),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DOUBLE_COMPRESSED_STICK))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DOUBLE_COMPRESSED_STICK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TRIPLE_COMPRESSED_STICK)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.DOUBLE_COMPRESSED_STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.DOUBLE_COMPRESSED_STICK),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.TRIPLE_COMPRESSED_STICK))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TRIPLE_COMPRESSED_STICK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.QUADRUPLE_COMPRESSED_STICK)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.TRIPLE_COMPRESSED_STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.TRIPLE_COMPRESSED_STICK),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.QUADRUPLE_COMPRESSED_STICK))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.QUADRUPLE_COMPRESSED_STICK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.QUINTUPLE_COMPRESSED_STICK)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.QUADRUPLE_COMPRESSED_STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.QUADRUPLE_COMPRESSED_STICK),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.QUINTUPLE_COMPRESSED_STICK))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.QUINTUPLE_COMPRESSED_STICK)));
 
 
         //Armor

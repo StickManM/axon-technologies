@@ -36,6 +36,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         //Dreadstone and Dreadstone Ores
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REINFORCED_DREADSTONE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_DIAMOND_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_THUNDERANIUM_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_NETHERITE_ORE);
@@ -73,6 +74,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.MIMICARIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_NETHERITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AXON_ALLOY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAZZORIUM, Models.GENERATED);
 
         //Fuels
         itemModelGenerator.register(ModItems.THUNDER_FUEL, Models.GENERATED);
@@ -83,6 +86,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DREADED_IGNITER, Models.GENERATED);
         itemModelGenerator.register(ModItems.THUNDERANIUM_KEY, Models.GENERATED);
         itemModelGenerator.register(ModItems.CORRUPTION_GATEWAY, Models.GENERATED);
+
+        //COMPRESSED STICKS
+        itemModelGenerator.register(ModItems.COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DOUBLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TRIPLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.QUADRUPLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.QUINTUPLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.QUATTUORDECUPLE_COMPRESSED_STICK, Models.GENERATED);
 
         //Thunderanium
         itemModelGenerator.register(ModItems.RAW_THUNDERANIUM, Models.GENERATED);

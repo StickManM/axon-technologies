@@ -37,6 +37,9 @@ public class ModItems {
     public static final Item RED_THUNDERANIUM_INGOT = registerItem("red_thunderanium_ingot",
             new Item(new FabricItemSettings().fireproof()));
 
+    public static final Item AXON_ALLOY = registerItem("axon_alloy",
+            new Item(new FabricItemSettings().fireproof()));
+
 
     public static final Item RED_THUNDERANIUM_CLUSTER = registerItem("red_thunderanium_cluster",
             new Item(new FabricItemSettings().fireproof()));
@@ -55,12 +58,36 @@ public class ModItems {
     public static final Item UNSTABLE_CORRUPTINITE = registerItem("unstable_corruptinite",
             new Item(new FabricItemSettings().fireproof()));
 
+    public static final Item RAZZORIUM = registerItem("razzorium",
+            new Item(new FabricItemSettings().fireproof()));
+
     //Fuels
     public static final Item THUNDER_FUEL = registerItem("thunder_fuel",
             new Item(new FabricItemSettings()));
 
     public static final Item VOID_COAL = registerItem("void_coal",
             new Item(new FabricItemSettings()));
+
+    //Compressed Sticks
+    public static final Item COMPRESSED_STICK = registerItem("compressed_stick",
+            new CompressedStickItem(new FabricItemSettings()));
+
+    public static final Item DOUBLE_COMPRESSED_STICK = registerItem("double_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings()));
+
+    public static final Item TRIPLE_COMPRESSED_STICK = registerItem("triple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings()));
+
+    public static final Item QUADRUPLE_COMPRESSED_STICK = registerItem("quadruple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings()));
+
+    public static final Item QUINTUPLE_COMPRESSED_STICK = registerItem("quintuple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings().fireproof()));
+
+
+    public static final Item QUATTUORDECUPLE_COMPRESSED_STICK = registerItem("quattuordecuple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings().fireproof()));
+
 
 
 
@@ -151,11 +178,11 @@ public class ModItems {
                     new FabricItemSettings()));
 
     public static final Item AXON_TOOL = registerItem("axon_tool",
-            new AxonToolItem(ModToolMaterials.AXON, 2147483646,100000f,
+            new AxonToolItem(ModToolMaterials.RAZZORIUM, 2147483646,100000f,
                     new FabricItemSettings()));
 
     public static final Item TICKLE_TRAVIS_TICKLER = registerItem("tickle_travis_tickler",
-            new AxonToolItem(ModToolMaterials.AXON, 2147483646,100000f,
+            new AxonToolItem(ModToolMaterials.RAZZORIUM, 2147483646,100000f,
                     new FabricItemSettings()));
 
 
@@ -247,6 +274,8 @@ public class ModItems {
 
     public static final Item LIQUID_THUNDER_BUCKET = registerItem("liquid_thunder_bucket",
             new BucketItem(ModFluids.STILL_LIQUID_THUNDER, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1).fireproof()));
+
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(AxonTechnologies.MOD_ID, name), item);

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "axontechnologies:quadruple_compressed_stick"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "axontechnologies:quintuple_compressed_stick"
+  },
+  "show_notification": true
+}

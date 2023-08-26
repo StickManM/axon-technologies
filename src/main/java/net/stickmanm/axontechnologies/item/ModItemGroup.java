@@ -20,6 +20,7 @@ public class ModItemGroup {
                         entries.add(ModItems.RAW_NETHERITE);
                         entries.add(ModItems.RED_ESSENCE);
                         entries.add(ModItems.DARK_ESSENCE);
+                        entries.add(ModItems.AXON_ALLOY);
 
                         entries.add(ModItems.VOID_COAL);
                         entries.add(ModItems.THUNDER_FUEL);
@@ -100,6 +101,15 @@ public class ModItemGroup {
                         entries.add(ModItems.AXON_TOOL);
                         entries.add(ModItems.TICKLE_TRAVIS_TICKLER);
 
+                        //COMPRESSED STICKS
+                        entries.add(ModItems.COMPRESSED_STICK);
+                        entries.add(ModItems.DOUBLE_COMPRESSED_STICK);
+                        entries.add(ModItems.TRIPLE_COMPRESSED_STICK);
+                        entries.add(ModItems.QUADRUPLE_COMPRESSED_STICK);
+                        entries.add(ModItems.QUINTUPLE_COMPRESSED_STICK);
+
+                        entries.add(ModItems.QUATTUORDECUPLE_COMPRESSED_STICK);
+
 
 
                         entries.add(ModItems.LIQUID_THUNDER_BUCKET);
@@ -123,6 +133,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.CORRUPTION_PORTAL_FRAME);
 
                         entries.add(ModBlocks.DREADSTONE);
+                        entries.add(ModBlocks.REINFORCED_DREADSTONE);
                         entries.add(ModBlocks.DREADSTONE_DIAMOND_ORE);
                         entries.add(ModBlocks.DREADSTONE_THUNDERANIUM_ORE);
                         entries.add(ModBlocks.DREADSTONE_NETHERITE_ORE);

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "axontechnologies:item/armor_test_leggings"
+    "layer0": "axontechnologies:item/compressed_stick"
   }
 }

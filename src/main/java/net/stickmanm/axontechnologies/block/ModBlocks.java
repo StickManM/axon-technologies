@@ -68,6 +68,9 @@ public class ModBlocks {
     public static final Block DREADSTONE = registerBlock("dreadstone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.4f).requiresTool()));
 
+    public static final Block REINFORCED_DREADSTONE = registerBlock("reinforced_dreadstone",
+            new Block(FabricBlockSettings.copyOf(Blocks.REINFORCED_DEEPSLATE).requiresTool().lightLevel(5).hardness(1000)));
+
     public static final Block DREADSTONE_DIAMOND_ORE = registerBlock("dreadstone_diamond_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool(),
                     UniformIntProvider.create(7, 10)));
