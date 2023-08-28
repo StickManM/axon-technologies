@@ -108,6 +108,7 @@ public class ThunderaniumArmorItem extends ArmorItem implements GeoItem {
                     }
                     else {
                         player.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTER, 200, 0, false, false, true));
+                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10, 1, false, false, false));
                     }
 
                   }

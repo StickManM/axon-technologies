@@ -33,8 +33,6 @@
 
   "item.axontechnologies.quattuordecuple_compressed_stick": "Quattuordecuple Compressed Stick",
 
-
-
   "item.axontechnologies.mimicarium_igniter": "Flint N' Mimicarium",
   "item.axontechnologies.dreaded_igniter": "Dread Igniter",
   "item.axontechnologies.thunderanium_key": "Thunderanium Key",
@@ -72,6 +70,21 @@
   "item.axontechnologies.corruptinite_leggings": "Corruptinite Leggings",
   "item.axontechnologies.corruptinite_boots": "Corruptinite Boots",
 
+  "item.axontechnologies.dark_thunderanium_axon_alloy_helmet": "Axon Alloy Helmet (G)",
+  "item.axontechnologies.dark_thunderanium_axon_alloy_chestplate": "Axon Alloy Chestplate (G)",
+  "item.axontechnologies.dark_thunderanium_axon_alloy_leggings": "Axon Alloy Leggings (G)",
+  "item.axontechnologies.dark_thunderanium_axon_alloy_boots": "Axon Alloy Boots (G)",
+
+  "item.axontechnologies.corruptinite_axon_alloy_helmet": "Axon Alloy Helmet (C)",
+  "item.axontechnologies.corruptinite_axon_alloy_chestplate": "Axon Alloy Chestplate (C)",
+  "item.axontechnologies.corruptinite_axon_alloy_leggings": "Axon Alloy Leggings (C)",
+  "item.axontechnologies.corruptinite_axon_alloy_boots": "Axon Alloy Boots (C)",
+
+  "item.axontechnologies.axon_alloy_helmet": "Axon Alloy Helmet (A)",
+  "item.axontechnologies.axon_alloy_chestplate": "Axon Alloy Chestplate (A)",
+  "item.axontechnologies.axon_alloy_leggings": "Axon Alloy Leggings (A)",
+  "item.axontechnologies.axon_alloy_boots": "Axon Alloy Boots (A)",
+
   "item.axontechnologies.red_essence_zombie_spawn_egg": "Red Essence Zombie Spawn Egg",
   "item.axontechnologies.dark_essence_zombie_spawn_egg": "Dark Essence Zombie Spawn Egg",
   "item.axontechnologies.lost_miner_spawn_egg": "Lost Miner Spawn Egg",
@@ -99,6 +112,24 @@
   "item.axontechnologies.corruptinite_pickaxe": "Corruptinite Pickaxe",
   "item.axontechnologies.corruptinite_shovel": "Corruptinite Shovel",
   "item.axontechnologies.corruptinite_hoe": "Corruptinite Hoe",
+
+  "item.axontechnologies.dark_thunderanium_axon_alloy_sword": "Axon Alloy Sword (G)",
+  "item.axontechnologies.dark_thunderanium_axon_alloy_axe": "Axon Alloy Axe",
+  "item.axontechnologies.dark_thunderanium_axon_alloy_pickaxe": "Axon Alloy Pickaxe (G)",
+  "item.axontechnologies.dark_thunderanium_axon_alloy_shovel": "Axon Alloy Shovel (G)",
+  "item.axontechnologies.dark_thunderanium_axon_alloy_hoe": "Axon Alloy Hoe (G)",
+
+  "item.axontechnologies.corruptinite_axon_alloy_sword": "Axon Alloy Sword (C)",
+  "item.axontechnologies.corruptinite_axon_alloy_axe": "Axon Alloy Axe (C)",
+  "item.axontechnologies.corruptinite_axon_alloy_pickaxe": "Axon Alloy Pickaxe (C)",
+  "item.axontechnologies.corruptinite_axon_alloy_shovel": "Axon Alloy Shovel (C)",
+  "item.axontechnologies.corruptinite_axon_alloy_hoe": "Axon Alloy Hoe (C)",
+
+  "item.axontechnologies.axon_alloy_sword": "Axon Alloy Sword (A)",
+  "item.axontechnologies.axon_alloy_axe": "Axon Alloy Axe (A)",
+  "item.axontechnologies.axon_alloy_pickaxe": "Axon Alloy Pickaxe (A)",
+  "item.axontechnologies.axon_alloy_shovel": "Axon Alloy Shovel (A)",
+  "item.axontechnologies.axon_alloy_hoe": "Axon Alloy Hoe (A)",
 
   "block.axontechnologies.mimicarium_ore": "Mimicarium Ore",
   "block.axontechnologies.deepslate_mimicarium_ore": "Deepslate Mimicarium Ore",
@@ -146,9 +177,11 @@
   "effect.axontechnologies.glitchster2": "Glitchster II",
   "effect.axontechnologies.glitchster3": "Glitchster III",
   "effect.axontechnologies.glitchster4": "Glitchster IV",
+  "effect.axontechnologies.glitchster5": "Glitchster V",
   "effect.axontechnologies.neutralized_glitchster": "Neutralized Glitchster",
-  "effect.axontechnologies.corrupted_glitchster": "Corrupted Glitchster",
-  "effect.axontechnologies.corrupted_glitchster2": "Corrupted Glitchster II",
+  "effect.axontechnologies.corrupted_glitchster": "Corrupted Glitchster III",
+  "effect.axontechnologies.corrupted_glitchster2": "Corrupted Glitchster IV",
+  "effect.axontechnologies.corrupted_glitchster3": "Corrupted Glitchster V",
   "effect.axontechnologies.thunder_poisoning": "Thunder Poisoning",
   "effect.axontechnologies.antiglitchster": "Anti Glitchster",
   "effect.axontechnologies.anti_corrupted_glitchster": "Glitchster",

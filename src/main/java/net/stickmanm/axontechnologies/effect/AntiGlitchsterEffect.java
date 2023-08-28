@@ -36,6 +36,12 @@ public class AntiGlitchsterEffect extends StatusEffect {
                 entity.addStatusEffect(new StatusEffectInstance(ModEffects.NEUTRALIZED_GLITCHSTER, 40));
             } else if (entity.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTER)) {
                 entity.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
+            } else if (entity.hasStatusEffect(ModEffects.GLITCHSTERIV)) {
+                entity.removeStatusEffect(ModEffects.GLITCHSTERIV);
+            } else if (entity.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTERII)) {
+                entity.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
+            } else if (entity.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTERIII)) {
+                entity.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
             }
         }
 

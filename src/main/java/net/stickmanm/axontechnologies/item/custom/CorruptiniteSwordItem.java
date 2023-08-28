@@ -23,7 +23,8 @@ public class CorruptiniteSwordItem extends SwordItem {
         else if (attacker.hasStatusEffect(ModEffects.GLITCHSTER) ||
                 attacker.hasStatusEffect(ModEffects.GLITCHSTERII)||
                 attacker.hasStatusEffect(ModEffects.GLITCHSTERIII)||
-                attacker.hasStatusEffect(ModEffects.GLITCHSTERIV)) {
+                attacker.hasStatusEffect(ModEffects.GLITCHSTERIV) ||
+                attacker.hasStatusEffect(ModEffects.GLITCHSTERV)) {
             attacker.addStatusEffect(new StatusEffectInstance(ModEffects.ANTIGLITCHSTER, 900, 2));
         }
 

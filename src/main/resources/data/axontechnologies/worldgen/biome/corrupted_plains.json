@@ -26,6 +26,8 @@
     "minecraft:canyon"
   ]},
   "features": [
-    "axontechnologies:corruptinite_ore"
+    "axontechnologies:corruptinite_ore",
+    "axontechnologies:lake_corruptionlands_lava",
+    "axontechnologies:ore_corruptionlands_lava"
   ]
 }

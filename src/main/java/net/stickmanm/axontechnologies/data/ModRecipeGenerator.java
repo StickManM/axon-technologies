@@ -514,6 +514,141 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_BOOTS))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_BOOTS)));
 
+        //Axon Alloy G
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_AXON_ALLOY_HELMET)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.DARK_THUNDERANIUM_HELMET)
+                .input('M', ModItems.DARK_THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_HELMET))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_AXON_ALLOY_CHESTPLATE)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.DARK_THUNDERANIUM_CHESTPLATE)
+                .input('M', ModItems.DARK_THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_CHESTPLATE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_AXON_ALLOY_LEGGINGS)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.DARK_THUNDERANIUM_LEGGINGS)
+                .input('M', ModItems.DARK_THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_LEGGINGS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_AXON_ALLOY_BOOTS)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.DARK_THUNDERANIUM_BOOTS)
+                .input('M', ModItems.DARK_THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_BOOTS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_BOOTS)));
+
+        //Axon Alloy C
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_AXON_ALLOY_HELMET)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.CORRUPTINITE_HELMET)
+                .input('M', ModItems.CORRUPTINITE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_AXON_ALLOY_HELMET))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_AXON_ALLOY_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_AXON_ALLOY_CHESTPLATE)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.CORRUPTINITE_CHESTPLATE)
+                .input('M', ModItems.CORRUPTINITE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_AXON_ALLOY_CHESTPLATE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_AXON_ALLOY_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_AXON_ALLOY_LEGGINGS)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.CORRUPTINITE_LEGGINGS)
+                .input('M', ModItems.CORRUPTINITE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_AXON_ALLOY_LEGGINGS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_AXON_ALLOY_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_AXON_ALLOY_BOOTS)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.CORRUPTINITE_BOOTS)
+                .input('M', ModItems.CORRUPTINITE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_AXON_ALLOY_BOOTS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_AXON_ALLOY_BOOTS)));
+
+        //Axon Alloy A
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY_HELMET)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.DARK_THUNDERANIUM_HELMET)
+                .input('M', ModItems.CORRUPTINITE_HELMET)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY_HELMET))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.AXON_ALLOY_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY_CHESTPLATE)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.DARK_THUNDERANIUM_CHESTPLATE)
+                .input('M', ModItems.CORRUPTINITE_CHESTPLATE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY_CHESTPLATE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.AXON_ALLOY_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY_LEGGINGS)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.DARK_THUNDERANIUM_LEGGINGS)
+                .input('M', ModItems.CORRUPTINITE_LEGGINGS)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY_LEGGINGS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.AXON_ALLOY_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY_BOOTS)
+                .pattern("###")
+                .pattern("A#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('A', ModItems.DARK_THUNDERANIUM_BOOTS)
+                .input('M', ModItems.CORRUPTINITE_BOOTS)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY_BOOTS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.AXON_ALLOY_BOOTS)));
+
 
         //Tools
 
@@ -771,6 +906,173 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_HOE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_HOE)));
 
+        //Axon Alloy G
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_AXON_ALLOY_SWORD)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.DARK_THUNDERANIUM_SWORD)
+                .input('M', ModItems.DARK_THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_SWORD))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_AXON_ALLOY_AXE)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.DARK_THUNDERANIUM_AXE)
+                .input('M', ModItems.DARK_THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_AXE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_AXON_ALLOY_PICKAXE)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.DARK_THUNDERANIUM_PICKAXE)
+                .input('M', ModItems.DARK_THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_PICKAXE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_AXON_ALLOY_SHOVEL)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.DARK_THUNDERANIUM_SHOVEL)
+                .input('M', ModItems.DARK_THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_SHOVEL))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_THUNDERANIUM_AXON_ALLOY_HOE)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.DARK_THUNDERANIUM_HOE)
+                .input('M', ModItems.DARK_THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_HOE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_HOE)));
+
+        //Axon Alloy C
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_AXON_ALLOY_SWORD)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.CORRUPTINITE_SWORD)
+                .input('M', ModItems.CORRUPTINITE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_AXON_ALLOY_SWORD))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_AXON_ALLOY_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_AXON_ALLOY_AXE)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.CORRUPTINITE_AXE)
+                .input('M', ModItems.CORRUPTINITE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_AXON_ALLOY_AXE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_AXON_ALLOY_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_AXON_ALLOY_PICKAXE)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.CORRUPTINITE_PICKAXE)
+                .input('M', ModItems.CORRUPTINITE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_AXON_ALLOY_PICKAXE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_AXON_ALLOY_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_AXON_ALLOY_SHOVEL)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.CORRUPTINITE_SHOVEL)
+                .input('M', ModItems.CORRUPTINITE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_AXON_ALLOY_SHOVEL))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_AXON_ALLOY_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CORRUPTINITE_AXON_ALLOY_HOE)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.CORRUPTINITE_HOE)
+                .input('M', ModItems.CORRUPTINITE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.CORRUPTINITE_AXON_ALLOY_HOE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.CORRUPTINITE_AXON_ALLOY_HOE)));
+
+        //Axon Alloy A
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY_SWORD)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.CORRUPTINITE_SWORD)
+                .input('M', ModItems.DARK_THUNDERANIUM_SWORD)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY_SWORD))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.AXON_ALLOY_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY_AXE)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.CORRUPTINITE_AXE)
+                .input('M', ModItems.DARK_THUNDERANIUM_AXE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY_AXE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.AXON_ALLOY_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY_PICKAXE)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.CORRUPTINITE_PICKAXE)
+                .input('M', ModItems.DARK_THUNDERANIUM_PICKAXE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY_PICKAXE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.AXON_ALLOY_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY_SHOVEL)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.CORRUPTINITE_SHOVEL)
+                .input('M', ModItems.DARK_THUNDERANIUM_SHOVEL)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY_SHOVEL))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.AXON_ALLOY_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY_HOE)
+                .pattern("###")
+                .pattern("T#M")
+                .pattern("###")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('T', ModItems.CORRUPTINITE_HOE)
+                .input('M', ModItems.DARK_THUNDERANIUM_HOE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.AXON_ALLOY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY_HOE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.AXON_ALLOY_HOE)));
 
 
 

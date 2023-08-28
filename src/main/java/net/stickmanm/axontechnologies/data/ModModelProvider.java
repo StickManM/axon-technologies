@@ -139,6 +139,21 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CORRUPTINITE_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.CORRUPTINITE_BOOTS, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.CORRUPTINITE_AXON_ALLOY_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_AXON_ALLOY_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_AXON_ALLOY_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_AXON_ALLOY_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.AXON_ALLOY_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AXON_ALLOY_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AXON_ALLOY_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AXON_ALLOY_BOOTS, Models.GENERATED);
+
         //Tools
 
         itemModelGenerator.register(ModItems.ANTIGLITCH_SWORD, Models.HANDHELD);
@@ -170,6 +185,24 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CORRUPTINITE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CORRUPTINITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CORRUPTINITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.CORRUPTINITE_AXON_ALLOY_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_AXON_ALLOY_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_AXON_ALLOY_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_AXON_ALLOY_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORRUPTINITE_AXON_ALLOY_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.AXON_ALLOY_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AXON_ALLOY_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AXON_ALLOY_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AXON_ALLOY_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AXON_ALLOY_HOE, Models.HANDHELD);
 
 
     }

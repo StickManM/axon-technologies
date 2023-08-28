@@ -68,7 +68,7 @@ public class DarkEssenceZombieEntity extends PathAwareEntity implements GeoEntit
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, MerchantEntity.class, true));
         this.targetSelector.add(3, new ActiveTargetGoal<>(this, VillagerEntity.class, true));
         this.targetSelector.add(3, new ActiveTargetGoal<>(this, WardenEntity.class, true));
-
+        this.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, -1, 2,false, false, false));
 
 
     }

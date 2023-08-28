@@ -31,6 +31,9 @@ public class ModDimensionFeatures {
     public static final RegistryKey<PlacedFeature> VOIDSTONE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"voidstone"));
 
     public static final RegistryKey<PlacedFeature> LIQUID_THUNDER_LAKE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"lake_liquid_thunder"));
+    public static final RegistryKey<PlacedFeature> CORRUPTIONLANDS_LAVA_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"lake_corruptionlands_lava"));
+    public static final RegistryKey<PlacedFeature> ORE_LIQUID_THUNDER_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"ore_liquid_thunder"));
+    public static final RegistryKey<PlacedFeature> ORE_CORRUPTIONLANDS_LAVA_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"ore_corruptionlands_lava"));
 
     public static void registerModDimensionFeatures() {
         BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, DREADSTONE_DIAMOND_ORE_PLACED_KEY);
@@ -38,13 +41,17 @@ public class ModDimensionFeatures {
         BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, DREADSTONE_NETHERITE_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, VOID_COAL_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, THUNDERANIUM_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, ORE_LIQUID_THUNDER_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, CORRUPTION_BLOCK_PLACED_KEY);
+
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIMIC_PLAINS_KEY), GenerationStep.Feature.UNDERGROUND_ORES, VOIDSTONE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIMIC_PLAINS_KEY), GenerationStep.Feature.UNDERGROUND_ORES, FAKESTONE_IRON_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIMIC_PLAINS_KEY), GenerationStep.Feature.UNDERGROUND_ORES, FAKESTONE_GOLD_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, CORRUPTINITE_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, ORE_CORRUPTIONLANDS_LAVA_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.THUNDERED_PLAINS_KEY), GenerationStep.Feature.LAKES, LIQUID_THUNDER_LAKE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.CORRUPTED_PLAINS), GenerationStep.Feature.LAKES, CORRUPTIONLANDS_LAVA_PLACED_KEY);
 
 
 

@@ -12,12 +12,15 @@ public class ModEffects {
     public static final StatusEffect GLITCHSTERII = new GlitchsterIIEffect();
     public static final StatusEffect GLITCHSTERIII = new GlitchsterIIIEffect();
     public static final StatusEffect GLITCHSTERIV = new GlitchsterIVEffect();
+    public static final StatusEffect GLITCHSTERV = new GlitchsterVEffect();
+    public static final StatusEffect GLITCHSTERX = new GlitchsterXEffect();
     public static final StatusEffect NEUTRALIZED_GLITCHSTER = new NeutralizedGlitchsterEffect();
     public static final StatusEffect THUNDER_POISONING = new ThunderPoisoningEffect();
 
     public static final StatusEffect ANTIGLITCHSTER = new AntiGlitchsterEffect();
     public static final StatusEffect CORRUPTED_GLITCHSTER = new CorruptedGlitchsterEffect();
     public static final StatusEffect CORRUPTED_GLITCHSTERII = new CorruptedGlitchsterIIEffect();
+    public static final StatusEffect CORRUPTED_GLITCHSTERIII = new CorruptedGlitchsterIIIEffect();
     public static final StatusEffect ANTI_CORRUPTED_GLITCHSTER = new AntiCorruptedGlitchsterEffect();
 
     public static void registerModEffects() {
@@ -25,9 +28,12 @@ public class ModEffects {
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "glitchster2"), GLITCHSTERII);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "glitchster3"), GLITCHSTERIII);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "glitchster4"), GLITCHSTERIV);
+        Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "glitchster5"), GLITCHSTERV);
+        Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "glitchsterx"), GLITCHSTERX);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "neutralized_glitchster"), NEUTRALIZED_GLITCHSTER);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "corrupted_glitchster"), CORRUPTED_GLITCHSTER);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "corrupted_glitchster2"), CORRUPTED_GLITCHSTERII);
+        Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "corrupted_glitchster3"), CORRUPTED_GLITCHSTERIII);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "thunder_poisoning"), THUNDER_POISONING);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "antiglitchster"), ANTIGLITCHSTER);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "anti_corrupted_glitchster"), ANTI_CORRUPTED_GLITCHSTER);

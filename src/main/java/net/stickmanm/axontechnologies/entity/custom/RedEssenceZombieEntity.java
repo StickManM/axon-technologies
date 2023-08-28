@@ -6,6 +6,8 @@ import net.minecraft.entity.ai.brain.sensor.HurtBySensor;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.mob.WardenEntity;
@@ -64,6 +66,7 @@ public class RedEssenceZombieEntity extends PathAwareEntity implements GeoEntity
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, MerchantEntity.class, true));
         this.targetSelector.add(3, new ActiveTargetGoal<>(this, VillagerEntity.class, true));
         this.targetSelector.add(3, new ActiveTargetGoal<>(this, WardenEntity.class, true));
+        this.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, -1, 2,false, false, false));
 
 
 

@@ -96,14 +96,9 @@ public class CorruptiniteArmorItem extends ArmorItem implements GeoItem {
                         legPiece.isOf(ModItems.CORRUPTINITE_LEGGINGS) &&
                         footPiece.isOf(ModItems.CORRUPTINITE_BOOTS)) {
 
-                    if(player.hasStatusEffect(ModEffects.ANTIGLITCHSTER)) {
-                        player.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
-                    }
-
-                    else {
                         player.addStatusEffect(new StatusEffectInstance(ModEffects.CORRUPTED_GLITCHSTER, 200, 0, false, false, true));
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1, false, false, true));
-                    }
+                        player.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
 
                   }
                 }
