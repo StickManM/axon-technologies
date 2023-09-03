@@ -9,8 +9,5 @@ public class ModSwordItem extends SwordItem {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
-    @Override
-    public boolean isEnchantable(ItemStack stack) {
-        return super.isEnchantable(stack);
-    }
+
 }

@@ -196,8 +196,8 @@ public class ModItems {
             new ModAntiGlitchSwordItem(ModToolMaterials.RED_THUNDERANIUM, 4,-2.5f,
                     new FabricItemSettings().fireproof()));
 
-    public static final Item IRON_GOLD_HOE = registerItem("iron_gold_hoe",
-            new HoeItem(ToolMaterials.IRON, 2,1f,
+    public static final Item VANILLA_HOE = registerItem("vanilla_hoe",
+            new HoeItem(ToolMaterials.NETHERITE, 2,1f,
                     new FabricItemSettings()));
 
     public static final Item ULTIMATE_HOE_TROPHY = registerItem("ultimate_hoe_trophy",

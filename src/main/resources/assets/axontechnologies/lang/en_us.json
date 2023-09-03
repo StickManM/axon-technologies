@@ -40,7 +40,7 @@
 
   "item.axontechnologies.liquid_thunder_bucket": "Bucket of Liquid Thunder",
   "item.axontechnologies.antiglitch_sword": "Antiglitch Sword",
-  "item.axontechnologies.iron_gold_hoe": "Iron-Gold Hoe",
+  "item.axontechnologies.vanilla_hoe": "Vanilla Hoe",
   "item.axontechnologies.ultimate_hoe_trophy": "Ultimate Hoe Trophy",
   "item.axontechnologies.tickle_travis_tickler": "Tickle Travis Tickler",
   "item.axontechnologies.axon_tool": "Razzor",
@@ -211,17 +211,29 @@
   "advancement.axontechnologies.get_dark_essence.title": "And the Cycle Continues",
   "advancement.axontechnologies.get_dark_essence.description": "Kill a Dark Essence Zombie for Dark Essence.",
 
-  "advancement.axontechnologies.get_dark_thunderanium_ingot.title": "Sometimes You Have to Embrace The Darkness",
+  "advancement.axontechnologies.get_dark_thunderanium_ingot.title": "Anti Hero",
   "advancement.axontechnologies.get_dark_thunderanium_ingot.description": "Create a Dark Thunderanium Ingot.",
 
   "advancement.axontechnologies.get_corruptinite.title": "Corruption is My Path",
   "advancement.axontechnologies.get_corruptinite.description": "Create Stabilized Corruptinite.",
 
-  "advancement.axontechnologies.get_dark_thunderanium_armor.title": "Dark Thunder Sounds Cool!",
+  "advancement.axontechnologies.get_dark_thunderanium_armor.title": "Sometimes You Have to Embrace The Darkness!",
   "advancement.axontechnologies.get_dark_thunderanium_armor.description": "Get a full set of Dark Thunderanium Armor.",
 
   "advancement.axontechnologies.get_corruptinite_armor.title": "You Can't Lock Up The Darkness!",
   "advancement.axontechnologies.get_corruptinite_armor.description": "Get a full set of Corruptinite Armor.",
+
+  "advancement.axontechnologies.get_axon_alloy.title": "All My Life's Work in One Alloy",
+  "advancement.axontechnologies.get_axon_alloy.description": "Create Axon Alloy.",
+
+  "advancement.axontechnologies.get_dark_thunderanium_axon_alloy_armor.title": "I Am the Fastest Glitchster Alive!",
+  "advancement.axontechnologies.get_dark_thunderanium_axon_alloy_armor.description": "Get a full set of Axon Alloy Armor (G).",
+
+  "advancement.axontechnologies.get_corruptinite_axon_alloy_armor.title": "The Darkness Evolves!",
+  "advancement.axontechnologies.get_corruptinite_axon_alloy_armor.description": "Get a full set of Axon Alloy Armor (C).",
+
+  "advancement.axontechnologies.get_axon_alloy_armor.title": "No... You Can't Do That!",
+  "advancement.axontechnologies.get_axon_alloy_armor.description": "Get a full set of Axon Alloy Armor (A).",
 
   "advancement.axontechnologies.get_ultimate_hoe_trophy.title": "Seriously? What is Wrong With You?",
   "advancement.axontechnologies.get_ultimate_hoe_trophy.description": "Get the Ultimate Hoe Trophy",

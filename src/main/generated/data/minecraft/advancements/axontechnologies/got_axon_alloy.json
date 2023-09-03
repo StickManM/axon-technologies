@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:axontechnologies/got_axon_alloy",
+  "parent": "minecraft:axontechnologies/got_dark_essence",
   "criteria": {
-    "got_ultimate_hoe_trophy": {
+    "got_axon_alloy": {
       "conditions": {
         "items": [
           {
             "items": [
-              "axontechnologies:ultimate_hoe_trophy"
+              "axontechnologies:axon_alloy"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.axontechnologies.get_ultimate_hoe_trophy.description"
+      "translate": "advancement.axontechnologies.get_axon_alloy.description"
     },
-    "frame": "challenge",
+    "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "axontechnologies:ultimate_hoe_trophy"
+      "item": "axontechnologies:axon_alloy"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.axontechnologies.get_ultimate_hoe_trophy.title"
+      "translate": "advancement.axontechnologies.get_axon_alloy.title"
     }
   },
   "requirements": [
     [
-      "got_ultimate_hoe_trophy"
+      "got_axon_alloy"
     ]
   ],
   "sends_telemetry_event": true

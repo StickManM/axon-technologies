@@ -157,7 +157,7 @@ public class ModModelProvider extends FabricModelProvider {
         //Tools
 
         itemModelGenerator.register(ModItems.ANTIGLITCH_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.IRON_GOLD_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VANILLA_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ULTIMATE_HOE_TROPHY, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AXON_TOOL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.TICKLE_TRAVIS_TICKLER, Models.HANDHELD);

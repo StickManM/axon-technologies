@@ -194,8 +194,76 @@ public class ModAdvancements implements Consumer<Consumer<Advancement>> {
                 .criterion("got_corruptinite_boots", InventoryChangedCriterion.Conditions.items(ModItems.CORRUPTINITE_BOOTS))
                 .build(consumer, AxonTechnologies.MOD_ID + "/has_corruptinite_armor");
 
+        Advancement getAxonAlloy = Advancement.Builder.create().parent(getDarkEssence)
+                .display(
+                        ModItems.AXON_ALLOY, // The display icon
+                        Text.translatable("advancement.axontechnologies.get_axon_alloy.title"), // The title
+                        Text.translatable("advancement.axontechnologies.get_axon_alloy.description"), // The description
+                        null,
+                        AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_axon_alloy", InventoryChangedCriterion.Conditions.items(ModItems.AXON_ALLOY))
+                .build(consumer, AxonTechnologies.MOD_ID + "/got_axon_alloy");
 
-        Advancement getUltimateHoeTrophy = Advancement.Builder.create().parent(getDarkEssence)
+        Advancement getCorruptiniteAxonAlloyArmor = Advancement.Builder.create().parent(getAxonAlloy)
+                .display(
+                        ModItems.CORRUPTINITE_AXON_ALLOY_CHESTPLATE, // The display icon
+                        Text.translatable("advancement.axontechnologies.get_corruptinite_axon_alloy_armor.title"), // The title
+                        Text.translatable("advancement.axontechnologies.get_corruptinite_axon_alloy_armor.description"), // The description
+                        null,
+                        AdvancementFrame.CHALLENGE, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_axon_alloy_corruptinite_helmet", InventoryChangedCriterion.Conditions.items(ModItems.CORRUPTINITE_AXON_ALLOY_HELMET))
+                .criterion("got_axon_alloy_corruptinite_chestplate", InventoryChangedCriterion.Conditions.items(ModItems.CORRUPTINITE_AXON_ALLOY_CHESTPLATE))
+                .criterion("got_axon_alloy_corruptinite_leggings", InventoryChangedCriterion.Conditions.items(ModItems.CORRUPTINITE_AXON_ALLOY_LEGGINGS))
+                .criterion("got_axon_alloy_corruptinite_boots", InventoryChangedCriterion.Conditions.items(ModItems.CORRUPTINITE_AXON_ALLOY_BOOTS))
+                .build(consumer, AxonTechnologies.MOD_ID + "/has_axon_alloy_corruptinite_armor");
+
+        Advancement getDarkThunderaniumAxonAlloyArmor = Advancement.Builder.create().parent(getAxonAlloy)
+                .display(
+                        ModItems.DARK_THUNDERANIUM_AXON_ALLOY_CHESTPLATE, // The display icon
+                        Text.translatable("advancement.axontechnologies.get_dark_thunderanium_axon_alloy_armor.title"), // The title
+                        Text.translatable("advancement.axontechnologies.get_dark_thunderanium_axon_alloy_armor.description"), // The description
+                        null,
+                        AdvancementFrame.CHALLENGE, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_axon_alloy_dark_thunderanium_helmet", InventoryChangedCriterion.Conditions.items(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_HELMET))
+                .criterion("got_axon_alloy_dark_thunderanium_chestplate", InventoryChangedCriterion.Conditions.items(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_CHESTPLATE))
+                .criterion("got_axon_alloy_dark_thunderanium_leggings", InventoryChangedCriterion.Conditions.items(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_LEGGINGS))
+                .criterion("got_axon_alloy_dark_thunderanium_boots", InventoryChangedCriterion.Conditions.items(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_BOOTS))
+                .build(consumer, AxonTechnologies.MOD_ID + "/has_axon_alloy_dark_thunderanium_armor");
+
+        Advancement getAxonAlloyArmor = Advancement.Builder.create().parent(getAxonAlloy)
+                .display(
+                        ModItems.AXON_ALLOY_CHESTPLATE, // The display icon
+                        Text.translatable("advancement.axontechnologies.get_axon_alloy_armor.title"), // The title
+                        Text.translatable("advancement.axontechnologies.get_axon_alloy_armor.description"), // The description
+                        null,
+                        AdvancementFrame.CHALLENGE, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_axon_alloy_helmet", InventoryChangedCriterion.Conditions.items(ModItems.AXON_ALLOY_HELMET))
+                .criterion("got_axon_alloy_chestplate", InventoryChangedCriterion.Conditions.items(ModItems.AXON_ALLOY_CHESTPLATE))
+                .criterion("got_axon_alloy_leggings", InventoryChangedCriterion.Conditions.items(ModItems.AXON_ALLOY_LEGGINGS))
+                .criterion("got_axon_alloy_boots", InventoryChangedCriterion.Conditions.items(ModItems.AXON_ALLOY_BOOTS))
+                .build(consumer, AxonTechnologies.MOD_ID + "/has_axon_alloy_armor");
+
+        Advancement getUltimateHoeTrophy = Advancement.Builder.create().parent(getAxonAlloy)
                 .display(
                         ModItems.ULTIMATE_HOE_TROPHY, // The display icon
                         Text.translatable("advancement.axontechnologies.get_ultimate_hoe_trophy.title"), // The title

@@ -261,9 +261,10 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.REINFORCED_DREADSTONE)
                 .pattern("###")
-                .pattern("###")
+                .pattern("#G#")
                 .pattern("###")
                 .input('#', ModBlocks.DREADSTONE)
+                .input('G', Items.GLOWSTONE_DUST)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.DREADSTONE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.REINFORCED_DREADSTONE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.REINFORCED_DREADSTONE)));
@@ -663,27 +664,30 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.ANTIGLITCH_SWORD))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.ANTIGLITCH_SWORD)));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.IRON_GOLD_HOE)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VANILLA_HOE)
                 .input(Items.GOLDEN_HOE)
                 .input(Items.IRON_HOE)
-                .criterion(FabricRecipeProvider.hasItem(Items.GOLDEN_HOE),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.IRON_GOLD_HOE))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.IRON_GOLD_HOE)));
+                .input(Items.DIAMOND_HOE)
+                .input(Items.WOODEN_HOE)
+                .input(Items.STONE_HOE)
+                .input(Items.NETHERITE_HOE)
+                .criterion(FabricRecipeProvider.hasItem(Items.WOODEN_HOE),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.VANILLA_HOE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.VANILLA_HOE)));
 
 
 
 
         //Axon
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ULTIMATE_HOE_TROPHY)
-                .input(Items.DIAMOND_HOE)
-                .input(Items.NETHERITE_HOE)
-                .input(Items.WOODEN_HOE)
-                .input(Items.STONE_HOE)
-                .input(ModItems.IRON_GOLD_HOE)
+                .input(ModItems.VANILLA_HOE)
                 .input(ModItems.THUNDERANIUM_HOE)
                 .input(ModItems.RED_THUNDERANIUM_HOE)
                 .input(ModItems.DARK_THUNDERANIUM_HOE)
                 .input(ModItems.CORRUPTINITE_HOE)
+                .input(ModItems.CORRUPTINITE_AXON_ALLOY_HOE)
+                .input(ModItems.DARK_THUNDERANIUM_AXON_ALLOY_HOE)
+                .input(ModItems.AXON_ALLOY_HOE)
                 .criterion(FabricRecipeProvider.hasItem(Items.NETHERITE_HOE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.ULTIMATE_HOE_TROPHY))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.ULTIMATE_HOE_TROPHY)));

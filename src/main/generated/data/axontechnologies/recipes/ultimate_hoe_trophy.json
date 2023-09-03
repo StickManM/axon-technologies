@@ -3,19 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:diamond_hoe"
-    },
-    {
-      "item": "minecraft:netherite_hoe"
-    },
-    {
-      "item": "minecraft:wooden_hoe"
-    },
-    {
-      "item": "minecraft:stone_hoe"
-    },
-    {
-      "item": "axontechnologies:iron_gold_hoe"
+      "item": "axontechnologies:vanilla_hoe"
     },
     {
       "item": "axontechnologies:thunderanium_hoe"
@@ -28,6 +16,15 @@
     },
     {
       "item": "axontechnologies:corruptinite_hoe"
+    },
+    {
+      "item": "axontechnologies:corruptinite_axon_alloy_hoe"
+    },
+    {
+      "item": "axontechnologies:dark_thunderanium_axon_alloy_hoe"
+    },
+    {
+      "item": "axontechnologies:axon_alloy_hoe"
     }
   ],
   "result": {

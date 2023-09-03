@@ -4,11 +4,14 @@
   "key": {
     "#": {
       "item": "axontechnologies:dreadstone"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
     }
   },
   "pattern": [
     "###",
-    "###",
+    "#G#",
     "###"
   ],
   "result": {

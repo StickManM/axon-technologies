@@ -95,12 +95,13 @@ public class CorruptiniteAxonAlloyArmorItem extends ArmorItem implements GeoItem
                         legPiece.isOf(ModItems.CORRUPTINITE_AXON_ALLOY_LEGGINGS) &&
                         footPiece.isOf(ModItems.CORRUPTINITE_AXON_ALLOY_BOOTS)) {
 
+
                         player.addStatusEffect(new StatusEffectInstance(ModEffects.CORRUPTED_GLITCHSTERIII, 200, 0, false, false, true));
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 2, false, false, true));
+
                         player.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
 
-
-                  }
+                    }
                 }
 
 
