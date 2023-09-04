@@ -101,7 +101,7 @@ public class DarkThunderaniumArmorItem extends ArmorItem implements GeoItem {
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 2, false, false, true));
                         player.addStatusEffect(new StatusEffectInstance(ModEffects.NEUTRALIZED_GLITCHSTER, 200, 0, false, false, true));
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10, 1, false, false, false));
-                    } else if (player.hasStatusEffect(ModEffects.GLITCHSTERIV)) {
+                    } else if (player.hasStatusEffect(ModEffects.GLITCHSTERX)) {
                         player.removeStatusEffect(ModEffects.GLITCHSTERIII);
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10, 1, false, false, false));
                     } else {

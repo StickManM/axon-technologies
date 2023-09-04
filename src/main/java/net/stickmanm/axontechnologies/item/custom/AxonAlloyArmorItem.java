@@ -98,7 +98,11 @@ public class AxonAlloyArmorItem extends ArmorItem implements GeoItem {
                     if(player.hasStatusEffect(ModEffects.ANTIGLITCHSTER)) {
                         player.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
                     }
-                    if(player.hasStatusEffect(ModEffects.ANTI_CORRUPTED_GLITCHSTER)) {
+                    else if(player.hasStatusEffect(ModEffects.GLITCHSTERX)) {
+                        player.removeStatusEffect(ModEffects.GLITCHSTERV);
+                        player.removeStatusEffect(ModEffects.CORRUPTED_GLITCHSTERIII);
+                    }
+                     else if(player.hasStatusEffect(ModEffects.ANTI_CORRUPTED_GLITCHSTER)) {
                         player.removeStatusEffect(ModEffects.ANTI_CORRUPTED_GLITCHSTER);
                     }
 

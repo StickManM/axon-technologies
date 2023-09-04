@@ -29,7 +29,7 @@ public class ModEffects {
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "glitchster3"), GLITCHSTERIII);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "glitchster4"), GLITCHSTERIV);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "glitchster5"), GLITCHSTERV);
-        Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "glitchsterx"), GLITCHSTERX);
+        Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "glitchx"), GLITCHSTERX);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "neutralized_glitchster"), NEUTRALIZED_GLITCHSTER);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "corrupted_glitchster"), CORRUPTED_GLITCHSTER);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(AxonTechnologies.MOD_ID, "corrupted_glitchster2"), CORRUPTED_GLITCHSTERII);

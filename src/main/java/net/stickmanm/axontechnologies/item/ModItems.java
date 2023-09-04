@@ -1,7 +1,6 @@
 package net.stickmanm.axontechnologies.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -193,7 +192,7 @@ public class ModItems {
 
     //MISC TOOLS
     public static final Item ANTIGLITCH_SWORD = registerItem("antiglitch_sword",
-            new ModAntiGlitchSwordItem(ModToolMaterials.RED_THUNDERANIUM, 4,-2.5f,
+            new AntiGlitchSwordItem(ModToolMaterials.RED_THUNDERANIUM, 4,-2.5f,
                     new FabricItemSettings().fireproof()));
 
     public static final Item VANILLA_HOE = registerItem("vanilla_hoe",

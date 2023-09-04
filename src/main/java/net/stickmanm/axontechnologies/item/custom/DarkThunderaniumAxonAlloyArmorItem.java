@@ -101,6 +101,9 @@ public class DarkThunderaniumAxonAlloyArmorItem extends ArmorItem implements Geo
                         player.addStatusEffect(new StatusEffectInstance(ModEffects.NEUTRALIZED_GLITCHSTER, 200, 2, false, false, true));
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10, 1, false, false, false));
                     }
+                    else if(player.hasStatusEffect(ModEffects.GLITCHSTERX)) {
+                        player.removeStatusEffect(ModEffects.GLITCHSTERV);
+                    }
                     else {
                         player.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERV, 200, 0, false, false, true));
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 3, false, false, true));
