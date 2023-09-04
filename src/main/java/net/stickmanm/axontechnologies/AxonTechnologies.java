@@ -19,6 +19,7 @@ import net.stickmanm.axontechnologies.fluid.ModFluids;
 import net.stickmanm.axontechnologies.item.ModFuels;
 import net.stickmanm.axontechnologies.item.ModItemGroup;
 import net.stickmanm.axontechnologies.item.ModItems;
+import net.stickmanm.axontechnologies.util.ModLootTableModifiers;
 import net.stickmanm.axontechnologies.world.biome.ModBiomes;
 import net.stickmanm.axontechnologies.world.dimension.ModDimensionFeatures;
 import net.stickmanm.axontechnologies.world.dimension.ModDimensions;
@@ -39,8 +40,10 @@ public class AxonTechnologies implements ModInitializer {
 		ModFluids.register();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModLootTableModifiers.modifyLootTables();
 		ModBlockTags.registerModTags();
 		ModWorldGeneration.generateModWorldGen();
+
 
 
 		ModFlammableBlockRegistry.registerFlammableBlocks();
