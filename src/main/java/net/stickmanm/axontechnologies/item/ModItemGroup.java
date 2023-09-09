@@ -146,6 +146,7 @@ public class ModItemGroup {
 
 
                         entries.add(ModItems.LIQUID_THUNDER_BUCKET);
+                        entries.add(ModItems.GX_BUCKET);
 
 
                         //BLOCKS

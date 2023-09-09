@@ -186,13 +186,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MIMIMCARIUM_PORTAL_FRAME)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.THUNDERANIUM_PORTAL_FRAME)
-                .pattern("DND")
-                .pattern("#M#")
-                .pattern("DND")
+                .pattern("DVD")
+                .pattern("#V#")
+                .pattern("DVD")
                 .input('#', ModItems.THUNDERANIUM_INGOT)
-                .input('D', Items.DIAMOND)
-                .input('M', ModBlocks.MIMIMCARIUM_PORTAL_FRAME)
-                .input('N', Items.NETHERITE_INGOT)
+                .input('D', ModBlocks.MIMIMCARIUM_PORTAL_FRAME)
+                .input('V', ModBlocks.VOIDSTONE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.THUNDERANIUM_PORTAL_FRAME))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.THUNDERANIUM_PORTAL_FRAME)));
@@ -258,6 +257,18 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(Items.NETHERITE_INGOT),
                         FabricRecipeProvider.conditionsFromItem(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GX_BUCKET)
+                .pattern("#D#")
+                .pattern("#L#")
+                .pattern("#R#")
+                .input('#', ModItems.AXON_ALLOY)
+                .input('L', ModItems.LIQUID_THUNDER_BUCKET)
+                .input('D', ModItems.AXON_ALLOY_HELMET)
+                .input('R', ModItems.THUNDERANIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.LIQUID_THUNDER_BUCKET),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.GX_BUCKET))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.GX_BUCKET)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.REINFORCED_DREADSTONE)
                 .pattern("###")

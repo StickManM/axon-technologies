@@ -39,6 +39,8 @@
   "item.axontechnologies.corruption_gateway": "Corruption Gateway",
 
   "item.axontechnologies.liquid_thunder_bucket": "Bucket of Liquid Thunder",
+  "item.axontechnologies.gx_bucket": "Bucket of Glitch X Formula",
+
   "item.axontechnologies.antiglitch_sword": "Antiglitch Sword",
   "item.axontechnologies.vanilla_hoe": "Vanilla Hoe",
   "item.axontechnologies.ultimate_hoe_trophy": "Ultimate Hoe Trophy",
@@ -172,6 +174,7 @@
 
   "block.customportalapi.customportalblock": "Portal Block",
   "block.axontechnologies.liquid_thunder_block": "Liquid Thunder",
+  "block.axontechnologies.gx_block": "Glitch X Formula",
 
   "effect.axontechnologies.glitchster": "Glitchster",
   "effect.axontechnologies.glitchster2": "Glitchster II",

@@ -77,6 +77,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.AXON_ALLOY, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAZZORIUM, Models.GENERATED);
 
+        //Buckests
+        itemModelGenerator.register(ModItems.LIQUID_THUNDER_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GX_BUCKET, Models.GENERATED);
+
         //Fuels
         itemModelGenerator.register(ModItems.THUNDER_FUEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_COAL, Models.GENERATED);

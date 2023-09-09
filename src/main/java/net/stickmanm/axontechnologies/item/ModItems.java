@@ -339,6 +339,9 @@ public class ModItems {
     public static final Item LIQUID_THUNDER_BUCKET = registerItem("liquid_thunder_bucket",
             new BucketItem(ModFluids.STILL_LIQUID_THUNDER, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1).fireproof()));
 
+    public static final Item GX_BUCKET = registerItem("gx_bucket",
+            new BucketItem(ModFluids.STILL_GX, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1).fireproof()));
+
 
 
     private static Item registerItem(String name, Item item){
