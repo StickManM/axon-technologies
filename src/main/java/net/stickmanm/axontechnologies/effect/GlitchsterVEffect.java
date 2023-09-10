@@ -29,7 +29,9 @@ public class GlitchsterVEffect extends StatusEffect {
         }
         else{
             if (!entity.getWorld().isClient()) {
-                ((PlayerEntity) entity).getHungerManager().add(Amplifier + 1, 1.0f);
+                if(entity.isPlayer()){
+                    ((PlayerEntity) entity).getHungerManager().add(Amplifier + 1, 1.0f);
+                }
                 addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE, "648D7064-6A60-4F59-8ABE-C2C23A6DD7A9", 18f, EntityAttributeModifier.Operation.ADDITION)
                         .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", 9.5f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
                         .addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "91AEAA56-376B-4498-935B-2F7F68070635", 50f, EntityAttributeModifier.Operation.ADDITION)
