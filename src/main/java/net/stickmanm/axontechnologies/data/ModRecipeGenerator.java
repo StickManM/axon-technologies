@@ -265,7 +265,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input('#', ModItems.AXON_ALLOY)
                 .input('L', ModItems.LIQUID_THUNDER_BUCKET)
                 .input('D', ModItems.AXON_ALLOY_HELMET)
-                .input('R', ModItems.THUNDERANIUM_INGOT)
+                .input('R', ModItems.AXON_ALLOY_BOOTS)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.LIQUID_THUNDER_BUCKET),
                         FabricRecipeProvider.conditionsFromItem(ModItems.GX_BUCKET))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.GX_BUCKET)));
@@ -292,7 +292,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input('T', ModItems.THUNDERANIUM_INGOT)
                 .input('H', ModItems.RED_THUNDERANIUM_INGOT)
                 .input('N', Items.NETHERITE_INGOT)
-                .input('S', ModItems.QUINTUPLE_COMPRESSED_STICK)
+                .input('S', ModItems.QUADRUPLE_COMPRESSED_STICK)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.CORRUPTINITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.AXON_ALLOY))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.DARK_THUNDERANIUM_INGOT),
@@ -333,6 +333,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(Items.STICK),
                         FabricRecipeProvider.conditionsFromItem(ModItems.COMPRESSED_STICK))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.COMPRESSED_STICK)));
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DOUBLE_COMPRESSED_STICK)
                 .pattern("###")

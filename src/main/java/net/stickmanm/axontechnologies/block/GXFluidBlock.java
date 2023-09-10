@@ -27,16 +27,24 @@ public class GXFluidBlock extends FluidBlock {
             if (entity instanceof LivingEntity) {
                 LivingEntity livingEntity = (LivingEntity)entity;
                 if (!livingEntity.isInvulnerableTo(world.getDamageSources().lightningBolt())) {
-                    livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERX, 400));
-                    livingEntity.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
-                    livingEntity.removeStatusEffect(ModEffects.ANTI_CORRUPTED_GLITCHSTER);
-                    overDose = random.nextInt(500);
                      if(overDose == 1){
                          livingEntity.removeStatusEffect(ModEffects.GLITCHSTERX);
-                         livingEntity.setHealth(0.001f);
-                         livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 120, 255));
-                         livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.THUNDER_POISONING, 120, 255));
+                         livingEntity.setHealth(0.0000000000000000000000001f);
+                         livingEntity.damage(livingEntity.getDamageSources().lightningBolt(), 999999999999999999999999999999999999f);
+                         livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1000, 255));
+                         livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.THUNDER_POISONING, 1000, 255));
+                         livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1000, 255));
+                         livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.ANTIGLITCHSTER, 1000, 255));
+                         livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1000, 255));
+                         livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.ANTI_CORRUPTED_GLITCHSTER, 1000, 255));
+                         livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1000, 255));
+                         livingEntity.removeStatusEffect(ModEffects.GLITCHSTERX);
                          overDose = 0;
+                     } else {
+                         livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.GLITCHSTERX, 450));
+                         livingEntity.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
+                         livingEntity.removeStatusEffect(ModEffects.ANTI_CORRUPTED_GLITCHSTER);
+                         overDose = random.nextInt(200);
                      }
                 }
             }
