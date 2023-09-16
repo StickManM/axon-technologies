@@ -9,12 +9,12 @@ import software.bernie.geckolib.model.GeoModel;
 public class RedThunderaniumArmorModel extends GeoModel<RedThunderaniumArmorItem>{
     @Override
     public Identifier getModelResource(RedThunderaniumArmorItem animatable) {
-        return new Identifier(AxonTechnologies.MOD_ID, "geo/armor_test.geo.json");
+        return new Identifier(AxonTechnologies.MOD_ID, "geo/thunderanium_armor.geo.json");
     }
 
     @Override
     public Identifier getTextureResource(RedThunderaniumArmorItem animatable) {
-        return new Identifier(AxonTechnologies.MOD_ID, "textures/armor/armor_test.png");
+        return new Identifier(AxonTechnologies.MOD_ID, "textures/armor/red_thunderanium_armor.png");
     }
 
     @Override

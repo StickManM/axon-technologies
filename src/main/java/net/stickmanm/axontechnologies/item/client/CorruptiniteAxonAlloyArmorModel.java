@@ -9,12 +9,12 @@ import software.bernie.geckolib.model.GeoModel;
 public class CorruptiniteAxonAlloyArmorModel extends GeoModel<CorruptiniteAxonAlloyArmorItem>{
     @Override
     public Identifier getModelResource(CorruptiniteAxonAlloyArmorItem animatable) {
-        return new Identifier(AxonTechnologies.MOD_ID, "geo/armor_test.geo.json");
+        return new Identifier(AxonTechnologies.MOD_ID, "geo/thunderanium_armor.geo.json");
     }
 
     @Override
     public Identifier getTextureResource(CorruptiniteAxonAlloyArmorItem animatable) {
-        return new Identifier(AxonTechnologies.MOD_ID, "textures/armor/armor_test.png");
+        return new Identifier(AxonTechnologies.MOD_ID, "textures/armor/axon_alloy_armor.png");
     }
 
     @Override
