@@ -26,6 +26,8 @@ public class ModDimensionFeatures {
     public static final RegistryKey<PlacedFeature> THUNDERANIUM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"thunderanium_ore"));
     public static final RegistryKey<PlacedFeature> FAKESTONE_IRON_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"fakestone_iron_ore"));
     public static final RegistryKey<PlacedFeature> FAKESTONE_GOLD_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"fakestone_gold_ore"));
+    public static final RegistryKey<PlacedFeature> FAKESLATE_IRON_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"fakeslate_iron_ore"));
+    public static final RegistryKey<PlacedFeature> FAKESLATE_GOLD_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"fakeslate_gold_ore"));
 
 
     public static final RegistryKey<PlacedFeature> VOIDSTONE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"voidstone"));
@@ -44,9 +46,26 @@ public class ModDimensionFeatures {
         BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, ORE_LIQUID_THUNDER_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, CORRUPTION_BLOCK_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIMIC_PLAINS_KEY), GenerationStep.Feature.UNDERGROUND_ORES, VOIDSTONE_PLACED_KEY);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIMIC_PLAINS_KEY), GenerationStep.Feature.UNDERGROUND_ORES, FAKESTONE_IRON_ORE_PLACED_KEY);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIMIC_PLAINS_KEY), GenerationStep.Feature.UNDERGROUND_ORES, FAKESTONE_GOLD_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIMIC_PLAINS_KEY,
+                        ModBiomes.MIMIC_FOREST_KEY, ModBiomes.MIMIC_DESERT_KEY, ModBiomes.MIMIC_SWAMP_KEY, ModBiomes.MIMIC_TAIGA_KEY, ModBiomes.MIMIC_SNOWY_TAIGA_KEY, ModBiomes.MIMIC_BAMBOO_JUNGLE_KEY),
+                GenerationStep.Feature.UNDERGROUND_ORES, VOIDSTONE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIMIC_PLAINS_KEY,
+                        ModBiomes.MIMIC_FOREST_KEY, ModBiomes.MIMIC_DESERT_KEY, ModBiomes.MIMIC_SWAMP_KEY, ModBiomes.MIMIC_TAIGA_KEY, ModBiomes.MIMIC_SNOWY_TAIGA_KEY, ModBiomes.MIMIC_BAMBOO_JUNGLE_KEY),
+                GenerationStep.Feature.UNDERGROUND_ORES, FAKESTONE_IRON_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIMIC_PLAINS_KEY,
+                        ModBiomes.MIMIC_FOREST_KEY, ModBiomes.MIMIC_DESERT_KEY, ModBiomes.MIMIC_SWAMP_KEY, ModBiomes.MIMIC_TAIGA_KEY, ModBiomes.MIMIC_SNOWY_TAIGA_KEY, ModBiomes.MIMIC_BAMBOO_JUNGLE_KEY),
+                GenerationStep.Feature.UNDERGROUND_ORES, FAKESTONE_GOLD_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIMIC_PLAINS_KEY,
+                        ModBiomes.MIMIC_FOREST_KEY, ModBiomes.MIMIC_DESERT_KEY, ModBiomes.MIMIC_SWAMP_KEY, ModBiomes.MIMIC_TAIGA_KEY, ModBiomes.MIMIC_SNOWY_TAIGA_KEY, ModBiomes.MIMIC_BAMBOO_JUNGLE_KEY),
+                GenerationStep.Feature.UNDERGROUND_ORES, FAKESLATE_GOLD_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIMIC_PLAINS_KEY,
+                        ModBiomes.MIMIC_FOREST_KEY, ModBiomes.MIMIC_DESERT_KEY, ModBiomes.MIMIC_SWAMP_KEY, ModBiomes.MIMIC_TAIGA_KEY, ModBiomes.MIMIC_SNOWY_TAIGA_KEY, ModBiomes.MIMIC_BAMBOO_JUNGLE_KEY),
+                GenerationStep.Feature.UNDERGROUND_ORES, FAKESLATE_IRON_ORE_PLACED_KEY);
+
         BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, CORRUPTINITE_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.all(), GenerationStep.Feature.UNDERGROUND_ORES, ORE_CORRUPTIONLANDS_LAVA_PLACED_KEY);
 

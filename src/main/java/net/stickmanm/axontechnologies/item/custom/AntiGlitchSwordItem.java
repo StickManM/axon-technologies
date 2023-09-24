@@ -19,7 +19,7 @@ public class AntiGlitchSwordItem extends SwordItem {
                 target.hasStatusEffect(ModEffects.GLITCHSTERIII)||
                 target.hasStatusEffect(ModEffects.GLITCHSTERIV) ||
                 target.hasStatusEffect(ModEffects.GLITCHSTERV)) {
-            target.addStatusEffect(new StatusEffectInstance(ModEffects.ANTIGLITCHSTER, 900, 2));
+            target.addStatusEffect(new StatusEffectInstance(ModEffects.ANTIGLITCHSTER, 900, 0));
         } else if (target.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTER) ||
                 target.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTERII) ||
                 target.hasStatusEffect(ModEffects.CORRUPTED_GLITCHSTERIII)) {

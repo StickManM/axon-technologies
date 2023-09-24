@@ -9,6 +9,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.stickmanm.axontechnologies.AxonTechnologies;
@@ -32,6 +33,14 @@ public class ModBlocks {
 
     public static final Block FAKESTONE_GOLD_ORE = registerBlock("fakestone_gold_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GOLD_ORE).requiresTool(),
+                    UniformIntProvider.create(3, 7)));
+
+    public static final Block FAKESLATE_IRON_ORE = registerBlock("fakeslate_iron_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE).requiresTool(),
+                    UniformIntProvider.create(3, 7)));
+
+    public static final Block FAKESLATE_GOLD_ORE = registerBlock("fakeslate_gold_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE).requiresTool(),
                     UniformIntProvider.create(3, 7)));
 
     //Thundered Tree
@@ -69,7 +78,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.4f).requiresTool()));
 
     public static final Block REINFORCED_DREADSTONE = registerBlock("reinforced_dreadstone",
-            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().luminance(15)));
+            new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
 
     public static final Block DREADSTONE_DIAMOND_ORE = registerBlock("dreadstone_diamond_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool(),

@@ -137,6 +137,8 @@
   "block.axontechnologies.deepslate_mimicarium_ore": "Deepslate Mimicarium Ore",
   "block.axontechnologies.fakestone_iron_ore": "Fakestone Iron Ore",
   "block.axontechnologies.fakestone_gold_ore": "Fakestone Gold Ore",
+  "block.axontechnologies.fakeslate_iron_ore": "Fakeslate Iron Ore",
+  "block.axontechnologies.fakeslate_gold_ore": "Fakeslate Gold Ore",
   "block.axontechnologies.thunderanium_ore": "Thunderanium Ore",
   "block.axontechnologies.corruptinite_ore": "Corruptinite Ore",
 
@@ -231,13 +233,13 @@
   "advancement.axontechnologies.get_axon_alloy.description": "Create Axon Alloy.",
 
   "advancement.axontechnologies.get_dark_thunderanium_axon_alloy_armor.title": "I Am the Fastest Glitchster Alive!",
-  "advancement.axontechnologies.get_dark_thunderanium_axon_alloy_armor.description": "Get a full set of Axon Alloy Armor (G).",
+  "advancement.axontechnologies.get_dark_thunderanium_axon_alloy_armor.description": "Get a full set of Axon Alloy Armor Type G.",
 
   "advancement.axontechnologies.get_corruptinite_axon_alloy_armor.title": "The Darkness Evolves!",
-  "advancement.axontechnologies.get_corruptinite_axon_alloy_armor.description": "Get a full set of Axon Alloy Armor (C).",
+  "advancement.axontechnologies.get_corruptinite_axon_alloy_armor.description": "Get a full set of Axon Alloy Armor Type C.",
 
   "advancement.axontechnologies.get_axon_alloy_armor.title": "No... You Can't Do That!",
-  "advancement.axontechnologies.get_axon_alloy_armor.description": "Get a full set of Axon Alloy Armor (A).",
+  "advancement.axontechnologies.get_axon_alloy_armor.description": "Get a full set of Axon Alloy Armor Type A.",
 
   "advancement.axontechnologies.get_ultimate_hoe_trophy.title": "Seriously? What is Wrong With You?",
   "advancement.axontechnologies.get_ultimate_hoe_trophy.description": "Get the Ultimate Hoe Trophy",

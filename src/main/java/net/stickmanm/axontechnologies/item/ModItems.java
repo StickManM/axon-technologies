@@ -286,7 +286,7 @@ public class ModItems {
 
     //Axon Allot G
     public static final Item DARK_THUNDERANIUM_AXON_ALLOY_SWORD = registerItem("dark_thunderanium_axon_alloy_sword",
-            new ModSwordItem(ModToolMaterials.DARK_THUNDERANIUM_AXON_ALLOY, 6,-2f,
+            new DarkThunderaniumSwordItem(ModToolMaterials.DARK_THUNDERANIUM_AXON_ALLOY, 6,-2f,
                     new FabricItemSettings().fireproof()));
     public static final Item DARK_THUNDERANIUM_AXON_ALLOY_AXE = registerItem("dark_thunderanium_axon_alloy_axe",
             new ModAxeItem(ModToolMaterials.DARK_THUNDERANIUM_AXON_ALLOY, 9,-3.9f,
@@ -303,7 +303,7 @@ public class ModItems {
 
     //Axon Alloy C
     public static final Item CORRUPTINITE_AXON_ALLOY_SWORD = registerItem("corruptinite_axon_alloy_sword",
-            new ModSwordItem(ModToolMaterials.CORRUPTINITE_AXON_ALLOY, 6,-2f,
+            new CorruptiniteSwordItem(ModToolMaterials.CORRUPTINITE_AXON_ALLOY, 6,-2f,
                     new FabricItemSettings().fireproof()));
     public static final Item CORRUPTINITE_AXON_ALLOY_AXE = registerItem("corruptinite_axon_alloy_axe",
             new ModAxeItem(ModToolMaterials.CORRUPTINITE_AXON_ALLOY, 9,-3.9f,
@@ -319,7 +319,7 @@ public class ModItems {
                     new FabricItemSettings().fireproof()));
     //Axon Alloy A
     public static final Item AXON_ALLOY_SWORD = registerItem("axon_alloy_sword",
-            new ModSwordItem(ModToolMaterials.CORRUPTINITE_AXON_ALLOY, 6,-2f,
+            new AxonAlloySwordItem(ModToolMaterials.CORRUPTINITE_AXON_ALLOY, 6,-2f,
                     new FabricItemSettings().fireproof()));
     public static final Item AXON_ALLOY_AXE = registerItem("axon_alloy_axe",
             new ModAxeItem(ModToolMaterials.CORRUPTINITE_AXON_ALLOY, 9,-3.9f,

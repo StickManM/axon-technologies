@@ -21,6 +21,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MIMICARIUM_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FAKESTONE_IRON_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FAKESTONE_GOLD_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FAKESLATE_IRON_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FAKESLATE_GOLD_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THUNDERANIUM_ORE);
 
 
