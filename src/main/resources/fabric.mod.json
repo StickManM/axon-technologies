@@ -3,14 +3,14 @@
 	"id": "axontechnologies",
 	"version": "${version}",
 	"name": "Axon T.e.c.h.n.o.l.o.g.i.e.s.",
-	"description": "This mod adds new ores, armor with their own tool types, status effects, dimensions, and more. It is currently still being developed, so bugs are expected.",
+	"description": "Axon T.e.c.h.n.o.l.o.g.i.e.s., Also referred as Axon Technologies or axontechnologies adds new ores, armor with their own tool types, status effects, mobs, dimensions, and more. It is currently still being developed, so bugs may occur.",
 	"authors": [
 		"StickManM"
-
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/axontechnologies",
-		"sources": "https://github.com/StickManM/axontechnologies"
+		"sources": "https://github.com/StickManM/axontechnologies",
+		"issues": "https://github.com/StickManM/axontechnologies/issues"
 	},
 	"license": "LGPL-3.0-only",
 	"icon": "assets/axontechnologies/icon.png",

@@ -39,6 +39,7 @@ public class ModModelProvider extends FabricModelProvider {
         //Dreadstone and Dreadstone Ores
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REINFORCED_DREADSTONE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REINFORCED_DREADSTONE_GLASS);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_DIAMOND_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_THUNDERANIUM_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_NETHERITE_ORE);

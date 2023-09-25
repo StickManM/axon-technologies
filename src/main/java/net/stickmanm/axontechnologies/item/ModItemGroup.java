@@ -168,6 +168,7 @@ public class ModItemGroup {
 
                         entries.add(ModBlocks.DREADSTONE);
                         entries.add(ModBlocks.REINFORCED_DREADSTONE);
+                        entries.add(ModBlocks.REINFORCED_DREADSTONE_GLASS);
                         entries.add(ModBlocks.DREADSTONE_DIAMOND_ORE);
                         entries.add(ModBlocks.DREADSTONE_THUNDERANIUM_ORE);
                         entries.add(ModBlocks.DREADSTONE_NETHERITE_ORE);

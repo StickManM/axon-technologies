@@ -3,13 +3,16 @@ package net.stickmanm.axontechnologies.data;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.GlassBlock;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.stickmanm.axontechnologies.block.ModBlocks;
 import net.stickmanm.axontechnologies.item.ModItems;
@@ -279,6 +282,16 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.DREADSTONE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.REINFORCED_DREADSTONE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.REINFORCED_DREADSTONE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.REINFORCED_DREADSTONE_GLASS)
+                .pattern("G#G")
+                .pattern("#G#")
+                .pattern("G#G")
+                .input('#', ModBlocks.REINFORCED_DREADSTONE)
+                .input('G', Blocks.GLASS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.REINFORCED_DREADSTONE),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.REINFORCED_DREADSTONE_GLASS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.REINFORCED_DREADSTONE_GLASS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY)
                 .pattern("RES")
