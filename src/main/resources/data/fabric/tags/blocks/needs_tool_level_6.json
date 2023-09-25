@@ -4,6 +4,8 @@
     "axontechnologies:corruptinite_ore",
     "axontechnologies:corruption_portal_frame",
     "axontechnologies:corruption_block",
-    "axontechnologies:reinforced_dreadstone"
+    "axontechnologies:reinforced_dreadstone",
+    "axontechnologies:reinforced_dreadstone_glass",
+    "axontechnologies:reinforced_dreadstone_door"
   ]
 }

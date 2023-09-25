@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.BlockTags;
@@ -105,6 +106,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         offerBlasting(exporter, List.of(Blocks.NETHER_BRICKS), RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_NETHER_BRICKS,
                 5f, 100, "cracked");
+
+        //Door
+        createDoorRecipe(ModBlocks.REINFORCED_DREADSTONE_DOOR, Ingredient.ofItems(ModBlocks.REINFORCED_DREADSTONE))
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.REINFORCED_DREADSTONE),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.REINFORCED_DREADSTONE_DOOR))
+        .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.REINFORCED_DREADSTONE_DOOR)));
 
         //CRAFTING +
         ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, Items.HOPPER)
@@ -292,6 +299,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.REINFORCED_DREADSTONE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.REINFORCED_DREADSTONE_GLASS))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.REINFORCED_DREADSTONE_GLASS)));
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AXON_ALLOY)
                 .pattern("RES")

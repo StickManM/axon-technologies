@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-24T20:13:52.2715778	Axon T.e.c.h.n.o.l.o.g.i.e.s./Recipes
+// 1.20.1	2023-09-25T18:28:32.3421709	Axon T.e.c.h.n.o.l.o.g.i.e.s./Recipes
 94600d9d2327b6becc980e2d44a29de849462694 data\axontechnologies\advancements\recipes\misc\dark_thunderanium_helmet.json
 91c6ecf48457cad5b4a0d638cf23681bbd06dbee data\axontechnologies\recipes\axon_alloy_helmet.json
 280ace8101b4a5a2715456e23f8a3ea328aa8c62 data\axontechnologies\recipes\double_compressed_stick.json
@@ -47,6 +47,7 @@ a72d5b1cc3ac6fd7b941679e8face7d1cd733fd5 data\axontechnologies\recipes\dark_thun
 8db21ebe9b5d482c7822b3deb7babe33829b9588 data\axontechnologies\advancements\recipes\misc\quadruple_compressed_stick.json
 9f14a2112c95cae9a349f8245063ca147b185442 data\axontechnologies\advancements\recipes\misc\corruptinite.json
 e7a9e73f62132ef8cc752ce5a81ac56d170e65d1 data\axontechnologies\recipes\corruptinite_axe.json
+3e29386d4a6c680eec956eb1c212a437ca6e403b data\axontechnologies\advancements\recipes\redstone\reinforced_dreadstone_door.json
 464e00f47a28705b1c1418d9aaff346ad90b3f6f data\axontechnologies\recipes\thunderanium_pickaxe.json
 33e741042a1fae2ec00660c5ab633a7e66af3f2f data\axontechnologies\advancements\recipes\building_blocks\cracked_deepslate_tiles_from_blasting_deepslate_tiles.json
 739377ea8c875187b27ef41bfd43741a173d544b data\axontechnologies\advancements\recipes\misc\mimicarium_portal_frame.json
@@ -150,6 +151,7 @@ dcbf1aeee9777d2cef8dfb6c0a1d8c6d5f199643 data\axontechnologies\recipes\thunderan
 91f013caf1e32775698c8ef158dfc789b60283da data\axontechnologies\recipes\axon_alloy_leggings.json
 01279419b9787ee7b834497bdf4f6f4ab0747137 data\axontechnologies\advancements\recipes\misc\thunderanium_chestplate.json
 c7d51a45e5a8588be44cc23f9cc3d38b58438b43 data\axontechnologies\recipes\red_thunderanium_chestplate.json
+715c8effe89b1154541fe00feaddbe04f37ff2e0 data\axontechnologies\recipes\reinforced_dreadstone_door.json
 9ae638290184b308691260d524d16169690273b8 data\axontechnologies\advancements\recipes\misc\reinforced_dreadstone_glass.json
 dfd3e2090ef8a490703816404cbcb9666e275c35 data\axontechnologies\advancements\recipes\misc\thunderanium_ingot_from_blasting_thunderanium_cluster.json
 096f1f99e94fae3f0cf23831dfd7963b0c5a7acc data\axontechnologies\recipes\corruption_portal_frame.json
