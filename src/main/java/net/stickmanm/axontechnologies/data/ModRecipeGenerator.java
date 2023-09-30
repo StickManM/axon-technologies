@@ -7,6 +7,7 @@ import net.minecraft.block.GlassBlock;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.SmeltingRecipe;
@@ -107,11 +108,38 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerBlasting(exporter, List.of(Blocks.NETHER_BRICKS), RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_NETHER_BRICKS,
                 5f, 100, "cracked");
 
-        //Door
+        //Reinforced Dreadstone Recipes
         createDoorRecipe(ModBlocks.REINFORCED_DREADSTONE_DOOR, Ingredient.ofItems(ModBlocks.REINFORCED_DREADSTONE))
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.REINFORCED_DREADSTONE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.REINFORCED_DREADSTONE_DOOR))
         .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.REINFORCED_DREADSTONE_DOOR)));
+
+        createTrapdoorRecipe(ModBlocks.REINFORCED_DREADSTONE_TRAPDOOR, Ingredient.ofItems(ModBlocks.REINFORCED_DREADSTONE))
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.REINFORCED_DREADSTONE),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.REINFORCED_DREADSTONE_TRAPDOOR))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.REINFORCED_DREADSTONE_TRAPDOOR)));
+
+        createStairsRecipe(ModBlocks.REINFORCED_DREADSTONE_STAIRS, Ingredient.ofItems(ModBlocks.REINFORCED_DREADSTONE))
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.REINFORCED_DREADSTONE),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.REINFORCED_DREADSTONE_STAIRS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.REINFORCED_DREADSTONE_STAIRS)));
+
+
+        createSlabRecipe(RecipeCategory.MISC, ModBlocks.REINFORCED_DREADSTONE_SLAB, Ingredient.ofItems(ModBlocks.REINFORCED_DREADSTONE_SLAB))
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.REINFORCED_DREADSTONE),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.REINFORCED_DREADSTONE_SLAB))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.REINFORCED_DREADSTONE_SLAB)));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.REINFORCED_DREADSTONE_WALL, 6)
+                .pattern("# #")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModBlocks.REINFORCED_DREADSTONE)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.REINFORCED_DREADSTONE),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.REINFORCED_DREADSTONE_WALL))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.REINFORCED_DREADSTONE_WALL)));
+
 
         //CRAFTING +
         ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, Items.HOPPER)
@@ -329,7 +357,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TICKLE_TRAVIS_TICKLER)));
 
         //Fuels
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDER_FUEL)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THUNDER_FUEL, 2)
                 .input(ModItems.THUNDERANIUM_INGOT)
                 .input(ModBlocks.VOID_COAL_BLOCK)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.THUNDERANIUM_INGOT),
@@ -346,52 +374,20 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.VOID_COAL_BLOCK)));
 
         //Compressed Sticks
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COMPRESSED_STICK)
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .input('#', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.COMPRESSED_STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.COMPRESSED_STICK)));
-
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DOUBLE_COMPRESSED_STICK)
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .input('#', ModItems.COMPRESSED_STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.COMPRESSED_STICK),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.DOUBLE_COMPRESSED_STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DOUBLE_COMPRESSED_STICK)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TRIPLE_COMPRESSED_STICK)
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .input('#', ModItems.DOUBLE_COMPRESSED_STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.DOUBLE_COMPRESSED_STICK),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.TRIPLE_COMPRESSED_STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TRIPLE_COMPRESSED_STICK)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.QUADRUPLE_COMPRESSED_STICK)
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .input('#', ModItems.TRIPLE_COMPRESSED_STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.TRIPLE_COMPRESSED_STICK),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.QUADRUPLE_COMPRESSED_STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.QUADRUPLE_COMPRESSED_STICK)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.QUINTUPLE_COMPRESSED_STICK)
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .input('#', ModItems.QUADRUPLE_COMPRESSED_STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.QUADRUPLE_COMPRESSED_STICK),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.QUINTUPLE_COMPRESSED_STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.QUINTUPLE_COMPRESSED_STICK)));
-
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.COMPRESSED_STICK, Items.STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.DOUBLE_COMPRESSED_STICK, ModItems.COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.TRIPLE_COMPRESSED_STICK,  ModItems.DOUBLE_COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.QUADRUPLE_COMPRESSED_STICK,  ModItems.TRIPLE_COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.QUINTUPLE_COMPRESSED_STICK,  ModItems.QUADRUPLE_COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.SEXTUPLE_COMPRESSED_STICK,  ModItems.QUINTUPLE_COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.SEPTUPLE_COMPRESSED_STICK,  ModItems.SEXTUPLE_COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.OCTUPLE_COMPRESSED_STICK,  ModItems.SEPTUPLE_COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.NONUPLE_COMPRESSED_STICK,  ModItems.OCTUPLE_COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.DECUPLE_COMPRESSED_STICK,  ModItems.NONUPLE_COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.UNDECUPLE_COMPRESSED_STICK,  ModItems.DECUPLE_COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.DUODECUPLE_COMPRESSED_STICK,  ModItems.UNDECUPLE_COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.TREDECUPLE_COMPRESSED_STICK,  ModItems.DUODECUPLE_COMPRESSED_STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.QUATTUORDECUPLE_COMPRESSED_STICK,  ModItems.TREDECUPLE_COMPRESSED_STICK);
 
         //Armor
 

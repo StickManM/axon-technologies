@@ -14,7 +14,7 @@ import software.bernie.geckolib.model.data.EntityModelData;
 public class DarkEssenceZombieModel extends GeoModel<DarkEssenceZombieEntity> {
     @Override
     public Identifier getModelResource(DarkEssenceZombieEntity animatable) {
-        return new Identifier(AxonTechnologies.MOD_ID,"geo/red_essence_zombie.geo.json");
+        return new Identifier(AxonTechnologies.MOD_ID,"geo/dark_essence_zombie.geo.json");
     }
 
     @Override

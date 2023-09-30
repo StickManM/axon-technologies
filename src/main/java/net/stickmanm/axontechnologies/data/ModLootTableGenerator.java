@@ -38,8 +38,12 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         //Dreadstone and Dreadstone Ores
         addDrop(ModBlocks.DREADSTONE);
         addDrop(ModBlocks.REINFORCED_DREADSTONE);
+        addDrop(ModBlocks.REINFORCED_DREADSTONE_STAIRS);
+        addDrop(ModBlocks.REINFORCED_DREADSTONE_WALL);
+        addDrop(ModBlocks.REINFORCED_DREADSTONE_TRAPDOOR);
         addDrop(ModBlocks.REINFORCED_DREADSTONE_GLASS);
         addDrop(ModBlocks.REINFORCED_DREADSTONE_DOOR, doorDrops(ModBlocks.REINFORCED_DREADSTONE_DOOR));
+        addDrop(ModBlocks.REINFORCED_DREADSTONE_TRAPDOOR, slabDrops(ModBlocks.REINFORCED_DREADSTONE_TRAPDOOR));
         addDrop(ModBlocks.DREADSTONE_DIAMOND_ORE,oreDrops(ModBlocks.DREADSTONE_DIAMOND_ORE, Items.DIAMOND));
         addDrop(ModBlocks.DREADSTONE_THUNDERANIUM_ORE,oreDrops(ModBlocks.DREADSTONE_THUNDERANIUM_ORE, ModItems.RAW_THUNDERANIUM));
         addDrop(ModBlocks.DREADSTONE_NETHERITE_ORE,oreDrops(ModBlocks.DREADSTONE_NETHERITE_ORE, ModItems.RAW_NETHERITE));

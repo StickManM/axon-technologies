@@ -38,14 +38,20 @@ public class ModModelProvider extends FabricModelProvider {
 
         //Dreadstone and Dreadstone Ores
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REINFORCED_DREADSTONE);
+        BlockStateModelGenerator.BlockTexturePool reinforcedDreadstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REINFORCED_DREADSTONE);
         blockStateModelGenerator.registerDoor(ModBlocks.REINFORCED_DREADSTONE_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.REINFORCED_DREADSTONE_TRAPDOOR);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REINFORCED_DREADSTONE_GLASS);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_DIAMOND_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_THUNDERANIUM_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DREADSTONE_NETHERITE_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOID_COAL_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOID_COAL_BLOCK);
+
+        //Reinforced Dreadstone
+        reinforcedDreadstonePool.wall(ModBlocks.REINFORCED_DREADSTONE_WALL);
+        reinforcedDreadstonePool.stairs(ModBlocks.REINFORCED_DREADSTONE_STAIRS);
+        reinforcedDreadstonePool.slab(ModBlocks.REINFORCED_DREADSTONE_SLAB);
 
         //MISC
 
@@ -68,6 +74,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         //SPAWN EGGS
         blockStateModelGenerator.registerParentedItemModel(ModItems.RED_ESSENCE_ZOMBIE_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
+        blockStateModelGenerator.registerParentedItemModel(ModItems.GENETICALLY_MODIFIED_RED_ESSENCE_ZOMBIE_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
         blockStateModelGenerator.registerParentedItemModel(ModItems.DARK_ESSENCE_ZOMBIE_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
         blockStateModelGenerator.registerParentedItemModel(ModItems.LOST_MINER_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
 
@@ -101,6 +108,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TRIPLE_COMPRESSED_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.QUADRUPLE_COMPRESSED_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.QUINTUPLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SEXTUPLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SEPTUPLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OCTUPLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NONUPLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DECUPLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNDECUPLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DUODECUPLE_COMPRESSED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TREDECUPLE_COMPRESSED_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.QUATTUORDECUPLE_COMPRESSED_STICK, Models.GENERATED);
 
         //Thunderanium

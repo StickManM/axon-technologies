@@ -42,6 +42,7 @@ public class ModItemGroup {
 
 
                         entries.add(ModItems.RED_ESSENCE_ZOMBIE_SPAWN_EGG);
+                        entries.add(ModItems.GENETICALLY_MODIFIED_RED_ESSENCE_ZOMBIE_SPAWN_EGG);
                         entries.add(ModItems.DARK_ESSENCE_ZOMBIE_SPAWN_EGG);
                         entries.add(ModItems.LOST_MINER_SPAWN_EGG);
 
@@ -140,7 +141,14 @@ public class ModItemGroup {
                         entries.add(ModItems.TRIPLE_COMPRESSED_STICK);
                         entries.add(ModItems.QUADRUPLE_COMPRESSED_STICK);
                         entries.add(ModItems.QUINTUPLE_COMPRESSED_STICK);
-
+                        entries.add(ModItems.SEXTUPLE_COMPRESSED_STICK);
+                        entries.add(ModItems.SEPTUPLE_COMPRESSED_STICK);
+                        entries.add(ModItems.OCTUPLE_COMPRESSED_STICK);
+                        entries.add(ModItems.NONUPLE_COMPRESSED_STICK);
+                        entries.add(ModItems.DECUPLE_COMPRESSED_STICK);
+                        entries.add(ModItems.UNDECUPLE_COMPRESSED_STICK);
+                        entries.add(ModItems.DUODECUPLE_COMPRESSED_STICK);
+                        entries.add(ModItems.TREDECUPLE_COMPRESSED_STICK);
                         entries.add(ModItems.QUATTUORDECUPLE_COMPRESSED_STICK);
 
 
@@ -168,7 +176,11 @@ public class ModItemGroup {
 
                         entries.add(ModBlocks.DREADSTONE);
                         entries.add(ModBlocks.REINFORCED_DREADSTONE);
+                        entries.add(ModBlocks.REINFORCED_DREADSTONE_SLAB);
+                        entries.add(ModBlocks.REINFORCED_DREADSTONE_STAIRS);
+                        entries.add(ModBlocks.REINFORCED_DREADSTONE_WALL);
                         entries.add(ModBlocks.REINFORCED_DREADSTONE_DOOR);
+                        entries.add(ModBlocks.REINFORCED_DREADSTONE_TRAPDOOR);
                         entries.add(ModBlocks.REINFORCED_DREADSTONE_GLASS);
                         entries.add(ModBlocks.DREADSTONE_DIAMOND_ORE);
                         entries.add(ModBlocks.DREADSTONE_THUNDERANIUM_ORE);

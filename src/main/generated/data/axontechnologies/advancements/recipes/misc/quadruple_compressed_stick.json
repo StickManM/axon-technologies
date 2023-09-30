@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:quadruple_compressed_stick"
+        "recipe": "axontechnologies:quadruple_compressed_stick"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -12,7 +12,7 @@
         "items": [
           {
             "items": [
-              "axontechnologies:quadruple_compressed_stick"
+              "axontechnologies:triple_compressed_stick"
             ]
           }
         ]
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:quadruple_compressed_stick"
+      "axontechnologies:quadruple_compressed_stick"
     ]
   },
   "sends_telemetry_event": false

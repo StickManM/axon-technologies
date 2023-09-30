@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "axontechnologies:compressed_stick"
+              "minecraft:stick"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:compressed_stick"
+        "recipe": "axontechnologies:compressed_stick"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:compressed_stick"
+      "axontechnologies:compressed_stick"
     ]
   },
   "sends_telemetry_event": false

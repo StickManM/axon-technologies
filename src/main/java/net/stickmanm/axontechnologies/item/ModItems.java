@@ -83,6 +83,29 @@ public class ModItems {
     public static final Item QUINTUPLE_COMPRESSED_STICK = registerItem("quintuple_compressed_stick",
             new CompressedStickItem(new FabricItemSettings().fireproof()));
 
+    public static final Item SEXTUPLE_COMPRESSED_STICK = registerItem("sextuple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings().fireproof()));
+
+    public static final Item SEPTUPLE_COMPRESSED_STICK = registerItem("septuple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings().fireproof()));
+
+    public static final Item OCTUPLE_COMPRESSED_STICK = registerItem("octuple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings().fireproof()));
+
+    public static final Item NONUPLE_COMPRESSED_STICK = registerItem("nonuple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings().fireproof()));
+
+    public static final Item DECUPLE_COMPRESSED_STICK = registerItem("decuple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings().fireproof()));
+
+    public static final Item UNDECUPLE_COMPRESSED_STICK = registerItem("undecuple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings().fireproof()));
+
+    public static final Item DUODECUPLE_COMPRESSED_STICK = registerItem("duodecuple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings().fireproof()));
+
+    public static final Item TREDECUPLE_COMPRESSED_STICK = registerItem("tredecuple_compressed_stick",
+            new CompressedStickItem(new FabricItemSettings().fireproof()));
 
     public static final Item QUATTUORDECUPLE_COMPRESSED_STICK = registerItem("quattuordecuple_compressed_stick",
             new CompressedStickItem(new FabricItemSettings().fireproof()));
@@ -95,6 +118,10 @@ public class ModItems {
     //SPAWN EGGS
     public static final Item RED_ESSENCE_ZOMBIE_SPAWN_EGG = registerItem("red_essence_zombie_spawn_egg",
             new SpawnEggItem(ModEntities.RED_ESSENCE_ZOMBIE, 0xFF0000, 0x000000,
+                    new FabricItemSettings()));
+
+    public static final Item GENETICALLY_MODIFIED_RED_ESSENCE_ZOMBIE_SPAWN_EGG = registerItem("genetically_modified_red_essence_zombie_spawn_egg",
+            new SpawnEggItem(ModEntities.GENETICALLY_MODIFIED_RED_ESSENCE_ZOMBIE, 0xFF0000, 0x00FF00,
                     new FabricItemSettings()));
 
     public static final Item DARK_ESSENCE_ZOMBIE_SPAWN_EGG = registerItem("dark_essence_zombie_spawn_egg",

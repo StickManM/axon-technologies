@@ -30,7 +30,14 @@
   "item.axontechnologies.triple_compressed_stick": "Triple Compressed Stick",
   "item.axontechnologies.quadruple_compressed_stick": "Quadruple Compressed Stick",
   "item.axontechnologies.quintuple_compressed_stick": "Quintuple Compressed Stick",
-
+  "item.axontechnologies.sextuple_compressed_stick": "Sextuple Compressed Stick",
+  "item.axontechnologies.septuple_compressed_stick": "Septuple Compressed Stick",
+  "item.axontechnologies.octuple_compressed_stick": "Octuple Compressed Stick",
+  "item.axontechnologies.nonuple_compressed_stick": "Nonuple Compressed Stick",
+  "item.axontechnologies.decuple_compressed_stick": "Decuple Compressed Stick",
+  "item.axontechnologies.undecuple_compressed_stick": "Undecuple Compressed Stick",
+  "item.axontechnologies.duodecuple_compressed_stick": "Duodecuple Compressed Stick",
+  "item.axontechnologies.tredecuple_compressed_stick": "Tredecuple Compressed Stick",
   "item.axontechnologies.quattuordecuple_compressed_stick": "Quattuordecuple Compressed Stick",
 
   "item.axontechnologies.mimicarium_igniter": "Flint N' Mimicarium",
@@ -88,6 +95,7 @@
   "item.axontechnologies.axon_alloy_boots": "Axon Alloy Boots Type A",
 
   "item.axontechnologies.red_essence_zombie_spawn_egg": "Red Essence Zombie Spawn Egg",
+  "item.axontechnologies.genetically_modified_red_essence_zombie_spawn_egg": "Genetically Modified Red Essence Zombie Spawn Egg",
   "item.axontechnologies.dark_essence_zombie_spawn_egg": "Dark Essence Zombie Spawn Egg",
   "item.axontechnologies.lost_miner_spawn_egg": "Lost Miner Spawn Egg",
 
@@ -144,7 +152,11 @@
 
   "block.axontechnologies.dreadstone": "Dreadstone",
   "block.axontechnologies.reinforced_dreadstone": "Reinforced Dreadstone",
+  "block.axontechnologies.reinforced_dreadstone_wall": "Reinforced Dreadstone Wall",
+  "block.axontechnologies.reinforced_dreadstone_stairs": "Reinforced Dreadstone Stairs",
+  "block.axontechnologies.reinforced_dreadstone_slab": "Reinforced Dreadstone Slab",
   "block.axontechnologies.reinforced_dreadstone_door": "Reinforced Dreadstone Door",
+  "block.axontechnologies.reinforced_dreadstone_trapdoor": "Reinforced Dreadstone Trapdoor",
   "block.axontechnologies.reinforced_dreadstone_glass": "Reinforced Dreadstone Glass",
   "block.axontechnologies.void_coal_block": "Block of Void Coal",
 
@@ -195,6 +207,7 @@
   "effect.axontechnologies.anti_corrupted_glitchster": "Glitchster",
 
   "entity.axontechnologies.red_essence_zombie": "Red Essence Zombie",
+  "entity.axontechnologies.genetically_modified_red_essence_zombie": "Genetically Modified Red Essence Zombie",
   "entity.axontechnologies.dark_essence_zombie": "Dark Essence Zombie",
   "entity.axontechnologies.lost_miner": "Lost Miner",
 

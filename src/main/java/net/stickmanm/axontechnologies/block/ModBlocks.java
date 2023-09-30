@@ -78,13 +78,25 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.4f).requiresTool()));
 
     public static final Block REINFORCED_DREADSTONE = registerBlock("reinforced_dreadstone",
-            new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.BEDROCK).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
+
+    public static final Block REINFORCED_DREADSTONE_SLAB = registerBlock("reinforced_dreadstone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK).resistance(-1f).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
+
+    public static final Block REINFORCED_DREADSTONE_STAIRS = registerBlock("reinforced_dreadstone_stairs",
+            new StairsBlock(ModBlocks.REINFORCED_DREADSTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BEDROCK).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
+
+    public static final Block REINFORCED_DREADSTONE_WALL = registerBlock("reinforced_dreadstone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
 
     public static final Block REINFORCED_DREADSTONE_DOOR = registerBlock("reinforced_dreadstone_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE), BlockSetType.CRIMSON));
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE), BlockSetType.CRIMSON));
+
+    public static final Block REINFORCED_DREADSTONE_TRAPDOOR = registerBlock("reinforced_dreadstone_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE), BlockSetType.CRIMSON));
 
     public static final Block REINFORCED_DREADSTONE_GLASS = registerBlock("reinforced_dreadstone_glass",
-            new Block(FabricBlockSettings.copyOf(Blocks.GLASS).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
+            new TransparentBlock(FabricBlockSettings.copyOf(Blocks.GLASS).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
 
     public static final Block DREADSTONE_DIAMOND_ORE = registerBlock("dreadstone_diamond_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool(),
