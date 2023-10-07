@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_liquid_thunder_bucket",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_liquid_thunder_bucket"
     ]
   ],
   "rewards": {

@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_dreadstone_netherite_ore",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_dreadstone_netherite_ore"
     ]
   ],
   "rewards": {

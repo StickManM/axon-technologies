@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_corruptinite",
-      "has_dark_thunderanium_ingot",
-      "has_the_recipe"
+      "has_dark_thunderanium_ingot"
     ]
   ],
   "rewards": {

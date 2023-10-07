@@ -189,31 +189,31 @@ public class ModItems {
             new CorruptiniteArmorItem(ModArmorMaterials.CORRUPTINITE, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
 
     public static final Item CORRUPTINITE_AXON_ALLOY_HELMET = registerItem("corruptinite_axon_alloy_helmet",
-            new CorruptiniteAxonAlloyArmorItem(ModArmorMaterials.CORRUPTINITE_AXON_ALLOY_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
+            new CorruptiniteAxonAlloyArmorItem(ModArmorMaterials.CORRUPTINITE_AXON_ALLOY, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
     public static final Item CORRUPTINITE_AXON_ALLOY_CHESTPLATE = registerItem("corruptinite_axon_alloy_chestplate",
-            new CorruptiniteAxonAlloyArmorItem(ModArmorMaterials.CORRUPTINITE_AXON_ALLOY_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
+            new CorruptiniteAxonAlloyArmorItem(ModArmorMaterials.CORRUPTINITE_AXON_ALLOY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
     public static final Item CORRUPTINITE_AXON_ALLOY_LEGGINGS = registerItem("corruptinite_axon_alloy_leggings",
-            new CorruptiniteAxonAlloyArmorItem(ModArmorMaterials.CORRUPTINITE_AXON_ALLOY_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()));
+            new CorruptiniteAxonAlloyArmorItem(ModArmorMaterials.CORRUPTINITE_AXON_ALLOY, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()));
     public static final Item CORRUPTINITE_AXON_ALLOY_BOOTS = registerItem("corruptinite_axon_alloy_boots",
-            new CorruptiniteAxonAlloyArmorItem(ModArmorMaterials.CORRUPTINITE_AXON_ALLOY_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
+            new CorruptiniteAxonAlloyArmorItem(ModArmorMaterials.CORRUPTINITE_AXON_ALLOY, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
 
     public static final Item DARK_THUNDERANIUM_AXON_ALLOY_HELMET = registerItem("dark_thunderanium_axon_alloy_helmet",
-            new DarkThunderaniumAxonAlloyArmorItem(ModArmorMaterials.DARK_THUNDERANIUM_AXON_ALLOY_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
+            new DarkThunderaniumAxonAlloyArmorItem(ModArmorMaterials.DARK_THUNDERANIUM_AXON_ALLOY, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
     public static final Item DARK_THUNDERANIUM_AXON_ALLOY_CHESTPLATE = registerItem("dark_thunderanium_axon_alloy_chestplate",
-            new DarkThunderaniumAxonAlloyArmorItem(ModArmorMaterials.DARK_THUNDERANIUM_AXON_ALLOY_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
+            new DarkThunderaniumAxonAlloyArmorItem(ModArmorMaterials.DARK_THUNDERANIUM_AXON_ALLOY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
     public static final Item DARK_THUNDERANIUM_AXON_ALLOY_LEGGINGS = registerItem("dark_thunderanium_axon_alloy_leggings",
-            new DarkThunderaniumAxonAlloyArmorItem(ModArmorMaterials.DARK_THUNDERANIUM_AXON_ALLOY_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()));
+            new DarkThunderaniumAxonAlloyArmorItem(ModArmorMaterials.DARK_THUNDERANIUM_AXON_ALLOY, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()));
     public static final Item DARK_THUNDERANIUM_AXON_ALLOY_BOOTS = registerItem("dark_thunderanium_axon_alloy_boots",
-            new DarkThunderaniumAxonAlloyArmorItem(ModArmorMaterials.DARK_THUNDERANIUM_AXON_ALLOY_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
+            new DarkThunderaniumAxonAlloyArmorItem(ModArmorMaterials.DARK_THUNDERANIUM_AXON_ALLOY, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
 
     public static final Item AXON_ALLOY_HELMET = registerItem("axon_alloy_helmet",
-            new AxonAlloyArmorItem(ModArmorMaterials.AXON_ALLOY_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
+            new AxonAlloyArmorItem(ModArmorMaterials.AXON_ALLOY, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
     public static final Item AXON_ALLOY_CHESTPLATE = registerItem("axon_alloy_chestplate",
-            new AxonAlloyArmorItem(ModArmorMaterials.AXON_ALLOY_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
+            new AxonAlloyArmorItem(ModArmorMaterials.AXON_ALLOY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
     public static final Item AXON_ALLOY_LEGGINGS = registerItem("axon_alloy_leggings",
-            new AxonAlloyArmorItem(ModArmorMaterials.AXON_ALLOY_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()));
+            new AxonAlloyArmorItem(ModArmorMaterials.AXON_ALLOY, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()));
     public static final Item AXON_ALLOY_BOOTS = registerItem("axon_alloy_boots",
-            new AxonAlloyArmorItem(ModArmorMaterials.AXON_ALLOY_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
+            new AxonAlloyArmorItem(ModArmorMaterials.AXON_ALLOY, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
 
     //TOOLS
 

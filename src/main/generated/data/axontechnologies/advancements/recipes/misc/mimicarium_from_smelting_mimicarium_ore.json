@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_mimicarium_ore",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_mimicarium_ore"
     ]
   ],
   "rewards": {

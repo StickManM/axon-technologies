@@ -109,7 +109,7 @@ public class ModLootTableModifiers {
 
         LootTableEvents.REPLACE.register((resourceManager, lootManager, id, original, source) -> {
 
-            if(ARCHAEOLOGY_DESERT_TEMPLE_ID.equals(id)){
+            /*if(ARCHAEOLOGY_DESERT_TEMPLE_ID.equals(id)){
                 List<LootPoolEntry> entries = new ArrayList<>(Arrays.asList(original.pools[0].entries));
                 entries.add(ItemEntry.builder(ModBlocks.THUNDERED_SAPLING).build());
                 entries.add(ItemEntry.builder(ModItems.QUADRUPLE_COMPRESSED_STICK).build());
@@ -136,7 +136,7 @@ public class ModLootTableModifiers {
                 LootPool.Builder pool = LootPool.builder().with(entries);
                 return LootTable.builder().pool(pool).build();
             }
-
+            */
 
             return null;
         });

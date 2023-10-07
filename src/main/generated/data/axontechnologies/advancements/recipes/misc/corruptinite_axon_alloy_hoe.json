@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_axon_alloy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_axon_alloy"
     ]
   ],
   "rewards": {
