@@ -1,4 +1,4 @@
-// 1.20.2	2023-10-06T19:36:36.3748169	Axon T.e.c.h.n.o.l.o.g.i.e.s./Model Definitions
+// 1.20.2	2023-10-07T14:17:25.5021694	Axon T.e.c.h.n.o.l.o.g.i.e.s./Model Definitions
 3411d12d0ffdbe4c4296192157fc7dd9873fa8c1 assets\axontechnologies\models\item\reinforced_dreadstone_door.json
 0350a9ccc24bde6caacec31cd097652d973b8860 assets\axontechnologies\models\block\void_coal_ore.json
 6d9b6227db83d5ac66c64381185e737cf862ea41 assets\axontechnologies\models\item\corruptinite_leggings.json
@@ -187,8 +187,8 @@ ac20589135585a64b68c961d52d5126c84704898 assets\axontechnologies\models\block\th
 4f898bbbf2f35881c17b1913fa7bd055fff5563f assets\axontechnologies\models\item\reinforced_dreadstone.json
 1d354b6ace1cb05678f2291af5516e440ed26e00 assets\axontechnologies\models\block\dreadstone.json
 a0fba4820d8a2a73647df56cda5a2d66703e3da7 assets\axontechnologies\models\item\dark_thunderanium_axon_alloy_hoe.json
-06ad3353e3655a8c040df5d6128f0d40a6a5b809 assets\axontechnologies\models\block\stripped_thundered_wood.json
 56b2ee299a448f4bef2ed751dd3783ec122ab900 assets\axontechnologies\models\item\dark_thunderanium_helmet.json
+06ad3353e3655a8c040df5d6128f0d40a6a5b809 assets\axontechnologies\models\block\stripped_thundered_wood.json
 0caadd8c41b7b584d386815145ac06c1bea79650 assets\axontechnologies\blockstates\corruption_portal_frame.json
 a83af85fa8dca1fe203ce23aa10e4b803f8e190a assets\axontechnologies\models\item\octuple_compressed_stick.json
 f83e4a3159efbfcb2125ba9c6bc02e3cd8e381b9 assets\axontechnologies\models\item\thundered_log.json
@@ -222,8 +222,8 @@ f0cb986f506713474ca5316859030571f46045d3 assets\axontechnologies\models\item\rei
 1e18d8ac1fdca905ed0b67544a18a12fdd50bdaa assets\axontechnologies\models\block\reinforced_dreadstone_door_top_right.json
 18f09c22ecb4daa9b5d1d47ee1321c4dfc264f5e assets\axontechnologies\models\item\fakestone_iron_ore.json
 4aa1f0da86c8e332c07a8f406b01eb1b6c2aad3f assets\axontechnologies\models\block\reinforced_dreadstone_door_bottom_right_open.json
-9517cde0b15c8731765f71d21d8e37347d21fbb0 assets\axontechnologies\models\block\reinforced_dreadstone_door_bottom_left_open.json
 0e472f6ff4ce36a8c366e74511228f9ab22871d5 assets\axontechnologies\models\item\dark_thunderanium_axon_alloy_leggings.json
+9517cde0b15c8731765f71d21d8e37347d21fbb0 assets\axontechnologies\models\block\reinforced_dreadstone_door_bottom_left_open.json
 dcdff4a11a44bfa804a0fe5122a97c3fdb247e5a assets\axontechnologies\blockstates\dreadstone_netherite_ore.json
 892403d3c63e0167f57c570f332873f938715418 assets\axontechnologies\models\item\red_thunderanium_shovel.json
 34e828196846a5bf79ffd818d19a76a31f60546d assets\axontechnologies\blockstates\thundered_leaves.json

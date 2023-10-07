@@ -27,19 +27,6 @@ public class AxonTechnologiesDataGenerator implements DataGeneratorEntrypoint {
 
 	}
 
-	static class AdvancementsProvider extends FabricAdvancementProvider {
-		protected AdvancementsProvider(FabricDataOutput dataGenerator) {
-			super(dataGenerator);
-		}
-
-		@Override
-		public void generateAdvancement(Consumer<AdvancementEntry> consumer) {
-			//
-			// We will create our custom advancements here...
-			//
-		}
-	}
-
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
