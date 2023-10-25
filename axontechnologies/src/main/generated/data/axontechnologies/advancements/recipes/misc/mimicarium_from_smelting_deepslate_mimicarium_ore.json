@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_deepslate_mimicarium_ore",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_deepslate_mimicarium_ore"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:mimicarium_from_smelting_deepslate_mimicarium_ore"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "axontechnologies:liquid_thunder",
-    "axontechnologies:flowing_liquid_thunder"
+    "axontechnologies:flowing_liquid_thunder",
+    "axontechnologies:thunderic_glitching_acid",
+    "axontechnologies:flowing_thunderic_glitching_acid"
+
+
   ]
 }

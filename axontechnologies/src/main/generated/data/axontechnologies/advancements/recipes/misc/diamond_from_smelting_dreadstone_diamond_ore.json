@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_dreadstone_diamond_ore",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_dreadstone_diamond_ore"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:diamond_from_smelting_dreadstone_diamond_ore"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

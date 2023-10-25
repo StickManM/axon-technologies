@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_thunderanium_ingot",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_thunderanium_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:thunderanium_shovel"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

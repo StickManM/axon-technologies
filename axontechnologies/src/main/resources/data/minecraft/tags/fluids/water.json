@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "axontechnologies:gx",
+    "axontechnologies:flowing_gx",
+    "axontechnologies:infinite_water",
+    "axontechnologies:flowing_infinite_water"
+
+  ]
+}

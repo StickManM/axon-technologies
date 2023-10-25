@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_mimicarium",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_mimicarium"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:mimicarium_portal_frame"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

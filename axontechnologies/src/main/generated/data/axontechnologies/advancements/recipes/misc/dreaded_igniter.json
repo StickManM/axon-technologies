@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_voidstone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_voidstone"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:dreaded_igniter"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

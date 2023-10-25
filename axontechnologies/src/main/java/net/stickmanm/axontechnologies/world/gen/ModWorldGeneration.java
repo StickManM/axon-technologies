@@ -7,6 +7,7 @@ import net.minecraft.world.gen.GenerationStep;
 public class ModWorldGeneration {
     public static void generateModWorldGen() {
         ModOreGeneration.generateOres();
+        ModTreeGeneration.generateTrees();
 
 
     }

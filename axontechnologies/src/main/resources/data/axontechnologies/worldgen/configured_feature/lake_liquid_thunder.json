@@ -4,7 +4,7 @@
     "fluid": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "axontechnologies:liquid_thunder",
+        "Name": "axontechnologies:liquid_thunder_block",
         "Properties": {
           "level": "0"
         }

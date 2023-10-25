@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_thundered_log",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_thundered_log"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:thundered_wood"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

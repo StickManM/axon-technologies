@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "axontechnologies:thunderlands_dimension_core_ore",
+    "axontechnologies:mimic_world_dimension_core_ore",
+    "axontechnologies:corruptionlands_dimension_core_ore",
+    "axontechnologies:dread_caverns_dimension_core_ore"
+  ]
+}

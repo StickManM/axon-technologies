@@ -2,6 +2,10 @@ package net.stickmanm.axontechnologies.fluid;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
@@ -14,12 +18,15 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.*;
 import net.stickmanm.axontechnologies.block.ModBlocks;
+import net.stickmanm.axontechnologies.effect.ModEffects;
 import net.stickmanm.axontechnologies.item.ModItems;
 
 public abstract class LiquidThunderFluid extends FlowableFluid {
+
+
     @Override
     protected boolean isInfinite(World world) {
-        return false;
+        return true;
     }
 
     @Override
@@ -60,7 +67,7 @@ public abstract class LiquidThunderFluid extends FlowableFluid {
 
     @Override
     protected boolean canBeReplacedWith(FluidState state, BlockView world, BlockPos pos, Fluid fluid, Direction direction) {
-        return false;
+        return true;
     }
 
     private void playExtinguishEvent(WorldAccess world, BlockPos pos) {
@@ -146,12 +153,23 @@ public abstract class LiquidThunderFluid extends FlowableFluid {
             FluidState fluidState2 = world.getFluidState(pos);
             if (this.isIn(FluidTags.LAVA) && fluidState2.isIn(FluidTags.WATER)) {
                 if (state.getBlock() instanceof FluidBlock) {
+                    world.setBlockState(pos, ModBlocks.THUNDERED_STONE.getDefaultState(), Block.NOTIFY_ALL);
+                }
+                this.playExtinguishEvent(world, pos);
+                return;
+            }
+        }
+        if (direction == Direction.UP) {
+            FluidState fluidState2 = world.getFluidState(pos);
+            if (this.isIn(FluidTags.LAVA) && fluidState2.isIn(FluidTags.WATER)) {
+                if (state.getBlock() instanceof FluidBlock) {
                     world.setBlockState(pos, ModBlocks.VOIDSTONE.getDefaultState(), Block.NOTIFY_ALL);
                 }
                 this.playExtinguishEvent(world, pos);
                 return;
             }
         }
+
         super.flow(world, pos, state, direction, fluidState);
     }
 
@@ -184,4 +202,9 @@ public abstract class LiquidThunderFluid extends FlowableFluid {
             return true;
         }
     }
+
+
+
+
+
 }

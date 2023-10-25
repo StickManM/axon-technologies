@@ -25,6 +25,8 @@
     "minecraft:canyon"
   ]},
   "features": [
-    "axontechnologies:lake_liquid_thunder"
+    "axontechnologies:lake_liquid_thunder",
+    "axontechnologies:ore_liquid_thunder",
+    "axontechnologies:thunderanium_ore"
   ]
 }

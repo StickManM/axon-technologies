@@ -1,11 +1,15 @@
 package net.stickmanm.axontechnologies.entity.custom;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.brain.sensor.HurtBySensor;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.mob.WardenEntity;
 import net.minecraft.entity.mob.ZombifiedPiglinEntity;
 import net.minecraft.entity.passive.*;
@@ -24,9 +28,9 @@ import software.bernie.geckolib.core.object.PlayState;
 
 import java.util.function.Predicate;
 
-public class RedEssenceZombieEntity extends AnimalEntity implements GeoEntity {
+public class RedEssenceZombieEntity extends PathAwareEntity implements GeoEntity {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
-    public RedEssenceZombieEntity(EntityType<? extends AnimalEntity> entityType, World world) {
+    public RedEssenceZombieEntity(EntityType<? extends PathAwareEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -38,8 +42,9 @@ public class RedEssenceZombieEntity extends AnimalEntity implements GeoEntity {
                 .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 0.4f)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 64)
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 100.0D)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 20.0f)
-                .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 40.0f)
+                .add(EntityAttributes.GENERIC_ATTACK_SPEED, 5.0f)
+                .add(EntityAttributes.GENERIC_LUCK, 50.5f)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 1.0f);
 
 
@@ -59,8 +64,9 @@ public class RedEssenceZombieEntity extends AnimalEntity implements GeoEntity {
 
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, MerchantEntity.class, true));
-        this.targetSelector.add(3, new ActiveTargetGoal<>(this, VillagerEntity.class, true));
+        this.targetSelector.add(2, new ActiveTargetGoal<>(this, VillagerEntity.class, true));
         this.targetSelector.add(3, new ActiveTargetGoal<>(this, WardenEntity.class, true));
+        this.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, -1, 2,false, false, false));
 
 
 
@@ -69,8 +75,8 @@ public class RedEssenceZombieEntity extends AnimalEntity implements GeoEntity {
 
 
     @Nullable
-    @Override
-    public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
+
+    public MobEntity createChild(ServerWorld world, MobEntity entity) {
         return ModEntities.RED_ESSENCE_ZOMBIE.create(world);
     }
 

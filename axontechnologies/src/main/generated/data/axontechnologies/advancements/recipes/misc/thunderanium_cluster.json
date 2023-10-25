@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_refined_thunderanium",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_refined_thunderanium"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:thunderanium_cluster"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }
