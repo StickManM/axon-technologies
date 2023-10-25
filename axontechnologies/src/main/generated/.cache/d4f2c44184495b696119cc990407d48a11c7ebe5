@@ -1,2 +1,16 @@
-// 1.20.2	2023-10-14T10:46:42.6405575	Axon T.e.c.h.n.o.l.o.g.i.e.s./Tags for minecraft:block
-d0149a1cc16eb4824710c96c31da6917f4b1e8bd data\minecraft\tags\blocks\walls.json
+// 1.20.2	2023-10-24T22:10:09.89875	Axon T.e.c.h.n.o.l.o.g.i.e.s./Tags for minecraft:block
+d0149a1cc16eb4824710c96c31da6917f4b1e8bd data/minecraft/tags/blocks/walls.json
+ff66fe11df011dbff5c38ec5a3652821ed7bbb57 data/fabric/tags/blocks/needs_tool_level_6.json
+dbad2d99d2e66826ab66f2f640076a329cefc87d data/minecraft/tags/blocks/needs_diamond_tool.json
+b56accdd9f242e9d9923ce1b86b2f0e9f264c724 data/fabric/tags/blocks/needs_tool_level_4.json
+3c9ebb7f31f5fbb95bba91ed723781561a57c7fe data/minecraft/tags/blocks/mineable/shovel.json
+3c9ebb7f31f5fbb95bba91ed723781561a57c7fe data/minecraft/tags/blocks/dirt.json
+cf97e6fb6193ff0f8c927343fd41fe801a9e3bb3 data/fabric/tags/blocks/needs_tool_level_5.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data/minecraft/tags/blocks/sword_efficient.json
+fcef3e9f5ecc632641eb66f82bb65a8c667f9650 data/minecraft/tags/blocks/needs_stone_tool.json
+ecad1da5682fbd389dbc248a3f8d771c2c086fb0 data/minecraft/tags/blocks/needs_iron_tool.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data/fabric/tags/blocks/needs_tool_level_10.json
+b7694a89613415660d5e61c0c5c9e2416c5cef3a data/minecraft/tags/blocks/mineable/pickaxe.json
+7310f744a992f75864100cad7c483f99dbe3b4d9 data/minecraft/tags/blocks/logs.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data/minecraft/tags/blocks/mineable/axe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data/minecraft/tags/blocks/mineable/hoe.json

@@ -18,6 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         //Ores
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MIMICARIUM_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RENDERIUM_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MIMICARIUM_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FAKESTONE_IRON_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FAKESTONE_GOLD_ORE);
@@ -85,6 +86,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
         itemModelGenerator.register(ModItems.MIMICARIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RENDERIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_NETHERITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AXON_ALLOY, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAZZORIUM, Models.GENERATED);

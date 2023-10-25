@@ -22,6 +22,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.MIMICARIUM_ORE)
+                .add(ModBlocks.RENDERIUM_ORE)
                 .add(ModBlocks.DEEPSLATE_MIMICARIUM_ORE)
                 .add(ModBlocks.FAKESLATE)
                 .add(ModBlocks.FAKESTONE)
@@ -94,8 +95,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VOID_COAL_BLOCK);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
-                .add(ModBlocks.THUNDERANIUM_ORE);
-                //.add(ModBlocks.RENDERIUM_ORE);
+                .add(ModBlocks.THUNDERANIUM_ORE)
+                .add(ModBlocks.RENDERIUM_ORE);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_6")))
                 .add(ModBlocks.CORRUPTINITE_ORE)

@@ -143,6 +143,10 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(2.5f).requiresTool(),
                     UniformIntProvider.create(15, 25)));
 
+    public static final Block RENDERIUM_ORE = registerBlock("renderium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(2.5f).requiresTool(),
+                    UniformIntProvider.create(15, 25)));
+
     //Corruptionlands
 
     public static final Block CORRUPTED_DIRT = registerBlock("corrupted_dirt",

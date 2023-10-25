@@ -23,6 +23,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.FAKESLATE_IRON_ORE,oreDrops(ModBlocks.FAKESTONE_IRON_ORE, Items.RAW_IRON));
         addDrop(ModBlocks.FAKESLATE_GOLD_ORE,oreDrops(ModBlocks.FAKESTONE_GOLD_ORE, Items.RAW_GOLD));
         addDrop(ModBlocks.THUNDERANIUM_ORE,oreDrops(ModBlocks.THUNDERANIUM_ORE, ModItems.REFINED_THUNDERANIUM));
+        addDrop(ModBlocks.RENDERIUM_ORE,oreDrops(ModBlocks.RENDERIUM_ORE, ModItems.RENDERIUM));
         addDrop(ModBlocks.CORRUPTINITE_ORE,oreDrops(ModBlocks.CORRUPTINITE_ORE, ModItems.UNSTABLE_CORRUPTINITE));
 
 
