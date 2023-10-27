@@ -1,16 +1,16 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 8,
-    "discard_chance_on_air_exposure": 0,
+    "discard_chance_on_air_exposure": 0.0,
+    "size": 10,
     "targets": [
       {
+        "state": {
+          "Name": "axontechnologies:void_coal_ore"
+        },
         "target": {
           "predicate_type": "minecraft:tag_match",
           "tag": "axontechnologies:dreadstone_replaceable"
-        },
-        "state": {
-          "Name": "axontechnologies:dreadstone_diamond_ore"
         }
       }
     ]

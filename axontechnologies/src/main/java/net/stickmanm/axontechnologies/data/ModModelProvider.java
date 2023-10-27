@@ -73,6 +73,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTION_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTINITE_ORE);
 
+        //Dimension Core ore
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MWDC_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DCDC_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TLDC_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CLDC_ORE);
 
         //SPAWN EGGS
         blockStateModelGenerator.registerParentedItemModel(ModItems.RED_ESSENCE_ZOMBIE_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
@@ -124,6 +129,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DUODECUPLE_COMPRESSED_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.TREDECUPLE_COMPRESSED_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.QUATTUORDECUPLE_COMPRESSED_STICK, Models.GENERATED);
+
+        //Dimension Core
+        itemModelGenerator.register(ModItems.MWDC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DCDC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TLDC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CLDC, Models.GENERATED);
 
         //Thunderanium
         itemModelGenerator.register(ModItems.RAW_THUNDERANIUM, Models.GENERATED);

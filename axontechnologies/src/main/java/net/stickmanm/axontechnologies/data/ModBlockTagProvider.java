@@ -52,11 +52,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.THUNDERANIUM_ORE)
                 .add(ModBlocks.CORRUPTED_STONE)
                 .add(ModBlocks.CORRUPTION_BLOCK)
-                .add(ModBlocks.CORRUPTINITE_ORE);
-                /*.add(ModBlocks.MIMIC_WORLD_DIMENSION_CORE_ORE)
-                .add(ModBlocks.DREAD_CAVERNS_DIMENSION_CORE_ORE)
-                .add(ModBlocks.THUNDERLANDS_DIMENSION_CORE_ORE)
-                .add(ModBlocks.CORRUPTIONLANDS_DIMENSION_CORE_ORE);*/
+                .add(ModBlocks.CORRUPTINITE_ORE)
+                .add(ModBlocks.MWDC_ORE)
+                .add(ModBlocks.DCDC_ORE)
+                .add(ModBlocks.CLDC_ORE)
+                .add(ModBlocks.TLDC_ORE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE);
 
@@ -110,11 +110,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.REINFORCED_DREADSTONE_WALL)
                 .add(ModBlocks.REINFORCED_DREADSTONE_GLASS);
 
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_10")));
-                /*.add(ModBlocks.THUNDERLANDS_DIMENSION_CORE_ORE)
-                .add(ModBlocks.MIMIC_WORLD_DIMENSION_CORE_ORE)
-                .add(ModBlocks.CORRUPTIONLANDS_DIMENSION_CORE_ORE)
-                .add(ModBlocks.DREAD_CAVERNS_DIMENSION_CORE_ORE);*/
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_10")))
+                .add(ModBlocks.TLDC_ORE)
+                .add(ModBlocks.MWDC_ORE)
+                .add(ModBlocks.CLDC_ORE)
+                .add(ModBlocks.DCDC_ORE);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.REINFORCED_DREADSTONE_WALL);

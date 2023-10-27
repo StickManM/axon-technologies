@@ -51,6 +51,12 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VOID_COAL_ORE,oreDrops(ModBlocks.VOID_COAL_ORE, ModItems.VOID_COAL));
         addDrop(ModBlocks.VOID_COAL_BLOCK);
 
+        //Dimension Cores
+        addDrop(ModBlocks.MWDC_ORE,oreDrops(ModBlocks.MWDC_ORE, ModItems.MWDC));
+        addDrop(ModBlocks.DCDC_ORE,oreDrops(ModBlocks.DCDC_ORE, ModItems.DCDC));
+        addDrop(ModBlocks.TLDC_ORE,oreDrops(ModBlocks.TLDC_ORE, ModItems.TLDC));
+        addDrop(ModBlocks.CLDC_ORE,oreDrops(ModBlocks.CLDC_ORE, ModItems.CLDC));
+
         //MISC
         addDrop(ModBlocks.VOIDSTONE);
         addDrop(ModBlocks.MIMIMCARIUM_PORTAL_FRAME);

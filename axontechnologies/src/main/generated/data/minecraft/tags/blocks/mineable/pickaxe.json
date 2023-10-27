@@ -32,6 +32,10 @@
     "axontechnologies:thunderanium_ore",
     "axontechnologies:corrupted_stone",
     "axontechnologies:corruption_block",
-    "axontechnologies:corruptinite_ore"
+    "axontechnologies:corruptinite_ore",
+    "axontechnologies:mimic_world_dimension_core_ore",
+    "axontechnologies:dread_caverns_dimension_core_ore",
+    "axontechnologies:corruptionlands_dimension_core_ore",
+    "axontechnologies:thunderlands_dimension_core_ore"
   ]
 }

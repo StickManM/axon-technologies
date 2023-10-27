@@ -18,12 +18,18 @@ public class ModItemGroup {
                         //ITEMS
                         entries.add(ModItems.MIMICARIUM);
                         entries.add(ModItems.RAW_NETHERITE);
+                        entries.add(ModItems.RENDERIUM);
                         entries.add(ModItems.RED_ESSENCE);
                         entries.add(ModItems.DARK_ESSENCE);
                         entries.add(ModItems.AXON_ALLOY);
                         entries.add(ModItems.RAZZORIUM);
                         entries.add(ModItems.NATEY_BALLS);
                         entries.add(ModItems.NATEY_GIFT);
+
+                        entries.add(ModItems.MWDC);
+                        entries.add(ModItems.DCDC);
+                        entries.add(ModItems.TLDC);
+                        entries.add(ModItems.CLDC);
 
                         entries.add(ModItems.VOID_COAL);
                         entries.add(ModItems.THUNDER_FUEL);
@@ -182,6 +188,11 @@ public class ModItemGroup {
                         entries.add(ModBlocks.THUNDERANIUM_PORTAL_FRAME);
                         entries.add(ModBlocks.CORRUPTION_PORTAL_FRAME);
 
+                        entries.add(ModBlocks.MWDC_ORE);
+                        entries.add(ModBlocks.DCDC_ORE);
+                        entries.add(ModBlocks.TLDC_ORE);
+                        entries.add(ModBlocks.CLDC_ORE);
+
                         entries.add(ModBlocks.DREADSTONE);
                         entries.add(ModBlocks.REINFORCED_DREADSTONE);
                         entries.add(ModBlocks.REINFORCED_DREADSTONE_SLAB);
@@ -202,6 +213,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.CHARGED_DIRT);
                         entries.add(ModBlocks.THUNDERED_STONE);
                         entries.add(ModBlocks.THUNDERANIUM_ORE);
+                        entries.add(ModBlocks.RENDERIUM_ORE);
 
                         entries.add(ModBlocks.CORRUPTED_DIRT);
                         entries.add(ModBlocks.CORRUPTED_STONE);

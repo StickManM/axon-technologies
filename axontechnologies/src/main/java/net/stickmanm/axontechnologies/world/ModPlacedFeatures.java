@@ -15,7 +15,13 @@ import net.stickmanm.axontechnologies.block.ModBlocks;
 import java.util.List;
 
 public class ModPlacedFeatures {
-    public static final RegistryKey<PlacedFeature> MIMICARIUM_ORE_PLACED_KEY = registerKey("mimicarium_ore_placed");
+    public static final RegistryKey<PlacedFeature> MIMICARIUM_ORE_PLACED_KEY = registerKey("mimicarium_ore");
+    public static final RegistryKey<PlacedFeature> DIMENSION_CORE_PLACED_KEY = registerKey("dimension_core_ore");
+    public static final RegistryKey<PlacedFeature> DREADSTONE_DIAMOND_ORE_PLACED_KEY = registerKey("dreadstone_diamond_ore");
+    public static final RegistryKey<PlacedFeature> DREADSTONE_NETHERITE_ORE_PLACED_KEY = registerKey("dreadstone_netherite_ore");
+    public static final RegistryKey<PlacedFeature> DREADSTONE_THUNDERANIUM_ORE_PLACED_KEY = registerKey("dreadstone_thunderanium_ore");
+    public static final RegistryKey<PlacedFeature> VOID_COAL_ORE_PLACED_KEY = registerKey("void_coal_ore");
+    public static final RegistryKey<PlacedFeature> RENDERIUM_ORE_PLACED_KEY = registerKey("renderium_ore");
     public static final RegistryKey<PlacedFeature> THUNDERED_TREE_PLACED_KEY = registerKey("thundered_tree_placed");
 
 
@@ -29,6 +35,31 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(32, // Veins per Chunk
                         HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(0), YOffset.belowTop(200))));
 
+        register(context, DIMENSION_CORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DIMENSION_CORE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(5, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(200))));
+
+        //DREADSTONE ORES
+        register(context, DREADSTONE_DIAMOND_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DREADSTONE_DIAMOND_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(32, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(0))));
+
+        register(context, DREADSTONE_NETHERITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DREADSTONE_NETHERITE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(19, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(0))));
+
+        register(context, DREADSTONE_THUNDERANIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DREADSTONE_THUNDERANIUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(17, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(0))));
+
+        register(context, VOID_COAL_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.VOID_COAL_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(27, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(0))));
+
+        //Thunderlands
+        register(context, RENDERIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.RENDERIUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(8, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(100))));
 
 
         register(context, THUNDERED_TREE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.THUNDERED_SAPLING_KEY),

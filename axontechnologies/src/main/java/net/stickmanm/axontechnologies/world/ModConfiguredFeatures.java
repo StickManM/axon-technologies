@@ -23,6 +23,12 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> THUNDERED_SAPLING_KEY = registerKey("thundered_tree");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MIMICARIUM_ORE_KEY = registerKey("mimicarium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DREADSTONE_DIAMOND_ORE_KEY = registerKey("dreadstone_diamond_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DREADSTONE_THUNDERANIUM_ORE_KEY = registerKey("dreadstone_thunderanium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DREADSTONE_NETHERITE_ORE_KEY = registerKey("dreadstone_netherite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> VOID_COAL_ORE_KEY = registerKey("void_coal_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DIMENSION_CORE_ORE_KEY = registerKey("dimension_core_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> RENDERIUM_ORE_KEY = registerKey("renderium_ore");
 
 
 
@@ -30,12 +36,30 @@ public class ModConfiguredFeatures {
         //Mimicarium Ore
         RuleTest mimicariumStoneReplaceables = new TagMatchRuleTest(ModBlockTags.MIMICARIUM_REPLACEABLE_STONE);
         RuleTest mimicariumDeepslateReplaceables = new TagMatchRuleTest(ModBlockTags.MIMICARIUM_REPLACEABLE_DEEPSLATE);
+        RuleTest mimicWorld = new TagMatchRuleTest(ModBlockTags.FAKESLATE_REPLACEABLE);
+        RuleTest dreadCaverns = new TagMatchRuleTest(ModBlockTags.DREADSTONE_REPLACEABLE);
+        RuleTest thunderlands = new TagMatchRuleTest(ModBlockTags.THUNDERED_STONE_REPLACEABLE);
+        RuleTest corruptionlands = new TagMatchRuleTest(ModBlockTags.CORRUPTED_STONE_REPLACEABLE);
 
         List<OreFeatureConfig.Target> overworldMimicariumOres =
                 List.of(OreFeatureConfig.createTarget(mimicariumStoneReplaceables, ModBlocks.MIMICARIUM_ORE.getDefaultState()),
                        OreFeatureConfig.createTarget(mimicariumDeepslateReplaceables, ModBlocks.DEEPSLATE_MIMICARIUM_ORE.getDefaultState()));
-        //Dreadstone Ores
 
+        //Dimension Cores
+        List<OreFeatureConfig.Target> dimensionCoreOres =
+                List.of(OreFeatureConfig.createTarget(mimicWorld, ModBlocks.MWDC_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(dreadCaverns, ModBlocks.DCDC_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(thunderlands, ModBlocks.TLDC_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(corruptionlands, ModBlocks.CLDC_ORE.getDefaultState()));
+
+        //Dreadstone Ores
+        List<OreFeatureConfig.Target> dreadstoneDiamondOres = List.of(OreFeatureConfig.createTarget(dreadCaverns, ModBlocks.DREADSTONE_DIAMOND_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> dreadstoneThunderaniumOres = List.of(OreFeatureConfig.createTarget(dreadCaverns, ModBlocks.DREADSTONE_THUNDERANIUM_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> dreadstoneNetheriteOres = List.of(OreFeatureConfig.createTarget(dreadCaverns, ModBlocks.DREADSTONE_NETHERITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> voidCoalOres = List.of(OreFeatureConfig.createTarget(dreadCaverns, ModBlocks.VOID_COAL_ORE.getDefaultState()));
+
+        //Thunderlands
+        List<OreFeatureConfig.Target> renderiumOres = List.of(OreFeatureConfig.createTarget(thunderlands, ModBlocks.RENDERIUM_ORE.getDefaultState()));
 
 
 
@@ -50,7 +74,17 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
+        //register
         register(context, MIMICARIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMimicariumOres, 10));
+        register(context, DIMENSION_CORE_ORE_KEY, Feature.ORE, new OreFeatureConfig(dimensionCoreOres, 2));
+        register(context, RENDERIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(renderiumOres, 3));
+
+
+        //Dreadstone Ores
+        register(context, DREADSTONE_DIAMOND_ORE_KEY, Feature.ORE, new OreFeatureConfig(dreadstoneDiamondOres, 8));
+        register(context, DREADSTONE_NETHERITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(dreadstoneNetheriteOres, 4));
+        register(context, DREADSTONE_THUNDERANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(dreadstoneThunderaniumOres, 4));
+        register(context, VOID_COAL_ORE_KEY, Feature.ORE, new OreFeatureConfig(voidCoalOres, 10));
     }
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(AxonTechnologies.MOD_ID, name));

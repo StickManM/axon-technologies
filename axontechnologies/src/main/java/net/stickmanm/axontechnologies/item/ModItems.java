@@ -69,6 +69,20 @@ public class ModItems {
     public static final Item RAZZORIUM = registerItem("razzorium",
             new Item(new FabricItemSettings().fireproof()));
 
+    //DIMENSION CORES
+    public static final Item MWDC = registerItem("mimic_world_dimension_core",
+            new Item(new FabricItemSettings().fireproof()));
+
+    public static final Item DCDC = registerItem("dread_caverns_dimension_core",
+            new Item(new FabricItemSettings().fireproof()));
+
+    public static final Item TLDC = registerItem("thunderlands_dimension_core",
+            new Item(new FabricItemSettings().fireproof()));
+
+    public static final Item CLDC = registerItem("corruptionlands_dimension_core",
+            new Item(new FabricItemSettings().fireproof()));
+
+
     //Fuels
     public static final Item THUNDER_FUEL = registerItem("thunder_fuel",
             new Item(new FabricItemSettings()));

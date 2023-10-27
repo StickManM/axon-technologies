@@ -147,6 +147,11 @@
   "item.axontechnologies.axon_alloy_shovel": "Axon Alloy Shovel Type A",
   "item.axontechnologies.axon_alloy_hoe": "Axon Alloy Hoe Type A",
 
+  "item.axontechnologies.mimic_world_dimension_core": "Mimic World Dimension Core",
+  "item.axontechnologies.dread_caverns_dimension_core": "Dread Caverns Dimension Core",
+  "item.axontechnologies.thunderlands_dimension_core": "Thunderlands Dimension Core",
+  "item.axontechnologies.corruptionlands_dimension_core": "Corruptionlands Dimension Core",
+
   "block.axontechnologies.mimicarium_ore": "Mimicarium Ore",
   "block.axontechnologies.deepslate_mimicarium_ore": "Deepslate Mimicarium Ore",
   "block.axontechnologies.fakestone_iron_ore": "Fakestone Iron Ore",
@@ -156,6 +161,11 @@
   "block.axontechnologies.thunderanium_ore": "Thunderanium Ore",
   "block.axontechnologies.renderium_ore": "Renderium Ore",
   "block.axontechnologies.corruptinite_ore": "Corruptinite Ore",
+
+  "block.axontechnologies.mimic_world_dimension_core_ore": "Mimic World Dimension Core Ore",
+  "block.axontechnologies.dread_caverns_dimension_core_ore": "Dread Caverns Dimension Core Ore",
+  "block.axontechnologies.thunderlands_dimension_core_ore": "Thunderlands Dimension Core Ore",
+  "block.axontechnologies.corruptionlands_dimension_core_ore": "Corruptionlands Dimension Core Ore",
 
   "block.axontechnologies.dreadstone": "Dreadstone",
   "block.axontechnologies.reinforced_dreadstone": "Reinforced Dreadstone",
