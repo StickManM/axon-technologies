@@ -14,17 +14,19 @@ import software.bernie.geckolib.model.data.EntityModelData;
 public class LostMinerModel extends GeoModel<LostMinerEntity> {
     @Override
     public Identifier getModelResource(LostMinerEntity animatable) {
-        return new Identifier(AxonTechnologies.MOD_ID,"geo/lost_miner.geo.json");
+        return new Identifier(AxonTechnologies.MOD_ID, "geo/lost_miner.geo.json");
     }
 
     @Override
     public Identifier getTextureResource(LostMinerEntity animatable) {
-        return new Identifier(AxonTechnologies.MOD_ID,"textures/entity/lost_miner.png");    }
+        return new Identifier(AxonTechnologies.MOD_ID, "textures/entity/lost_miner.png");
+    }
 
     @Override
     public Identifier getAnimationResource(LostMinerEntity animatable) {
-        return new Identifier(AxonTechnologies.MOD_ID,"animations/lost_miner.animation.json");
+        return new Identifier(AxonTechnologies.MOD_ID, "animations/lost_miner.animation.json");
     }
+
     @Override
     public void setCustomAnimations(LostMinerEntity animatable, long instanceId, AnimationState<LostMinerEntity> animationState) {
         CoreGeoBone head = getAnimationProcessor().getBone("head");

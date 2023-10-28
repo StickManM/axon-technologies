@@ -19,6 +19,7 @@ public class ModItemGroup {
                         entries.add(ModItems.MIMICARIUM);
                         entries.add(ModItems.RAW_NETHERITE);
                         entries.add(ModItems.RENDERIUM);
+                        entries.add(ModItems.DENDERIUM);
                         entries.add(ModItems.RED_ESSENCE);
                         entries.add(ModItems.DARK_ESSENCE);
                         entries.add(ModItems.AXON_ALLOY);

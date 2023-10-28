@@ -22,7 +22,7 @@ public class GeneticallyModifiedRedEssenceZombieRenderer extends GeoEntityRender
     @Override
     public void render(GeneticallyModifiedRedEssenceZombieEntity entity, float entityYaw, float partialTick, MatrixStack poseStack,
                        VertexConsumerProvider bufferSource, int packedLight) {
-        if (entity.isBaby()){
+        if (entity.isBaby()) {
             poseStack.scale(0.4f, 0.4f, 0.4f);
         }
         super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);

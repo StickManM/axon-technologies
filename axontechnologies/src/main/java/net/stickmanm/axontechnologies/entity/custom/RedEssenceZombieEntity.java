@@ -30,10 +30,10 @@ import java.util.function.Predicate;
 
 public class RedEssenceZombieEntity extends PathAwareEntity implements GeoEntity {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+
     public RedEssenceZombieEntity(EntityType<? extends PathAwareEntity> entityType, World world) {
         super(entityType, world);
     }
-
 
 
     public static DefaultAttributeContainer.Builder setAttributes() {
@@ -59,19 +59,16 @@ public class RedEssenceZombieEntity extends PathAwareEntity implements GeoEntity
         this.targetSelector.add(1, new RevengeGoal(this, new Class[0]).setGroupRevenge(ZombifiedPiglinEntity.class));
 
 
-
         this.goalSelector.add(4, new LookAroundGoal(this));
 
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, MerchantEntity.class, true));
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, VillagerEntity.class, true));
         this.targetSelector.add(3, new ActiveTargetGoal<>(this, WardenEntity.class, true));
-        this.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, -1, 2,false, false, false));
-
+        this.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, -1, 2, false, false, false));
 
 
     }
-
 
 
     @Nullable
@@ -87,7 +84,7 @@ public class RedEssenceZombieEntity extends PathAwareEntity implements GeoEntity
     }
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
-        if (tAnimationState.isMoving()){
+        if (tAnimationState.isMoving()) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.modified_RedEssenceZombie.walking", Animation.LoopType.LOOP));
             return PlayState.CONTINUE;
         }

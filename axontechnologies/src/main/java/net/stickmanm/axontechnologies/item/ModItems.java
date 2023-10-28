@@ -27,6 +27,9 @@ public class ModItems {
     public static final Item RENDERIUM = registerItem("renderium",
             new Item(new FabricItemSettings().fireproof()));
 
+    public static final Item DENDERIUM = registerItem("denderium",
+            new Item(new FabricItemSettings().fireproof()));
+
     public static final Item RAW_THUNDERANIUM = registerItem("raw_thunderanium",
             new Item(new FabricItemSettings().fireproof()));
 

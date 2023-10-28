@@ -16,12 +16,17 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> MIMICARIUM_ORE_PLACED_KEY = registerKey("mimicarium_ore");
+    public static final RegistryKey<PlacedFeature> FAKESTONES_IRON_ORE_PLACED_KEY = registerKey("fakestones_iron_ore");
+    public static final RegistryKey<PlacedFeature> FAKESTONES_GOLD_ORE_PLACED_KEY = registerKey("fakestones_gold_ore");
     public static final RegistryKey<PlacedFeature> DIMENSION_CORE_PLACED_KEY = registerKey("dimension_core_ore");
     public static final RegistryKey<PlacedFeature> DREADSTONE_DIAMOND_ORE_PLACED_KEY = registerKey("dreadstone_diamond_ore");
     public static final RegistryKey<PlacedFeature> DREADSTONE_NETHERITE_ORE_PLACED_KEY = registerKey("dreadstone_netherite_ore");
     public static final RegistryKey<PlacedFeature> DREADSTONE_THUNDERANIUM_ORE_PLACED_KEY = registerKey("dreadstone_thunderanium_ore");
     public static final RegistryKey<PlacedFeature> VOID_COAL_ORE_PLACED_KEY = registerKey("void_coal_ore");
     public static final RegistryKey<PlacedFeature> RENDERIUM_ORE_PLACED_KEY = registerKey("renderium_ore");
+    public static final RegistryKey<PlacedFeature> DENDERIUM_ORE_PLACED_KEY = registerKey("denderium_ore");
+    public static final RegistryKey<PlacedFeature> ORE_LIQUID_THUNDER_PLACED_KEY = registerKey("ore_liquid_thunder");
+    public static final RegistryKey<PlacedFeature> ORE_CORRUPTIONLANDS_LAVA_PLACED_KEY = registerKey("ore_corruptionlands_lava");
     public static final RegistryKey<PlacedFeature> THUNDERED_TREE_PLACED_KEY = registerKey("thundered_tree_placed");
 
 
@@ -33,11 +38,19 @@ public class ModPlacedFeatures {
 
         register(context, MIMICARIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MIMICARIUM_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(32, // Veins per Chunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(0), YOffset.belowTop(200))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(0), YOffset.belowTop(100))));
+
+        register(context, FAKESTONES_IRON_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.FAKESTONES_IRON_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(64, // Veins per Chunk
+                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(0), YOffset.belowTop(100))));
+
+        register(context, FAKESTONES_GOLD_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.FAKESTONES_GOLD_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(50, // Veins per Chunk
+                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(0), YOffset.belowTop(100))));
 
         register(context, DIMENSION_CORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DIMENSION_CORE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(5, // Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(200))));
+                ModOrePlacement.modifiersWithCount(8, // Veins per Chunk
+                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(0), YOffset.belowTop(200))));
 
         //DREADSTONE ORES
         register(context, DREADSTONE_DIAMOND_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DREADSTONE_DIAMOND_ORE_KEY),
@@ -58,7 +71,20 @@ public class ModPlacedFeatures {
 
         //Thunderlands
         register(context, RENDERIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.RENDERIUM_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(8, // Veins per Chunk
+                ModOrePlacement.modifiersWithCount(9, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(100))));
+
+        register(context, ORE_LIQUID_THUNDER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORE_LIQUID_THUNDER_KEY),
+                ModOrePlacement.modifiersWithCount(11, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(100))));
+
+        //Corruptionlands
+        register(context, DENDERIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DENDERIUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(9, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(100))));
+
+        register(context, ORE_CORRUPTIONLANDS_LAVA_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORE_CORRUPTIONLANDS_LAVA_KEY),
+                ModOrePlacement.modifiersWithCount(11, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(100))));
 
 

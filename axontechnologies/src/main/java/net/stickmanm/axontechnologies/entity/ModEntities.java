@@ -20,40 +20,40 @@ import net.stickmanm.axontechnologies.entity.custom.RedEssenceZombieEntity;
 public class ModEntities {
 
     public static final EntityType<RedEssenceZombieEntity> RED_ESSENCE_ZOMBIE = Registry.register(
-            Registries.ENTITY_TYPE, new Identifier(AxonTechnologies.MOD_ID,"red_essence_zombie"),
+            Registries.ENTITY_TYPE, new Identifier(AxonTechnologies.MOD_ID, "red_essence_zombie"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, RedEssenceZombieEntity::new)
                     .fireImmune()
                     .specificSpawnBlocks(ModBlocks.CHARGED_DIRT)
                     .specificSpawnBlocks(ModBlocks.THUNDERED_STONE)
                     .trackRangeChunks(32)
-                    .dimensions(EntityDimensions.fixed(0.6f,2f)).build());
+                    .dimensions(EntityDimensions.fixed(0.6f, 2f)).build());
 
     public static final EntityType<DarkEssenceZombieEntity> DARK_ESSENCE_ZOMBIE = Registry.register(
-            Registries.ENTITY_TYPE, new Identifier(AxonTechnologies.MOD_ID,"dark_essence_zombie"),
+            Registries.ENTITY_TYPE, new Identifier(AxonTechnologies.MOD_ID, "dark_essence_zombie"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, DarkEssenceZombieEntity::new)
                     .fireImmune()
                     .specificSpawnBlocks(ModBlocks.CORRUPTED_DIRT)
                     .specificSpawnBlocks(ModBlocks.CORRUPTED_STONE)
                     .trackRangeChunks(48)
-                    .dimensions(EntityDimensions.fixed(0.6f,2f)).build());
+                    .dimensions(EntityDimensions.fixed(0.6f, 2f)).build());
 
     public static final EntityType<LostMinerEntity> LOST_MINER = Registry.register(
-            Registries.ENTITY_TYPE, new Identifier(AxonTechnologies.MOD_ID,"lost_miner"),
+            Registries.ENTITY_TYPE, new Identifier(AxonTechnologies.MOD_ID, "lost_miner"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, LostMinerEntity::new)
                     .specificSpawnBlocks(ModBlocks.DREADSTONE)
                     .trackRangeChunks(15)
-                    .dimensions(EntityDimensions.fixed(0.6f,2f)).build());
+                    .dimensions(EntityDimensions.fixed(0.6f, 2f)).build());
 
     public static final EntityType<GeneticallyModifiedRedEssenceZombieEntity> GENETICALLY_MODIFIED_RED_ESSENCE_ZOMBIE = Registry.register(
-            Registries.ENTITY_TYPE, new Identifier(AxonTechnologies.MOD_ID,"genetically_modified_red_essence_zombie"),
+            Registries.ENTITY_TYPE, new Identifier(AxonTechnologies.MOD_ID, "genetically_modified_red_essence_zombie"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, GeneticallyModifiedRedEssenceZombieEntity::new)
                     .fireImmune()
                     .specificSpawnBlocks(ModBlocks.CHARGED_DIRT)
                     .specificSpawnBlocks(ModBlocks.THUNDERED_STONE)
                     .trackRangeChunks(64)
-                    .dimensions(EntityDimensions.fixed(0.6f,2f)).build());
+                    .dimensions(EntityDimensions.fixed(0.6f, 2f)).build());
 
-    public static void registerModEntities(){
+    public static void registerModEntities() {
         FabricDefaultAttributeRegistry.register(ModEntities.RED_ESSENCE_ZOMBIE, RedEssenceZombieEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.GENETICALLY_MODIFIED_RED_ESSENCE_ZOMBIE, RedEssenceZombieEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.DARK_ESSENCE_ZOMBIE, DarkEssenceZombieEntity.setAttributes());

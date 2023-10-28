@@ -5,8 +5,11 @@
     "A": {
       "item": "axontechnologies:axon_alloy"
     },
-    "B": {
-      "item": "axontechnologies:axon_alloy_sword"
+    "C": {
+      "item": "axontechnologies:corruptionlands_dimension_core"
+    },
+    "D": {
+      "item": "axontechnologies:dread_caverns_dimension_core"
     },
     "G": {
       "item": "axontechnologies:gx_bucket"
@@ -14,20 +17,17 @@
     "H": {
       "item": "axontechnologies:ultimate_hoe_trophy"
     },
-    "J": {
-      "item": "axontechnologies:axon_alloy_pickaxe"
+    "M": {
+      "item": "axontechnologies:mimic_world_dimension_core"
     },
-    "Q": {
-      "item": "axontechnologies:axon_alloy_axe"
-    },
-    "S": {
-      "item": "axontechnologies:quattuordecuple_compressed_stick"
+    "T": {
+      "item": "axontechnologies:thunderlands_dimension_core"
     }
   },
   "pattern": [
-    "AHA",
-    "GSG",
-    "QBJ"
+    "MAD",
+    "GHG",
+    "TAC"
   ],
   "result": {
     "item": "axontechnologies:razzorium"

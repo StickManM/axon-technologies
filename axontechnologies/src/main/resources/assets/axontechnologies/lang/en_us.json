@@ -23,6 +23,7 @@
 
   "item.axontechnologies.red_essence": "Red Essence",
   "item.axontechnologies.renderium": "Renderium",
+  "item.axontechnologies.denderium": "Denderium",
   "item.axontechnologies.dark_essence": "Dark Essence",
 
   "item.axontechnologies.thunder_fuel": "Thunder Fuel",
@@ -160,6 +161,7 @@
   "block.axontechnologies.fakeslate_gold_ore": "Fakeslate Gold Ore",
   "block.axontechnologies.thunderanium_ore": "Thunderanium Ore",
   "block.axontechnologies.renderium_ore": "Renderium Ore",
+  "block.axontechnologies.denderium_ore": "Denderium Ore",
   "block.axontechnologies.corruptinite_ore": "Corruptinite Ore",
 
   "block.axontechnologies.mimic_world_dimension_core_ore": "Mimic World Dimension Core Ore",

@@ -30,10 +30,10 @@ import software.bernie.geckolib.core.object.PlayState;
 
 public class LostMinerEntity extends PathAwareEntity implements GeoEntity {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+
     public LostMinerEntity(EntityType<? extends PathAwareEntity> entityType, World world) {
         super(entityType, world);
     }
-
 
 
     public static DefaultAttributeContainer.Builder setAttributes() {
@@ -59,8 +59,6 @@ public class LostMinerEntity extends PathAwareEntity implements GeoEntity {
         this.targetSelector.add(1, new RevengeGoal(this, new Class[0]).setGroupRevenge(ZombifiedPiglinEntity.class));
 
 
-
-
         this.goalSelector.add(4, new LookAroundGoal(this));
 
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
@@ -69,11 +67,7 @@ public class LostMinerEntity extends PathAwareEntity implements GeoEntity {
         this.equipStack(EquipmentSlot.MAINHAND, new ItemStack(Items.NETHERITE_PICKAXE));
 
 
-
     }
-
-
-
 
 
     @Nullable
@@ -89,7 +83,7 @@ public class LostMinerEntity extends PathAwareEntity implements GeoEntity {
     }
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
-        if (tAnimationState.isMoving()){
+        if (tAnimationState.isMoving()) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.lostminer.walking", Animation.LoopType.LOOP));
             return PlayState.CONTINUE;
         }
