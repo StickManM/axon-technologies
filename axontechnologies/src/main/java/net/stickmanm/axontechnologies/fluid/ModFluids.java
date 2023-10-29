@@ -19,9 +19,17 @@ public class ModFluids {
     public static FlowableFluid FLOWING_LIQUID_THUNDER;
     public static Block LIQUID_THUNDER_BLOCK;
 
+    public static FlowableFluid STILL_LIQUID_CORRUPTION;
+    public static FlowableFluid FLOWING_LIQUID_CORRUPTION;
+    public static Block LIQUID_CORRUPTION_BLOCK;
+
     public static FlowableFluid STILL_GX;
     public static FlowableFluid FLOWING_GX;
     public static Block GX_BLOCK;
+
+    public static FlowableFluid STILL_LIQUID_LIFE_ESSENCE;
+    public static FlowableFluid FLOWING_LIQUID_LIFE_ESSENCE;
+    public static Block LIQUID_LIFE_ESSENCE_BLOCK;
 
     public static FlowableFluid STILL_INFINITE_WATER;
     public static FlowableFluid FLOWING_INFINITE_WATER;
@@ -36,17 +44,29 @@ public class ModFluids {
                 new Identifier(AxonTechnologies.MOD_ID, "liquid_thunder"), new LiquidThunderFluid.Still());
         FLOWING_LIQUID_THUNDER = Registry.register(Registries.FLUID,
                 new Identifier(AxonTechnologies.MOD_ID, "flowing_liquid_thunder"), new LiquidThunderFluid.Flowing());
-
         LIQUID_THUNDER_BLOCK = Registry.register(Registries.BLOCK, new Identifier(AxonTechnologies.MOD_ID, "liquid_thunder_block"),
                 new LiquidThunderFluidBlock(ModFluids.STILL_LIQUID_THUNDER, FabricBlockSettings.copyOf(Blocks.LAVA).liquid().pistonBehavior(PistonBehavior.DESTROY).replaceable()));
+
+        STILL_LIQUID_CORRUPTION = Registry.register(Registries.FLUID,
+                new Identifier(AxonTechnologies.MOD_ID, "liquid_corruption"), new LiquidCorruptionFluid.Still());
+        FLOWING_LIQUID_CORRUPTION = Registry.register(Registries.FLUID,
+                new Identifier(AxonTechnologies.MOD_ID, "flowing_liquid_corruption"), new LiquidCorruptionFluid.Flowing());
+        LIQUID_CORRUPTION_BLOCK = Registry.register(Registries.BLOCK, new Identifier(AxonTechnologies.MOD_ID, "liquid_corruption_block"),
+                new FluidBlock(STILL_LIQUID_CORRUPTION, FabricBlockSettings.copyOf(Blocks.LAVA).liquid().pistonBehavior(PistonBehavior.DESTROY).replaceable()));
 
         STILL_GX = Registry.register(Registries.FLUID,
                 new Identifier(AxonTechnologies.MOD_ID, "gx"), new GXFluid.Still());
         FLOWING_GX = Registry.register(Registries.FLUID,
                 new Identifier(AxonTechnologies.MOD_ID, "flowing_gx"), new GXFluid.Flowing());
-
         GX_BLOCK = Registry.register(Registries.BLOCK, new Identifier(AxonTechnologies.MOD_ID, "gx_block"),
                 new GXFluidBlock(ModFluids.STILL_GX, FabricBlockSettings.copyOf(Blocks.WATER).replaceable().pistonBehavior(PistonBehavior.DESTROY)));
+
+        STILL_LIQUID_LIFE_ESSENCE = Registry.register(Registries.FLUID,
+                new Identifier(AxonTechnologies.MOD_ID, "liquid_life_essence"), new LiquidLifeEssence.Still());
+        FLOWING_LIQUID_LIFE_ESSENCE = Registry.register(Registries.FLUID,
+                new Identifier(AxonTechnologies.MOD_ID, "flowing_liquid_life_essence"), new LiquidLifeEssence.Flowing());
+        LIQUID_LIFE_ESSENCE_BLOCK = Registry.register(Registries.BLOCK, new Identifier(AxonTechnologies.MOD_ID, "liquid_life_essence_block"),
+                new FluidBlock(ModFluids.STILL_LIQUID_LIFE_ESSENCE, FabricBlockSettings.copyOf(Blocks.WATER).replaceable().pistonBehavior(PistonBehavior.DESTROY)));
 
         STILL_THUNDERIC_GLITCHING_ACID = Registry.register(Registries.FLUID,
                 new Identifier(AxonTechnologies.MOD_ID, "thunderic_glitching_acid"), new ThundericGlitchingAcid.Still());

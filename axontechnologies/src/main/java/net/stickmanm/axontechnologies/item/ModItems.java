@@ -400,11 +400,18 @@ public class ModItems {
     public static final Item LIQUID_THUNDER_BUCKET = registerItem("liquid_thunder_bucket",
             new BucketItem(ModFluids.STILL_LIQUID_THUNDER, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1).fireproof()));
 
+    public static final Item LIQUID_CORRUPTION_BUCKET = registerItem("liquid_corruption_bucket",
+            new BucketItem(ModFluids.STILL_LIQUID_CORRUPTION, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1).fireproof()));
+
     public static final Item THUNDERIC_GLITCHING_ACID_BUCKET = registerItem("thunderic_glitching_acid_bucket",
             new BucketItem(ModFluids.STILL_THUNDERIC_GLITCHING_ACID, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1).fireproof()));
 
     public static final Item GX_BUCKET = registerItem("gx_bucket",
             new BucketItem(ModFluids.STILL_GX, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1).fireproof()));
+
+    public static final Item LIQUID_LIFE_ESSENCE_BUCKET = registerItem("liquid_life_essence_bucket",
+            new BucketItem(ModFluids.STILL_LIQUID_LIFE_ESSENCE, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1).fireproof()));
+
 
     public static final Item INFINITE_WATER_BUCKET = registerItem("infinite_water_bucket",
             new BucketItem(ModFluids.STILL_INFINITE_WATER, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1).fireproof()));

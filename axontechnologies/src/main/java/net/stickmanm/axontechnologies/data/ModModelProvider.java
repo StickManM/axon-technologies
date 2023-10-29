@@ -102,8 +102,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         //Buckests
         itemModelGenerator.register(ModItems.LIQUID_THUNDER_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIQUID_CORRUPTION_BUCKET, Models.GENERATED);
         itemModelGenerator.register(ModItems.THUNDERIC_GLITCHING_ACID_BUCKET, Models.GENERATED);
         itemModelGenerator.register(ModItems.GX_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIQUID_LIFE_ESSENCE_BUCKET, Models.GENERATED);
         itemModelGenerator.register(ModItems.INFINITE_WATER_BUCKET, Models.GENERATED);
 
         //Fuels

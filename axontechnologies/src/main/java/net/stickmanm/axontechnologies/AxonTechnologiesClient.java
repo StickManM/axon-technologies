@@ -63,6 +63,20 @@ public class AxonTechnologiesClient implements ClientModInitializer {
                 SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY,
                 0x0));
 
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_LIQUID_CORRUPTION, new SimpleFluidRenderHandler(
+                SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY,
+                0x0));
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.FLOWING_LIQUID_CORRUPTION, new SimpleFluidRenderHandler(
+                SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY,
+                0x0));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_LIQUID_LIFE_ESSENCE, new SimpleFluidRenderHandler(
+                SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_OVERLAY,
+                0x550505));
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.FLOWING_LIQUID_LIFE_ESSENCE, new SimpleFluidRenderHandler(
+                SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY,
+                0x550505));
+
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_INFINITE_WATER, new SimpleFluidRenderHandler(
                 SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY, 0x345fda));
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.FLOWING_INFINITE_WATER, new SimpleFluidRenderHandler(

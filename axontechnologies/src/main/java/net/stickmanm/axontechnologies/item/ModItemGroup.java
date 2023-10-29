@@ -166,7 +166,9 @@ public class ModItemGroup {
 
 
                         entries.add(ModItems.LIQUID_THUNDER_BUCKET);
+                        entries.add(ModItems.LIQUID_CORRUPTION_BUCKET);
                         entries.add(ModItems.GX_BUCKET);
+                        entries.add(ModItems.LIQUID_LIFE_ESSENCE_BUCKET);
                         entries.add(ModItems.THUNDERIC_GLITCHING_ACID_BUCKET);
                         entries.add(ModItems.INFINITE_WATER_BUCKET);
 
@@ -215,6 +217,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.THUNDERED_STONE);
                         entries.add(ModBlocks.THUNDERANIUM_ORE);
                         entries.add(ModBlocks.RENDERIUM_ORE);
+                        entries.add(ModBlocks.DENDERIUM_ORE);
 
                         entries.add(ModBlocks.CORRUPTED_DIRT);
                         entries.add(ModBlocks.CORRUPTED_STONE);

@@ -69,22 +69,22 @@ public abstract class LiquidLifeEssence extends FlowableFluid {
 
     @Override
     public Fluid getStill() {
-        return ModFluids.STILL_GX;
+        return ModFluids.STILL_LIQUID_LIFE_ESSENCE;
     }
 
     @Override
     public Fluid getFlowing() {
-        return ModFluids.FLOWING_GX;
+        return ModFluids.FLOWING_LIQUID_LIFE_ESSENCE;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModItems.GX_BUCKET;
+        return ModItems.LIQUID_LIFE_ESSENCE_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluids.GX_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+        return ModFluids.LIQUID_LIFE_ESSENCE_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
 

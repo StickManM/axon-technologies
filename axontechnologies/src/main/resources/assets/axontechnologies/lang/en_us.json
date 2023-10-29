@@ -50,6 +50,8 @@
   "item.axontechnologies.corruption_gateway": "Corruption Gateway",
 
   "item.axontechnologies.liquid_thunder_bucket": "Bucket of Liquid Thunder",
+  "item.axontechnologies.liquid_corruption_bucket": "Bucket of Liquid Corruption",
+  "item.axontechnologies.liquid_life_essence_bucket": "Bucket of Liquid Life Essence",
   "item.axontechnologies.gx_bucket": "Bucket of Glitch X Formula",
   "item.axontechnologies.thunderic_glitching_acid_bucket": "Bucket of Thunderic Glitching Acid",
   "item.axontechnologies.infinite_water_bucket": "Bucket of Infinite Water",
@@ -210,7 +212,9 @@
 
   "block.customportalapi.customportalblock": "Portal Block",
   "block.axontechnologies.liquid_thunder_block": "Liquid Thunder",
+  "block.axontechnologies.liquid_corruption_block": "Liquid Corruption",
   "block.axontechnologies.gx_block": "GlitchX Formula",
+  "block.axontechnologies.liquid_life_essence_block": "Liquid Life Essence Block",
   "block.axontechnologies.thunderic_glitching_acid_block": "Thunderic Glitching Acid",
   "block.axontechnologies.infinite_water_block": "Infinite Water",
 
@@ -219,7 +223,7 @@
   "effect.axontechnologies.glitchster3": "Glitchster III",
   "effect.axontechnologies.glitchster4": "Glitchster IV",
   "effect.axontechnologies.glitchster5": "Glitchster V",
-  "effect.axontechnologies.glitchx": "GX",
+  "effect.axontechnologies.glitchx": "GlitchX",
   "effect.axontechnologies.neutralized_glitchster": "Neutralized Glitchster",
   "effect.axontechnologies.corrupted_glitchster": "Corrupted Glitchster III",
   "effect.axontechnologies.corrupted_glitchster2": "Corrupted Glitchster IV",

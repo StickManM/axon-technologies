@@ -1,4 +1,4 @@
-// 1.20.2	2023-10-28T09:37:34.175122	Axon T.e.c.h.n.o.l.o.g.i.e.s./Tags for minecraft:block
+// 1.20.2	2023-10-29T14:57:02.505342	Axon T.e.c.h.n.o.l.o.g.i.e.s./Tags for minecraft:block
 d0149a1cc16eb4824710c96c31da6917f4b1e8bd data/minecraft/tags/blocks/walls.json
 45e3e450789751662ec9bc08e97f38117a749a50 data/fabric/tags/blocks/needs_tool_level_6.json
 dbad2d99d2e66826ab66f2f640076a329cefc87d data/minecraft/tags/blocks/needs_diamond_tool.json
