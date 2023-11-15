@@ -50,7 +50,7 @@ public class AxonTechnologies implements ModInitializer {
 		ModStrippableBlockRegistry.registerStrippableBlocks();
 
 		ModDimensions.registerModDimensions();
-		ModDimensionFeatures.registerModDimensionFeatures();
+		//ModDimensionFeatures.registerModDimensionFeatures();
 		ModBiomes.registerModBiomes();
 
 		ModEffects.registerModEffects();

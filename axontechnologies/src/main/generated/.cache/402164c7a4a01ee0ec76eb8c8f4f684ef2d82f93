@@ -1,4 +1,4 @@
-// 1.20.2	2023-10-29T14:57:02.499512	Axon T.e.c.h.n.o.l.o.g.i.e.s./Block Loot Tables
+// 1.20.2	2023-11-14T22:22:45.459696	Axon T.e.c.h.n.o.l.o.g.i.e.s./Block Loot Tables
 6ee63f2ba97e4298ef6ad404fc6b7e3b3206c85d data/axontechnologies/loot_tables/blocks/fakestone_iron_ore.json
 eb6cf81d44f097c527376fcc845a7850337064ca data/axontechnologies/loot_tables/blocks/reinforced_dreadstone.json
 84099559cf1419574494589b5bbf9dd3aa291e7f data/axontechnologies/loot_tables/blocks/corruptinite_ore.json
@@ -21,8 +21,8 @@ e941cccd654c9ef8f057d0f43fa919d21f5a936c data/axontechnologies/loot_tables/block
 568b7adab59ef1d202fdebe1fa6c46f8c4afe52d data/axontechnologies/loot_tables/blocks/thundered_stone.json
 b1c5e0c84d2defee04f2db9e13c912b0a69afc4e data/axontechnologies/loot_tables/blocks/reinforced_dreadstone_glass.json
 13e662cab2c4e87ede8bf68faa6e573899d5c33e data/axontechnologies/loot_tables/blocks/mimicarium_portal_frame.json
-1656a967ac35ab9e900b4336ba2517eaaeb4a9b4 data/axontechnologies/loot_tables/blocks/reinforced_dreadstone_slab.json
 4e3b15017018aa01f5c5bc036f2a6adce4bd6a95 data/axontechnologies/loot_tables/blocks/void_coal_block.json
+1656a967ac35ab9e900b4336ba2517eaaeb4a9b4 data/axontechnologies/loot_tables/blocks/reinforced_dreadstone_slab.json
 8dfd753bb3d4456bed27fd0c0ddc29bcf37c28da data/axontechnologies/loot_tables/blocks/dreadstone_netherite_ore.json
 76c28a59d450588c4a2a9dc47b78fe93384c686e data/axontechnologies/loot_tables/blocks/thundered_wood.json
 a30690ea4233c3c56ed8907b11b3ae1330375ae9 data/axontechnologies/loot_tables/blocks/reinforced_dreadstone_trapdoor.json
@@ -41,7 +41,7 @@ bb4023b3215295bb7f1dd99dee38f4fc467d942a data/axontechnologies/loot_tables/block
 52cd033ccb282e71b2a3db4284be55d7f62c3522 data/axontechnologies/loot_tables/blocks/corruptionlands_dimension_core_ore.json
 89c00ff62aa093a28fc996887eff960a2b74dbc2 data/axontechnologies/loot_tables/blocks/dreadstone.json
 e4e7c0610505d72d8f8e2ddeb36f3619ee114aed data/axontechnologies/loot_tables/blocks/dreadstone_diamond_ore.json
-4bce5fb71f1a71baede3748fe0d0cc070ce8ce5d data/axontechnologies/loot_tables/blocks/thunderanium_portal_frame.json
 b60238745b4a0d1b0741e8aa26acad2260a1ff1e data/axontechnologies/loot_tables/blocks/thunderanium_ore.json
+4bce5fb71f1a71baede3748fe0d0cc070ce8ce5d data/axontechnologies/loot_tables/blocks/thunderanium_portal_frame.json
 b2c0012a5bc4e81962b4f2c3e1ead9201343b3c6 data/axontechnologies/loot_tables/blocks/renderium_ore.json
 1eb69a4a47f46d6e45f8a9cda3ced9c9a524aa5e data/axontechnologies/loot_tables/blocks/dread_caverns_dimension_core_ore.json

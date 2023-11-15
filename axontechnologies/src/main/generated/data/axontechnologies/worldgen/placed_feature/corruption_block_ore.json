@@ -1,9 +1,9 @@
 {
-  "feature": "axontechnologies:voidstone_ore",
+  "feature": "axontechnologies:corruption_block_ore",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 50
+      "count": 25
     },
     {
       "type": "minecraft:in_square"
@@ -11,12 +11,12 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "type": "minecraft:trapezoid",
+        "type": "minecraft:uniform",
         "max_inclusive": {
-          "below_top": 300
+          "below_top": 370
         },
         "min_inclusive": {
-          "above_bottom": 1
+          "above_bottom": 0
         }
       }
     },

@@ -1,11 +1,9 @@
 package net.stickmanm.axontechnologies.world;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
@@ -27,15 +25,18 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> MIMICARIUM_ORE_KEY = registerKey("mimicarium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> FAKESTONES_IRON_ORE_KEY = registerKey("fakestones_iron_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> FAKESTONES_GOLD_ORE_KEY = registerKey("fakestones_gold_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> VOIDSTONE_ORE_KEY = registerKey("voidstone");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DREADSTONE_DIAMOND_ORE_KEY = registerKey("dreadstone_diamond_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DREADSTONE_THUNDERANIUM_ORE_KEY = registerKey("dreadstone_thunderanium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DREADSTONE_NETHERITE_ORE_KEY = registerKey("dreadstone_netherite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> VOID_COAL_ORE_KEY = registerKey("void_coal_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DIMENSION_CORE_ORE_KEY = registerKey("dimension_core_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> RENDERIUM_ORE_KEY = registerKey("renderium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> THUNDERANIUM_ORE_KEY = registerKey("thunderanium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DENDERIUM_ORE_KEY = registerKey("denderium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CORRUPTINITE_ORE_KEY = registerKey("corruptinite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CORRUPTION_BLOCK_ORE_KEY = registerKey("corruption_block_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_LIQUID_THUNDER_KEY = registerKey("ore_liquid_thunder");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_CORRUPTIONLANDS_LAVA_KEY = registerKey("ore_corruptionlands_lava");
 
 
 
@@ -48,6 +49,7 @@ public class ModConfiguredFeatures {
         RuleTest dreadCaverns = new TagMatchRuleTest(ModBlockTags.DREADSTONE_REPLACEABLE);
         RuleTest thunderlands = new TagMatchRuleTest(ModBlockTags.THUNDERED_STONE_REPLACEABLE);
         RuleTest corruptionlands = new TagMatchRuleTest(ModBlockTags.CORRUPTED_STONE_REPLACEABLE);
+        RuleTest voidstoneReplaceable = new TagMatchRuleTest(ModBlockTags.VOIDSTONE_REPLACEABLE);
 
         List<OreFeatureConfig.Target> overworldMimicariumOres =
                 List.of(OreFeatureConfig.createTarget(mimicariumStoneReplaceables, ModBlocks.MIMICARIUM_ORE.getDefaultState()),
@@ -59,6 +61,10 @@ public class ModConfiguredFeatures {
 
         List<OreFeatureConfig.Target> fakestonesGoldOre = List.of(OreFeatureConfig.createTarget(fakestone, ModBlocks.FAKESTONE_GOLD_ORE.getDefaultState()),
                 OreFeatureConfig.createTarget(fakeslate, ModBlocks.FAKESLATE_GOLD_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> voidstoneOre = List.of(OreFeatureConfig.createTarget(voidstoneReplaceable, ModBlocks.VOIDSTONE.getDefaultState()));
+
+
 
 
 
@@ -77,11 +83,13 @@ public class ModConfiguredFeatures {
 
         //Thunderlands
         List<OreFeatureConfig.Target> renderiumOres = List.of(OreFeatureConfig.createTarget(thunderlands, ModBlocks.RENDERIUM_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> thunderaniumOres = List.of(OreFeatureConfig.createTarget(thunderlands, ModBlocks.THUNDERANIUM_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> corruptionBlockOres = List.of(OreFeatureConfig.createTarget(thunderlands, ModBlocks.CORRUPTION_BLOCK.getDefaultState()));
         List<OreFeatureConfig.Target> oreLiquidThunder = List.of(OreFeatureConfig.createTarget(thunderlands, ModFluids.LIQUID_THUNDER_BLOCK.getDefaultState()));
 
         //Corruptionlands
         List<OreFeatureConfig.Target> denderiumOres = List.of(OreFeatureConfig.createTarget(corruptionlands, ModBlocks.DENDERIUM_ORE.getDefaultState()));
-        List<OreFeatureConfig.Target> oreCorruptionlandsLava = List.of(OreFeatureConfig.createTarget(corruptionlands, Blocks.LAVA.getDefaultState()));
+        List<OreFeatureConfig.Target> corruptiniteOres = List.of(OreFeatureConfig.createTarget(corruptionlands, ModBlocks.CORRUPTINITE_ORE.getDefaultState()));
 
 
 
@@ -96,15 +104,18 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
-        //register
+        //register ores
         register(context, MIMICARIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMimicariumOres, 10));
         register(context, DIMENSION_CORE_ORE_KEY, Feature.ORE, new OreFeatureConfig(dimensionCoreOres, 3));
         register(context, FAKESTONES_IRON_ORE_KEY, Feature.ORE, new OreFeatureConfig(fakestonesIronOre, 14));
         register(context, FAKESTONES_GOLD_ORE_KEY, Feature.ORE, new OreFeatureConfig(fakestonesGoldOre, 10));
+        register(context, VOIDSTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(voidstoneOre, 11));
         register(context, RENDERIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(renderiumOres, 4));
+        register(context, THUNDERANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(thunderaniumOres, 10));
+        register(context, CORRUPTION_BLOCK_ORE_KEY, Feature.ORE, new OreFeatureConfig(corruptionBlockOres, 12));
         register(context, DENDERIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(denderiumOres, 4));
+        register(context, CORRUPTINITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(corruptiniteOres, 5));
         register(context, ORE_LIQUID_THUNDER_KEY, Feature.ORE, new OreFeatureConfig(oreLiquidThunder, 5));
-        register(context, ORE_CORRUPTIONLANDS_LAVA_KEY, Feature.ORE, new OreFeatureConfig(oreCorruptionlandsLava, 5));
 
 
         //Dreadstone Ores

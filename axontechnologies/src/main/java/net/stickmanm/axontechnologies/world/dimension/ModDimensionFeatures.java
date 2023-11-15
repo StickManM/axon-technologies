@@ -12,15 +12,8 @@ import net.stickmanm.axontechnologies.world.biome.ModBiomes;
 import static net.stickmanm.axontechnologies.AxonTechnologies.*;
 
 
-
-
-
 public class ModDimensionFeatures {
-    public static final RegistryKey<PlacedFeature> LIQUID_THUNDER_LAKE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"lake_liquid_thunder"));
-    public static final RegistryKey<PlacedFeature> CORRUPTIONLANDS_LAVA_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"lake_corruptionlands_lava"));
 
     public static void registerModDimensionFeatures() {
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.THUNDERED_PLAINS_KEY), GenerationStep.Feature.LAKES, LIQUID_THUNDER_LAKE_PLACED_KEY);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.CORRUPTED_PLAINS_KEY), GenerationStep.Feature.LAKES, CORRUPTIONLANDS_LAVA_PLACED_KEY);
     }
 }
