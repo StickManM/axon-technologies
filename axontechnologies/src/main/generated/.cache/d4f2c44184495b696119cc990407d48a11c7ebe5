@@ -1,4 +1,4 @@
-// 1.20.2	2023-11-14T22:22:45.46524	Axon T.e.c.h.n.o.l.o.g.i.e.s./Tags for minecraft:block
+// 1.20.2	2023-11-15T21:46:17.643206	Axon T.e.c.h.n.o.l.o.g.i.e.s./Tags for minecraft:block
 d0149a1cc16eb4824710c96c31da6917f4b1e8bd data/minecraft/tags/blocks/walls.json
 45e3e450789751662ec9bc08e97f38117a749a50 data/fabric/tags/blocks/needs_tool_level_6.json
 dbad2d99d2e66826ab66f2f640076a329cefc87d data/minecraft/tags/blocks/needs_diamond_tool.json
@@ -12,5 +12,5 @@ ecad1da5682fbd389dbc248a3f8d771c2c086fb0 data/minecraft/tags/blocks/needs_iron_t
 ba95b38a066701379d2259fe6a0ca5e7c746f5a7 data/fabric/tags/blocks/needs_tool_level_10.json
 104c5e14388a885b3415eb306f0d53b90d781ae7 data/minecraft/tags/blocks/mineable/pickaxe.json
 7310f744a992f75864100cad7c483f99dbe3b4d9 data/minecraft/tags/blocks/logs.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data/minecraft/tags/blocks/mineable/hoe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data/minecraft/tags/blocks/mineable/axe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data/minecraft/tags/blocks/mineable/hoe.json

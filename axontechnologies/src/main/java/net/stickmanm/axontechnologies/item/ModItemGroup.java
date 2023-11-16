@@ -143,6 +143,7 @@ public class ModItemGroup {
                         entries.add(ModItems.VANILLA_HOE);
                         entries.add(ModItems.ULTIMATE_HOE_TROPHY);
                         entries.add(ModItems.RAZZOR);
+                        entries.add(ModItems.NOKIA_HAMMER);
                         entries.add(ModItems.NEMESIS_COMMANDO_BLADE);
                         entries.add(ModItems.BOMB_STICK);
                         entries.add(ModItems.TICKLE_TRAVIS_TICKLER);

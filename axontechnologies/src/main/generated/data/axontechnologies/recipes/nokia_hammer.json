@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:redstone_block"
+    },
+    "D": {
+      "item": "axontechnologies:reinforced_dreadstone"
+    },
+    "I": {
+      "item": "axontechnologies:razzorium"
+    },
+    "R": {
+      "item": "axontechnologies:razzor"
+    },
+    "S": {
+      "item": "axontechnologies:quattuordecuple_compressed_stick"
+    }
+  },
+  "pattern": [
+    "III",
+    "BRB",
+    "DSD"
+  ],
+  "result": {
+    "item": "axontechnologies:nokia_hammer"
+  },
+  "show_notification": true
+}

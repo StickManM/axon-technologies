@@ -417,6 +417,19 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.NEMESIS_COMMANDO_BLADE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.NEMESIS_COMMANDO_BLADE)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.NOKIA_HAMMER)
+                .pattern("III")
+                .pattern("BRB")
+                .pattern("DSD")
+                .input('R', ModItems.RAZZOR)
+                .input('S', ModItems.QUATTUORDECUPLE_COMPRESSED_STICK)
+                .input('I', ModItems.RAZZORIUM)
+                .input('D', ModBlocks.REINFORCED_DREADSTONE)
+                .input('B', Blocks.REDSTONE_BLOCK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RAZZOR),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.NOKIA_HAMMER))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.NOKIA_HAMMER)));
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.NATEY_GIFT)
                 .input(ModItems.OCTUPLE_COMPRESSED_STICK)
                 .input(ModItems.NATEY_BALLS)

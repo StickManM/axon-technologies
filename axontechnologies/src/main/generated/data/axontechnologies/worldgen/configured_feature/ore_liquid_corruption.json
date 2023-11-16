@@ -6,14 +6,14 @@
     "targets": [
       {
         "state": {
-          "Name": "axontechnologies:liquid_thunder_block",
+          "Name": "axontechnologies:liquid_corruption_block",
           "Properties": {
             "level": "0"
           }
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
-          "tag": "axontechnologies:thundered_stone_replaceable"
+          "tag": "axontechnologies:corrupted_stone_replaceable"
         }
       }
     ]

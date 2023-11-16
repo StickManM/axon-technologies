@@ -206,6 +206,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ULTIMATE_HOE_TROPHY, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RAZZOR, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NEMESIS_COMMANDO_BLADE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NOKIA_HAMMER, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BOMB_STICK, Models.HANDHELD);
         itemModelGenerator.register(ModItems.TICKLE_TRAVIS_TICKLER, Models.HANDHELD);
 

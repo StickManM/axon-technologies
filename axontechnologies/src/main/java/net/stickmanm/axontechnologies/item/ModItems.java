@@ -264,6 +264,10 @@ public class ModItems {
             new RazzorSkinItem(ModToolMaterials.RAZZORIUM, 2147483646,100000f,
                     new FabricItemSettings()));
 
+    public static final Item NOKIA_HAMMER = registerItem("nokia_hammer",
+            new RazzorSkinItem(ModToolMaterials.RAZZORIUM, 2147483647,100001f,
+                    new FabricItemSettings()));
+
     public static final Item BOMB_STICK = registerItem("bomb_stick",
             new RazzorSkinItem(ModToolMaterials.RAZZORIUM, 2147483646,100000f,
                     new FabricItemSettings()));

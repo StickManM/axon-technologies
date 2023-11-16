@@ -9,7 +9,7 @@ public class ModFuels {
         FuelRegistry.INSTANCE.add(ModItems.THUNDER_FUEL, 34560000);
         FuelRegistry.INSTANCE.add(ModItems.VOID_COAL, 1728000);
         FuelRegistry.INSTANCE.add(ModBlocks.VOID_COAL_BLOCK, 17280000);
-        FuelRegistry.INSTANCE.add(ModItems.LIQUID_LIFE_ESSENCE_BUCKET, 545642100);
+        //FuelRegistry.INSTANCE.add(ModItems.LIQUID_LIFE_ESSENCE_BUCKET, 545642100);
 
     }
 }

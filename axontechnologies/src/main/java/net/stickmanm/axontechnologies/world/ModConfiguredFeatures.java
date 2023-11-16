@@ -37,6 +37,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> CORRUPTINITE_ORE_KEY = registerKey("corruptinite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CORRUPTION_BLOCK_ORE_KEY = registerKey("corruption_block_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_LIQUID_THUNDER_KEY = registerKey("ore_liquid_thunder");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_LIQUID_CORRUPTION_KEY = registerKey("ore_liquid_corruption");
 
 
 
@@ -90,6 +91,7 @@ public class ModConfiguredFeatures {
         //Corruptionlands
         List<OreFeatureConfig.Target> denderiumOres = List.of(OreFeatureConfig.createTarget(corruptionlands, ModBlocks.DENDERIUM_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> corruptiniteOres = List.of(OreFeatureConfig.createTarget(corruptionlands, ModBlocks.CORRUPTINITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> oreLiquidCorruption = List.of(OreFeatureConfig.createTarget(corruptionlands, ModFluids.LIQUID_CORRUPTION_BLOCK.getDefaultState()));
 
 
 
@@ -115,7 +117,8 @@ public class ModConfiguredFeatures {
         register(context, CORRUPTION_BLOCK_ORE_KEY, Feature.ORE, new OreFeatureConfig(corruptionBlockOres, 12));
         register(context, DENDERIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(denderiumOres, 4));
         register(context, CORRUPTINITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(corruptiniteOres, 5));
-        register(context, ORE_LIQUID_THUNDER_KEY, Feature.ORE, new OreFeatureConfig(oreLiquidThunder, 5));
+        register(context, ORE_LIQUID_THUNDER_KEY, Feature.ORE, new OreFeatureConfig(oreLiquidThunder, 7));
+        register(context, ORE_LIQUID_CORRUPTION_KEY, Feature.ORE, new OreFeatureConfig(oreLiquidCorruption, 7));
 
 
         //Dreadstone Ores

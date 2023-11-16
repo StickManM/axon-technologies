@@ -30,6 +30,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> DENDERIUM_ORE_PLACED_KEY = registerKey("denderium_ore");
     public static final RegistryKey<PlacedFeature> CORRUPTINITE_ORE_PLACED_KEY = registerKey("corruptinite_ore");
     public static final RegistryKey<PlacedFeature> ORE_LIQUID_THUNDER_PLACED_KEY = registerKey("ore_liquid_thunder");
+    public static final RegistryKey<PlacedFeature> ORE_LIQUID_CORRUPTION_PLACED_KEY = registerKey("ore_liquid_corruption");
     public static final RegistryKey<PlacedFeature> THUNDERED_TREE_PLACED_KEY = registerKey("thundered_tree_placed");
 
 
@@ -90,8 +91,8 @@ public class ModPlacedFeatures {
                         HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(370))));
 
         register(context, ORE_LIQUID_THUNDER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORE_LIQUID_THUNDER_KEY),
-                ModOrePlacement.modifiersWithCount(11, // Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(100))));
+                ModOrePlacement.modifiersWithCount(12, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(50))));
 
         //Corruptionlands
         register(context, DENDERIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DENDERIUM_ORE_KEY),
@@ -100,6 +101,10 @@ public class ModPlacedFeatures {
 
         register(context, CORRUPTINITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.CORRUPTINITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(14, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(50))));
+
+        register(context, ORE_LIQUID_CORRUPTION_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORE_LIQUID_CORRUPTION_KEY),
+                ModOrePlacement.modifiersWithCount(12, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(50))));
 
 

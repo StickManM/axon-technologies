@@ -37,6 +37,7 @@ public class ModOreGeneration {
         //Corruptionlads
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.CORRUPTED_PLAINS_KEY), GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.DENDERIUM_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.CORRUPTED_PLAINS_KEY), GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.CORRUPTINITE_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.CORRUPTED_PLAINS_KEY), GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ORE_LIQUID_CORRUPTION_PLACED_KEY);
 
 
         //Dimension Core
