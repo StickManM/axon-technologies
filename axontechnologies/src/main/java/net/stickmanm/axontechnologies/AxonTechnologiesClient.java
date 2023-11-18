@@ -72,15 +72,15 @@ public class AxonTechnologiesClient implements ClientModInitializer {
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_LIQUID_LIFE_ESSENCE, new SimpleFluidRenderHandler(
                 SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_OVERLAY,
-                0x800500));
+                0x050080));
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.FLOWING_LIQUID_LIFE_ESSENCE, new SimpleFluidRenderHandler(
                 SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY,
-                0x800500));
+                0x050080));
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_INFINITE_WATER, new SimpleFluidRenderHandler(
                 SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY, 0x345fda));
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.FLOWING_INFINITE_WATER, new SimpleFluidRenderHandler(
                 SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY, 0x345fda));
-
+//0x800500
     }
 }
