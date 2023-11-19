@@ -73,6 +73,21 @@ public class ModAdvancementGenerator extends FabricAdvancementProvider {
                     .criterion("got_thunderanium_boots", InventoryChangedCriterion.Conditions.items(ModItems.THUNDERANIUM_BOOTS))
                     .build(consumer, AxonTechnologies.MOD_ID + "/has_thunderanium_armor");
 
+        AdvancementEntry getRenderium = Advancement.Builder.create().parent(getThunderaniumArmor)
+                .display(
+                        ModItems.RENDERIUM, // The display icon
+                        Text.translatable("advancement.axontechnologies.get_renderium.title"), // The title
+                        Text.translatable("advancement.axontechnologies.get_renderium.description"), // The description
+                        null,
+                        AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_renderium", InventoryChangedCriterion.Conditions.items(ModItems.RENDERIUM))
+                .build(consumer, AxonTechnologies.MOD_ID + "/got_renderium");
+
             AdvancementEntry getRedEssence = Advancement.Builder.create().parent(getThunderaniumArmor)
                     .display(
                             ModItems.RED_ESSENCE, // The display icon
@@ -121,6 +136,21 @@ public class ModAdvancementGenerator extends FabricAdvancementProvider {
                     .criterion("got_red_thunderanium_boots", InventoryChangedCriterion.Conditions.items(ModItems.RED_THUNDERANIUM_BOOTS))
                     .build(consumer, AxonTechnologies.MOD_ID + "/has_red_thunderanium_armor");
 
+        AdvancementEntry getDenderium = Advancement.Builder.create().parent(getRedThunderaniumArmor)
+                .display(
+                        ModItems.DENDERIUM, // The display icon
+                        Text.translatable("advancement.axontechnologies.get_denderium.title"), // The title
+                        Text.translatable("advancement.axontechnologies.get_denderium.description"), // The description
+                        null,
+                        AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_denderium", InventoryChangedCriterion.Conditions.items(ModItems.DENDERIUM))
+                .build(consumer, AxonTechnologies.MOD_ID + "/got_denderium");
+
             AdvancementEntry getDarkEssence = Advancement.Builder.create().parent(getRedThunderaniumArmor)
                     .display(
                             ModItems.DARK_ESSENCE, // The display icon
@@ -135,6 +165,7 @@ public class ModAdvancementGenerator extends FabricAdvancementProvider {
                     // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
                     .criterion("got_dark_essence", InventoryChangedCriterion.Conditions.items(ModItems.DARK_ESSENCE))
                     .build(consumer, AxonTechnologies.MOD_ID + "/got_dark_essence");
+
 
             AdvancementEntry getDarkThunderaniumIngot = Advancement.Builder.create().parent(getDarkEssence)
                     .display(
@@ -285,6 +316,36 @@ public class ModAdvancementGenerator extends FabricAdvancementProvider {
                     // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
                     .criterion("got_ultimate_hoe_trophy", InventoryChangedCriterion.Conditions.items(ModItems.ULTIMATE_HOE_TROPHY))
                     .build(consumer, AxonTechnologies.MOD_ID + "/got_ultimate_hoe_trophy");
+
+        AdvancementEntry getRazzorium = Advancement.Builder.create().parent(getUltimateHoeTrophy)
+                .display(
+                        ModItems.RAZZORIUM, // The display icon
+                        Text.translatable("advancement.axontechnologies.get_razzorium.title"), // The title
+                        Text.translatable("advancement.axontechnologies.get_razzorium.description"), // The description
+                        null,
+                        AdvancementFrame.CHALLENGE, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_razzorium", InventoryChangedCriterion.Conditions.items(ModItems.RAZZORIUM))
+                .build(consumer, AxonTechnologies.MOD_ID + "/got_razzorium");
+
+        AdvancementEntry getRazzor = Advancement.Builder.create().parent(getRazzorium)
+                .display(
+                        ModItems.RAZZORIUM, // The display icon
+                        Text.translatable("advancement.axontechnologies.get_razzor.title"), // The title
+                        Text.translatable("advancement.axontechnologies.get_razzor.description"), // The description
+                        null,
+                        AdvancementFrame.CHALLENGE, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_razzor", InventoryChangedCriterion.Conditions.items(ModItems.RAZZOR))
+                .build(consumer, AxonTechnologies.MOD_ID + "/got_razzor");
 
         }
     }

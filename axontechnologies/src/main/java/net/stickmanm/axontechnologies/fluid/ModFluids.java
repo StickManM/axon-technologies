@@ -10,9 +10,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.stickmanm.axontechnologies.AxonTechnologies;
-import net.stickmanm.axontechnologies.block.GXFluidBlock;
-import net.stickmanm.axontechnologies.block.LiquidThunderFluidBlock;
-import net.stickmanm.axontechnologies.block.custom.ThundericGlitchingAcidFluidBlock;
+import net.stickmanm.axontechnologies.block.custom.*;
 
 public class ModFluids {
     public static FlowableFluid STILL_LIQUID_THUNDER;
@@ -52,7 +50,7 @@ public class ModFluids {
         FLOWING_LIQUID_CORRUPTION = Registry.register(Registries.FLUID,
                 new Identifier(AxonTechnologies.MOD_ID, "flowing_liquid_corruption"), new LiquidCorruptionFluid.Flowing());
         LIQUID_CORRUPTION_BLOCK = Registry.register(Registries.BLOCK, new Identifier(AxonTechnologies.MOD_ID, "liquid_corruption_block"),
-                new FluidBlock(STILL_LIQUID_CORRUPTION, FabricBlockSettings.copyOf(Blocks.LAVA).liquid().pistonBehavior(PistonBehavior.DESTROY).replaceable()));
+                new LiquidCorruptionFluidBlock(STILL_LIQUID_CORRUPTION, FabricBlockSettings.copyOf(Blocks.LAVA).liquid().pistonBehavior(PistonBehavior.DESTROY).replaceable()));
 
         STILL_GX = Registry.register(Registries.FLUID,
                 new Identifier(AxonTechnologies.MOD_ID, "gx"), new GXFluid.Still());
@@ -66,7 +64,7 @@ public class ModFluids {
         FLOWING_LIQUID_LIFE_ESSENCE = Registry.register(Registries.FLUID,
                 new Identifier(AxonTechnologies.MOD_ID, "flowing_liquid_life_essence"), new LiquidLifeEssence.Flowing());
         LIQUID_LIFE_ESSENCE_BLOCK = Registry.register(Registries.BLOCK, new Identifier(AxonTechnologies.MOD_ID, "liquid_life_essence_block"),
-                new FluidBlock(ModFluids.STILL_LIQUID_LIFE_ESSENCE, FabricBlockSettings.copyOf(Blocks.WATER).replaceable().pistonBehavior(PistonBehavior.DESTROY)));
+                new LiquidLifeEssenceFluidBlock(ModFluids.STILL_LIQUID_LIFE_ESSENCE, FabricBlockSettings.copyOf(Blocks.WATER).replaceable().pistonBehavior(PistonBehavior.DESTROY)));
 
         STILL_THUNDERIC_GLITCHING_ACID = Registry.register(Registries.FLUID,
                 new Identifier(AxonTechnologies.MOD_ID, "thunderic_glitching_acid"), new ThundericGlitchingAcid.Still());

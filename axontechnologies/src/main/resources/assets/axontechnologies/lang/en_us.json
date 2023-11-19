@@ -250,6 +250,9 @@
   "advancement.axontechnologies.get_red_essence.title": "All That Work For a Color...",
   "advancement.axontechnologies.get_red_essence.description": "Kill a Red Essence Zombie and collect its Red Essence.",
 
+  "advancement.axontechnologies.get_renderium.title": "I Prefer the Old School Method.",
+  "advancement.axontechnologies.get_renderium.description": "Obtain a piece of Renderium.",
+
   "advancement.axontechnologies.get_red_thunderanium_ingot.title": "I Could Get the Same Results Using Red Dye",
   "advancement.axontechnologies.get_red_thunderanium_ingot.description": "Combine Thunderanium Ingots and Red Essence to obtain a Red Thunderanium Ingot.",
 
@@ -259,11 +262,14 @@
   "advancement.axontechnologies.get_dark_essence.title": "And the Cycle Continues",
   "advancement.axontechnologies.get_dark_essence.description": "Kill a Dark Essence Zombie for Dark Essence.",
 
+  "advancement.axontechnologies.get_denderium.title": "I Prefer the Newer Old School Method.",
+  "advancement.axontechnologies.get_denderium.description": "Obtain a piece of Denderium.",
+
   "advancement.axontechnologies.get_dark_thunderanium_ingot.title": "Anti Hero",
   "advancement.axontechnologies.get_dark_thunderanium_ingot.description": "Create a Dark Thunderanium Ingot.",
 
   "advancement.axontechnologies.get_corruptinite.title": "Corruption is My Path",
-  "advancement.axontechnologies.get_corruptinite.description": "Create Stabilized Corruptinite.",
+  "advancement.axontechnologies.get_corruptinite.description": "Stabilize Unstable Corruptinite.",
 
   "advancement.axontechnologies.get_dark_thunderanium_armor.title": "Sometimes You Have to Embrace The Darkness!",
   "advancement.axontechnologies.get_dark_thunderanium_armor.description": "Get a full set of Dark Thunderanium Armor.",
@@ -280,12 +286,17 @@
   "advancement.axontechnologies.get_corruptinite_axon_alloy_armor.title": "The Darkness Evolves!",
   "advancement.axontechnologies.get_corruptinite_axon_alloy_armor.description": "Get a full set of Axon Alloy Armor Type C.",
 
-  "advancement.axontechnologies.get_axon_alloy_armor.title": "No... You Can't Do That!",
+  "advancement.axontechnologies.get_axon_alloy_armor.title": "No... You Can't Use Both of Them!",
   "advancement.axontechnologies.get_axon_alloy_armor.description": "Get a full set of Axon Alloy Armor Type A.",
 
   "advancement.axontechnologies.get_ultimate_hoe_trophy.title": "Seriously? What is Wrong With You?",
-  "advancement.axontechnologies.get_ultimate_hoe_trophy.description": "Get the Ultimate Hoe Trophy",
+  "advancement.axontechnologies.get_ultimate_hoe_trophy.description": "Get the Ultimate Hoe Trophy.",
 
+  "advancement.axontechnologies.get_razzorium.title": "All That Work for One Ingot?!",
+  "advancement.axontechnologies.get_razzorium.description": "Make a piece of Razzorium.",
+
+  "advancement.axontechnologies.get_razzor.title": "The Omega Weapon",
+  "advancement.axontechnologies.get_razzor.description": "Create Razzor.",
 
 
   "category.axontechnologies.keybinds": "Axon T.e.c.h.n.o.l.o.g.i.e.s. (WIP)",

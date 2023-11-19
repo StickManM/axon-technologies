@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:axontechnologies/has_red_thunderanium_armor",
+  "criteria": {
+    "got_denderium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "axontechnologies:denderium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.axontechnologies.get_denderium.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "axontechnologies:denderium"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.axontechnologies.get_denderium.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_denderium"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

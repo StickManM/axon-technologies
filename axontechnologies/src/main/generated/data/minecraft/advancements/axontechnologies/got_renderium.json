@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:axontechnologies/has_thunderanium_armor",
+  "criteria": {
+    "got_renderium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "axontechnologies:renderium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.axontechnologies.get_renderium.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "axontechnologies:renderium"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.axontechnologies.get_renderium.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_renderium"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

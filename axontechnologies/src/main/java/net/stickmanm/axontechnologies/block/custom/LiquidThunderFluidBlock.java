@@ -5,14 +5,15 @@ import net.minecraft.block.FluidBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 import net.stickmanm.axontechnologies.effect.ModEffects;
 
-public class ThundericGlitchingAcidFluidBlock extends FluidBlock {
-    public ThundericGlitchingAcidFluidBlock(FlowableFluid fluid, Settings settings) {
+public class LiquidThunderFluidBlock extends FluidBlock {
+    public LiquidThunderFluidBlock(FlowableFluid fluid, Settings settings) {
         super(fluid, settings);
     }
 
@@ -21,9 +22,8 @@ public class ThundericGlitchingAcidFluidBlock extends FluidBlock {
             if (entity instanceof LivingEntity) {
                 LivingEntity livingEntity = (LivingEntity)entity;
                 if (!livingEntity.isInvulnerableTo(world.getDamageSources().lightningBolt())) {
-                    livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.ANTIGLITCHSTER, 2, 2));
-                    livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.ANTI_CORRUPTED_GLITCHSTER, 2, 2));
-                    livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.THUNDER_POISONING, 2, 2));
+                    livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.THUNDER_POISONING, 2));
+                    livingEntity.removeStatusEffect(ModEffects.ANTIGLITCHSTER);
                 }
             }
 
