@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD:axontechnologies/src/main/generated/data/axontechnologies/worldgen/placed_feature/renderium_ore.json
   "feature": "axontechnologies:renderium_ore",
+=======
+  "feature": "axontechnologies:denderium_ore",
+>>>>>>> origin/master:axontechnologies/src/main/generated/data/axontechnologies/worldgen/placed_feature/denderium_ore.json
   "placement": [
     {
       "type": "minecraft:count",

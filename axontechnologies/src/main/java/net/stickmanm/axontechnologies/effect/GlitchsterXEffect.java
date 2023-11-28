@@ -24,10 +24,11 @@ public class GlitchsterXEffect extends StatusEffect {
 
             if (!entity.getWorld().isClient()) {
 
-                if(entity.isPlayer()){
+                if (entity.isPlayer()) {
                     ((PlayerEntity) entity).getHungerManager().add(Amplifier + 1, 1.0f);
                     entity.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 10, 1, false, false, false));
-                }
+
+            }
 
                 addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE, "648D7064-6A60-4F59-8ABE-C2C23A6DD7A9", 50f, EntityAttributeModifier.Operation.ADDITION)
                         .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", 50f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
