@@ -11,6 +11,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.stickmanm.axontechnologies.AxonTechnologies;
 import net.stickmanm.axontechnologies.block.custom.*;
+import net.stickmanm.axontechnologies.block.custom.GXFluidBlock;
+import net.stickmanm.axontechnologies.block.custom.LiquidCorruptionFluidBlock;
+import net.stickmanm.axontechnologies.block.custom.LiquidLifeEssenceFluidBlock;
+import net.stickmanm.axontechnologies.block.custom.LiquidThunderFluidBlock;
+import net.stickmanm.axontechnologies.block.custom.ThundericGlitchingAcidFluidBlock;
 
 public class ModFluids {
     public static FlowableFluid STILL_LIQUID_THUNDER;
