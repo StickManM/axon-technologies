@@ -1,47 +1,44 @@
 package net.stickmanm.axontechnologies.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.stickmanm.axontechnologies.AxonTechnologies;
-import net.stickmanm.axontechnologies.item.ModItemGroup;
-import net.stickmanm.axontechnologies.world.tree.ThunderedSaplingGenerator;
+import net.stickmanm.axontechnologies.world.tree.ModSaplingGenerators;
 
 public class ModBlocks {
 
     //Ore
     public static final Block MIMICARIUM_ORE = registerBlock("mimicarium_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GOLD_ORE).strength(4.0f).requiresTool(),
-                    UniformIntProvider.create(3, 7)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7),
+                    FabricBlockSettings.copyOf(Blocks.GOLD_ORE).strength(4.0f).requiresTool()));
 
     public static final Block DEEPSLATE_MIMICARIUM_ORE = registerBlock("deepslate_mimicarium_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE).strength(4.0f).requiresTool(),
-                    UniformIntProvider.create(3, 7)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE).strength(4.0f).requiresTool()));
 
     public static final Block FAKESTONE_IRON_ORE = registerBlock("fakestone_iron_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).requiresTool(),
-                    UniformIntProvider.create(3, 7)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7),
+                    FabricBlockSettings.copyOf(Blocks.IRON_ORE).requiresTool()));
 
     public static final Block FAKESTONE_GOLD_ORE = registerBlock("fakestone_gold_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GOLD_ORE).requiresTool(),
-                    UniformIntProvider.create(3, 7)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7),
+                    FabricBlockSettings.copyOf(Blocks.GOLD_ORE).requiresTool()));
 
     public static final Block FAKESLATE_IRON_ORE = registerBlock("fakeslate_iron_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE).requiresTool(),
-                    UniformIntProvider.create(3, 7)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE).requiresTool()));
 
     public static final Block FAKESLATE_GOLD_ORE = registerBlock("fakeslate_gold_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE).requiresTool(),
-                    UniformIntProvider.create(3, 7)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE).requiresTool()));
 
     //Thundered Tree
     public static final Block THUNDERED_LOG = registerBlock("thundered_log",
@@ -59,7 +56,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(1.0f).requiresTool()));
 
     public static final Block THUNDERED_SAPLING = registerBlock("thundered_sapling",
-            new SaplingBlock(new ThunderedSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            new SaplingBlock(ModSaplingGenerators.THUNDERED, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
     //Portal Blocks
     public static final Block VOIDSTONE = registerBlock("voidstone",
@@ -90,28 +87,28 @@ public class ModBlocks {
             new WallBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
 
     public static final Block REINFORCED_DREADSTONE_DOOR = registerBlock("reinforced_dreadstone_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE), BlockSetType.CRIMSON));
+            new DoorBlock(BlockSetType.CRIMSON, FabricBlockSettings.copyOf(Blocks.OBSIDIAN).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
 
     public static final Block REINFORCED_DREADSTONE_TRAPDOOR = registerBlock("reinforced_dreadstone_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE), BlockSetType.CRIMSON ));
+            new TrapdoorBlock(BlockSetType.CRIMSON, FabricBlockSettings.copyOf(Blocks.OBSIDIAN).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
 
     public static final Block REINFORCED_DREADSTONE_GLASS = registerBlock("reinforced_dreadstone_glass",
             new TransparentBlock(FabricBlockSettings.copyOf(Blocks.GLASS).resistance(3600000.0F).strength(255f).hardness(255f).requiresTool().luminance(15).sounds(BlockSoundGroup.NETHERITE)));
 
     public static final Block DREADSTONE_DIAMOND_ORE = registerBlock("dreadstone_diamond_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool(),
-                    UniformIntProvider.create(7, 10)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(7, 10),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool()));
 
     public static final Block DREADSTONE_THUNDERANIUM_ORE = registerBlock("dreadstone_thunderanium_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool(),
-                    UniformIntProvider.create(10, 17)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(10, 17),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).strength(2.4f).requiresTool()));
     public static final Block DREADSTONE_NETHERITE_ORE = registerBlock("dreadstone_netherite_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength(4.5f).requiresTool(),
-                    UniformIntProvider.create(10, 17)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(10, 17),
+                    FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength(4.5f).requiresTool()));
 
     public static final Block VOID_COAL_ORE = registerBlock("void_coal_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.COAL_ORE).strength(2.4f).requiresTool(),
-                    UniformIntProvider.create(7, 10)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(7, 10),
+                    FabricBlockSettings.copyOf(Blocks.COAL_ORE).strength(2.4f).requiresTool()));
 
     public static final Block VOID_COAL_BLOCK = registerBlock("void_coal_block",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.4f).requiresTool()));
@@ -140,12 +137,12 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.1f).requiresTool()));
 
     public static final Block THUNDERANIUM_ORE = registerBlock("thunderanium_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(2.5f).requiresTool(),
-                    UniformIntProvider.create(15, 25)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(15, 25),
+                    FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(4.0f).requiresTool()));
 
     public static final Block RENDERIUM_ORE = registerBlock("renderium_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(2.5f).requiresTool(),
-                    UniformIntProvider.create(15, 25)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(15, 25),
+                    FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(4.0f).requiresTool()));
 
     //Corruptionlands
 
@@ -158,28 +155,28 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(2.3f).requiresTool()));
 
     public static final Block CORRUPTINITE_ORE = registerBlock("corruptinite_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.CORRUPTED_STONE).strength(2.5f).requiresTool(),
-                    UniformIntProvider.create(20, 27)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(20, 27),
+                    FabricBlockSettings.copyOf(ModBlocks.CORRUPTED_STONE).strength(4.0f).requiresTool()));
 
     public static final Block DENDERIUM_ORE = registerBlock("denderium_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.CORRUPTED_STONE).strength(2.5f).requiresTool(),
-                    UniformIntProvider.create(15, 25)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(20, 27),
+                    FabricBlockSettings.copyOf(ModBlocks.CORRUPTED_STONE).strength(4.0f).requiresTool()));
 
     public static final Block MWDC_ORE = registerBlock("mimic_world_dimension_core_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.FAKESLATE).strength(4.5f).requiresTool(),
-                    UniformIntProvider.create(30, 37)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(30, 37),
+                    FabricBlockSettings.copyOf(ModBlocks.FAKESLATE).strength(5.0f).requiresTool()));
 
     public static final Block DCDC_ORE = registerBlock("dread_caverns_dimension_core_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.DREADSTONE).strength(4.5f).requiresTool(),
-                    UniformIntProvider.create(30, 37)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(30, 37),
+                    FabricBlockSettings.copyOf(ModBlocks.DREADSTONE).strength(5.0f).requiresTool()));
 
     public static final Block TLDC_ORE = registerBlock("thunderlands_dimension_core_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(4.5f).requiresTool(),
-                    UniformIntProvider.create(30, 37)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(30, 37),
+                    FabricBlockSettings.copyOf(ModBlocks.THUNDERED_STONE).strength(5.0f).requiresTool()));;
 
     public static final Block CLDC_ORE = registerBlock("corruptionlands_dimension_core_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.CORRUPTED_STONE).strength(4.5f).requiresTool(),
-                    UniformIntProvider.create(30, 37)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(30, 37),
+                    FabricBlockSettings.copyOf(ModBlocks.CORRUPTED_STONE).strength(5.0f).requiresTool()));
 
 
 
